@@ -242,7 +242,7 @@ begin
 end process ;
 
 signalRX_end <= error_flag and not error_type; 
-RX_end <= signalRX_end;
+--RX_end <= signalRX_end;
 bit_error <= error_flag;
 
 -- process (rstn,clk)

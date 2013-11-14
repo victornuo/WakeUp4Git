@@ -225,8 +225,8 @@ d_hk <= Mom_Free;
 			if  ZB_active = '0' then 
 				next_state <= MoM_StandBy;
 			
-			elsif commandReceived = '1' and commandType = NWKRroute  then -- se recibe un rRouteNWK antes de quie se resuleva el R2SINK, 
-				next_state <= Contention;								-- se envia el nuevo comando al considerarse de mas importancia
+			-- elsif commandReceived = '1' and commandType = NWKRroute  then -- se recibe un rRouteNWK antes de que se resuleva el R2SINK, 
+				-- next_state <= Contention;								-- se envia el nuevo comando al considerarse de mas importancia
 			end if;
 	
       end case;      
@@ -383,13 +383,13 @@ d_hk <= Mom_Free;
 			WaitingACKEnab <= '0';
 			ContentionEnab <= '0'; 
 			NACKCounterEnab <= '0'; 
-			--RF_selector <= '1'; -- lo dejo como transmisor asi me no me levanto aunque lleguen mas mensajes hasta que le microcontroller me diga que ha terminado
-			RF_selector <= '0'; -- medidas desesperadas
+			RF_selector <= '1'; -- lo dejo como transmisor asi me no me levanto aunque lleguen mas mensajes hasta que le microcontroller me diga que ha terminado
+			--RF_selector <= '0'; -- medidas desesperadas
 			TX_load <= '0';
 			TX_enable <= '0';
 			clean_command <= '0'; -- cambiado para que en las pruebas con fpgas por cable el rRouting no rebotara, en la implementacion con radio no era necesario dado que el switch se queda en posicion TX para que no lleguen mensajes nuevos.
 			commandReady2ZB <= '0';
-			Mom_Free <= '1';
+			Mom_Free <= '0';
 		
 		
 		end if;

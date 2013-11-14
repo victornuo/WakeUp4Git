@@ -12,7 +12,6 @@ entity housekeepingCheck is
         Data4 : in std_logic; 
 		Data5 : in std_logic;
 		Data6 : in std_logic;
-		Data7 : in std_logic;
 	
         Result : out std_logic) ;
 end housekeepingCheck;
@@ -20,7 +19,7 @@ end housekeepingCheck;
 
 architecture DEF_ARCH of  housekeepingCheck is
 begin
-    Result <= ((((Data1 and Data2)) and Data3) and (Data4 and (Data5 and Data6)) and Data7) ;
+    Result <= (((Data1 and Data2)) and Data3) and (Data4 and (Data5 and Data6));
 
 end DEF_ARCH;
 

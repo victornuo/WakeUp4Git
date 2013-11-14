@@ -16,8 +16,8 @@ port (
 	IRQ1 : OUT std_logic; -- Señal q va a IRQ 1 a desactiva el modulo ZB
 	IRQ2 : OUT std_logic; -- Señal q va a IRQ 2 a pone las señales R2SINKTimeout and R2SINKTimeout a '0'
 	IRQ3 : OUT std_logic; -- Señal q va a IRQ 3 a StartTimers
-	WD_IRQ : IN std_logic;
-	WD_CLR : OUT std_logic;
+	-- WD_IRQ : IN std_logic;
+	-- WD_CLR : OUT std_logic;
 	
 	ZBCtrlState : OUT std_logic_vector (1 downto 0);
  	
@@ -116,7 +116,7 @@ begin
 	
 	d_HK <= not ZBcontrolActive;
 	
-	NEXT_STATE_DECODE: process (state, ZBTimeout, commandReadyIN, R2SINKTimeout, NWKrRouteTimeout, WD_IRQ )
+	NEXT_STATE_DECODE: process (state, ZBTimeout, commandReadyIN, R2SINKTimeout, NWKrRouteTimeout) --, WD_IRQ )
 	begin
       --declare default state for next_state to avoid latches
       next_state <= state;  --default is to stay in current state
@@ -129,8 +129,10 @@ begin
 				
 				if commandReadyIN = '1' then
 					next_state <= RadioOn;
+				elsif NWKrRouteTimeout = '1' and R2SINKTimeOut = '1' then  -- añadido el 11/10/2013 para evitar que se queden a 1 tras el reset del nodo.
+					next_state <= ResetFlags;
 				end if;
-			
+				
 			when RadioOn =>
 				ZBCtrlState <= "01";
 				if ZBTimeout = '1' then 
@@ -173,7 +175,7 @@ begin
 		if state = RadioOff then
 			if commandReadyIN = '1'  then
 				  
-				WD_CLR <= '1';
+				-- WD_CLR <= '1';
 				ActivateZB <= '1'; 
 				SleepZB <= '0';
 				LoadNWKmsg <= '0';
@@ -182,8 +184,9 @@ begin
 				IOtoLow <= '0'; -- Señal q va a IRQ 2 
 				StartTimers <= '1';
 			
+				
 			else
-				WD_CLR <= '0'; 
+				-- WD_CLR <= '0'; 
 				ActivateZB <= '0'; 
 				SleepZB <= '1';
 				LoadNWKmsg <= '0';
@@ -198,7 +201,7 @@ begin
 		elsif state = RadioOn then
 			
 			if ZBTimeout = '1'  then
-				WD_CLR <= '0';  
+				-- WD_CLR <= '0';  
 				ActivateZB <= '1'; 
 				SleepZB <= '0';
 				LoadNWKmsg <= '0';
@@ -209,7 +212,7 @@ begin
 				 
 			
 			elsif commandReadyIN = '1' and commandType2uC = '1' then			 
-				WD_CLR <= '0';  
+				-- WD_CLR <= '0';  
 				ActivateZB <= '1'; 
 				SleepZB <= '0';
 				LoadNWKmsg <= '0';
@@ -220,7 +223,7 @@ begin
 			
 				
 			else
-				WD_CLR <= '0';  
+				-- WD_CLR <= '0';  
 				ActivateZB <= '1'; 
 				SleepZB <= '0';
 				LoadNWKmsg <= '0';
@@ -234,7 +237,7 @@ begin
 		elsif state = ResetFlags then
 						
 			if R2SINKTimeout = '0' and NWKrRouteTimeout = '0' then
-				WD_CLR <= '1';  
+				-- WD_CLR <= '1';  
 				ActivateZB <= '1'; 
 				SleepZB <= '0';
 				LoadNWKmsg <= '0';
@@ -244,7 +247,7 @@ begin
 				StartTimers <= '0';
 				
 			else
-				WD_CLR <= '1';  
+				-- WD_CLR <= '1';  
 				ActivateZB <= '1'; 
 				SleepZB <= '0';
 				LoadNWKmsg <= '0';
@@ -258,7 +261,7 @@ begin
 		-- elsif state = Inic0 then  
 			
 			-- if  rstn = '0' then
-		 		-- WD_CLR <= '0';  
+		 		-- -- WD_CLR <= '0';  
 				-- ActivateZB <= '0'; 
 				-- SleepZB <= '0';
 				-- LoadNWKmsg <= '0';
@@ -268,7 +271,7 @@ begin
 				-- StartTimers <= '0';
 			
 			-- elsif R2SINKTimeout = '1' then
-				-- WD_CLR <= '0';  
+				-- -- WD_CLR <= '0';  
 				-- ActivateZB <= '0'; 
 				-- SleepZB <= '0';
 				-- LoadNWKmsg <= '0';
@@ -278,7 +281,7 @@ begin
 				-- StartTimers <= '0';
 			
 			-- else
-				-- WD_CLR <= '0';  
+				-- -- WD_CLR <= '0';  
 				-- ActivateZB <= '1'; 
 				-- SleepZB <= '0';
 				-- LoadNWKmsg <= '0';
@@ -291,7 +294,7 @@ begin
 		-- elsif state = Inic1 then  
 						
 			-- if R2SINKTimeout = '1' then
-				-- WD_CLR <= '0';  
+				-- -- WD_CLR <= '0';  
 				-- ActivateZB <= '0'; 
 				-- SleepZB <= '0';
 				-- LoadNWKmsg <= '0';
@@ -301,7 +304,7 @@ begin
 				-- StartTimers <= '0';
 			
 			-- else
-				-- WD_CLR <= '0';  
+				-- -- WD_CLR <= '0';  
 				-- ActivateZB <= '0'; 
 				-- SleepZB <= '0';
 				-- LoadNWKmsg <= '0';
@@ -312,7 +315,7 @@ begin
 		
 			
 		else
-			WD_CLR <= '0';  
+			-- WD_CLR <= '0';  
 			ActivateZB <= '1'; 
 			SleepZB <= '0';
 			LoadNWKmsg <= '0';

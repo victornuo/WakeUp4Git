@@ -59,7 +59,8 @@ ARCHITECTURE RTL of MoM_unit is
 --constant CONTENTION_TIME	: integer := (BITTIME_OOK*(FCLK_ENC/10**6))/2;
 
 --type state_type is (Inic0, MoM_StandBy, Contention, Sending_MSG, WaitingACK, WakeupCOMM, WaitingTimeout);
-type state_type is ( MoM_StandBy, Contention, Sending_MSG, WaitingACK, WakeupCOMM, WaitingTimeout);
+--type state_type is ( MoM_StandBy, Contention, Sending_MSG, WaitingACK, WakeupCOMM, WaitingTimeout);
+type state_type is ( MoM_StandBy, Contention, Sending_MSG, WaitingACK, WakeupCOMM_WurOFF, WakeupCOMM_WurON, WaitingTimeout_WurON, WaitingTimeout_WurOFF);
 signal state, next_state : state_type; 
 
 signal TX_enable : std_logic;
@@ -190,11 +191,14 @@ d_hk <= Mom_Free;
 				-- next_state <= MoM_StandBy;
             
 			-- els
+			-- Cambio introducido el 15/10/2013 Se elimina la dependencia de SinkNeigbor (este sie	
 			if TX_Active = '0' then
 				if  command2send = R2SINK and SINKNeighbor = '0' then -- si el R2Sink y no soy el ultimo nodo antes del sink/root/coordinador
 					next_state <= WaitingACK; -- en estos casos hago data clean y a funcionar no necesito decirle nada al micro
-				else -- si ee un NWKReroute o soy el SINK neighbor despues de enviar no hay q esperar al indirect ACK
-					next_state <= WakeupCOMM;
+				elsif command2send = R2SINK and SINKNeighbor = '1' then -- si ee un NWKReroute o soy el SINK neighbor despues de enviar no hay q esperar al indirect ACK
+					next_state <= WakeupCOMM_WurON;
+				else
+					next_state <= WakeupCOMM_WurOFF;
 				end if;
 				
 			end if;        
@@ -202,7 +206,10 @@ d_hk <= Mom_Free;
 		when WaitingACK =>
 			MoMState <= "101";
 			if commandReceived = '1' and (RX_commandType = R2SINK and RX_addressOK = '0') then
-				next_state <= WakeupCOMM;
+				next_state <= WakeupCOMM_WurON;
+			
+			elsif commandReceived = '1' and (RX_commandType = R2SINK and RX_addressOK = '1') then
+				next_state <= Contention;
 			
 			elsif timeOutACK = '1' and NACKCnt = MAXRETRIES -1 then
 				next_state <= MoM_StandBy;
@@ -214,21 +221,37 @@ d_hk <= Mom_Free;
 					next_state <= Contention;
 			end if;
 			
-		when WakeupCOMM => -- de aqui salgo cuando dice el microcontroller
+		when WakeupCOMM_WurOFF => -- de aqui salgo cuando dice el ZB
 			MoMState <= "100";
 			if  ZB_active = '1' then 
-				next_state <= WaitingTimeout;
+				next_state <= WaitingTimeout_WurOFF;
 			end if;
 			
 			
-		when WaitingTimeout => -- de aqui salgo cuando telegesis se va dormir
-		
+		when WaitingTimeout_WurOFF => -- de aqui salgo cuando telegesis se va dormir
 		    MoMState <= "001";
 			if  ZB_active = '0' then 
 				next_state <= MoM_StandBy;
 			
 			-- elsif commandReceived = '1' and commandType = NWKRroute  then -- se recibe un rRouteNWK antes de que se resuleva el R2SINK, 
 				-- next_state <= Contention;								-- se envia el nuevo comando al considerarse de mas importancia
+			end if;
+		
+		-- Modificado el 15/10/2013 Añadido para separar el caso de haber recibido un NWKreRoute en cuyo caso desactivo la radio Wur o un R2SINK en cuyo caso dejo la radio activada para posibles reenvios o fallos en le receptor del direct ACK
+		when WakeupCOMM_WurON => -- de aqui salgo cuando dice el ZB
+			MoMState <= "100";
+			if  ZB_active = '1' then 
+				next_state <= WaitingTimeout_WurON;
+			end if;
+			
+		when WaitingTimeout_WurON => -- de aqui salgo cuando telegesis se va dormir
+		
+		    MoMState <= "001";
+			if  ZB_active = '0' then 
+				next_state <= MoM_StandBy;
+			
+			elsif commandReceived = '1' and (RX_commandType = R2SINK and RX_addressOK = '1') then
+				next_state <= Contention;								-- se envia el nuevo comando al considerarse de mas importancia
 			end if;
 	
       end case;      
@@ -239,32 +262,6 @@ d_hk <= Mom_Free;
 	begin
 		--insert statements to decode internal output signals
       --below is simple example
-		-- if (state = Inic0) then
-			-- if rstn = '0' then
-				-- WaitingACKEnab <= '0';
-				-- ContentionEnab <= '0'; 
-				-- NACKCounterEnab <= '0'; 
-				-- RF_selector <= '0';
-				-- TX_load <= '0';
-				-- TX_enable <= '0';
-				-- clean_command <= '0';
-				-- -- reg_command_enab <= '0';
-				-- commandReady2ZB <= '0';
-				-- Mom_Free <= '0';
-			-- else
-				-- WaitingACKEnab <= '0';
-				-- ContentionEnab <= '0'; 
-				-- NACKCounterEnab <= '0'; 
-				-- RF_selector <= '0';
-				-- TX_load <= '0';
-				-- TX_enable <= '0';
-				-- clean_command <= '0';
-				-- -- reg_command_enab <= '0';
-				-- commandReady2ZB <= '0';
-				-- Mom_Free <= '0';
-			-- end if;
-			
-		-- els
 		if (state = MoM_StandBy) then
 			if  (RX_commandType = R2SINK and RX_addressOK = '0' and RX_commandReady = '1') then -- recibo un r2sink q no es para mi
 				WaitingACKEnab <= '0';
@@ -292,17 +289,6 @@ d_hk <= Mom_Free;
 
 		
 		elsif (state = Contention) then
-			-- if RX_Port = '1' and ContentionExpired = '0' then 
-				-- WaitingACKEnab <= '0';
-				-- ContentionEnab <= '0'; 
-				-- NACKCounterEnab <= '1'; -- cambiado el 16/05/13 no se pq estaba a '0'
-				-- RF_selector <= '0';
-				-- TX_load <= '1';
-				-- TX_enable <= '0';
-				-- clean_command <= '0';
-				-- -- reg_command_enab <= '0';
-				-- commandReady2ZB <= '0';
-				-- Mom_Free <= '0';
 			
 			if ContentionTimeExpired = '1' then
 				WaitingACKEnab <= '0';
@@ -339,7 +325,6 @@ d_hk <= Mom_Free;
 				TX_load <= '0';
 				TX_enable <= '0';
 				clean_command <= '0';
-				--clean_command <= '1';
 				commandReady2ZB <= '0';
 				Mom_Free <= '0';
 
@@ -368,7 +353,7 @@ d_hk <= Mom_Free;
 			commandReady2ZB <= '0';
 			Mom_Free <= '0'; -- cambiado 20/05/2013
 			
-		elsif state = WakeupCOMM then
+		elsif state = WakeupCOMM_WurOFF then
 		
 				WaitingACKEnab <= '0';
 				ContentionEnab <= '0'; 
@@ -379,9 +364,20 @@ d_hk <= Mom_Free;
 				clean_command <= '1';
 				commandReady2ZB <= '1';
 				Mom_Free <= '0';
-
 		
-		elsif state = WaitingTimeout then
+		elsif state = WakeupCOMM_WurON then
+		
+				WaitingACKEnab <= '0';
+				ContentionEnab <= '0'; 
+				NACKCounterEnab <= '0'; 
+				RF_selector <= '0'; 
+				TX_load <= '0';
+				TX_enable <= '0';
+				clean_command <= '1';
+				commandReady2ZB <= '1';
+				Mom_Free <= '0';
+		
+		elsif state = WaitingTimeout_WurOFF then
 
 			WaitingACKEnab <= '0';
 			ContentionEnab <= '0'; 
@@ -394,6 +390,18 @@ d_hk <= Mom_Free;
 			commandReady2ZB <= '0';
 			Mom_Free <= '0';
 		
+		elsif state = WaitingTimeout_WurON then
+
+			WaitingACKEnab <= '0';
+			ContentionEnab <= '0'; 
+			NACKCounterEnab <= '0'; 
+			RF_selector <= '0'; -- lo dejo como receptor para poder reenviar el R2SINK en caso de que no haya recivido bien el ACK el emisor.
+			--RF_selector <= '0'; -- medidas desesperadas
+			TX_load <= '0';
+			TX_enable <= '0';
+			clean_command <= '0'; -- cambiado para que en las pruebas con fpgas por cable el rRouting no rebotara, en la implementacion con radio no era necesario dado que el switch se queda en posicion TX para que no lleguen mensajes nuevos.
+			commandReady2ZB <= '0';
+			Mom_Free <= '0';
 		
 		end if;
 				
@@ -448,7 +456,6 @@ d_hk <= Mom_Free;
 		elsif clk'event and clk = '1' then
 			if ContentionEnab = '1' and ((RX_end = '1' and RX_port = '0')or uc_CommandReady = '1' ) then
 				ChannelFreeTime <= '1';
-			
 			elsif TX_Active = '1' then
 				ChannelFreeTime <= '0';
 			end if;
