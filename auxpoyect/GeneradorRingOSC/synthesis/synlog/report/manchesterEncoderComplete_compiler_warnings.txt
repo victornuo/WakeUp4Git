@@ -1,9 +1,0 @@
-@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":71:44:71:51|Signal load_din in the sensitivity list is not used in the process
-@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":125:35:125:42|Signal load_din in the sensitivity list is not used in the process
-@W: CG296 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":125:19:125:25|Incomplete sensitivity list - assuming completeness
-@W: CG290 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":233:11:233:24|Referenced variable nexthopaddress is not in sensitivity list
-@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":51:7:51:18|Signal rstn_freqref is undriven 
-@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":234:8:234:9|Optimizing register bit bit_count(3) to a constant 0
-@W: CL260 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":234:8:234:9|Pruning register bit 3 of bit_count(3 downto 0)  
-@W: CL159 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":20:1:20:6|Input enable is unused
-

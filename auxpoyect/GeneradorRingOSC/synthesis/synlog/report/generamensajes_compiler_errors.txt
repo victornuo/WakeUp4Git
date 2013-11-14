@@ -1,5 +1,0 @@
-@E: CD242 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\Wupu_pck.vhd":48:10:48:20|Expecting ;
-@E: CD169 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\Wupu_pck.vhd":48:10:48:20|Illegal declaration
-@E: CD255 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":145:20:145:20|No identifier "preamble" in scope
-@E|Parse errors encountered - exiting
-

@@ -1,1 +1,0 @@
-@W: MT532 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\t100msext_clk\hdl\ledbartimer.vhd":49:4:49:5|Found signal identified as System clock which controls 30 sequential elements including ledbarTimer_0/Ledaux[9:0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. 

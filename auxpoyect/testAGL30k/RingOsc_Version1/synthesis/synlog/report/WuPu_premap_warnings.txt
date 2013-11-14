@@ -1,1 +1,0 @@
-@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version1\component\work\ringoscillator\ringoscillator.vhd":229:0:229:6|Found combinational loop during mapping at net RingOscillator_0.AOI5_11_Y

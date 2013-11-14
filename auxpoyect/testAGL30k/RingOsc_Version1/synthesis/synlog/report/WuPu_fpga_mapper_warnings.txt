@@ -1,4 +1,0 @@
-@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version1\component\work\ringoscillator\ringoscillator.vhd":239:0:239:6|Found combinational loop during mapping at net RingOscillator_0.NAND2_0_Y
-@W: MT462 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version1\component\work\ringoscillator\ringoscillator.vhd":229:0:229:6|Net RingOscillator_0.AOI5_11_Y appears to be an unidentified clock source. Assuming default frequency. 
-@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version1\component\work\ringoscillator\ringoscillator.vhd":229:0:229:6|Found combinational loop during mapping at net RingOscillator_0.AOI5_11_Y
-@W: MT420 |Found inferred clock ringO_cnt|CLK_OUT_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:CLK_OUT"

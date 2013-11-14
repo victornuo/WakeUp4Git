@@ -1,3 +1,0 @@
-@W: BN137 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\ringoscillator\component\work\ringoscillator\ringoscillator.vhd":367:0:367:6|Found combinational loop during mapping at net NAND2_0_Y
-@W: MT462 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\ringoscillator\component\work\ringoscillator\ringoscillator.vhd":267:0:267:6|Net AO14_15_Y appears to be an unidentified clock source. Assuming default frequency. 
-@W: BN137 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\ringoscillator\component\work\ringoscillator\ringoscillator.vhd":267:0:267:6|Found combinational loop during mapping at net AO14_15_Y

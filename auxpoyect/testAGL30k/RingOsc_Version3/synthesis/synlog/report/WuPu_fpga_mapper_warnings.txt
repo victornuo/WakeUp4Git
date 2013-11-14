@@ -1,1 +1,0 @@
-@W: MT462 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version3\component\work\wupu\wupu.vhd":121:0:121:6|Net CLK_OUT appears to be an unidentified clock source. Assuming default frequency. 

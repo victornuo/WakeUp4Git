@@ -1,1 +1,0 @@
-@W: MT532 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\generadorringosc\hdl\manchester_encoder.vhd":130:8:130:9|Found signal identified as System clock which controls 39 sequential elements including manchester_encoder_0/symbol_t[5:0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. 

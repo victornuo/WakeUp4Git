@@ -1,9 +1,0 @@
-@N: MF248 |Running in 64-bit mode.
-@N: MF667 |Clock conversion disabled 
-@N: BN362 :"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\smartgen\common\vhdl\flashfreeze_fsm.vhd":63:6:63:7|Removing sequential instance LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
-@N: FP130 |Promoting Net RESETZB_c on CLKINT  I_70 
-@N: FP130 |Promoting Net CLK_GATED_0 on CLKINT  RingOscillator_0.ringO_cnt_0.CLK_GATED_0_inferred_clock 
-@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
-@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
-@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
-@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

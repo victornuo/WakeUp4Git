@@ -1,6 +1,0 @@
-@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\hdl\ringO_cnt.vhd":19:12:19:15|Component declarations with different initial values are not supported.  Port b of component and2 may have been given a different initial value in two different component declarations
-@W: CL168 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\hdl\ringO_cnt.vhd":84:4:84:13|Pruning instance U_AND2_0_1 -- not in use ... 
-@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_Filter.vhd":17:11:17:14|Component declarations with different initial values are not supported.  Port clk of component dfn1 may have been given a different initial value in two different component declarations
-@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_FSM.vhd":52:12:52:23|Signal flash_freeze in the sensitivity list is not used in the process
-@W: CD604 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_FSM.vhd":130:12:130:25|OTHERS clause is not synthesized 
-

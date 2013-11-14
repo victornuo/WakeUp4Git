@@ -1,1 +1,0 @@
-@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\wupu30k-controlledring\component\work\ringoscillator\ringoscillator.vhd":391:0:391:6|Found combinational loop during mapping at net RingOscillator_0.NAND2_0_Y
