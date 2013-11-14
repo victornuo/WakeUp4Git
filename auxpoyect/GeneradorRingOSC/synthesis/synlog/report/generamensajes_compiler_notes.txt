@@ -1,0 +1,26 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\generamensajes\generamensajes.vhd":17:7:17:20|Top entity is set to generamensajes.
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\generamensajes\generamensajes.vhd":17:7:17:20|Synthesizing work.generamensajes.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\RingOscillator\RingOscillator.vhd":17:7:17:20|Synthesizing work.ringoscillator.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\smartgen\ringO_cnt\ringO_cnt.vhd":8:7:8:15|Synthesizing work.ringo_cnt.def_arch 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":37:10:37:13|Synthesizing igloo.and3.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1472:10:1472:17|Synthesizing igloo.dfn1e1c0.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1934:10:1934:12|Synthesizing igloo.inv.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1388:10:1388:15|Synthesizing igloo.dfn1c0.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":2817:10:2817:13|Synthesizing igloo.xor2.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":13:10:13:13|Synthesizing igloo.and2.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":2032:10:2032:14|Synthesizing igloo.nand2.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":91:10:91:13|Synthesizing igloo.ao14.syn_black_box 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\smartgen\muxRefTime\muxRefTime.vhd":8:7:8:16|Synthesizing work.muxreftime.def_arch 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1996:10:1996:12|Synthesizing igloo.mx2.syn_black_box 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd":17:7:17:31|Synthesizing work.manchesterencodercomplete.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":10:7:10:29|Synthesizing work.manchester_encoder_ctrl.rtl 
+@N: CD231 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":34:16:34:17|Using onehot encoding for type state_type (free="1000000")
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":12:7:12:24|Synthesizing work.manchester_encoder.rtl 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1793:10:1793:14|Synthesizing igloo.inbuf.syn_black_box 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\detectorflanco.vhd":10:7:10:20|Synthesizing work.detectorflanco.def_arch 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\controlbloque.vhd":10:7:10:13|Synthesizing work.control.controlada 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\counter.vhd":11:7:11:14|Synthesizing work.contador.def_arch 
+@N: CL201 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":64:6:64:7|Trying to extract state machine for register state
+

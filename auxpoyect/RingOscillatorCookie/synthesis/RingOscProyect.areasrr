@@ -1,0 +1,60 @@
+----------------------------------------------------------------------
+Report for cell RingOscProyect.rtl
+                                          Cell usage:
+                               cell       count     area    count*area
+                               BUFF         2       1.0        2.0
+                                GND         1       0.0        0.0
+                              INBUF         1       0.0        0.0
+                             OUTBUF        11       0.0        0.0
+                     RingOscillator         1      35.0       35.0
+                                VCC         1       0.0        0.0
+                        ledbarTimer         1      76.0       76.0
+                            
+                         TOTAL             18                113.0
+----------------------------------------------------------------------
+Report for cell RingOscillator.netlist
+     Instance path:  RingOscillator_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AO14        24       1.0       24.0
+                                GND         1       0.0        0.0
+                              NAND2         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                          clkCouter         1      10.0       10.0
+                            
+                         TOTAL             28                 35.0
+----------------------------------------------------------------------
+Report for cell clkCouter.netlist
+     Instance path:  RingOscillator_0.clkCouter_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         1       1.0        1.0
+                               AND3         1       1.0        1.0
+                             CLKINT         1       0.0        0.0
+                             DFN1C0         2       1.0        2.0
+                           DFN1E1C0         2       1.0        2.0
+                                GND         1       0.0        0.0
+                                INV         3       1.0        3.0
+                                VCC         1       0.0        0.0
+                               XOR2         1       1.0        1.0
+                            
+                         TOTAL             13                 10.0
+----------------------------------------------------------------------
+Report for cell ledbarTimer.netlist
+     Instance path:  ledbarTimer_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AX1C        12       1.0       12.0
+                             DFN1C0        18       1.0       18.0
+                           DFN1E1C0         9       1.0        9.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                               NOR2         3       1.0        3.0
+                              NOR2A         1       1.0        1.0
+                              NOR2B         2       1.0        2.0
+                              NOR3A         2       1.0        2.0
+                              NOR3C        14       1.0       14.0
+                                VCC         1       0.0        0.0
+                               XOR2        14       1.0       14.0
+                            
+                         TOTAL             78                 76.0

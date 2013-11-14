@@ -1,0 +1,44 @@
+@P:  Worst Slack : -7.822
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Estimated Frequency : 40.9 MHz
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Estimated Period : 24.431
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Requested Period : 10.000
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Slack : -7.822
+@P:  System - Estimated Frequency : 182.8 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 5.471
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : 4.529
+@P:  Worst Slack(min analysis) : 0.968
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Estimated Frequency(min analysis) : 40.9 MHz
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Estimated Period(min analysis) : 24.431
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Requested Period(min analysis) : 10.000
+@P:  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock - Slack(min analysis) : -7.822
+@P:  System - Estimated Frequency(min analysis) : 182.8 MHz
+@P:  System - Requested Frequency(min analysis) : 100.0 MHz
+@P:  System - Estimated Period(min analysis) : 5.471
+@P:  System - Requested Period(min analysis) : 10.000
+@P:  System - Slack(min analysis) : 4.529
+@P:  Total Area : 652.0
+@P:  Total Area : 12.0
+@P:  Total Area : 36.0
+@P:  Total Area : 10.0
+@P:  Total Area : 1.0
+@P:  Total Area : 170.0
+@P:  Total Area : 64.0
+@P:  Total Area : 18.0
+@P:  Total Area : 152.0
+@P:  Total Area : 67.0
+@P:  Total Area : 84.0
+@P:  Total Area : 28.0
+@P:  Total Area : 28.0
+@P:  Total Area : 28.0
+@P:  Total Area : 3.0
+@P:  Total Area : 25.0
+@P:  Total Area : 11.0
+@P:  Total Area : 5.0
+@P:  Total Area : 163.0
+@P:  Total Area : 11.0
+@P:  Total Area : 652.0
+@P:  CPU Time : 0h:00m:01s

@@ -1,0 +1,820 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\simulation
+Eaddressingdata
+Z1 w1359567286
+Z2 DPx4 work 8 wupu_pck 0 22 0o_hl^LcNR9h?RHf^LKYT3
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\simulation
+Z6 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/adressingData.vhd
+Z7 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/adressingData.vhd
+l0
+L14
+VH]KYjJ1lIYI4HNm7cnoYE0
+Z8 OW;C;10.1b;51
+31
+Z9 !s108 1365772695.061000
+Z10 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/adressingData.vhd|
+Z11 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/adressingData.vhd|
+Z12 o-93 -explicit -work presynth -O0
+Z13 tExplicit 1
+!s100 enH_dK=`TK:YHI>zYHc<X3
+!i10b 1
+Asymplified
+R2
+R3
+R4
+DEx4 work 14 addressingdata 0 22 H]KYjJ1lIYI4HNm7cnoYE0
+l28
+L26
+VTbD67HzLEfYY8=bKg2>_W1
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 4Ij`z]41Ld8nC9N1?XI4D2
+!i10b 1
+Pascii_char
+R3
+R4
+w1350469183
+R5
+8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ASCII_pck.vhd
+FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ASCII_pck.vhd
+l0
+L11
+V`8AAYl_boBYe:ZHFP[[891
+R8
+31
+R12
+R13
+!s100 M;H>GeG;bEV8C2`dkne7O1
+!i10b 1
+!s108 1365772700.231000
+!s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ASCII_pck.vhd|
+!s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ASCII_pck.vhd|
+Ecommand_process
+Z14 w1365771199
+R2
+R3
+R4
+R5
+Z15 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Command_Process_preamble.vhd
+Z16 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Command_Process_preamble.vhd
+l0
+L17
+V87Q[?Mc`eUoSc_US5KGdU3
+R8
+31
+Z17 !s108 1365772695.232000
+Z18 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Command_Process_preamble.vhd|
+Z19 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Command_Process_preamble.vhd|
+R12
+R13
+!s100 4Nz]1Akb8D1:Yie8czX[:3
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 15 command_process 0 22 87Q[?Mc`eUoSc_US5KGdU3
+l89
+L38
+V_[DM76l72VIdB4EOL7Pgl1
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 CL61BjiFMfKz:CPNEVdXQ0
+!i10b 1
+Eflashfreeze_filter
+Z20 w1316620795
+R3
+R4
+R5
+Z21 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_Filter.vhd
+Z22 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_Filter.vhd
+l0
+L7
+V]Z=5?CG^S>dALf`0KIeT[1
+R8
+31
+Z23 !s108 1365772696.280000
+Z24 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_Filter.vhd|
+Z25 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_Filter.vhd|
+R12
+R13
+!s100 6<45kGihFSG`>OzhX<zSP0
+!i10b 1
+Atrans
+R3
+R4
+DEx4 work 18 flashfreeze_filter 0 22 ]Z=5?CG^S>dALf`0KIeT[1
+l44
+L15
+V1MnZ7<9^>bKHUffg>Q<JV1
+R8
+31
+R23
+R24
+R25
+R12
+R13
+!s100 K1X4;JN<9zJVgnX?b0z=z1
+!i10b 1
+Eflashfreeze_fsm
+R20
+R3
+R4
+R5
+Z26 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_FSM.vhd
+Z27 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_FSM.vhd
+l0
+L6
+V;2[jHQL[DPdZXf]Q2AJGj3
+R8
+31
+Z28 !s108 1365772695.712000
+Z29 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_FSM.vhd|
+Z30 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_FSM.vhd|
+R12
+R13
+!s100 nMOn16en1G1icI415FnZ`3
+!i10b 1
+Atrans
+R3
+R4
+DEx4 work 15 flashfreeze_fsm 0 22 ;2[jHQL[DPdZXf]Q2AJGj3
+l48
+L20
+VG6Y1D4j<OC2FN`[JoQLS?2
+R8
+31
+R28
+R29
+R30
+R12
+R13
+!s100 6AEIiI^aF>UF`WEOF@K=@3
+!i10b 1
+Eflashfreeze_managment
+R20
+Z31 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z32 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R3
+R4
+R5
+Z33 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_Managment.vhd
+Z34 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_Managment.vhd
+l0
+L8
+VXM^?9b4SMViYf]03kW3H<1
+R8
+31
+Z35 !s108 1365772696.573000
+Z36 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_Managment.vhd|
+Z37 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/common/vhdl/FlashFreeze_Managment.vhd|
+R12
+R13
+!s100 7_?4^l^AI8iEAVhoF0Adh2
+!i10b 1
+Atrans
+R31
+R32
+R3
+R4
+DEx4 work 21 flashfreeze_managment 0 22 XM^?9b4SMViYf]03kW3H<1
+l58
+L25
+V]X^4gfz93P>OzE:924DcW1
+R8
+31
+R35
+R36
+R37
+R12
+R13
+!s100 Wa[6OgT@TIh=fz2cEbMN_1
+!i10b 1
+Efrec_ref
+Z38 w1339078728
+R31
+R3
+R4
+R5
+Z39 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/freq_ref_preamble.vhd
+Z40 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/freq_ref_preamble.vhd
+l0
+L8
+V_k9obU?[e4n>356@G>fzg1
+R8
+31
+Z41 !s108 1365772698.512000
+Z42 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/freq_ref_preamble.vhd|
+Z43 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/freq_ref_preamble.vhd|
+R12
+R13
+!s100 a<AhPh]MLOc[VICR8@beO2
+!i10b 1
+Adef_arch
+R31
+R3
+R4
+DEx4 work 8 frec_ref 0 22 _k9obU?[e4n>356@G>fzg1
+l23
+L19
+V]2Rl6DACToQNf@:F<6e2Q0
+R8
+31
+R41
+R42
+R43
+R12
+R13
+!s100 U?O_H7RR<ljBUZV3K^4iK1
+!i10b 1
+Ehousekeepingcheck
+Z44 w1365772060
+R3
+R4
+R5
+Z45 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/housekeepingCheck.vhd
+Z46 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/housekeepingCheck.vhd
+l0
+L8
+Vj8]:2DzYfg28D[ezX?n1a1
+R8
+31
+Z47 !s108 1365772695.437000
+Z48 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/housekeepingCheck.vhd|
+Z49 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/housekeepingCheck.vhd|
+R12
+R13
+!s100 PzNEFmAG<gZD_RCfKXRh@0
+!i10b 1
+Adef_arch
+R3
+R4
+DEx4 work 17 housekeepingcheck 0 22 j8]:2DzYfg28D[ezX?n1a1
+l21
+L20
+V>FH@UlKJf@mDNLAHFZHD`0
+R8
+31
+R47
+R48
+R49
+R12
+R13
+!s100 j9cfHzYdXXThS0J@z@gj@3
+!i10b 1
+Elowpowermanagement
+R20
+R3
+R4
+R5
+Z50 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/LowPowerManagement/LowPowerManagement.vhd
+Z51 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/LowPowerManagement/LowPowerManagement.vhd
+l0
+L8
+Vinzm=jYRMgzh[`m71eFkA1
+R8
+31
+Z52 !s108 1365772697.388000
+Z53 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/LowPowerManagement/LowPowerManagement.vhd|
+Z54 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/LowPowerManagement/LowPowerManagement.vhd|
+R12
+R13
+!s100 ];NiC]>bV=4EjSL@Hfff51
+!i10b 1
+Adef_arch
+R3
+R4
+DEx4 work 18 lowpowermanagement 0 22 inzm=jYRMgzh[`m71eFkA1
+l60
+L21
+VK7=Z:W2jEk^WN@=F8Kje92
+R8
+31
+R52
+R53
+R54
+R12
+R13
+!s100 mo9n;odB@caEafCP]eDCL1
+!i10b 1
+Elowpowermanagement_wrapper
+R20
+Z55 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R3
+R4
+R5
+Z56 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/LowPowerManagement/LowPowerManagement_wrapper.vhd
+Z57 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/LowPowerManagement/LowPowerManagement_wrapper.vhd
+l0
+L35
+VVTLD3h]S5dgE[:<0=F4mM2
+R8
+31
+Z58 !s108 1365772696.875000
+Z59 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/LowPowerManagement/LowPowerManagement_wrapper.vhd|
+Z60 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/LowPowerManagement/LowPowerManagement_wrapper.vhd|
+R12
+R13
+!s100 `]iaz>[Em0P`WJ]Yk;PEm2
+!i10b 1
+Adef_arch
+R55
+R3
+R4
+DEx4 work 26 lowpowermanagement_wrapper 0 22 VTLD3h]S5dgE[:<0=F4mM2
+l69
+L49
+V`ZF83z5ll?DfeQS>9`[>d1
+R8
+31
+R58
+R59
+R60
+R12
+R13
+!s100 mZLaK8Oz4UX3Lk0YcUVZj2
+!i10b 1
+Emanchester_encoder
+Z61 w1361994186
+R2
+R32
+R31
+R3
+R4
+R5
+Z62 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchester_encoder.vhd
+Z63 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchester_encoder.vhd
+l0
+L12
+VL:fPePoYka4Fcc9`26PKR0
+R8
+31
+Z64 !s108 1365772697.648000
+Z65 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchester_encoder.vhd|
+Z66 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchester_encoder.vhd|
+R12
+R13
+!s100 :`=[Gn3Thda<M6lJo0GJS3
+!i10b 1
+Artl
+R2
+R32
+R31
+R3
+R4
+DEx4 work 18 manchester_encoder 0 22 L:fPePoYka4Fcc9`26PKR0
+l64
+L30
+V0bYk::j_ILYI6cPOKadQ20
+R8
+31
+R64
+R65
+R66
+R12
+R13
+!s100 Kh?CjZ2TnO`i@LPf30_W70
+!i10b 1
+Emanchester_encoder_ctrl
+Z67 w1365761933
+R2
+R32
+R31
+R3
+R4
+R5
+Z68 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ManchesterEncoder_ctrl.vhd
+Z69 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ManchesterEncoder_ctrl.vhd
+l0
+L12
+VWUDAHV>TX2:G:>PUKni431
+R8
+31
+Z70 !s108 1365772697.907000
+Z71 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ManchesterEncoder_ctrl.vhd|
+Z72 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ManchesterEncoder_ctrl.vhd|
+R12
+R13
+!s100 =12NDe6BAomDQS:K<5TIK1
+!i10b 1
+Artl
+R2
+R32
+R31
+R3
+R4
+DEx4 work 23 manchester_encoder_ctrl 0 22 WUDAHV>TX2:G:>PUKni431
+l49
+L31
+Va3Ph03G<i46=KgPmoF?iH0
+R8
+31
+R70
+R71
+R72
+R12
+R13
+!s100 JGRQ2m8:nW3Z?n83D?nLD0
+!i10b 1
+Emanchesterencodercomplete
+Z73 w1365528974
+R3
+R4
+R5
+Z74 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/manchesterEncoderComplete/manchesterEncoderComplete.vhd
+Z75 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/manchesterEncoderComplete/manchesterEncoderComplete.vhd
+l0
+L17
+VGLamlY@Sb07KOXRg7[b;W0
+R8
+31
+Z76 !s108 1365772698.147000
+Z77 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/manchesterEncoderComplete/manchesterEncoderComplete.vhd|
+Z78 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/manchesterEncoderComplete/manchesterEncoderComplete.vhd|
+R12
+R13
+!s100 >A[>SW2aGNV0@2z@?eQLL2
+!i10b 1
+Artl
+R3
+R4
+DEx4 work 25 manchesterencodercomplete 0 22 GLamlY@Sb07KOXRg7[b;W0
+l108
+L36
+VbbZHjTYbemM>PD_QIYeKY3
+R8
+31
+R76
+R77
+R78
+R12
+R13
+!s100 86KL>P1WXW49IWT49za0V2
+!i10b 1
+Emd_v3
+Z79 w1357129516
+Z80 DPx4 work 8 wupu_pck 0 22 [96]`=9n?A7@7YXKoS9i20
+R31
+R3
+R4
+R5
+Z81 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchesterDecoder_preamble.vhd
+Z82 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchesterDecoder_preamble.vhd
+l0
+L19
+VDHSiD?CHCkH7YIli6UDSK1
+R8
+31
+Z83 !s108 1365676528.103000
+Z84 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchesterDecoder_preamble.vhd|
+Z85 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchesterDecoder_preamble.vhd|
+R12
+R13
+!s100 MB?O]mPcVGSeaYJPgO>d>0
+!i10b 1
+Av1
+R80
+R31
+R3
+R4
+DEx4 work 5 md_v3 0 22 DHSiD?CHCkH7YIli6UDSK1
+l74
+L35
+Vn550MX1FfaXBC=>F>Q7l?3
+R8
+31
+R83
+R84
+R85
+R12
+R13
+!s100 `^7]D3RfUWX28LEMWL?dl0
+!i10b 1
+Emd_v4
+Z86 w1365764138
+R2
+R31
+R3
+R4
+R5
+Z87 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchesterDecoder_0toStart.vhd
+Z88 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchesterDecoder_0toStart.vhd
+l0
+L21
+V==ji[Zal?1H^im5@JfCbc2
+R8
+31
+Z89 !s108 1365772698.798000
+Z90 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchesterDecoder_0toStart.vhd|
+Z91 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/manchesterDecoder_0toStart.vhd|
+R12
+R13
+!s100 JYCP;VeOVO_[@XhE]SfVb3
+!i10b 1
+Artl
+R2
+R31
+R3
+R4
+DEx4 work 5 md_v4 0 22 ==ji[Zal?1H^im5@JfCbc2
+l76
+L37
+Vc36mXa41AKln?1V<4zPTo2
+R8
+31
+R89
+R90
+R91
+R12
+R13
+!s100 Q`EDb4>3h0iKKdH_7IWc?2
+!i10b 1
+Emom_unit
+Z92 w1365610344
+R2
+R55
+R31
+R32
+R3
+R4
+R5
+Z93 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Mom_unit_indirectACK.vhd
+Z94 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Mom_unit_indirectACK.vhd
+l0
+L13
+VARLN36]3Zo_TCl^KQUnj31
+R8
+31
+Z95 !s108 1365772699.122000
+Z96 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Mom_unit_indirectACK.vhd|
+Z97 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Mom_unit_indirectACK.vhd|
+R12
+R13
+!s100 4[i@CFoi?6b@=iolCoL``0
+!i10b 1
+Artl
+R2
+R55
+R31
+R32
+R3
+R4
+DEx4 work 8 mom_unit 0 22 ARLN36]3Zo_TCl^KQUnj31
+l113
+L53
+VGMlCd5eEVlbzHeFgU@OoM3
+R8
+31
+R95
+R96
+R97
+R12
+R13
+!s100 kUBn`R]KcETeW:oPlcc6^2
+!i10b 1
+Epulse_gen
+Z98 w1365527444
+R31
+R3
+R4
+R5
+Z99 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/Actel/Simulation/PULSE_GEN/1.0.1/PULSE_GEN.vhd
+Z100 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/Actel/Simulation/PULSE_GEN/1.0.1/PULSE_GEN.vhd
+l0
+L5
+VnEP2<4282iQ`lUYzdg=RL3
+!s100 >[an5TF^WUa>R:lQo93L]2
+R8
+31
+!i10b 1
+Z101 !s108 1365772700.431000
+Z102 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/Actel/Simulation/PULSE_GEN/1.0.1/PULSE_GEN.vhd|
+Z103 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/Actel/Simulation/PULSE_GEN/1.0.1/PULSE_GEN.vhd|
+R12
+R13
+Abehavior
+R31
+R3
+R4
+Z104 DEx4 work 9 pulse_gen 0 22 nEP2<4282iQ`lUYzdg=RL3
+l16
+L12
+Z105 VkTU2EE[gHzF]^l=a2ggGz1
+Z106 !s100 eUEi8Dmblk^[96fZN8fmP2
+R8
+31
+!i10b 1
+R101
+R102
+R103
+R12
+R13
+Etb_wupu_complete
+Z107 w1365676512
+R3
+R4
+R5
+Z108 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/TB_WUPU_Complete/TB_WUPU_Complete.vhd
+Z109 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/TB_WUPU_Complete/TB_WUPU_Complete.vhd
+l0
+L17
+VZaez`H`DhX0cl1IWGn0<Q2
+R8
+31
+Z110 !s108 1365676530.815000
+Z111 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/TB_WUPU_Complete/TB_WUPU_Complete.vhd|
+Z112 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/TB_WUPU_Complete/TB_WUPU_Complete.vhd|
+R12
+R13
+!s100 P^AOC3IXdMGP74Y`@fAn13
+!i10b 1
+Artl
+R3
+R4
+DEx4 work 16 tb_wupu_complete 0 22 Zaez`H`DhX0cl1IWGn0<Q2
+l195
+L22
+VVTZddf3SL>md^z4h<:7KA2
+R8
+31
+R110
+R111
+R112
+R12
+R13
+!s100 ^FV4c1>zogI7D7T5lV1Sa3
+!i10b 1
+Etestbench
+Z113 w1362407490
+R3
+R4
+Z114 dC:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\simulation
+Z115 8C:/Users/Victor/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/WuPu/testbench.vhd
+Z116 FC:/Users/Victor/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/WuPu/testbench.vhd
+l0
+L13
+VaGWVk:RCzoYiHK`cBlADW2
+R8
+31
+Z117 !s108 1362409691.830000
+Z118 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/WuPu/testbench.vhd|
+Z119 !s107 C:/Users/Victor/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/WuPu/testbench.vhd|
+R12
+R13
+!s100 SS]j:^]CaVnb=FcfJ3Uk[0
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 9 testbench 0 22 aGWVk:RCzoYiHK`cBlADW2
+l60
+L16
+VX7VbkiHj^MBY6VOKQC?L[3
+R8
+31
+R117
+R118
+R119
+R12
+R13
+!s100 fA]dXK1H`z_Yi=[FGA2RH1
+!i10b 1
+Ewupu
+Z120 w1365772082
+R3
+R4
+R5
+Z121 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/WuPu/WuPu.vhd
+Z122 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/WuPu/WuPu.vhd
+l0
+L17
+VhFn;A48`=DN[T3<D=9NQM0
+R8
+31
+Z123 !s108 1365772699.966000
+Z124 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/WuPu/WuPu.vhd|
+Z125 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/component/work/WuPu/WuPu.vhd|
+R12
+R13
+!s100 Rdm6?I_7aL`DP:`J3K;Y@2
+!i10b 1
+Artl
+R3
+R4
+DEx4 work 4 wupu 0 22 hFn;A48`=DN[T3<D=9NQM0
+l282
+L51
+VOE2Zb;3TSR2e07TaPBj=`2
+R8
+31
+R123
+R124
+R125
+R12
+R13
+!s100 ET8I_8g]kX5eQafGP^S_D2
+!i10b 1
+Pwupu_pck
+R3
+R4
+w1365761862
+R5
+8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Wupu_pck.vhd
+FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Wupu_pck.vhd
+l0
+L10
+V0o_hl^LcNR9h?RHf^LKYT3
+R8
+31
+R12
+R13
+!s100 K@hTZ=ilJ:88Xe:Q[_OLY3
+!i10b 1
+!s108 1365772694.894000
+!s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Wupu_pck.vhd|
+!s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/Wupu_pck.vhd|
+Ezbcontrol
+Z126 w1365435405
+R3
+R4
+R5
+Z127 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ZBControl_IRQs.vhd
+Z128 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ZBControl_IRQs.vhd
+l0
+L7
+V5^zac>IKPmAG6CmXOMBW11
+R8
+31
+Z129 !s108 1365772699.384000
+Z130 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ZBControl_IRQs.vhd|
+Z131 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/hdl/ZBControl_IRQs.vhd|
+R12
+R13
+!s100 5BdSGidAEia=cfamebn;c2
+!i10b 1
+Asymplified
+R3
+R4
+DEx4 work 9 zbcontrol 0 22 5^zac>IKPmAG6CmXOMBW11
+l105
+L42
+V<PO2739>_111FZFYUX6B90
+R8
+31
+R129
+R130
+R131
+R12
+R13
+!s100 XTb<O23G3FDn=gI]`Yg2n2
+!i10b 1
+Ezbwatchdog
+Z132 w1354019724
+R3
+R4
+R5
+Z133 8C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/ZBWatchDog/ZBWatchDog.vhd
+Z134 FC:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/ZBWatchDog/ZBWatchDog.vhd
+l0
+L8
+V[Ce52aCCHP?IeSa`Um77:1
+R8
+31
+Z135 !s108 1365772699.630000
+Z136 !s90 -reportprogress|300|-93|-explicit|-work|presynth|C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/ZBWatchDog/ZBWatchDog.vhd|
+Z137 !s107 C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/auxpoyect/WupPMODbyIRQnoMultiRX/smartgen/ZBWatchDog/ZBWatchDog.vhd|
+R12
+R13
+!s100 RlmeFozNFj5j6kmXSC<<33
+!i10b 1
+Adef_arch
+R3
+R4
+DEx4 work 10 zbwatchdog 0 22 [Ce52aCCHP?IeSa`Um77:1
+l87
+L19
+V:T@RBJl>_=Tfk:J7ogaAF3
+R8
+31
+R135
+R136
+R137
+R12
+R13
+!s100 Uh;lOmY@GHlh>QAG:RHAD3
+!i10b 1

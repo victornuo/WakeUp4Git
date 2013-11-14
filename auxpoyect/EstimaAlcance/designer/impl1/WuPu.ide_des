@@ -1,0 +1,22 @@
+KEY IDE_DES_TOOL "Designer"
+KEY IDE_DES_FAMILY "IGLOO"
+KEY IDE_DES_DIE "IS4X4M1LP"
+KEY IDE_DES_PACKAGE "vq100"
+KEY IDE_DES_TOP_CELL_NAME "WuPu"
+KEY IDE_DES_KEEP_PHY_CONSTR "FALSE"
+KEY IDE_DES_KEEP_TIME_CONSTR "TRUE"
+KEY IDE_DES_LAYOUT_DONE "TRUE"
+KEY IDE_DES_BA_EXPORTED "FALSE"
+KEY IDE_DES_ERROR_FOUND "FALSE"
+KEY IDE_DES_ADB_PATH "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\EstimaAlcance\designer\impl1\WuPu.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\EstimaAlcance\synthesis\WuPu.edn;edn"
+VALUE "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\EstimaAlcance\component\work\WuPu\WuPu.pdc;pdc"
+VALUE "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\EstimaAlcance\synthesis\WuPu_sdc.sdc;sdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\EstimaAlcance\component\work\WuPu\WuPu.pdc;Used"
+VALUE "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\EstimaAlcance\synthesis\WuPu_sdc.sdc;Used"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

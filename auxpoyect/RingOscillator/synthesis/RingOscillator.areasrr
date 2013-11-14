@@ -1,0 +1,28 @@
+----------------------------------------------------------------------
+Report for cell RingOscillator.rtl
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AO14        24       1.0       24.0
+                                GND         1       0.0        0.0
+                              INBUF         1       0.0        0.0
+                              NAND2         1       1.0        1.0
+                             OUTBUF         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                          clkCouter         1      10.0       10.0
+                            
+                         TOTAL             30                 35.0
+----------------------------------------------------------------------
+Report for cell clkCouter.netlist
+     Instance path:  clkCouter_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         1       1.0        1.0
+                               AND3         1       1.0        1.0
+                             DFN1C0         2       1.0        2.0
+                           DFN1E1C0         2       1.0        2.0
+                                GND         1       0.0        0.0
+                                INV         3       1.0        3.0
+                                VCC         1       0.0        0.0
+                               XOR2         1       1.0        1.0
+                            
+                         TOTAL             12                 10.0

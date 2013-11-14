@@ -1,0 +1,61 @@
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\generamensajes\generamensajes.vhd":17:7:17:20|Synthesizing work.generamensajes.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\RingOscillator\RingOscillator.vhd":17:7:17:20|Synthesizing work.ringoscillator.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\smartgen\ringO_cnt\ringO_cnt.vhd":8:7:8:15|Synthesizing work.ringo_cnt.def_arch 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":37:10:37:13|Synthesizing igloo.and3.syn_black_box 
+Post processing for igloo.and3.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1472:10:1472:17|Synthesizing igloo.dfn1e1c0.syn_black_box 
+Post processing for igloo.dfn1e1c0.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1934:10:1934:12|Synthesizing igloo.inv.syn_black_box 
+Post processing for igloo.inv.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1388:10:1388:15|Synthesizing igloo.dfn1c0.syn_black_box 
+Post processing for igloo.dfn1c0.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":2817:10:2817:13|Synthesizing igloo.xor2.syn_black_box 
+Post processing for igloo.xor2.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":13:10:13:13|Synthesizing igloo.and2.syn_black_box 
+Post processing for igloo.and2.syn_black_box
+Post processing for work.ringo_cnt.def_arch
+@W: CL168 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\smartgen\ringO_cnt\ringO_cnt.vhd":84:4:84:13|Pruning instance U_AND2_0_1 -- not in use ... 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":2032:10:2032:14|Synthesizing igloo.nand2.syn_black_box 
+Post processing for igloo.nand2.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":91:10:91:13|Synthesizing igloo.ao14.syn_black_box 
+Post processing for igloo.ao14.syn_black_box
+Post processing for work.ringoscillator.rtl
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\smartgen\muxRefTime\muxRefTime.vhd":8:7:8:16|Synthesizing work.muxreftime.def_arch 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1996:10:1996:12|Synthesizing igloo.mx2.syn_black_box 
+Post processing for igloo.mx2.syn_black_box
+Post processing for work.muxreftime.def_arch
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd":17:7:17:31|Synthesizing work.manchesterencodercomplete.rtl 
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd":41:10:41:13|Component declarations with different initial values are not supported.  Port b of component and2 may have been given a different initial value in two different component declarations
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":10:7:10:29|Synthesizing work.manchester_encoder_ctrl.rtl 
+@N: CD231 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":34:16:34:17|Using onehot encoding for type state_type (free="1000000")
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":71:44:71:51|Signal load_din in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":125:35:125:42|Signal load_din in the sensitivity list is not used in the process
+@W: CG296 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":125:19:125:25|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":233:11:233:24|Referenced variable nexthopaddress is not in sensitivity list
+Post processing for work.manchester_encoder_ctrl.rtl
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":12:7:12:24|Synthesizing work.manchester_encoder.rtl 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":51:7:51:18|Signal rstn_freqref is undriven 
+Post processing for work.manchester_encoder.rtl
+Post processing for work.manchesterencodercomplete.rtl
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1793:10:1793:14|Synthesizing igloo.inbuf.syn_black_box 
+Post processing for igloo.inbuf.syn_black_box
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\detectorflanco.vhd":10:7:10:20|Synthesizing work.detectorflanco.def_arch 
+Post processing for work.detectorflanco.def_arch
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\controlbloque.vhd":10:7:10:13|Synthesizing work.control.controlada 
+Post processing for work.control.controlada
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\counter.vhd":11:7:11:14|Synthesizing work.contador.def_arch 
+Post processing for work.contador.def_arch
+Post processing for work.generamensajes.rtl
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":234:8:234:9|Optimizing register bit bit_count(3) to a constant 0
+@W: CL260 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":234:8:234:9|Pruning register bit 3 of bit_count(3 downto 0)  
+@W: CL159 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":20:1:20:6|Input enable is unused
+@N: CL201 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":64:6:64:7|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 7 reachable states with original encodings of:
+   0000001
+   0000010
+   0000100
+   0001000
+   0010000
+   0100000
+   1000000

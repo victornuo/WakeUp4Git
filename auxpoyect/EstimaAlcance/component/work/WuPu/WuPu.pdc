@@ -1,0 +1,181 @@
+# Actel Physical design constraints file
+# Generated file
+
+# Version: 9.1 SP3 9.1.3.4
+# Family: IGLOO , Die: AGL250V5 , Package: 100 VQFP
+# Date generated: Wed Jan 30 12:10:59 2013 
+
+
+# 
+# IO banks setting
+# 
+
+set_iobank Bank0  \
+    -vcci 3.30    \
+    -fixed no
+
+set_iobank Bank1  \
+    -vcci 3.30    \
+    -fixed no
+
+set_iobank Bank2  \
+    -vcci 3.30    \
+    -fixed no
+
+set_iobank Bank3  \
+    -vcci 3.30    \
+    -fixed no
+
+
+# 
+# I/O constraints
+# 
+
+set_io AddOKflag       \
+    -pinname 6         \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io NewMsg          \
+    -pinname 80        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io RESETZB         \
+    -pinname 19        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL Up       \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io RST            \
+    -pinname 58       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -REGISTER No      \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io RX             \
+    -pinname 57       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -REGISTER Yes     \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io RX_OUT          \
+    -pinname 93        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io bit_error       \
+    -pinname 4         \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io clk            \
+    -pinname 97       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io d_hk            \
+    -pinname 84        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io dout            \
+    -pinname 8         \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io new_data        \
+    -pinname 83        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+
+#
+# Non IO constraints
+#
+
+
+#
+# Old IO constraints, commented out for reference
+#
+
+# set_iobank Bank0 -vcci 3.30 -fixed no 
+# set_iobank Bank1 -vcci 3.30 -fixed no 
+# set_iobank Bank2 -vcci 3.30 -fixed no 
+# set_iobank Bank3 -vcci 3.30 -fixed no 
+# set_io AddOKflag -pinname 6 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io NewMsg -pinname 80 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io RESETZB -pinname 19 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -REGISTER No -RES_PULL Up -SKEW Off -SLEW High -DIRECTION Output 
+# set_io RST -pinname 58 -fixed yes -iostd LVCMOS33 -REGISTER No -RES_PULL None -DIRECTION Input 
+# set_io RX -pinname 57 -fixed yes -iostd LVCMOS33 -REGISTER Yes -RES_PULL None -DIRECTION Input 
+# set_io RX_OUT -pinname 93 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io bit_error -pinname 4 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io clk -pinname 97 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io d_hk -pinname 84 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io dout -pinname 8 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io new_data -pinname 83 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 

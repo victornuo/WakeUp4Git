@@ -1,0 +1,596 @@
+#Build: Synplify Pro E-2010.09A-1, Build 006R, Oct  6 2010
+#install: C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1
+#OS:  6.1
+#Hostname: VICTOR-PHD
+
+#Implementation: synthesis
+
+#Tue Jan 22 15:50:22 2013
+
+$ Start of Compile
+#Tue Jan 22 15:50:22 2013
+
+Synopsys VHDL Compiler, version comp520rcp1, Build 028R, built Sep 23 2010
+@N|Running in 32-bit mode
+Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+
+@N: CD720 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\component\work\WuPu\WuPu.vhd":8:7:8:10|Top entity is set to WuPu.
+VHDL syntax check successful!
+File C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\component\work\WuPu\WuPu.vhd changed - recompiling
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\component\work\WuPu\WuPu.vhd":8:7:8:10|Synthesizing work.wupu.def_arch 
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\housekeepingCheck.vhd":8:7:8:23|Synthesizing work.housekeepingcheck.def_arch 
+Post processing for work.housekeepingcheck.def_arch
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1793:10:1793:14|Synthesizing igloo.inbuf.syn_black_box 
+Post processing for igloo.inbuf.syn_black_box
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\manchesterDecoder_preamble.vhd":19:7:19:11|Synthesizing work.md_v3.v1 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\manchesterDecoder_preamble.vhd":55:7:55:18|Signal double_speed is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\manchesterDecoder_preamble.vhd":62:7:62:15|Signal errortime is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\manchesterDecoder_preamble.vhd":63:7:63:19|Signal errortime_reg is undriven 
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\freq_ref_preamble.vhd":8:7:8:14|Synthesizing work.frec_ref.def_arch 
+Post processing for work.frec_ref.def_arch
+Post processing for work.md_v3.v1
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":12:7:12:20|Synthesizing work.addressingdata.symplified 
+@W: CD604 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":51:4:51:17|OTHERS clause is not synthesized 
+Post processing for work.addressingdata.symplified
+@W: CL190 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Optimizing register bit NextHopAddress(0) to a constant 0
+@W: CL190 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Optimizing register bit NextHopAddress(4) to a constant 0
+@W: CL190 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Optimizing register bit NextHopAddress(8) to a constant 0
+@W: CL190 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Optimizing register bit NextHopAddress(12) to a constant 0
+@W: CL190 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Optimizing register bit NodeAddress(0) to a constant 0
+@W: CL190 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Optimizing register bit NodeAddress(4) to a constant 0
+@W: CL190 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Optimizing register bit NodeAddress(8) to a constant 0
+@W: CL190 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Optimizing register bit NodeAddress(12) to a constant 0
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register bit 12 of NextHopAddress(15 downto 0)  
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register bit 8 of NextHopAddress(15 downto 0)  
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register bit 4 of NextHopAddress(15 downto 0)  
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register bit 0 of NextHopAddress(15 downto 0)  
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register bit 12 of NodeAddress(15 downto 0)  
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register bit 8 of NodeAddress(15 downto 0)  
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register bit 4 of NodeAddress(15 downto 0)  
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register bit 0 of NodeAddress(15 downto 0)  
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1934:10:1934:12|Synthesizing igloo.inv.syn_black_box 
+Post processing for igloo.inv.syn_black_box
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\manchester_encoder_preamble4WuR.vhd":12:7:12:24|Synthesizing work.manchester_encoder.rtl 
+Post processing for work.manchester_encoder.rtl
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\manchester_encoder_preamble4WuR.vhd":122:8:122:9|Pruning Register reg_Cout  
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\manchester_encoder_preamble4WuR.vhd":122:8:122:9|Pruning Register reg_tc  
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":2722:10:2722:12|Synthesizing igloo.vcc.syn_black_box 
+Post processing for igloo.vcc.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1787:10:1787:12|Synthesizing igloo.gnd.syn_black_box 
+Post processing for igloo.gnd.syn_black_box
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Mom_unit_preamble.vhd":12:7:12:14|Synthesizing work.mom_unit.rtl 
+@N: CD231 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Mom_unit_preamble.vhd":62:16:62:17|Using onehot encoding for type state_type (mom_awake="10000000")
+@W: CD434 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Mom_unit_preamble.vhd":184:77:184:85|Signal tx_enable in the sensitivity list is not used in the process
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Mom_unit_preamble.vhd":81:7:81:17|Signal emptyrandom is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Mom_unit_preamble.vhd":94:7:94:16|Signal delayed_tx is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Mom_unit_preamble.vhd":111:7:111:18|Signal backoff_flag is undriven 
+Post processing for work.mom_unit.rtl
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":17:7:17:21|Synthesizing work.command_process.rtl 
+@N: CD231 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":40:16:40:17|Using onehot encoding for type state_type (nodata="1000000000")
+@W: CG296 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":185:20:185:26|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":188:20:188:24|Referenced variable state is not in sensitivity list
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":267:29:267:39|Referenced variable address_end is not in sensitivity list
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":258:28:258:43|Referenced variable reg_long_command is not in sensitivity list
+@W: CD434 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":277:56:277:68|Signal short_command in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":277:71:277:82|Signal long_command in the sensitivity list is not used in the process
+@W: CG296 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":277:16:277:22|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":557:28:557:38|Referenced variable address_end is not in sensitivity list
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":530:27:530:43|Referenced variable reg_command_error is not in sensitivity list
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":522:27:522:42|Referenced variable reg_long_command is not in sensitivity list
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":514:27:514:43|Referenced variable reg_short_command is not in sensitivity list
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":55:7:55:22|Signal startsymbol_flag is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":56:7:56:20|Signal startsymbol_ok is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":62:7:62:20|Signal set_newcommand is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":82:7:82:21|Signal last_bit_active is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":84:7:84:17|Signal r2sink_flag is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":88:7:88:15|Signal paritybit is undriven 
+Post processing for work.command_process.rtl
+@W: CL240 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":32:1:32:9|AddOKflag is not assigned a value (floating) - a simulation mismatch is possible 
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":645:1:645:2|Pruning Register addOK_reg  
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":631:1:631:2|Pruning Register addressRX(15 downto 0)  
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\LowPowerManagement\LowPowerManagement.vhd":8:7:8:24|Synthesizing work.lowpowermanagement.def_arch 
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\LowPowerManagement\LowPowerManagement_wrapper.vhd":35:7:35:32|Synthesizing work.lowpowermanagement_wrapper.def_arch 
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\common\vhdl\FlashFreeze_Managment.vhd":8:7:8:27|Synthesizing work.flashfreeze_managment.trans 
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\common\vhdl\FlashFreeze_Filter.vhd":7:7:7:24|Synthesizing work.flashfreeze_filter.trans 
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":2858:10:2858:15|Synthesizing igloo.clkint.syn_black_box 
+Post processing for igloo.clkint.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":13:10:13:13|Synthesizing igloo.and2.syn_black_box 
+Post processing for igloo.and2.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1667:10:1667:13|Synthesizing igloo.dln0.syn_black_box 
+Post processing for igloo.dln0.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1379:10:1379:13|Synthesizing igloo.dfn1.syn_black_box 
+Post processing for igloo.dfn1.syn_black_box
+Post processing for work.flashfreeze_filter.trans
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\common\vhdl\FlashFreeze_FSM.vhd":6:7:6:21|Synthesizing work.flashfreeze_fsm.trans 
+@N: CD234 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\common\vhdl\FlashFreeze_FSM.vhd":43:16:43:17|Using user defined encoding for type state_type
+@W: CD434 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\common\vhdl\FlashFreeze_FSM.vhd":52:12:52:23|Signal flash_freeze in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\common\vhdl\FlashFreeze_FSM.vhd":130:12:130:25|OTHERS clause is not synthesized 
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":3669:10:3669:15|Synthesizing igloo.ulsicc.syn_black_box 
+Post processing for igloo.ulsicc.syn_black_box
+Post processing for work.flashfreeze_fsm.trans
+Post processing for work.flashfreeze_managment.trans
+Post processing for work.lowpowermanagement_wrapper.def_arch
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":3843:10:3843:17|Synthesizing igloo.inbuf_ff.syn_black_box 
+Post processing for igloo.inbuf_ff.syn_black_box
+Post processing for work.lowpowermanagement.def_arch
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":7:7:7:15|Synthesizing work.zbcontrol.symplified 
+@N: CD233 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":96:16:96:17|Using sequential encoding for type state_type
+@W: CD434 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":153:36:153:38|Signal rst in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":153:68:153:75|Signal zbsleeps in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":153:110:153:118|Signal re_zbboot in the sensitivity list is not used in the process
+@W: CG296 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":153:20:153:26|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":171:10:171:15|Referenced variable wd_irq is not in sensitivity list
+@W: CD434 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":197:59:197:73|Signal commandready2uc in the sensitivity list is not used in the process
+@W: CG296 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":197:16:197:22|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":266:30:266:45|Referenced variable nwkrroutetimeout is not in sensitivity list
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":266:6:266:18|Referenced variable r2sinktimeout is not in sensitivity list
+@W: CG290 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":241:34:241:47|Referenced variable commandtype2uc is not in sensitivity list
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":61:7:61:20|Signal commandtypeout is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":63:7:63:21|Signal commandreadyout is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":67:7:67:11|Signal endrx is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":68:7:68:17|Signal uartmsgtype is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":69:7:69:17|Signal uartsendmsg is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":71:7:71:14|Signal zbsleeps is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":74:7:74:18|Signal loadwaittime is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":76:7:76:11|Signal start is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":87:7:87:16|Signal aux0_reset is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":88:7:88:16|Signal aux1_reset is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":89:7:89:15|Signal re_zbboot is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":92:7:92:13|Signal aux0_zb is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":93:7:93:13|Signal aux1_zb is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":99:7:99:16|Signal waitingpan is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":100:7:100:14|Signal rxmsgend is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":101:7:101:15|Signal panjoined is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":102:7:102:17|Signal loaduartmsg is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":103:7:103:19|Signal loadnexttxbit is undriven 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":104:7:104:22|Signal selloadnexttxbit is undriven 
+Post processing for work.zbcontrol.symplified
+@W: CL240 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":89:7:89:15|RE_ZBboot is not assigned a value (floating) - a simulation mismatch is possible 
+@W: CL240 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":71:7:71:14|ZBSleeps is not assigned a value (floating) - a simulation mismatch is possible 
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\ZBWatchDog\ZBWatchDog.vhd":8:7:8:16|Synthesizing work.zbwatchdog.def_arch 
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1483:10:1483:17|Synthesizing igloo.dfn1e1c1.syn_black_box 
+Post processing for igloo.dfn1e1c1.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":37:10:37:13|Synthesizing igloo.and3.syn_black_box 
+Post processing for igloo.and3.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":2817:10:2817:13|Synthesizing igloo.xor2.syn_black_box 
+Post processing for igloo.xor2.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1398:10:1398:15|Synthesizing igloo.dfn1c1.syn_black_box 
+Post processing for igloo.dfn1c1.syn_black_box
+Post processing for work.zbwatchdog.def_arch
+@W: CL168 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\ZBWatchDog\ZBWatchDog.vhd":436:4:436:13|Pruning instance U_AND2_3_4 - not in use ... 
+@W: CL168 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\ZBWatchDog\ZBWatchDog.vhd":212:4:212:19|Pruning instance U_U_AND3_0_to_26 - not in use ... 
+@W: CL168 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\ZBWatchDog\ZBWatchDog.vhd":195:4:195:14|Pruning instance U_AND2_9_10 - not in use ... 
+@W: CL168 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\ZBWatchDog\ZBWatchDog.vhd":191:4:191:19|Pruning instance U_U_AND3_1_to_26 - not in use ... 
+@W: CL168 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\ZBWatchDog\ZBWatchDog.vhd":148:4:148:13|Pruning instance U_AND2_0_1 - not in use ... 
+Post processing for work.wupu.def_arch
+@W: CL168 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\component\work\WuPu\WuPu.vhd":274:4:274:8|Pruning instance 	VCC - not in use ... 
+@W: CL168 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\component\work\WuPu\WuPu.vhd":271:4:271:8|Pruning instance 	GND - not in use ... 
+@N: CL201 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":142:2:142:3|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL159 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\ZBControl_IRQs.vhd":14:1:14:11|Input activate_uC is unused
+@N: CL201 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\smartgen\common\vhdl\FlashFreeze_FSM.vhd":63:6:63:7|Trying to extract state machine for register ff_current_state
+Extracted state machine for register ff_current_state
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+@W: CL190 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":601:2:601:3|Optimizing register bit bitCounter(4) to a constant 0
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":601:2:601:3|Pruning Register bit 4 of bitCounter(4 downto 0)  
+@N: CL201 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":178:2:178:3|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 10 reachable states with original encodings of:
+   0000000001
+   0000000010
+   0000000100
+   0000001000
+   0000010000
+   0000100000
+   0001000000
+   0010000000
+   0100000000
+   1000000000
+@W: CL159 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Command_Process_preamble.vhd":21:1:21:11|Input nodeAddress is unused
+@N: CL201 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\Mom_unit_preamble.vhd":174:6:174:7|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 8 reachable states with original encodings of:
+   00000001
+   00000010
+   00000100
+   00001000
+   00010000
+   00100000
+   01000000
+   10000000
+@W: CL260 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register bit 2 of NextHopAddress(3 downto 1)  
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register NextHopAddress(7 downto 5)  
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register NextHopAddress(11 downto 9)  
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register NextHopAddress(15 downto 13)  
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register NodeAddress(7 downto 5)  
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register NodeAddress(11 downto 9)  
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\adressingData.vhd":29:2:29:3|Pruning Register NodeAddress(15 downto 13)  
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 22 15:50:23 2013
+
+###########################################################]
+Synopsys Actel Technology Mapper, Version mapact, Build 023R, Built Sep 29 2010 09:29:00
+Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+Product Version E-2010.09A-1
+@N: MF249 |Running in 32-bit mode.
+@N: MF258 |Gated clock conversion disabled 
+
+@N: BN116 :"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\hdl\adressingdata.vhd":29:2:29:3|Removing sequential instance addressingData_0.addressload of view:PrimLib.dffr(prim) because there are no references to its outputs 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W:"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\smartgen\common\vhdl\flashfreeze_filter.vhd":64:3:64:23|Net LowPowerManagement_0/LowPowerManagement_wrapper_inst.U0/Primary_Filter_Instance.clock_to_user_logic_temp appears to be a clock source which was not identfied. Assuming default frequency. 
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+Encoding state machine work.ZBControl(symplified)-state[0:3]
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+Encoding state machine work.FlashFreeze_FSM(trans)-ff_current_state[0:5]
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+@N:"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\hdl\command_process_preamble.vhd":601:2:601:3|Found counter in view:work.command_process(rtl) inst bitCounter[3:0]
+Encoding state machine work.command_process(rtl)-state[0:9]
+original code -> new code
+   0000000001 -> 0000000001
+   0000000010 -> 0000000010
+   0000000100 -> 0000000100
+   0000001000 -> 0000001000
+   0000010000 -> 0000010000
+   0000100000 -> 0000100000
+   0001000000 -> 0001000000
+   0010000000 -> 0010000000
+   0100000000 -> 0100000000
+   1000000000 -> 1000000000
+Encoding state machine work.MoM_unit(rtl)-state[0:7]
+original code -> new code
+   00000001 -> 00000001
+   00000010 -> 00000010
+   00000100 -> 00000100
+   00001000 -> 00001000
+   00010000 -> 00010000
+   00100000 -> 00100000
+   01000000 -> 01000000
+   10000000 -> 10000000
+@N:"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\hdl\manchesterdecoder_preamble.vhd":266:1:266:2|Found counter in view:work.md_v3(v1) inst error_counter[3:0]
+@N:"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\hdl\freq_ref_preamble.vhd":28:8:28:9|Found counter in view:work.frec_ref(def_arch) inst q[6:0]
+Finished factoring (Time elapsed 0h:00m:01s; Memory used current: 61MB peak: 62MB)
+
+@N: BN116 :"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\smartgen\common\vhdl\flashfreeze_filter.vhd":56:3:56:24|Removing sequential instance LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.GEN1\.GEN2\.0\.seconday_filter_instance.Latch_For_Clock_Gating of view:IGLOO.DLN0(prim) because there are no references to its outputs 
+@N: BN116 :"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\smartgen\common\vhdl\flashfreeze_filter.vhd":48:3:48:27|Removing sequential instance LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.GEN1\.GEN2\.0\.seconday_filter_instance.Register_For_Clock_Gating of view:IGLOO.DFN1(prim) because there are no references to its outputs 
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:01s; Memory used current: 61MB peak: 62MB)
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:01s; Memory used current: 58MB peak: 62MB)
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 58MB peak: 62MB)
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 58MB peak: 62MB)
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:01s; Memory used current: 58MB peak: 62MB)
+
+Finished preparing to map (Time elapsed 0h:00m:01s; Memory used current: 59MB peak: 62MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name               Fanout, notes                   
+-------------------------------------------------------------------------
+ZBControl_0.WD_CLR_i_i_a3 / Y            27                              
+INBUF_0 / Y                              159 : 157 asynchronous set/reset
+md_v3_0.rx_error / Q                     28                              
+MoM_unit_0.TX_load_0 / Y                 50                              
+manchester_encoder_0.un2_bit_end / Y     41                              
+=========================================================================
+
+@N: FP130 |Promoting Net RESETZB_c on CLKINT  I_58 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+Replicating Combinational Instance manchester_encoder_0.un2_bit_end, fanout 41 segments 2
+Replicating Combinational Instance MoM_unit_0.TX_load_0, fanout 51 segments 3
+Replicating Sequential Instance md_v3_0.rx_error, fanout 28 segments 2
+Replicating Combinational Instance ZBControl_0.WD_CLR_i_i_a3, fanout 27 segments 2
+Finished technology mapping (Time elapsed 0h:00m:01s; Memory used current: 62MB peak: 63MB)
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:01s; Memory used current: 62MB peak: 63MB)
+
+
+Added 0 Buffers
+Added 5 Cells via replication
+	Added 1 Sequential Cells via replication
+	Added 4 Combinational Cells via replication
+Finished restoring hierarchy (Time elapsed 0h:00m:01s; Memory used current: 62MB peak: 63MB)
+
+Writing Analyst data base C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\synthesis\WuPu.srm
+Finished Writing Netlist Databases (Time elapsed 0h:00m:01s; Memory used current: 62MB peak: 63MB)
+
+Writing EDIF Netlist and constraint files
+E-2010.09A-1
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:02s; Memory used current: 62MB peak: 63MB)
+
+@W: MT420 |Found inferred clock WuPu|clk with period 100.00ns. A user-defined clock should be declared on object "p:clk"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 22 15:50:27 2013
+#
+
+
+Top view:               WuPu
+Library name:           IGLOO
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.85, tree_type = balanced_tree )
+Requested Frequency:    10.0 MHz
+Wire load mode:         top
+Wire load model:        IGLOO
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 29.693
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group              
+----------------------------------------------------------------------------------------------------------------------
+WuPu|clk           10.0 MHz      24.6 MHz      100.000       40.614        29.693     inferred     Inferred_clkgroup_0
+System             10.0 MHz      NA            100.000       NA            NA         system       system_clkgroup    
+======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks              |    rise  to  rise    |    fall  to  fall    |    rise  to  fall    |    fall  to  rise  
+--------------------------------------------------------------------------------------------------------------
+Starting  Ending    |  constraint  slack   |  constraint  slack   |  constraint  slack   |  constraint  slack 
+--------------------------------------------------------------------------------------------------------------
+WuPu|clk  System    |  100.000     98.728  |  No paths    -       |  No paths    -       |  No paths    -     
+WuPu|clk  WuPu|clk  |  100.000     75.310  |  100.000     95.707  |  50.000      30.050  |  50.000      29.693
+==============================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: WuPu|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                     Starting                                              Arrival           
+Instance                             Reference     Type       Pin     Net                  Time        Slack 
+                                     Clock                                                                   
+-------------------------------------------------------------------------------------------------------------
+MoM_unit_0.uC_active_D0              WuPu|clk      DFN0C0     Q       uC_active_D0         0.633       29.693
+MoM_unit_0.uC_active_D1              WuPu|clk      DFN0P0     Q       uC_active_D1_i_0     0.633       29.952
+manchester_encoder_0.symbol_t[4]     WuPu|clk      DFN1C0     Q       symbol_t[4]          0.885       30.050
+manchester_encoder_0.symbol_t[1]     WuPu|clk      DFN1C0     Q       symbol_t[1]          0.885       30.622
+manchester_encoder_0.symbol_t[7]     WuPu|clk      DFN1C0     Q       symbol_t[7]          0.885       30.781
+manchester_encoder_0.symbol_t[0]     WuPu|clk      DFN1C0     Q       symbol_t[0]          0.885       30.844
+manchester_encoder_0.symbol_t[8]     WuPu|clk      DFN1C0     Q       symbol_t[8]          0.885       31.170
+manchester_encoder_0.symbol_t[2]     WuPu|clk      DFN1C0     Q       symbol_t[2]          0.885       31.232
+manchester_encoder_0.symbol_t[6]     WuPu|clk      DFN1C0     Q       symbol_t[6]          0.885       31.512
+manchester_encoder_0.symbol_t[5]     WuPu|clk      DFN1C0     Q       symbol_t[5]          0.885       31.692
+=============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                     Starting                                               Required           
+Instance                             Reference     Type         Pin     Net                 Time         Slack 
+                                     Clock                                                                     
+---------------------------------------------------------------------------------------------------------------
+manchester_encoder_0.symbol_t[7]     WuPu|clk      DFN1C0       D       I_38_0              49.353       29.693
+manchester_encoder_0.symbol_t[8]     WuPu|clk      DFN1C0       D       symbol_t_4[8]       49.353       29.768
+command_process_0.commandRX[0]       WuPu|clk      DFN0E0C0     E       un1_dataclean_1     49.269       30.050
+command_process_0.commandRX[1]       WuPu|clk      DFN0E0C0     E       un1_dataclean_1     49.269       30.050
+command_process_0.commandRX[2]       WuPu|clk      DFN0E0C0     E       un1_dataclean_1     49.269       30.050
+command_process_0.commandRX[3]       WuPu|clk      DFN0E0C0     E       un1_dataclean_1     49.269       30.050
+manchester_encoder_0.symbol_t[6]     WuPu|clk      DFN1C0       D       I_36_0              49.353       30.697
+manchester_encoder_0.symbol_t[4]     WuPu|clk      DFN1C0       D       symbol_t_4[4]       49.353       30.767
+manchester_encoder_0.symbol_t[5]     WuPu|clk      DFN1C0       D       I_33_0              49.353       30.775
+command_process_0.commandRX[1]       WuPu|clk      DFN0E0C0     D       commandRX_3[1]      49.144       30.911
+===============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      50.000
+    - Setup time:                            0.647
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         49.353
+
+    - Propagation time:                      19.660
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     29.693
+
+    Number of logic level(s):                11
+    Starting point:                          MoM_unit_0.uC_active_D0 / Q
+    Ending point:                            manchester_encoder_0.symbol_t[7] / D
+    The start point is clocked by            WuPu|clk [falling] on pin CLK
+    The end   point is clocked by            WuPu|clk [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                         Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+MoM_unit_0.uC_active_D0                      DFN0C0     Q        Out     0.633     0.633       -         
+uC_active_D0                                 Net        -        -       0.464     -           2         
+MoM_unit_0.uC_active_D1_RNI35N1              NOR2       B        In      -         1.096       -         
+MoM_unit_0.uC_active_D1_RNI35N1              NOR2       Y        Out     0.618     1.714       -         
+N_516_li                                     Net        -        -       2.005     -           9         
+MoM_unit_0.state_RNITBC5[4]                  OR3B       C        In      -         3.719       -         
+MoM_unit_0.state_RNITBC5[4]                  OR3B       Y        Out     0.902     4.621       -         
+N_437                                        Net        -        -       0.969     -           3         
+MoM_unit_0.state_RNIPTSD1[4]                 OR2B       B        In      -         5.590       -         
+MoM_unit_0.state_RNIPTSD1[4]                 OR2B       Y        Out     0.754     6.344       -         
+MoM_unit_0_TX_load_0                         Net        -        -       2.664     -           17        
+manchester_encoder_0.sendingMsg_RNI399H3     OR3B       C        In      -         9.008       -         
+manchester_encoder_0.sendingMsg_RNI399H3     OR3B       Y        Out     0.819     9.827       -         
+un5_enable                                   Net        -        -       0.464     -           2         
+manchester_encoder_0.sendingMsg_RNIGL6S4     NOR2A      B        In      -         10.290      -         
+manchester_encoder_0.sendingMsg_RNIGL6S4     NOR2A      Y        Out     0.464     10.754      -         
+Cout_1_sqmuxa                                Net        -        -       0.464     -           2         
+manchester_encoder_0.un1_symbol_t.I_1        AND2       B        In      -         11.217      -         
+manchester_encoder_0.un1_symbol_t.I_1        AND2       Y        Out     0.754     11.971      -         
+DWACT_ADD_CI_0_TMP[0]                        Net        -        -       0.464     -           2         
+manchester_encoder_0.un1_symbol_t.I_40       NOR2B      A        In      -         12.435      -         
+manchester_encoder_0.un1_symbol_t.I_40       NOR2B      Y        Out     0.618     13.053      -         
+DWACT_ADD_CI_0_g_array_1[0]                  Net        -        -       0.969     -           3         
+manchester_encoder_0.un1_symbol_t.I_44       NOR2B      A        In      -         14.022      -         
+manchester_encoder_0.un1_symbol_t.I_44       NOR2B      Y        Out     0.618     14.640      -         
+DWACT_ADD_CI_0_g_array_2[0]                  Net        -        -       1.422     -           4         
+manchester_encoder_0.un1_symbol_t.I_43       NOR2B      A        In      -         16.062      -         
+manchester_encoder_0.un1_symbol_t.I_43       NOR2B      Y        Out     0.618     16.680      -         
+DWACT_ADD_CI_0_g_array_11[0]                 Net        -        -       0.464     -           2         
+manchester_encoder_0.un1_symbol_t.I_50       NOR2B      A        In      -         17.144      -         
+manchester_encoder_0.un1_symbol_t.I_50       NOR2B      Y        Out     0.618     17.762      -         
+DWACT_ADD_CI_0_g_array_12_2[0]               Net        -        -       0.386     -           1         
+manchester_encoder_0.un1_symbol_t.I_38       XOR2       B        In      -         18.148      -         
+manchester_encoder_0.un1_symbol_t.I_38       XOR2       Y        Out     1.125     19.274      -         
+I_38_0                                       Net        -        -       0.386     -           1         
+manchester_encoder_0.symbol_t[7]             DFN1C0     D        In      -         19.660      -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 20.307 is 9.188(45.2%) logic and 11.120(54.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: AGL250V5_VQFP100_Std
+Report for cell WuPu.def_arch
+  Core Cell usage:
+              cell count     area count*area
+              AND2    50      1.0       50.0
+              AND3    16      1.0       16.0
+               AO1     7      1.0        7.0
+              AO1A     7      1.0        7.0
+              AO1B     4      1.0        4.0
+              AO1C     2      1.0        2.0
+              AO1D     5      1.0        5.0
+              AOI1     5      1.0        5.0
+             AOI1B     8      1.0        8.0
+              AX1A     1      1.0        1.0
+              AX1E     2      1.0        2.0
+             AXOI1     1      1.0        1.0
+             AXOI5     1      1.0        1.0
+            CLKINT     2      0.0        0.0
+               GND    15      0.0        0.0
+               INV     6      1.0        6.0
+               MX2    35      1.0       35.0
+              MX2A     1      1.0        1.0
+              MX2B     4      1.0        4.0
+              MX2C     4      1.0        4.0
+              NOR2    33      1.0       33.0
+             NOR2A    61      1.0       61.0
+             NOR2B    53      1.0       53.0
+              NOR3    14      1.0       14.0
+             NOR3A    23      1.0       23.0
+             NOR3B    21      1.0       21.0
+             NOR3C    12      1.0       12.0
+               OA1     6      1.0        6.0
+              OA1A     2      1.0        2.0
+              OA1B    12      1.0       12.0
+              OA1C     2      1.0        2.0
+              OAI1     6      1.0        6.0
+               OR2    45      1.0       45.0
+              OR2A    39      1.0       39.0
+              OR2B    22      1.0       22.0
+               OR3     5      1.0        5.0
+              OR3A     9      1.0        9.0
+              OR3B    17      1.0       17.0
+              OR3C    17      1.0       17.0
+            ULSICC     1      0.0        0.0
+               VCC    15      0.0        0.0
+               XA1     4      1.0        4.0
+              XA1B     3      1.0        3.0
+             XNOR2     4      1.0        4.0
+              XOR2    59      1.0       59.0
+
+
+            DFN0C0     1      1.0        1.0
+          DFN0E0C0     4      1.0        4.0
+            DFN0P0     1      1.0        1.0
+              DFN1     1      1.0        1.0
+            DFN1C0    63      1.0       63.0
+            DFN1C1     3      1.0        3.0
+          DFN1E0C0     1      1.0        1.0
+          DFN1E0P0     1      1.0        1.0
+          DFN1E1C0    73      1.0       73.0
+          DFN1E1C1    24      1.0       24.0
+          DFN1E1P0     7      1.0        7.0
+            DFN1P0     7      1.0        7.0
+              DLN0     1      1.0        1.0
+                   -----          ----------
+             TOTAL   848               815.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     1
+             INBUF     8
+          INBUF_FF     1
+            OUTBUF    19
+                   -----
+             TOTAL    29
+
+
+Core Cells         : 815 of 6144 (13%)
+IO Cells           : 29
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Tue Jan 22 15:50:27 2013
+
+###########################################################]

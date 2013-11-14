@@ -1,0 +1,2 @@
+CKID0001:@|S:RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_4@|E:FF_0.FF_wrapper_inst.U0.Primary_Filter_Instance.Register_For_Clock_Gating@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001
+CKID0002:@|S:RingOscillator_0.AOI5_11@|E:RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002

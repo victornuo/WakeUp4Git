@@ -1,0 +1,27 @@
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\component\work\generamensajes\generamensajes.vhd":8:7:8:20|Synthesizing work.generamensajes.def_arch 
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1793:10:1793:14|Synthesizing igloo.inbuf.syn_black_box 
+Post processing for igloo.inbuf.syn_black_box
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\counter.vhd":10:7:10:14|Synthesizing work.contador.def_arch 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\counter.vhd":25:7:25:18|Signal milisegundos is undriven 
+Post processing for work.contador.def_arch
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\detectorflanco.vhd":10:7:10:20|Synthesizing work.detectorflanco.def_arch 
+@W: CD638 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\detectorflanco.vhd":28:7:28:8|Signal nq is undriven 
+Post processing for work.detectorflanco.def_arch
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\manchester_encoder_preamble4WuR.vhd":12:7:12:24|Synthesizing work.manchester_encoder.rtl 
+Post processing for work.manchester_encoder.rtl
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\manchester_encoder_preamble4WuR.vhd":121:8:121:9|Pruning Register reg_Cout  
+@W: CL169 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\manchester_encoder_preamble4WuR.vhd":121:8:121:9|Pruning Register reg_tc  
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\controlbloque.vhd":8:7:8:13|Synthesizing work.control.controlada 
+Post processing for work.control.controlada
+@W: CL240 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\controlbloque.vhd":27:4:27:10|leddin0 is not assigned a value (floating) - a simulation mismatch is possible 
+@W: CL240 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\controlbloque.vhd":26:4:26:10|leddin1 is not assigned a value (floating) - a simulation mismatch is possible 
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1787:10:1787:12|Synthesizing igloo.gnd.syn_black_box 
+Post processing for igloo.gnd.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":2722:10:2722:12|Synthesizing igloo.vcc.syn_black_box 
+Post processing for igloo.vcc.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":2198:10:2198:12|Synthesizing igloo.or2.syn_black_box 
+Post processing for igloo.or2.syn_black_box
+Post processing for work.generamensajes.def_arch
+@W: CL168 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\component\work\generamensajes\generamensajes.vhd":89:4:89:8|Pruning instance 	GND - not in use ... 
+@W: CL168 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\component\work\generamensajes\generamensajes.vhd":86:4:86:8|Pruning instance 	VCC - not in use ... 
+@W: CL159 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\generarapido\hdl\controlbloque.vhd":12:4:12:6|Input din is unused

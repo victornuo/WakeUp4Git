@@ -1,0 +1,147 @@
+Synopsys Actel Technology Pre-mapping, Version mapact, Build 729R, Built Jun 20 2012 09:20:46
+Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version F-2012.03M-SP1 
+
+Mapper Startup Complete (Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 49MB)
+
+@L: C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillator\synthesis\RingOscillator_scck.rpt 
+Printing clock  summary report in "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillator\synthesis\RingOscillator_scck.rpt" file 
+@N: MF249 |Running in 32-bit mode.
+@N: MF258 |Gated clock conversion disabled 
+@N: MF547 |Generated clock conversion disabled 
+
+Design Input Complete (Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 50MB)
+
+
+Mapper Initialization Complete (Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 50MB)
+
+Warning: Found 1 combinational loops!
+@W: BN137 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\ringoscillator\component\work\ringoscillator\ringoscillator.vhd":267:0:267:6|Found combinational loop during mapping at net AO14_15_Y
+1) instance AO14_15 (netlist:AO14), output net "AO14_15_Y" in work.RingOscillator(rtl)
+    net        AO14_15_Y
+    input  pin NAND2_0/B
+    instance   NAND2_0 (cell NAND2)
+    output pin NAND2_0/Y
+    net        NAND2_0_Y
+    input  pin AO14_0/C
+    instance   AO14_0 (cell AO14)
+    output pin AO14_0/Y
+    net        AO14_0_Y
+    input  pin AO14_1/C
+    instance   AO14_1 (cell AO14)
+    output pin AO14_1/Y
+    net        AO14_1_Y
+    input  pin AO14_2/C
+    instance   AO14_2 (cell AO14)
+    output pin AO14_2/Y
+    net        AO14_2_Y
+    input  pin AO14_12/C
+    instance   AO14_12 (cell AO14)
+    output pin AO14_12/Y
+    net        AO14_12_Y
+    input  pin AO14_13/C
+    instance   AO14_13 (cell AO14)
+    output pin AO14_13/Y
+    net        AO14_13_Y
+    input  pin AO14_16/C
+    instance   AO14_16 (cell AO14)
+    output pin AO14_16/Y
+    net        AO14_16_Y
+    input  pin AO14_3/C
+    instance   AO14_3 (cell AO14)
+    output pin AO14_3/Y
+    net        AO14_3_Y
+    input  pin AO14_4/C
+    instance   AO14_4 (cell AO14)
+    output pin AO14_4/Y
+    net        AO14_4_Y
+    input  pin AO14_5/C
+    instance   AO14_5 (cell AO14)
+    output pin AO14_5/Y
+    net        AO14_5_Y
+    input  pin AO14_17/C
+    instance   AO14_17 (cell AO14)
+    output pin AO14_17/Y
+    net        AO14_17_Y
+    input  pin AO14_18/C
+    instance   AO14_18 (cell AO14)
+    output pin AO14_18/Y
+    net        AO14_18_Y
+    input  pin AO14_19/C
+    instance   AO14_19 (cell AO14)
+    output pin AO14_19/Y
+    net        AO14_19_Y
+    input  pin AO14_6/C
+    instance   AO14_6 (cell AO14)
+    output pin AO14_6/Y
+    net        AO14_6_Y
+    input  pin AO14_7/C
+    instance   AO14_7 (cell AO14)
+    output pin AO14_7/Y
+    net        AO14_7_Y
+    input  pin AO14_8/C
+    instance   AO14_8 (cell AO14)
+    output pin AO14_8/Y
+    net        AO14_8_Y
+    input  pin AO14_20/C
+    instance   AO14_20 (cell AO14)
+    output pin AO14_20/Y
+    net        AO14_20_Y
+    input  pin AO14_21/C
+    instance   AO14_21 (cell AO14)
+    output pin AO14_21/Y
+    net        AO14_21_Y
+    input  pin AO14_22/C
+    instance   AO14_22 (cell AO14)
+    output pin AO14_22/Y
+    net        AO14_22_Y
+    input  pin AO14_9/C
+    instance   AO14_9 (cell AO14)
+    output pin AO14_9/Y
+    net        AO14_9_Y
+    input  pin AO14_10/C
+    instance   AO14_10 (cell AO14)
+    output pin AO14_10/Y
+    net        AO14_10_Y
+    input  pin AO14_11/C
+    instance   AO14_11 (cell AO14)
+    output pin AO14_11/Y
+    net        AO14_11_Y
+    input  pin AO14_23/C
+    instance   AO14_23 (cell AO14)
+    output pin AO14_23/Y
+    net        AO14_23_Y
+    input  pin AO14_14/C
+    instance   AO14_14 (cell AO14)
+    output pin AO14_14/Y
+    net        AO14_14_Y
+    input  pin AO14_15/C
+    instance   AO14_15 (cell AO14)
+    output pin AO14_15/Y
+    net        AO14_15_Y
+End of loops
+
+
+Clock Summary
+**************
+
+Start      Requested     Requested     Clock      Clock          
+Clock      Frequency     Period        Type       Group          
+-----------------------------------------------------------------
+System     1.0 MHz       1000.000      system     system_clkgroup
+=================================================================
+
+@W: MT532 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\ringoscillator\smartgen\clkcouter\clkcouter_mod.vhd":104:4:104:16|Found signal identified as System clock which controls 0 sequential elements including clkCouter_0/DFN1E1C0_NU_3.  Using this clock, which has no specified timing constraint, can adversely impact design performance. 
+
+
+Finished Pre Mapping Phase. (Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 57MB)
+
+@N: BN225 |Writing default property annotation file C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillator\synthesis\RingOscillator.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Time elapsed 0h:00m:00s; Memory used current: 22MB peak: 57MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Feb 28 12:53:45 2013
+
+###########################################################]

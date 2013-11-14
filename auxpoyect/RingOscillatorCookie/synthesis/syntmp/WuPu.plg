@@ -1,0 +1,38 @@
+@P:  Worst Slack : -12.131
+@P:  WuPu|clk - Estimated Frequency : 29.2 MHz
+@P:  WuPu|clk - Requested Frequency : 100.0 MHz
+@P:  WuPu|clk - Estimated Period : 34.261
+@P:  WuPu|clk - Requested Period : 10.000
+@P:  WuPu|clk - Slack : -12.131
+@P:  System - Estimated Frequency : NA
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : NA
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : NA
+@P:  Worst Slack(min analysis) : 1.022
+@P:  WuPu|clk - Estimated Frequency(min analysis) : 29.2 MHz
+@P:  WuPu|clk - Requested Frequency(min analysis) : 100.0 MHz
+@P:  WuPu|clk - Estimated Period(min analysis) : 34.261
+@P:  WuPu|clk - Requested Period(min analysis) : 10.000
+@P:  WuPu|clk - Slack(min analysis) : -12.131
+@P:  System - Estimated Frequency(min analysis) : NA
+@P:  System - Requested Frequency(min analysis) : 100.0 MHz
+@P:  System - Estimated Period(min analysis) : NA
+@P:  System - Requested Period(min analysis) : 10.000
+@P:  System - Slack(min analysis) : NA
+@P:  Total Area : 779.0
+@P:  Total Area : 3.0
+@P:  Total Area : 83.0
+@P:  Total Area : 30.0
+@P:  Total Area : 10.0
+@P:  Total Area : 201.0
+@P:  Total Area : 272.0
+@P:  Total Area : 154.0
+@P:  Total Area : 26.0
+@P:  Total Area : 25.0
+@P:  Total Area : 25.0
+@P:  Total Area : 3.0
+@P:  Total Area : 22.0
+@P:  Total Area : 29.0
+@P:  Total Area : 779.0
+@P:  CPU Time : 0h:00m:02s

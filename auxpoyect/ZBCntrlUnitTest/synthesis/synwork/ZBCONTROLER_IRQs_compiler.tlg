@@ -1,0 +1,70 @@
+@N: CD231 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\vhd2008\std1164.vhd":913:16:913:17|Using onehot encoding for type mvl9plus ('U'="1000000000")
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\component\work\ZBCONTROLER_IRQs\ZBCONTROLER_IRQs.vhd":17:7:17:22|Synthesizing work.zbcontroler_irqs.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\hdl\ZBControl_IRQs.vhd":7:7:7:15|Synthesizing work.zbcontrol.symplified 
+@N: CD233 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\hdl\ZBControl_IRQs.vhd":55:16:55:17|Using sequential encoding for type state_type
+Post processing for work.zbcontrol.symplified
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\component\work\RingOscillator\RingOscillator.vhd":17:7:17:20|Synthesizing work.ringoscillator.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\hdl\ringO_cnt.vhd":8:7:8:15|Synthesizing work.ringo_cnt.def_arch 
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\hdl\ringO_cnt.vhd":19:12:19:15|Component declarations with different initial values are not supported.  Port b of component and2 may have been given a different initial value in two different component declarations
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":37:10:37:13|Synthesizing igloo.and3.syn_black_box 
+Post processing for igloo.and3.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1472:10:1472:17|Synthesizing igloo.dfn1e1c0.syn_black_box 
+Post processing for igloo.dfn1e1c0.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1934:10:1934:12|Synthesizing igloo.inv.syn_black_box 
+Post processing for igloo.inv.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1388:10:1388:15|Synthesizing igloo.dfn1c0.syn_black_box 
+Post processing for igloo.dfn1c0.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":2817:10:2817:13|Synthesizing igloo.xor2.syn_black_box 
+Post processing for igloo.xor2.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":13:10:13:13|Synthesizing igloo.and2.syn_black_box 
+Post processing for igloo.and2.syn_black_box
+Post processing for work.ringo_cnt.def_arch
+@W: CL168 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\hdl\ringO_cnt.vhd":84:4:84:13|Pruning instance U_AND2_0_1 -- not in use ... 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":2032:10:2032:14|Synthesizing igloo.nand2.syn_black_box 
+Post processing for igloo.nand2.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":91:10:91:13|Synthesizing igloo.ao14.syn_black_box 
+Post processing for igloo.ao14.syn_black_box
+Post processing for work.ringoscillator.rtl
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\FFCtrl\FFCtrl.vhd":8:7:8:12|Synthesizing work.ffctrl.def_arch 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1787:10:1787:12|Synthesizing igloo.gnd.syn_black_box 
+Post processing for igloo.gnd.syn_black_box
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\FFCtrl\FFCtrl_wrapper.vhd":35:7:35:20|Synthesizing work.ffctrl_wrapper.def_arch 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_Managment.vhd":8:7:8:27|Synthesizing work.flashfreeze_managment.trans 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_Filter.vhd":7:7:7:24|Synthesizing work.flashfreeze_filter.trans 
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_Filter.vhd":17:11:17:14|Component declarations with different initial values are not supported.  Port clk of component dfn1 may have been given a different initial value in two different component declarations
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":2858:10:2858:15|Synthesizing igloo.clkint.syn_black_box 
+Post processing for igloo.clkint.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1667:10:1667:13|Synthesizing igloo.dln0.syn_black_box 
+Post processing for igloo.dln0.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1379:10:1379:13|Synthesizing igloo.dfn1.syn_black_box 
+Post processing for igloo.dfn1.syn_black_box
+Post processing for work.flashfreeze_filter.trans
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_FSM.vhd":6:7:6:21|Synthesizing work.flashfreeze_fsm.trans 
+@N: CD234 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_FSM.vhd":43:16:43:17|Using user defined encoding for type state_type
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_FSM.vhd":52:12:52:23|Signal flash_freeze in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_FSM.vhd":130:12:130:25|OTHERS clause is not synthesized 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":3669:10:3669:15|Synthesizing igloo.ulsicc.syn_black_box 
+Post processing for igloo.ulsicc.syn_black_box
+Post processing for work.flashfreeze_fsm.trans
+Post processing for work.flashfreeze_managment.trans
+Post processing for work.ffctrl_wrapper.def_arch
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":3843:10:3843:17|Synthesizing igloo.inbuf_ff.syn_black_box 
+Post processing for igloo.inbuf_ff.syn_black_box
+Post processing for work.ffctrl.def_arch
+Post processing for work.zbcontroler_irqs.rtl
+@N: CL201 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\smartgen\common\vhdl\FlashFreeze_FSM.vhd":63:6:63:7|Trying to extract state machine for register ff_current_state
+Extracted state machine for register ff_current_state
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+@N: CL201 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\hdl\ZBControl_IRQs.vhd":106:2:106:3|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11

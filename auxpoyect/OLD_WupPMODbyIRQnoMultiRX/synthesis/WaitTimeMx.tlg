@@ -1,0 +1,6 @@
+@N: CD630 :"C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\hdl\WaitTimeMx.vhd":8:7:8:16|Synthesizing work.waittimemx.def_arch 
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":1996:10:1996:12|Synthesizing igloo.mx2.syn_black_box 
+Post processing for igloo.mx2.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\igloo.vhd":2852:10:2852:13|Synthesizing igloo.buff.syn_black_box 
+Post processing for igloo.buff.syn_black_box
+Post processing for work.waittimemx.def_arch

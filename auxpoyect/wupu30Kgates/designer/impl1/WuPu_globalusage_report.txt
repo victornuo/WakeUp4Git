@@ -1,0 +1,25 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v10.1 SP3
+Version: 10.1.3.1
+Date: Thu Feb 28 19:30:22 2013
+Design Name: WuPu  Family: IGLOO  Die: AGL030V5  Package: 100 VQFP
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    110               Net   : FFctrl_0_CLK_GATED
+                      Driver: FFctrl_0/FFctrl_wrapper_inst/U0/Primary_Filter_Instance/Gate_For_Clock_Gating_Clkint/U_GL
+    3                 Net   : clk_c
+                      Driver: clk_pad/U0/U1/U_GL
+    85                Net   : RESETZB_c
+                      Driver: INBUF_0_RNI9C35/U_GL
+
+
+
+

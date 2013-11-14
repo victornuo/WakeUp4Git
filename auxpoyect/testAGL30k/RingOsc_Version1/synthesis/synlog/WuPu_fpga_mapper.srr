@@ -1,0 +1,504 @@
+Synopsys Microsemi Technology Mapper, Version mapact, Build 974R, Built May 21 2013 10:19:34
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version H-2013.03M-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+Warning: Found 1 combinational loops!
+@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version1\component\work\ringoscillator\ringoscillator.vhd":239:0:239:6|Found combinational loop during mapping at net RingOscillator_0.NAND2_0_Y
+1) instance RingOscillator_0.NAND2_0 (view:work.WuPu(rtl)), output net "RingOscillator_0.NAND2_0_Y" in work.WuPu(rtl)
+    net        RingOscillator_0.NAND2_0_Y
+    input  pin RingOscillator_0.AOI5_0/B
+    instance   RingOscillator_0.AOI5_0 (cell AOI5)
+    output pin RingOscillator_0.AOI5_0/Y
+    net        RingOscillator_0.AOI5_0_Y
+    input  pin RingOscillator_0.AOI5_1/B
+    instance   RingOscillator_0.AOI5_1 (cell AOI5)
+    output pin RingOscillator_0.AOI5_1/Y
+    net        RingOscillator_0.AOI5_1_Y
+    input  pin RingOscillator_0.AOI5_2/B
+    instance   RingOscillator_0.AOI5_2 (cell AOI5)
+    output pin RingOscillator_0.AOI5_2/Y
+    net        RingOscillator_0.AOI5_2_Y
+    input  pin RingOscillator_0.AOI5_3/B
+    instance   RingOscillator_0.AOI5_3 (cell AOI5)
+    output pin RingOscillator_0.AOI5_3/Y
+    net        RingOscillator_0.AOI5_3_Y
+    input  pin RingOscillator_0.AOI5_4/B
+    instance   RingOscillator_0.AOI5_4 (cell AOI5)
+    output pin RingOscillator_0.AOI5_4/Y
+    net        RingOscillator_0.AOI5_4_Y
+    input  pin RingOscillator_0.AOI5_5/B
+    instance   RingOscillator_0.AOI5_5 (cell AOI5)
+    output pin RingOscillator_0.AOI5_5/Y
+    net        RingOscillator_0.AOI5_5_Y
+    input  pin RingOscillator_0.AOI5_6/B
+    instance   RingOscillator_0.AOI5_6 (cell AOI5)
+    output pin RingOscillator_0.AOI5_6/Y
+    net        RingOscillator_0.AOI5_6_Y
+    input  pin RingOscillator_0.AOI5_7/B
+    instance   RingOscillator_0.AOI5_7 (cell AOI5)
+    output pin RingOscillator_0.AOI5_7/Y
+    net        RingOscillator_0.AOI5_7_Y
+    input  pin RingOscillator_0.AOI5_8/B
+    instance   RingOscillator_0.AOI5_8 (cell AOI5)
+    output pin RingOscillator_0.AOI5_8/Y
+    net        RingOscillator_0.AOI5_8_Y
+    input  pin RingOscillator_0.AOI5_9/B
+    instance   RingOscillator_0.AOI5_9 (cell AOI5)
+    output pin RingOscillator_0.AOI5_9/Y
+    net        RingOscillator_0.AOI5_9_Y
+    input  pin RingOscillator_0.AOI5_10/B
+    instance   RingOscillator_0.AOI5_10 (cell AOI5)
+    output pin RingOscillator_0.AOI5_10/Y
+    net        RingOscillator_0.AOI5_10_Y
+    input  pin RingOscillator_0.AOI5_11/B
+    instance   RingOscillator_0.AOI5_11 (cell AOI5)
+    output pin RingOscillator_0.AOI5_11/Y
+    net        RingOscillator_0.AOI5_11_Y
+    input  pin RingOscillator_0.NAND2_0/B
+    instance   RingOscillator_0.NAND2_0 (cell NAND2)
+    output pin RingOscillator_0.NAND2_0/Y
+    net        RingOscillator_0.NAND2_0_Y
+End of loops
+@W: MT462 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version1\component\work\ringoscillator\ringoscillator.vhd":229:0:229:6|Net RingOscillator_0.AOI5_11_Y appears to be an unidentified clock source. Assuming default frequency. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+Encoding state machine ff_current_state[0:5] (view:work.FlashFreeze_FSM(trans))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+@N: FP130 |Promoting Net CLK_OUT_c on CLKINT  RingOscillator_0.ringO_cnt_0.CLK_OUT_inferred_clock 
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 17 clock pin(s) of sequential element(s)
+0 instances converted, 17 sequential instances remain driven by gated/generated clocks
+
+= Non-Gated/Non-Generated Clocks =
+************** None **************
+----------------------------------
+==================================
+=========================================================================================================================================== Gated/Generated Clocks ============================================================================================================================================
+Clock Tree ID     Driving Element                                Drive Element Type     Fanout     Sample Instance                                                               Explanation                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_4     DFN1E1C0               12         FF_0.FF_wrapper_inst.U0.Primary_Filter_Instance.Register_For_Clock_Gating     No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0002       RingOscillator_0.AOI5_11                       AOI5                   5          RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1                                    Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+===============================================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\synthesis\WuPu.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Writing EDIF Netlist and constraint files
+H-2013.03M-1 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Warning: Found 1 combinational loops!
+@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version1\component\work\ringoscillator\ringoscillator.vhd":229:0:229:6|Found combinational loop during mapping at net RingOscillator_0.AOI5_11_Y
+1) instance AOI5_11 (view:work.RingOscillator(netlist)), output net "AOI5_11_Y" in work.RingOscillator(netlist)
+    net        RingOscillator_0.AOI5_11_Y
+    input  pin RingOscillator_0.NAND2_0/B
+    instance   RingOscillator_0.NAND2_0 (cell NAND2)
+    output pin RingOscillator_0.NAND2_0/Y
+    net        RingOscillator_0.NAND2_0_Y
+    input  pin RingOscillator_0.AOI5_0/B
+    instance   RingOscillator_0.AOI5_0 (cell AOI5)
+    output pin RingOscillator_0.AOI5_0/Y
+    net        RingOscillator_0.AOI5_0_Y
+    input  pin RingOscillator_0.AOI5_1/B
+    instance   RingOscillator_0.AOI5_1 (cell AOI5)
+    output pin RingOscillator_0.AOI5_1/Y
+    net        RingOscillator_0.AOI5_1_Y
+    input  pin RingOscillator_0.AOI5_2/B
+    instance   RingOscillator_0.AOI5_2 (cell AOI5)
+    output pin RingOscillator_0.AOI5_2/Y
+    net        RingOscillator_0.AOI5_2_Y
+    input  pin RingOscillator_0.AOI5_3/B
+    instance   RingOscillator_0.AOI5_3 (cell AOI5)
+    output pin RingOscillator_0.AOI5_3/Y
+    net        RingOscillator_0.AOI5_3_Y
+    input  pin RingOscillator_0.AOI5_4/B
+    instance   RingOscillator_0.AOI5_4 (cell AOI5)
+    output pin RingOscillator_0.AOI5_4/Y
+    net        RingOscillator_0.AOI5_4_Y
+    input  pin RingOscillator_0.AOI5_5/B
+    instance   RingOscillator_0.AOI5_5 (cell AOI5)
+    output pin RingOscillator_0.AOI5_5/Y
+    net        RingOscillator_0.AOI5_5_Y
+    input  pin RingOscillator_0.AOI5_6/B
+    instance   RingOscillator_0.AOI5_6 (cell AOI5)
+    output pin RingOscillator_0.AOI5_6/Y
+    net        RingOscillator_0.AOI5_6_Y
+    input  pin RingOscillator_0.AOI5_7/B
+    instance   RingOscillator_0.AOI5_7 (cell AOI5)
+    output pin RingOscillator_0.AOI5_7/Y
+    net        RingOscillator_0.AOI5_7_Y
+    input  pin RingOscillator_0.AOI5_8/B
+    instance   RingOscillator_0.AOI5_8 (cell AOI5)
+    output pin RingOscillator_0.AOI5_8/Y
+    net        RingOscillator_0.AOI5_8_Y
+    input  pin RingOscillator_0.AOI5_9/B
+    instance   RingOscillator_0.AOI5_9 (cell AOI5)
+    output pin RingOscillator_0.AOI5_9/Y
+    net        RingOscillator_0.AOI5_9_Y
+    input  pin RingOscillator_0.AOI5_10/B
+    instance   RingOscillator_0.AOI5_10 (cell AOI5)
+    output pin RingOscillator_0.AOI5_10/Y
+    net        RingOscillator_0.AOI5_10_Y
+    input  pin RingOscillator_0.AOI5_11/B
+    instance   RingOscillator_0.AOI5_11 (cell AOI5)
+    output pin RingOscillator_0.AOI5_11/Y
+    net        RingOscillator_0.AOI5_11_Y
+End of loops
+@W: MT420 |Found inferred clock ringO_cnt|CLK_OUT_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:CLK_OUT"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Jul 29 16:30:44 2013
+#
+
+
+Top view:               WuPu
+Library name:           IGLOO
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.85, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        IGLOO
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 2.182
+
+                                     Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                       Frequency     Frequency     Period        Period        Slack     Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------------
+ringO_cnt|CLK_OUT_inferred_clock     100.0 MHz     127.9 MHz     10.000        7.818         2.182     inferred     Inferred_clkgroup_0
+System                               100.0 MHz     182.8 MHz     10.000        5.471         4.529     system       system_clkgroup    
+=======================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                              |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                          Ending                            |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+System                            System                            |  10.000      4.529  |  No paths    -      |  No paths    -      |  No paths    -    
+ringO_cnt|CLK_OUT_inferred_clock  System                            |  10.000      8.728  |  No paths    -      |  No paths    -      |  No paths    -    
+ringO_cnt|CLK_OUT_inferred_clock  ringO_cnt|CLK_OUT_inferred_clock  |  10.000      2.182  |  No paths    -      |  5.000       2.824  |  No paths    -    
+==========================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: ringO_cnt|CLK_OUT_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                              Starting                                                                              Arrival          
+Instance                                                                      Reference                            Type         Pin     Net                         Time        Slack
+                                                                              Clock                                                                                                  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.Flash_Freeze_reg                 ringO_cnt|CLK_OUT_inferred_clock     DFN1P0       Q       Flash_Freeze_reg_i_0        0.885       2.182
+FF_0.FF_wrapper_inst.U0.Primary_Filter_Instance.Register_For_Clock_Gating     ringO_cnt|CLK_OUT_inferred_clock     DFN1         Q       stop_stage_one              0.885       2.824
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[2]              ringO_cnt|CLK_OUT_inferred_clock     DFN1C0       Q       ff_current_state[2]         0.885       3.765
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request             ringO_cnt|CLK_OUT_inferred_clock     DFN1E1C0     Q       N_Housekeeping              0.885       4.634
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[5]              ringO_cnt|CLK_OUT_inferred_clock     DFN1P0       Q       ff_current_state[5]         0.885       4.726
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[1]              ringO_cnt|CLK_OUT_inferred_clock     DFN1C0       Q       ff_current_state[1]         0.885       4.926
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[3]              ringO_cnt|CLK_OUT_inferred_clock     DFN1C0       Q       ff_current_state[3]         0.885       5.247
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[0]              ringO_cnt|CLK_OUT_inferred_clock     DFN1P0       Q       ff_current_state_i_0[0]     0.885       6.601
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[4]              ringO_cnt|CLK_OUT_inferred_clock     DFN1C0       Q       ff_current_state[4]         0.885       7.035
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.control_user_clock               ringO_cnt|CLK_OUT_inferred_clock     DFN1E1P0     Q       control_user_clock_net      0.885       8.039
+=====================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                           Starting                                                                                        Required          
+Instance                                                                   Reference                            Type         Pin     Net                                   Time         Slack
+                                                                           Clock                                                                                                             
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request          ringO_cnt|CLK_OUT_inferred_clock     DFN1E1C0     E       un1_housekeeping_request_0_sqmuxa     9.269        2.182
+FF_0.FF_wrapper_inst.U0.Primary_Filter_Instance.Latch_For_Clock_Gating     ringO_cnt|CLK_OUT_inferred_clock     DLN0         D       stop_stage_one                        4.096        2.824
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[1]           ringO_cnt|CLK_OUT_inferred_clock     DFN1C0       D       ff_current_state_ns[4]                9.311        3.130
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.control_user_clock            ringO_cnt|CLK_OUT_inferred_clock     DFN1E1P0     E       N_58                                  9.269        3.178
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[2]           ringO_cnt|CLK_OUT_inferred_clock     DFN1C0       D       ff_current_state_ns[3]                9.311        3.723
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request          ringO_cnt|CLK_OUT_inferred_clock     DFN1E1C0     D       housekeeping_request_0_sqmuxa         9.395        4.953
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[5]           ringO_cnt|CLK_OUT_inferred_clock     DFN1P0       D       ff_current_state_ns_i[0]              9.353        5.128
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[0]           ringO_cnt|CLK_OUT_inferred_clock     DFN1P0       D       ff_current_state_ns_i[5]              9.311        5.429
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[3]           ringO_cnt|CLK_OUT_inferred_clock     DFN1C0       D       ff_current_state_ns[2]                9.311        5.452
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[4]           ringO_cnt|CLK_OUT_inferred_clock     DFN1C0       D       ff_current_state_ns[1]                9.311        5.452
+=============================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.731
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.269
+
+    - Propagation time:                      7.087
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     2.182
+
+    Number of logic level(s):                4
+    Starting point:                          FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.Flash_Freeze_reg / Q
+    Ending point:                            FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request / E
+    The start point is clocked by            ringO_cnt|CLK_OUT_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            ringO_cnt|CLK_OUT_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.Flash_Freeze_reg                      DFN1P0       Q        Out     0.885     0.885       -         
+Flash_Freeze_reg_i_0                                                               Net          -        -       1.833     -           7         
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_ns_a3_1[4]           NOR2B        B        In      -         2.719       -         
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_ns_a3_1[4]           NOR2B        Y        Out     0.754     3.473       -         
+N_65_1                                                                             Net          -        -       0.464     -           2         
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_ns_a3[4]             NOR2B        A        In      -         3.936       -         
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_ns_a3[4]             NOR2B        Y        Out     0.618     4.554       -         
+N_65                                                                               Net          -        -       0.464     -           2         
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_ns_a3_RNICH6G[4]     OR2          A        In      -         5.018       -         
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_ns_a3_RNICH6G[4]     OR2          Y        Out     0.610     5.628       -         
+N_58                                                                               Net          -        -       0.464     -           2         
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request_RNO              OR2          A        In      -         6.091       -         
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request_RNO              OR2          Y        Out     0.610     6.701       -         
+un1_housekeeping_request_0_sqmuxa                                                  Net          -        -       0.386     -           1         
+FF_0.FF_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request                  DFN1E1C0     E        In      -         7.087       -         
+=================================================================================================================================================
+Total path delay (propagation time + setup) of 7.818 is 4.207(53.8%) logic and 3.610(46.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                               Starting                                         Arrival          
+Instance                                       Reference     Type         Pin     Net           Time        Slack
+                                               Clock                                                             
+-----------------------------------------------------------------------------------------------------------------
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0       System        DFN1C0       Q       NU_0          0.885       4.529
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1     System        DFN1E1C0     Q       NU_1          0.885       4.847
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_4     System        DFN1E1C0     Q       CLK_OUT_i     0.885       5.621
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_3     System        DFN1E1C0     Q       NU_3          0.885       6.492
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2       System        DFN1C0       Q       NU_2          0.885       6.686
+=================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                               Starting                                        Required          
+Instance                                       Reference     Type         Pin     Net          Time         Slack
+                                               Clock                                                             
+-----------------------------------------------------------------------------------------------------------------
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2       System        DFN1C0       D       XOR2_1_Y     9.353        4.529
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_4     System        DFN1E1C0     D       XOR2_0_Y     9.353        5.621
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_3     System        DFN1E1C0     E       NU_0_1_2     9.269        5.941
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_4     System        DFN1E1C0     E       NU_0_1_2     9.269        5.941
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0       System        DFN1C0       D       INV_1_Y      9.353        6.049
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1     System        DFN1E1C0     D       INV_2_Y      9.353        6.503
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1     System        DFN1E1C0     E       NU_0         9.269        6.962
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_3     System        DFN1E1C0     D       INV_0_Y      9.353        7.008
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.647
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         9.353
+
+    - Propagation time:                      4.824
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 4.529
+
+    Number of logic level(s):                2
+    Starting point:                          RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0 / Q
+    Ending point:                            RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2 / D
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            System [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                         Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0     DFN1C0     Q        Out     0.885     0.885       -         
+NU_0                                         Net        -        -       1.422     -           4         
+RingOscillator_0.ringO_cnt_0.AND2_0          AND2       A        In      -         2.307       -         
+RingOscillator_0.ringO_cnt_0.AND2_0          AND2       Y        Out     0.618     2.925       -         
+AND2_0_Y                                     Net        -        -       0.386     -           1         
+RingOscillator_0.ringO_cnt_0.XOR2_1          XOR2       B        In      -         3.312       -         
+RingOscillator_0.ringO_cnt_0.XOR2_1          XOR2       Y        Out     1.125     4.437       -         
+XOR2_1_Y                                     Net        -        -       0.386     -           1         
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2     DFN1C0     D        In      -         4.824       -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 5.471 is 3.276(59.9%) logic and 2.195(40.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: AGL030V5_VQFP100_STD
+Report for cell WuPu.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2     2      1.0        2.0
+              AND3     1      1.0        1.0
+              AO1A     1      1.0        1.0
+              AOI1     1      1.0        1.0
+              AOI5    12      1.0       12.0
+            CLKINT     2      0.0        0.0
+               GND     8      0.0        0.0
+               INV     4      1.0        4.0
+             NAND2     1      1.0        1.0
+             NOR2B     6      1.0        6.0
+               OR2     4      1.0        4.0
+              OR2A     1      1.0        1.0
+            ULSICC     1      0.0        0.0
+               VCC     8      0.0        0.0
+              XOR2     2      1.0        2.0
+
+
+              DFN1     1      1.0        1.0
+            DFN1C0     6      1.0        6.0
+          DFN1E1C0     5      1.0        5.0
+          DFN1E1P0     1      1.0        1.0
+            DFN1P0     3      1.0        3.0
+              DLN0     1      1.0        1.0
+                   -----          ----------
+             TOTAL    71                52.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     1
+          INBUF_FF     1
+            OUTBUF     8
+                   -----
+             TOTAL    10
+
+
+Core Cells         : 52 of 768 (7%)
+IO Cells           : 10
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 46MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jul 29 16:30:44 2013
+
+###########################################################]

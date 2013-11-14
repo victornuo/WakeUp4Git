@@ -1,0 +1,816 @@
+KEY LIBERO "10.1"
+KEY CAPTURE "10.1.3.1"
+KEY DEFAULT_IMPORT_LOC "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\stimulus"
+KEY DEFAULT_OPEN_LOC "C:\Users\Victor\Documents\Libero Projects\controlFFTest\hdl"
+KEY ProjectID "c6dc5278-59b4-4ff1-b9cc-0d37ee95aa09"
+KEY HDLTechnology "VHDL"
+KEY VendorTechnology_Family "IGLOO"
+KEY VendorTechnology_Die "IS4X4M1LP"
+KEY VendorTechnology_Package "vq100"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.5"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_OPCONR "COM"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX"
+KEY ProjectDescription ""
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "WuPu::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\Simulation\CLK_GEN\1.0.1\CLK_GEN.cxf,actgen_cxf"
+STATE="utd"
+TIME="1365772416"
+SIZE="467"
+PARENT="<project>\component\work\TB_MOM_ENCODER_ZBCtrl\TB_MOM_ENCODER_ZBCtrl.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\Simulation\CLK_GEN\1.0.1\CLK_GEN.vhd,tb_hdl"
+STATE="utd"
+TIME="1365527444"
+SIZE="504"
+PARENT="<project>\component\Actel\Simulation\CLK_GEN\1.0.1\CLK_GEN.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\Simulation\PULSE_GEN\1.0.1\PULSE_GEN.cxf,actgen_cxf"
+STATE="utd"
+TIME="1366016236"
+SIZE="471"
+PARENT="<project>\component\work\CLK\CLK.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\Simulation\PULSE_GEN\1.0.1\PULSE_GEN.vhd,tb_hdl"
+STATE="utd"
+TIME="1365527444"
+SIZE="793"
+PARENT="<project>\component\Actel\Simulation\PULSE_GEN\1.0.1\PULSE_GEN.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\Simulation\RESET_GEN\1.0.1\RESET_GEN.cxf,actgen_cxf"
+STATE="utd"
+TIME="1365772416"
+SIZE="471"
+PARENT="<project>\component\work\TB_MOM_ENCODER_ZBCtrl\TB_MOM_ENCODER_ZBCtrl.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\Simulation\RESET_GEN\1.0.1\RESET_GEN.vhd,tb_hdl"
+STATE="utd"
+TIME="1365527444"
+SIZE="538"
+PARENT="<project>\component\Actel\Simulation\RESET_GEN\1.0.1\RESET_GEN.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CLK\CLK.cxf,actgen_cxf"
+STATE="utd"
+TIME="1365527993"
+SIZE="1631"
+ENDFILE
+VALUE "<project>\component\work\CLK\CLK.vhd,tb_hdl"
+STATE="utd"
+TIME="1365527993"
+SIZE="2417"
+PARENT="<project>\component\work\CLK\CLK.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CLK\testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1365527993"
+SIZE="1570"
+PARENT="<project>\component\work\CLK\CLK.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1362075547"
+SIZE="437"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1362075548"
+SIZE="413"
+ENDFILE
+VALUE "<project>\component\work\manchesterEncoderComplete\manchesterEncoderComplete.cxf,actgen_cxf"
+STATE="utd"
+TIME="1365528974"
+SIZE="2942"
+ENDFILE
+VALUE "<project>\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd,hdl"
+STATE="utd"
+TIME="1365528974"
+SIZE="6543"
+PARENT="<project>\component\work\manchesterEncoderComplete\manchesterEncoderComplete.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\manchesterEncoderComplete\testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1365528975"
+SIZE="2247"
+PARENT="<project>\component\work\manchesterEncoderComplete\manchesterEncoderComplete.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TB_MOM_ENCODER_ZBCtrl\TB_MOM_ENCODER_ZBCtrl.cxf,actgen_cxf"
+STATE="utd"
+TIME="1365772416"
+SIZE="4109"
+ENDFILE
+VALUE "<project>\component\work\TB_MOM_ENCODER_ZBCtrl\TB_MOM_ENCODER_ZBCtrl.vhd,tb_hdl"
+STATE="utd"
+TIME="1365772416"
+SIZE="8861"
+PARENT="<project>\component\work\TB_MOM_ENCODER_ZBCtrl\TB_MOM_ENCODER_ZBCtrl.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TB_WUPU_Complete\TB_WUPU_Complete.cxf,actgen_cxf"
+STATE="utd"
+TIME="1366044972"
+SIZE="2234"
+ENDFILE
+VALUE "<project>\component\work\WuPu\testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1365772741"
+SIZE="3259"
+PARENT="<project>\component\work\WuPu\WuPu.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\WuPu\WuPu.cxf,actgen_cxf"
+STATE="utd"
+TIME="1365772742"
+SIZE="6350"
+ENDFILE
+VALUE "<project>\component\work\WuPu\WuPu.pdc,pdc"
+STATE="utd"
+TIME="1365772741"
+SIZE="5725"
+PARENT="<project>\component\work\WuPu\WuPu.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideDESIGNER"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\WuPu\WuPu.vhd,hdl"
+STATE="utd"
+TIME="1365772741"
+SIZE="18060"
+PARENT="<project>\component\work\WuPu\WuPu.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\designer\impl1\manchesterEncoderComplete.ide_des,ide_des"
+STATE="utd"
+TIME="1365086695"
+SIZE="256"
+ENDFILE
+VALUE "<project>\designer\impl1\WuPu.ide_des,ide_des"
+STATE="utd"
+TIME="1365772741"
+SIZE="849"
+ENDFILE
+VALUE "<project>\designer\impl1\ZBControl.ide_des,ide_des"
+STATE="utd"
+TIME="1365087086"
+SIZE="240"
+ENDFILE
+VALUE "<project>\designer\impl1\ZBWatchDog.ide_des,ide_des"
+STATE="utd"
+TIME="1362075461"
+SIZE="241"
+ENDFILE
+VALUE "<project>\hdl\adressingData.vhd,hdl"
+STATE="utd"
+TIME="1359563686"
+SIZE="1729"
+ENDFILE
+VALUE "<project>\hdl\ASCII_pck.vhd,hdl"
+STATE="utd"
+TIME="1350469183"
+SIZE="3423"
+ENDFILE
+VALUE "<project>\hdl\Command_Process_preamble.vhd,hdl"
+STATE="utd"
+TIME="1366123101"
+SIZE="17058"
+ENDFILE
+VALUE "<project>\hdl\freq_ref_preamble.vhd,hdl"
+STATE="utd"
+TIME="1339078728"
+SIZE="954"
+ENDFILE
+VALUE "<project>\hdl\housekeepingCheck.vhd,hdl"
+STATE="utd"
+TIME="1365772060"
+SIZE="1173"
+ENDFILE
+VALUE "<project>\hdl\manchesterDecoder_0toStart.vhd,hdl"
+STATE="utd"
+TIME="1366123826"
+SIZE="5341"
+ENDFILE
+VALUE "<project>\hdl\ManchesterEncoder_ctrl.vhd,hdl"
+STATE="utd"
+TIME="1366105738"
+SIZE="7278"
+ENDFILE
+VALUE "<project>\hdl\manchester_encoder.vhd,hdl"
+STATE="utd"
+TIME="1366121576"
+SIZE="7540"
+ENDFILE
+VALUE "<project>\hdl\Mom_unit_indirectACK.vhd,hdl"
+STATE="utd"
+TIME="1366122216"
+SIZE="14799"
+ENDFILE
+VALUE "<project>\hdl\Wupu_pck.vhd,hdl"
+STATE="utd"
+TIME="1366104445"
+SIZE="2529"
+ENDFILE
+VALUE "<project>\hdl\ZBControl_IRQs.vhd,hdl"
+STATE="utd"
+TIME="1365435405"
+SIZE="8924"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1365772689"
+SIZE="2276"
+ENDFILE
+VALUE "<project>\simulation\waveCokmpleteOK.do,do"
+STATE="utd"
+TIME="1366037795"
+SIZE="3431"
+ENDFILE
+VALUE "<project>\simulation\waveCOMPLETE.do,do"
+STATE="utd"
+TIME="1365676443"
+SIZE="5565"
+ENDFILE
+VALUE "<project>\simulation\waveMOM_ENC_ZBctrl.do,do"
+STATE="utd"
+TIME="1365526716"
+SIZE="7075"
+ENDFILE
+VALUE "<project>\smartgen\common\vhdl\FlashFreeze_Filter.vhd,hdl"
+STATE="utd"
+TIME="1316620795"
+SIZE="1846"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\common\vhdl\FlashFreeze_FSM.vhd,hdl"
+STATE="utd"
+TIME="1316620795"
+SIZE="4548"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\common\vhdl\FlashFreeze_Managment.vhd,hdl"
+STATE="utd"
+TIME="1316620795"
+SIZE="3491"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf,actgen_cxf"
+STATE="utd"
+TIME="1316620795"
+SIZE="2635"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement.gen,gen"
+STATE="utd"
+TIME="1316620795"
+SIZE="369"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement.log,log"
+STATE="utd"
+TIME="1316620795"
+SIZE="329"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement.vhd,hdl"
+STATE="utd"
+TIME="1316620795"
+SIZE="3056"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement_wrapper.vhd,hdl"
+STATE="utd"
+TIME="1316620795"
+SIZE="2491"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\register_reg\register_reg.cxf,actgen_cxf"
+STATE="utd"
+TIME="1353597808"
+SIZE="1494"
+ENDFILE
+VALUE "<project>\smartgen\register_reg\register_reg.gen,gen"
+STATE="utd"
+TIME="1353597806"
+SIZE="596"
+PARENT="<project>\smartgen\register_reg\register_reg.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\register_reg\register_reg.log,log"
+STATE="utd"
+TIME="1353597808"
+SIZE="1804"
+PARENT="<project>\smartgen\register_reg\register_reg.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\register_reg\register_reg.vhd,hdl"
+STATE="utd"
+TIME="1353597808"
+SIZE="1598"
+PARENT="<project>\smartgen\register_reg\register_reg.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ZBWatchDog\ZBWatchDog.cxf,actgen_cxf"
+STATE="utd"
+TIME="1354016124"
+SIZE="1650"
+ENDFILE
+VALUE "<project>\smartgen\ZBWatchDog\ZBWatchDog.gen,gen"
+STATE="utd"
+TIME="1354016123"
+SIZE="678"
+PARENT="<project>\smartgen\ZBWatchDog\ZBWatchDog.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ZBWatchDog\ZBWatchDog.log,log"
+STATE="utd"
+TIME="1354016124"
+SIZE="2056"
+PARENT="<project>\smartgen\ZBWatchDog\ZBWatchDog.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ZBWatchDog\ZBWatchDog.vhd,hdl"
+STATE="utd"
+TIME="1354016124"
+SIZE="15424"
+PARENT="<project>\smartgen\ZBWatchDog\ZBWatchDog.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\stimulus\dormir_ctrl_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1311862844"
+SIZE="1549"
+ENDFILE
+VALUE "<project>\stimulus\FF_MoM_Encoder_AddresData_testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1315477441"
+SIZE="8581"
+ENDFILE
+VALUE "<project>\stimulus\MoM_Encoder_AddresData_testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1340122529"
+SIZE="7555"
+ENDFILE
+VALUE "<project>\stimulus\MoM_Encoder_multiSend_testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1362410349"
+SIZE="8423"
+ENDFILE
+VALUE "<project>\stimulus\TB_EncoderCTRLandEncoder.vhd,tb_hdl"
+STATE="utd"
+TIME="1361989568"
+SIZE="4912"
+ENDFILE
+VALUE "<project>\stimulus\TB_manchester_enc_MEI_parity.vhd,tb_hdl"
+STATE="utd"
+TIME="1361796077"
+SIZE="3724"
+ENDFILE
+VALUE "<project>\stimulus\TB_manchester_enc_preamble.vhd,tb_hdl"
+STATE="utd"
+TIME="1340037206"
+SIZE="3410"
+ENDFILE
+VALUE "<project>\stimulus\TB_MOMUnit_IndirectACK.vhd,tb_hdl"
+STATE="utd"
+TIME="1364922130"
+SIZE="5703"
+ENDFILE
+VALUE "<project>\stimulus\TB_MOMUnit_IndirectACK_Encoder_ZBCtrl.vhd,tb_hdl"
+STATE="utd"
+TIME="1365087057"
+SIZE="6930"
+ENDFILE
+VALUE "<project>\stimulus\TB_MOM_ENCODER_ZBCtrl.vhd,tb_hdl"
+STATE="utd"
+TIME="1365521689"
+SIZE="10749"
+ENDFILE
+VALUE "<project>\stimulus\TB_MoM_Unit_Pre.vhd,tb_hdl"
+STATE="utd"
+TIME="1340119741"
+SIZE="6864"
+ENDFILE
+VALUE "<project>\stimulus\TB_Pre_global.vhd,tb_hdl"
+STATE="utd"
+TIME="1340207260"
+SIZE="8543"
+ENDFILE
+VALUE "<project>\stimulus\TB_Pre_global_UART.vhd,tb_hdl"
+STATE="utd"
+TIME="1340721936"
+SIZE="8907"
+ENDFILE
+VALUE "<project>\stimulus\TB_ZBControl.vhd,tb_hdl"
+STATE="utd"
+TIME="1365087254"
+SIZE="2071"
+ENDFILE
+VALUE "<project>\stimulus\TB_ZBController.vhd,tb_hdl"
+STATE="utd"
+TIME="1365087146"
+SIZE="2083"
+ENDFILE
+VALUE "<project>\stimulus\testbecnh_decoder_commandprocessor_preamble.vhd,tb_hdl"
+STATE="utd"
+TIME="1357212872"
+SIZE="6067"
+ENDFILE
+VALUE "<project>\stimulus\testbench_ZBControler.vhd,tb_hdl"
+STATE="utd"
+TIME="1340811829"
+SIZE="3628"
+ENDFILE
+VALUE "<project>\stimulus\WuPu_2R2ACK_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1327428052"
+SIZE="10679"
+ENDFILE
+VALUE "<project>\synthesis\WaitTimeMx_syn.prj,prj"
+STATE="utd"
+TIME="1365426952"
+SIZE="573"
+ENDFILE
+VALUE "<project>\synthesis\WuPu.edn,syn_edn"
+STATE="ood"
+TIME="1358866227"
+SIZE="403214"
+ENDFILE
+VALUE "<project>\synthesis\WuPu_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1358866227"
+SIZE="378"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "manchesterEncoderComplete::work"
+FILE "<project>\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\manchesterEncoderComplete\testbench.vhd,tb_hdl"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\manchesterEncoderComplete\testbench.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "WuPu::work"
+FILE "<project>\component\work\WuPu\WuPu.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\WuPu\testbench.vhd,tb_hdl"
+VALUE "<project>\component\work\WuPu\WuPu.pdc,pdc"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\Actel\Simulation\PULSE_GEN\1.0.1\PULSE_GEN.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST WuPu
+VALUE "<project>\component\Actel\Simulation\PULSE_GEN\1.0.1\PULSE_GEN.vhd,tb_hdl"
+ENDLIST
+LIST manchesterEncoderComplete
+VALUE "<project>\component\work\manchesterEncoderComplete\testbench.vhd,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+LIST WuPu
+VALUE "<project>\component\work\WuPu\testbench.vhd,tb_hdl"
+VALUE "<project>\component\work\WuPu\WuPu.pdc,pdc"
+ENDLIST
+LIST manchesterEncoderComplete
+VALUE "<project>\component\work\manchesterEncoderComplete\testbench.vhd,tb_hdl"
+ENDLIST
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=10 ps
+Resolution=1ps
+VsimOpt=
+EntityName=TB_WUPU_Complete
+TopInstanceName=<top>_0
+DoFileName=waveCOMPLETE.do
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=true
+LogAllSignals=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=C:/Actel/Libero_v9.1/Designer/lib/modelsim/precompiled/vhdl/igloo
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="C:\Microsemi\Libero_v10.1\SoftConsole\Eclipse\eclipse.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="Synplify Pro AE"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro AE"
+LOCATION="C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="ModelSim AE"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_v10.1\Model\win32acoem\modelsim.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="WFL"
+FUNCTION="Stimulus"
+TOOL="WFL"
+LOCATION="syncad.exe"
+PARAM="-p waveform"
+BATCH=0
+EndProfile
+NAME="FlashPro"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_v10.1\Designer\bin\FlashPro.exe"
+PARAM=""
+BATCH=0
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "manchesterEncoderComplete::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "WuPu::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+SmartDesign;manchesterEncoderComplete
+SmartDesign;WuPu
+SmartDesign;TB_WUPU_Complete
+ACTIVEVIEW;TB_WUPU_Complete
+ENDLIST
+LIST ModuleSubBlockList
+LIST "addressingData::work","hdl\adressingData.vhd","FALSE","FALSE"
+ENDLIST
+LIST "ASCII_Char::work","hdl\ASCII_pck.vhd","FALSE","FALSE"
+ENDLIST
+LIST "command_process::work","hdl\Command_Process_preamble.vhd","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+ENDLIST
+LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
+ENDLIST
+LIST "FlashFreeze_Filter::work","smartgen\common\vhdl\FlashFreeze_Filter.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FlashFreeze_FSM::work","smartgen\common\vhdl\FlashFreeze_FSM.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FlashFreeze_Managment::work","smartgen\common\vhdl\FlashFreeze_Managment.vhd","FALSE","FALSE"
+SUBBLOCK "FlashFreeze_FSM::work","smartgen\common\vhdl\FlashFreeze_FSM.vhd","FALSE","FALSE"
+SUBBLOCK "FlashFreeze_Filter::work","smartgen\common\vhdl\FlashFreeze_Filter.vhd","FALSE","FALSE"
+ENDLIST
+LIST "frec_ref::work","hdl\freq_ref_preamble.vhd","FALSE","FALSE"
+ENDLIST
+LIST "housekeepingCheck::work","hdl\housekeepingCheck.vhd","FALSE","FALSE"
+ENDLIST
+LIST "LowPowerManagement::work","smartgen\LowPowerManagement\LowPowerManagement.vhd","TRUE","FALSE"
+SUBBLOCK "LowPowerManagement_wrapper::work","smartgen\LowPowerManagement\LowPowerManagement_wrapper.vhd","FALSE","FALSE"
+ENDLIST
+LIST "LowPowerManagement_wrapper::work","smartgen\LowPowerManagement\LowPowerManagement_wrapper.vhd","FALSE","FALSE"
+SUBBLOCK "FlashFreeze_Managment::work","smartgen\common\vhdl\FlashFreeze_Managment.vhd","FALSE","FALSE"
+ENDLIST
+LIST "manchester_encoder::work","hdl\manchester_encoder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "manchester_encoder_ctrl::work","hdl\ManchesterEncoder_ctrl.vhd","FALSE","FALSE"
+ENDLIST
+LIST "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd","TRUE","FALSE"
+SUBBLOCK "manchester_encoder_ctrl::work","hdl\ManchesterEncoder_ctrl.vhd","FALSE","FALSE"
+SUBBLOCK "manchester_encoder::work","hdl\manchester_encoder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "md_v4::work","hdl\manchesterDecoder_0toStart.vhd","FALSE","FALSE"
+SUBBLOCK "frec_ref::work","hdl\freq_ref_preamble.vhd","FALSE","FALSE"
+ENDLIST
+LIST "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+ENDLIST
+LIST "register_reg::work","smartgen\register_reg\register_reg.vhd","TRUE","FALSE"
+ENDLIST
+LIST "WuPu::work","component\work\WuPu\WuPu.vhd","TRUE","FALSE"
+SUBBLOCK "addressingData::work","hdl\adressingData.vhd","FALSE","FALSE"
+SUBBLOCK "housekeepingCheck::work","hdl\housekeepingCheck.vhd","FALSE","FALSE"
+SUBBLOCK "LowPowerManagement::work","smartgen\LowPowerManagement\LowPowerManagement.vhd","TRUE","FALSE"
+SUBBLOCK "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd","TRUE","FALSE"
+SUBBLOCK "ZBControl::work","hdl\ZBControl_IRQs.vhd","FALSE","FALSE"
+SUBBLOCK "ZBWatchDog::work","smartgen\ZBWatchDog\ZBWatchDog.vhd","TRUE","FALSE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+SUBBLOCK "command_process::work","hdl\Command_Process_preamble.vhd","FALSE","FALSE"
+SUBBLOCK "md_v4::work","hdl\manchesterDecoder_0toStart.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Wupu_pck::work","hdl\Wupu_pck.vhd","FALSE","FALSE"
+ENDLIST
+LIST "ZBControl::work","hdl\ZBControl_IRQs.vhd","FALSE","FALSE"
+ENDLIST
+LIST "ZBWatchDog::work","smartgen\ZBWatchDog\ZBWatchDog.vhd","TRUE","FALSE"
+ENDLIST
+LIST "CLK::work","component\work\CLK\CLK.vhd","TRUE","TRUE"
+SUBBLOCK "PULSE_GEN::work","component\Actel\Simulation\PULSE_GEN\1.0.1\PULSE_GEN.vhd","FALSE","TRUE"
+ENDLIST
+LIST "CLK_GEN::work","component\Actel\Simulation\CLK_GEN\1.0.1\CLK_GEN.vhd","FALSE","TRUE"
+ENDLIST
+LIST "dormir_ctrl::work","","FALSE","FALSE"
+ENDLIST
+LIST "dormir_ctrl_tb::work","stimulus\dormir_ctrl_tb.vhd","FALSE","TRUE"
+SUBBLOCK "dormir_ctrl::work","","FALSE","FALSE"
+ENDLIST
+LIST "FF_MoM_Encoder_Address::work","stimulus\FF_MoM_Encoder_AddresData_testbench.vhd","FALSE","TRUE"
+SUBBLOCK "LowPowerManagement::work","smartgen\LowPowerManagement\LowPowerManagement.vhd","TRUE","FALSE"
+SUBBLOCK "addressingData::work","hdl\adressingData.vhd","FALSE","FALSE"
+SUBBLOCK "manchester_encoder::work","hdl\manchester_encoder.vhd","FALSE","FALSE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+ENDLIST
+LIST "md_V3::work","","FALSE","FALSE"
+ENDLIST
+LIST "PULSE_GEN::work","component\Actel\Simulation\PULSE_GEN\1.0.1\PULSE_GEN.vhd","FALSE","TRUE"
+ENDLIST
+LIST "RESET_GEN::work","component\Actel\Simulation\RESET_GEN\1.0.1\RESET_GEN.vhd","FALSE","TRUE"
+ENDLIST
+LIST "TB_ctrlAndEnc::work","stimulus\TB_EncoderCTRLandEncoder.vhd","FALSE","TRUE"
+SUBBLOCK "manchester_encoder_ctrl::work","hdl\ManchesterEncoder_ctrl.vhd","FALSE","FALSE"
+SUBBLOCK "manchester_encoder::work","hdl\manchester_encoder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_global::work","stimulus\TB_Pre_global.vhd","FALSE","TRUE"
+SUBBLOCK "WuPu::work","component\work\WuPu\WuPu.vhd","TRUE","FALSE"
+ENDLIST
+LIST "TB_global_uart::work","stimulus\TB_Pre_global_UART.vhd","FALSE","TRUE"
+SUBBLOCK "WuPu::work","component\work\WuPu\WuPu.vhd","TRUE","FALSE"
+ENDLIST
+LIST "TB_manchester_enc_MEI_parity::work","stimulus\TB_manchester_enc_MEI_parity.vhd","FALSE","TRUE"
+SUBBLOCK "manchester_encoder::work","hdl\manchester_encoder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_MD_CommP_Pre::work","stimulus\testbecnh_decoder_commandprocessor_preamble.vhd","FALSE","TRUE"
+SUBBLOCK "md_V3::work","","FALSE","FALSE"
+SUBBLOCK "command_process::work","hdl\Command_Process_preamble.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_MOM_ENCODER_ZBCtrl::work","component\work\TB_MOM_ENCODER_ZBCtrl\TB_MOM_ENCODER_ZBCtrl.vhd","TRUE","TRUE"
+SUBBLOCK "CLK_GEN::work","component\Actel\Simulation\CLK_GEN\1.0.1\CLK_GEN.vhd","FALSE","TRUE"
+SUBBLOCK "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd","TRUE","FALSE"
+SUBBLOCK "RESET_GEN::work","component\Actel\Simulation\RESET_GEN\1.0.1\RESET_GEN.vhd","FALSE","TRUE"
+SUBBLOCK "ZBControl::work","hdl\ZBControl_IRQs.vhd","FALSE","FALSE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_MOM_ENCODER_ZBCtrl::work","stimulus\TB_MOM_ENCODER_ZBCtrl.vhd","FALSE","TRUE"
+SUBBLOCK "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd","TRUE","FALSE"
+SUBBLOCK "ZBControl::work","hdl\ZBControl_IRQs.vhd","FALSE","FALSE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_MOMUnit_IndirectACK::work","stimulus\TB_MOMUnit_IndirectACK.vhd","FALSE","TRUE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_MOMUnit_IndirectACK::work","stimulus\TB_MOMUnit_IndirectACK_Encoder_ZBCtrl.vhd","FALSE","TRUE"
+SUBBLOCK "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd","TRUE","FALSE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_PR_manchester_enc::work","stimulus\TB_manchester_enc_preamble.vhd","FALSE","TRUE"
+SUBBLOCK "manchester_encoder::work","hdl\manchester_encoder.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_pre_mom::work","stimulus\TB_MoM_Unit_Pre.vhd","FALSE","TRUE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_pre_MoM_Encoder::work","stimulus\MoM_Encoder_AddresData_testbench.vhd","FALSE","TRUE"
+SUBBLOCK "manchester_encoder::work","hdl\manchester_encoder.vhd","FALSE","FALSE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_pre_MoM_Encoder::work","stimulus\MoM_Encoder_multiSend_testbench.vhd","FALSE","TRUE"
+SUBBLOCK "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd","TRUE","FALSE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_WUPU_Complete::work","component\work\TB_WUPU_Complete\TB_WUPU_Complete.cxf","TRUE","TRUE"
+SUBBLOCK "PULSE_GEN::work","component\Actel\Simulation\PULSE_GEN\1.0.1\PULSE_GEN.vhd","FALSE","TRUE"
+SUBBLOCK "addressingData::work","hdl\adressingData.vhd","FALSE","FALSE"
+SUBBLOCK "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd","TRUE","FALSE"
+SUBBLOCK "ZBControl::work","hdl\ZBControl_IRQs.vhd","FALSE","FALSE"
+SUBBLOCK "MoM_unit::work","hdl\Mom_unit_indirectACK.vhd","FALSE","FALSE"
+SUBBLOCK "command_process::work","hdl\Command_Process_preamble.vhd","FALSE","FALSE"
+SUBBLOCK "md_v4::work","hdl\manchesterDecoder_0toStart.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_ZBControl::work","stimulus\TB_ZBControl.vhd","FALSE","TRUE"
+SUBBLOCK "ASCII_Char::work","hdl\ASCII_pck.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_ZBController::work","stimulus\TB_ZBController.vhd","FALSE","TRUE"
+SUBBLOCK "ASCII_Char::work","hdl\ASCII_pck.vhd","FALSE","FALSE"
+ENDLIST
+LIST "TB_ZBHandler::work","stimulus\testbench_ZBControler.vhd","FALSE","TRUE"
+SUBBLOCK "ZBHandler::work","","FALSE","FALSE"
+ENDLIST
+LIST "testbench::work","component\work\CLK\testbench.vhd","FALSE","TRUE"
+SUBBLOCK "CLK::work","component\work\CLK\CLK.vhd","TRUE","TRUE"
+ENDLIST
+LIST "testbench::work","component\work\WuPu\testbench.vhd","FALSE","TRUE"
+SUBBLOCK "WuPu::work","component\work\WuPu\WuPu.vhd","TRUE","FALSE"
+ENDLIST
+LIST "testbench::work","component\work\manchesterEncoderComplete\testbench.vhd","FALSE","TRUE"
+SUBBLOCK "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd","TRUE","FALSE"
+ENDLIST
+LIST "wupu_testbench::work","stimulus\WuPu_2R2ACK_tb.vhd","FALSE","TRUE"
+SUBBLOCK "WuPu::work","component\work\WuPu\WuPu.vhd","TRUE","FALSE"
+ENDLIST
+LIST "ZBHandler::work","","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST

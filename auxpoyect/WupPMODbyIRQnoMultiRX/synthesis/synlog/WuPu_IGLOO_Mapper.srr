@@ -1,0 +1,372 @@
+Synopsys Actel Technology Mapper, Version mapact, Build 023R, Built Sep 29 2010 09:29:00
+Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+Product Version E-2010.09A-1
+@N: MF249 |Running in 32-bit mode.
+@N: MF258 |Gated clock conversion disabled 
+
+@N: BN116 :"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\hdl\adressingdata.vhd":29:2:29:3|Removing sequential instance addressingData_0.addressload of view:PrimLib.dffr(prim) because there are no references to its outputs 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W:"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\smartgen\common\vhdl\flashfreeze_filter.vhd":64:3:64:23|Net LowPowerManagement_0/LowPowerManagement_wrapper_inst.U0/Primary_Filter_Instance.clock_to_user_logic_temp appears to be a clock source which was not identfied. Assuming default frequency. 
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+Encoding state machine work.ZBControl(symplified)-state[0:3]
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+Encoding state machine work.FlashFreeze_FSM(trans)-ff_current_state[0:5]
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+@N:"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\hdl\command_process_preamble.vhd":601:2:601:3|Found counter in view:work.command_process(rtl) inst bitCounter[3:0]
+Encoding state machine work.command_process(rtl)-state[0:9]
+original code -> new code
+   0000000001 -> 0000000001
+   0000000010 -> 0000000010
+   0000000100 -> 0000000100
+   0000001000 -> 0000001000
+   0000010000 -> 0000010000
+   0000100000 -> 0000100000
+   0001000000 -> 0001000000
+   0010000000 -> 0010000000
+   0100000000 -> 0100000000
+   1000000000 -> 1000000000
+Encoding state machine work.MoM_unit(rtl)-state[0:7]
+original code -> new code
+   00000001 -> 00000001
+   00000010 -> 00000010
+   00000100 -> 00000100
+   00001000 -> 00001000
+   00010000 -> 00010000
+   00100000 -> 00100000
+   01000000 -> 01000000
+   10000000 -> 10000000
+@N:"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\hdl\manchesterdecoder_preamble.vhd":266:1:266:2|Found counter in view:work.md_v3(v1) inst error_counter[3:0]
+@N:"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\hdl\freq_ref_preamble.vhd":28:8:28:9|Found counter in view:work.frec_ref(def_arch) inst q[6:0]
+Finished factoring (Time elapsed 0h:00m:01s; Memory used current: 61MB peak: 62MB)
+
+@N: BN116 :"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\smartgen\common\vhdl\flashfreeze_filter.vhd":56:3:56:24|Removing sequential instance LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.GEN1\.GEN2\.0\.seconday_filter_instance.Latch_For_Clock_Gating of view:IGLOO.DLN0(prim) because there are no references to its outputs 
+@N: BN116 :"c:\users\victor\documents\cookies\wake_up_radio\wuppmodbyirq\smartgen\common\vhdl\flashfreeze_filter.vhd":48:3:48:27|Removing sequential instance LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.GEN1\.GEN2\.0\.seconday_filter_instance.Register_For_Clock_Gating of view:IGLOO.DFN1(prim) because there are no references to its outputs 
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:01s; Memory used current: 61MB peak: 62MB)
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:01s; Memory used current: 58MB peak: 62MB)
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 58MB peak: 62MB)
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 58MB peak: 62MB)
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:01s; Memory used current: 58MB peak: 62MB)
+
+Finished preparing to map (Time elapsed 0h:00m:01s; Memory used current: 59MB peak: 62MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name               Fanout, notes                   
+-------------------------------------------------------------------------
+ZBControl_0.WD_CLR_i_i_a3 / Y            27                              
+INBUF_0 / Y                              159 : 157 asynchronous set/reset
+md_v3_0.rx_error / Q                     28                              
+MoM_unit_0.TX_load_0 / Y                 50                              
+manchester_encoder_0.un2_bit_end / Y     41                              
+=========================================================================
+
+@N: FP130 |Promoting Net RESETZB_c on CLKINT  I_58 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+Replicating Combinational Instance manchester_encoder_0.un2_bit_end, fanout 41 segments 2
+Replicating Combinational Instance MoM_unit_0.TX_load_0, fanout 51 segments 3
+Replicating Sequential Instance md_v3_0.rx_error, fanout 28 segments 2
+Replicating Combinational Instance ZBControl_0.WD_CLR_i_i_a3, fanout 27 segments 2
+Finished technology mapping (Time elapsed 0h:00m:01s; Memory used current: 62MB peak: 63MB)
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:01s; Memory used current: 62MB peak: 63MB)
+
+
+Added 0 Buffers
+Added 5 Cells via replication
+	Added 1 Sequential Cells via replication
+	Added 4 Combinational Cells via replication
+Finished restoring hierarchy (Time elapsed 0h:00m:01s; Memory used current: 62MB peak: 63MB)
+
+Writing Analyst data base C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPMODbyIRQ\synthesis\WuPu.srm
+Finished Writing Netlist Databases (Time elapsed 0h:00m:01s; Memory used current: 62MB peak: 63MB)
+
+Writing EDIF Netlist and constraint files
+E-2010.09A-1
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:02s; Memory used current: 62MB peak: 63MB)
+
+@W: MT420 |Found inferred clock WuPu|clk with period 100.00ns. A user-defined clock should be declared on object "p:clk"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 22 15:50:27 2013
+#
+
+
+Top view:               WuPu
+Library name:           IGLOO
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.85, tree_type = balanced_tree )
+Requested Frequency:    10.0 MHz
+Wire load mode:         top
+Wire load model:        IGLOO
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 29.693
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group              
+----------------------------------------------------------------------------------------------------------------------
+WuPu|clk           10.0 MHz      24.6 MHz      100.000       40.614        29.693     inferred     Inferred_clkgroup_0
+System             10.0 MHz      NA            100.000       NA            NA         system       system_clkgroup    
+======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks              |    rise  to  rise    |    fall  to  fall    |    rise  to  fall    |    fall  to  rise  
+--------------------------------------------------------------------------------------------------------------
+Starting  Ending    |  constraint  slack   |  constraint  slack   |  constraint  slack   |  constraint  slack 
+--------------------------------------------------------------------------------------------------------------
+WuPu|clk  System    |  100.000     98.728  |  No paths    -       |  No paths    -       |  No paths    -     
+WuPu|clk  WuPu|clk  |  100.000     75.310  |  100.000     95.707  |  50.000      30.050  |  50.000      29.693
+==============================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: WuPu|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                     Starting                                              Arrival           
+Instance                             Reference     Type       Pin     Net                  Time        Slack 
+                                     Clock                                                                   
+-------------------------------------------------------------------------------------------------------------
+MoM_unit_0.uC_active_D0              WuPu|clk      DFN0C0     Q       uC_active_D0         0.633       29.693
+MoM_unit_0.uC_active_D1              WuPu|clk      DFN0P0     Q       uC_active_D1_i_0     0.633       29.952
+manchester_encoder_0.symbol_t[4]     WuPu|clk      DFN1C0     Q       symbol_t[4]          0.885       30.050
+manchester_encoder_0.symbol_t[1]     WuPu|clk      DFN1C0     Q       symbol_t[1]          0.885       30.622
+manchester_encoder_0.symbol_t[7]     WuPu|clk      DFN1C0     Q       symbol_t[7]          0.885       30.781
+manchester_encoder_0.symbol_t[0]     WuPu|clk      DFN1C0     Q       symbol_t[0]          0.885       30.844
+manchester_encoder_0.symbol_t[8]     WuPu|clk      DFN1C0     Q       symbol_t[8]          0.885       31.170
+manchester_encoder_0.symbol_t[2]     WuPu|clk      DFN1C0     Q       symbol_t[2]          0.885       31.232
+manchester_encoder_0.symbol_t[6]     WuPu|clk      DFN1C0     Q       symbol_t[6]          0.885       31.512
+manchester_encoder_0.symbol_t[5]     WuPu|clk      DFN1C0     Q       symbol_t[5]          0.885       31.692
+=============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                     Starting                                               Required           
+Instance                             Reference     Type         Pin     Net                 Time         Slack 
+                                     Clock                                                                     
+---------------------------------------------------------------------------------------------------------------
+manchester_encoder_0.symbol_t[7]     WuPu|clk      DFN1C0       D       I_38_0              49.353       29.693
+manchester_encoder_0.symbol_t[8]     WuPu|clk      DFN1C0       D       symbol_t_4[8]       49.353       29.768
+command_process_0.commandRX[0]       WuPu|clk      DFN0E0C0     E       un1_dataclean_1     49.269       30.050
+command_process_0.commandRX[1]       WuPu|clk      DFN0E0C0     E       un1_dataclean_1     49.269       30.050
+command_process_0.commandRX[2]       WuPu|clk      DFN0E0C0     E       un1_dataclean_1     49.269       30.050
+command_process_0.commandRX[3]       WuPu|clk      DFN0E0C0     E       un1_dataclean_1     49.269       30.050
+manchester_encoder_0.symbol_t[6]     WuPu|clk      DFN1C0       D       I_36_0              49.353       30.697
+manchester_encoder_0.symbol_t[4]     WuPu|clk      DFN1C0       D       symbol_t_4[4]       49.353       30.767
+manchester_encoder_0.symbol_t[5]     WuPu|clk      DFN1C0       D       I_33_0              49.353       30.775
+command_process_0.commandRX[1]       WuPu|clk      DFN0E0C0     D       commandRX_3[1]      49.144       30.911
+===============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      50.000
+    - Setup time:                            0.647
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         49.353
+
+    - Propagation time:                      19.660
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     29.693
+
+    Number of logic level(s):                11
+    Starting point:                          MoM_unit_0.uC_active_D0 / Q
+    Ending point:                            manchester_encoder_0.symbol_t[7] / D
+    The start point is clocked by            WuPu|clk [falling] on pin CLK
+    The end   point is clocked by            WuPu|clk [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                         Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+MoM_unit_0.uC_active_D0                      DFN0C0     Q        Out     0.633     0.633       -         
+uC_active_D0                                 Net        -        -       0.464     -           2         
+MoM_unit_0.uC_active_D1_RNI35N1              NOR2       B        In      -         1.096       -         
+MoM_unit_0.uC_active_D1_RNI35N1              NOR2       Y        Out     0.618     1.714       -         
+N_516_li                                     Net        -        -       2.005     -           9         
+MoM_unit_0.state_RNITBC5[4]                  OR3B       C        In      -         3.719       -         
+MoM_unit_0.state_RNITBC5[4]                  OR3B       Y        Out     0.902     4.621       -         
+N_437                                        Net        -        -       0.969     -           3         
+MoM_unit_0.state_RNIPTSD1[4]                 OR2B       B        In      -         5.590       -         
+MoM_unit_0.state_RNIPTSD1[4]                 OR2B       Y        Out     0.754     6.344       -         
+MoM_unit_0_TX_load_0                         Net        -        -       2.664     -           17        
+manchester_encoder_0.sendingMsg_RNI399H3     OR3B       C        In      -         9.008       -         
+manchester_encoder_0.sendingMsg_RNI399H3     OR3B       Y        Out     0.819     9.827       -         
+un5_enable                                   Net        -        -       0.464     -           2         
+manchester_encoder_0.sendingMsg_RNIGL6S4     NOR2A      B        In      -         10.290      -         
+manchester_encoder_0.sendingMsg_RNIGL6S4     NOR2A      Y        Out     0.464     10.754      -         
+Cout_1_sqmuxa                                Net        -        -       0.464     -           2         
+manchester_encoder_0.un1_symbol_t.I_1        AND2       B        In      -         11.217      -         
+manchester_encoder_0.un1_symbol_t.I_1        AND2       Y        Out     0.754     11.971      -         
+DWACT_ADD_CI_0_TMP[0]                        Net        -        -       0.464     -           2         
+manchester_encoder_0.un1_symbol_t.I_40       NOR2B      A        In      -         12.435      -         
+manchester_encoder_0.un1_symbol_t.I_40       NOR2B      Y        Out     0.618     13.053      -         
+DWACT_ADD_CI_0_g_array_1[0]                  Net        -        -       0.969     -           3         
+manchester_encoder_0.un1_symbol_t.I_44       NOR2B      A        In      -         14.022      -         
+manchester_encoder_0.un1_symbol_t.I_44       NOR2B      Y        Out     0.618     14.640      -         
+DWACT_ADD_CI_0_g_array_2[0]                  Net        -        -       1.422     -           4         
+manchester_encoder_0.un1_symbol_t.I_43       NOR2B      A        In      -         16.062      -         
+manchester_encoder_0.un1_symbol_t.I_43       NOR2B      Y        Out     0.618     16.680      -         
+DWACT_ADD_CI_0_g_array_11[0]                 Net        -        -       0.464     -           2         
+manchester_encoder_0.un1_symbol_t.I_50       NOR2B      A        In      -         17.144      -         
+manchester_encoder_0.un1_symbol_t.I_50       NOR2B      Y        Out     0.618     17.762      -         
+DWACT_ADD_CI_0_g_array_12_2[0]               Net        -        -       0.386     -           1         
+manchester_encoder_0.un1_symbol_t.I_38       XOR2       B        In      -         18.148      -         
+manchester_encoder_0.un1_symbol_t.I_38       XOR2       Y        Out     1.125     19.274      -         
+I_38_0                                       Net        -        -       0.386     -           1         
+manchester_encoder_0.symbol_t[7]             DFN1C0     D        In      -         19.660      -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 20.307 is 9.188(45.2%) logic and 11.120(54.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: AGL250V5_VQFP100_Std
+Report for cell WuPu.def_arch
+  Core Cell usage:
+              cell count     area count*area
+              AND2    50      1.0       50.0
+              AND3    16      1.0       16.0
+               AO1     7      1.0        7.0
+              AO1A     7      1.0        7.0
+              AO1B     4      1.0        4.0
+              AO1C     2      1.0        2.0
+              AO1D     5      1.0        5.0
+              AOI1     5      1.0        5.0
+             AOI1B     8      1.0        8.0
+              AX1A     1      1.0        1.0
+              AX1E     2      1.0        2.0
+             AXOI1     1      1.0        1.0
+             AXOI5     1      1.0        1.0
+            CLKINT     2      0.0        0.0
+               GND    15      0.0        0.0
+               INV     6      1.0        6.0
+               MX2    35      1.0       35.0
+              MX2A     1      1.0        1.0
+              MX2B     4      1.0        4.0
+              MX2C     4      1.0        4.0
+              NOR2    33      1.0       33.0
+             NOR2A    61      1.0       61.0
+             NOR2B    53      1.0       53.0
+              NOR3    14      1.0       14.0
+             NOR3A    23      1.0       23.0
+             NOR3B    21      1.0       21.0
+             NOR3C    12      1.0       12.0
+               OA1     6      1.0        6.0
+              OA1A     2      1.0        2.0
+              OA1B    12      1.0       12.0
+              OA1C     2      1.0        2.0
+              OAI1     6      1.0        6.0
+               OR2    45      1.0       45.0
+              OR2A    39      1.0       39.0
+              OR2B    22      1.0       22.0
+               OR3     5      1.0        5.0
+              OR3A     9      1.0        9.0
+              OR3B    17      1.0       17.0
+              OR3C    17      1.0       17.0
+            ULSICC     1      0.0        0.0
+               VCC    15      0.0        0.0
+               XA1     4      1.0        4.0
+              XA1B     3      1.0        3.0
+             XNOR2     4      1.0        4.0
+              XOR2    59      1.0       59.0
+
+
+            DFN0C0     1      1.0        1.0
+          DFN0E0C0     4      1.0        4.0
+            DFN0P0     1      1.0        1.0
+              DFN1     1      1.0        1.0
+            DFN1C0    63      1.0       63.0
+            DFN1C1     3      1.0        3.0
+          DFN1E0C0     1      1.0        1.0
+          DFN1E0P0     1      1.0        1.0
+          DFN1E1C0    73      1.0       73.0
+          DFN1E1C1    24      1.0       24.0
+          DFN1E1P0     7      1.0        7.0
+            DFN1P0     7      1.0        7.0
+              DLN0     1      1.0        1.0
+                   -----          ----------
+             TOTAL   848               815.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     1
+             INBUF     8
+          INBUF_FF     1
+            OUTBUF    19
+                   -----
+             TOTAL    29
+
+
+Core Cells         : 815 of 6144 (13%)
+IO Cells           : 29
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Tue Jan 22 15:50:27 2013
+
+###########################################################]

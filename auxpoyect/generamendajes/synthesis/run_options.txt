@@ -1,0 +1,66 @@
+#-- Synopsys, Inc.
+#-- Version E-2010.09A-1
+#-- Project file C:\Users\Victor\Dropbox\Wakeup Radio\generamendajes\synthesis\run_options.txt
+#-- Written on Thu Jan 03 18:29:38 2013
+
+
+#project files
+add_file -vhdl -lib work "C:/Users/Victor/Dropbox/Wakeup Radio/generamendajes/hdl/controlbloque.vhd"
+add_file -vhdl -lib work "C:/Users/Victor/Dropbox/Wakeup Radio/generamendajes/hdl/detectorflanco.vhd"
+add_file -vhdl -lib work "C:/Users/Victor/Dropbox/Wakeup Radio/generamendajes/hdl/counter.vhd"
+add_file -vhdl -lib work "C:/Users/Victor/Dropbox/Wakeup Radio/generamendajes/hdl/Wupu_pck.vhd"
+add_file -vhdl -lib work "C:/Users/Victor/Dropbox/Wakeup Radio/generamendajes/hdl/manchester_encoder_preamble4WuR.vhd"
+add_file -vhdl -lib work "C:/Users/Victor/Dropbox/Wakeup Radio/generamendajes/component/work/generamensajes/generamensajes.vhd"
+
+
+#implementation: "synthesis"
+impl -add synthesis -type fpga
+
+#device options
+set_option -technology IGLOO
+set_option -part M1AGL600V2
+set_option -package CS281
+set_option -speed_grade Std
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -top_module "work.generamensajes"
+
+# mapper_options
+set_option -frequency 100,0000
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Actel 500K
+set_option -run_prop_extract 1
+set_option -maxfan 24
+set_option -maxfan_hard3 0
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -report_path 0
+set_option -opcond COMWC
+set_option -update_models_cp 0
+set_option -preserve_registers 0
+
+# Actel 500K
+set_option -globalthreshold 50
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./generamensajes.edn"
+impl -active "synthesis"

@@ -1,0 +1,115 @@
+----------------------------------------------------------------------
+Report for cell generamensajes.def_arch
+                                          Cell usage:
+                               cell       count     area    count*area
+                             CLKBUF         1       0.0        0.0
+                             CLKINT         1       0.0        0.0
+                                GND         1       0.0        0.0
+                              INBUF        11       0.0        0.0
+                                OR2         1       1.0        1.0
+                             OUTBUF         8       0.0        0.0
+                                VCC         1       0.0        0.0
+                           contador         1     126.0      126.0
+                            control         1       4.0        4.0
+                     detectorflanco         1      14.0       14.0
+                 manchester_encoder         1     211.0      211.0
+                            
+                         TOTAL             28                356.0
+----------------------------------------------------------------------
+Report for cell contador.netlist
+     Instance path:  contador_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AO1B         3       1.0        3.0
+                               AO1C         3       1.0        3.0
+                               AOI1         1       1.0        1.0
+                              AOI1B         2       1.0        2.0
+                               AX1A         1       1.0        1.0
+                               AX1E         6       1.0        6.0
+                              AXOI5         1       1.0        1.0
+                             DFN1C0        16       1.0       16.0
+                           DFN1E1C0        12       1.0       12.0
+                                GND         1       0.0        0.0
+                               MX2A         1       1.0        1.0
+                               NOR2         8       1.0        8.0
+                              NOR2A         4       1.0        4.0
+                              NOR2B        17       1.0       17.0
+                              NOR3A         1       1.0        1.0
+                              NOR3C         6       1.0        6.0
+                                OA1         1       1.0        1.0
+                               OAI1         2       1.0        2.0
+                                OR2         1       1.0        1.0
+                               OR2A         9       1.0        9.0
+                               OR2B         6       1.0        6.0
+                                OR3         5       1.0        5.0
+                               OR3A         2       1.0        2.0
+                               OR3B         2       1.0        2.0
+                               OR3C         9       1.0        9.0
+                                VCC         1       0.0        0.0
+                                XA1         7       1.0        7.0
+                            
+                         TOTAL            128                126.0
+----------------------------------------------------------------------
+Report for cell detectorflanco.netlist
+     Instance path:  detectorflanco_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                             DFN1C0         5       1.0        5.0
+                           DFN1E1C0         1       1.0        1.0
+                                GND         1       0.0        0.0
+                                MX2         3       1.0        3.0
+                              NOR3A         1       1.0        1.0
+                               OR2A         1       1.0        1.0
+                               OR2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                              XNOR2         1       1.0        1.0
+                               XOR2         1       1.0        1.0
+                            
+                         TOTAL             16                 14.0
+----------------------------------------------------------------------
+Report for cell manchester_encoder.netlist
+     Instance path:  manchester_encoder_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        12       1.0       12.0
+                                AO1         5       1.0        5.0
+                               AO1C         1       1.0        1.0
+                               AOI1         1       1.0        1.0
+                           DFI1E1C0         1       1.0        1.0
+                             DFN1C0        15       1.0       15.0
+                           DFN1E0C0         1       1.0        1.0
+                           DFN1E1C0        43       1.0       43.0
+                             DFN1P0         2       1.0        2.0
+                                GND         1       0.0        0.0
+                                MX2        34       1.0       34.0
+                               MX2B         2       1.0        2.0
+                               NOR2         6       1.0        6.0
+                              NOR2A        12       1.0       12.0
+                              NOR2B        16       1.0       16.0
+                              NOR3B         4       1.0        4.0
+                              NOR3C         3       1.0        3.0
+                                OA1         1       1.0        1.0
+                                OR2        14       1.0       14.0
+                               OR2A         6       1.0        6.0
+                               OR2B         1       1.0        1.0
+                               OR3A         1       1.0        1.0
+                               OR3B         1       1.0        1.0
+                               OR3C         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XOR2        26       1.0       26.0
+                            
+                         TOTAL            213                211.0
+----------------------------------------------------------------------
+Report for cell control.netlist
+     Instance path:  control_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                AO1         1       1.0        1.0
+                               AO1A         1       1.0        1.0
+                             CLKINT         1       0.0        0.0
+                           DFN1E1C0         2       1.0        2.0
+                                GND         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              7                  4.0

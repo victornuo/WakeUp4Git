@@ -1,0 +1,33 @@
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\ZBControl_IRQs.vhd":119:96:119:101|Signal wd_irq in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\ZBControl_IRQs.vhd":167:32:167:35|Signal rstn in the sensitivity list is not used in the process
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\ringO_cnt\ringO_cnt.vhd":48:12:48:17|Component declarations with different initial values are not supported.  Port clk of component dfn1c0 may have been given a different initial value in two different component declarations
+@W: CL168 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\ringO_cnt\ringO_cnt.vhd":84:4:84:13|Pruning instance U_AND2_0_1 -- not in use ... 
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\component\work\PerformanceMeasure\PerformanceMeasure.vhd":66:10:66:17|Component declarations with different initial values are not supported.  Port clk of component dfn1e1c0 may have been given a different initial value in two different component declarations
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\CuentaEnvios\CuentaEnvios.vhd":27:12:27:19|Component declarations with different initial values are not supported.  Port clk of component dfn1e1c0 may have been given a different initial value in two different component declarations
+@W: CL168 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\CuentaEnvios\CuentaEnvios.vhd":84:4:84:13|Pruning instance U_AND2_0_1 -- not in use ... 
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":159:48:159:58|Signal commandtype in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":160:78:160:81|Signal rstn in the sensitivity list is not used in the process
+@W: CG296 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":159:20:159:26|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":176:7:176:21|Referenced variable uc_commandready is not in sensitivity list
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":238:58:238:64|Signal rx_port in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":238:83:238:99|Signal contentionexpired in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":238:102:238:116|Signal channelfreetime in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":238:119:238:122|Signal rstn in the sensitivity list is not used in the process
+@W: CG296 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":238:16:238:22|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":307:6:307:26|Referenced variable contentiontimeexpired is not in sensitivity list
+@W: CG290 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":269:59:269:73|Referenced variable rx_commandready is not in sensitivity list
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":83:7:83:17|Signal channelfree is undriven 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":84:7:84:23|Signal contentionexpired is undriven 
+@W: CL240 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd":84:7:84:23|ContentionExpired is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\manchesterDecoder_0toStart_v5.vhd":58:7:58:23|Signal rst_error_counter is undriven 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\manchesterDecoder_0toStart_v5.vhd":60:7:60:20|Signal enable_freqref is undriven 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\manchesterDecoder_0toStart_v5.vhd":64:7:64:14|Signal rx_error is undriven 
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd":41:10:41:13|Component declarations with different initial values are not supported.  Port b of component and2 may have been given a different initial value in two different component declarations
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\common\vhdl\FlashFreeze_Filter.vhd":27:11:27:14|Component declarations with different initial values are not supported.  Port b of component and2 may have been given a different initial value in two different component declarations
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\common\vhdl\FlashFreeze_FSM.vhd":52:12:52:23|Signal flash_freeze in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\common\vhdl\FlashFreeze_FSM.vhd":130:12:130:25|OTHERS clause is not synthesized 
+@W: CL159 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\adressingDataTestbed.vhd":20:1:20:3|Input clk is unused
+@W: CL159 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\adressingDataTestbed.vhd":21:1:21:4|Input rstn is unused
+@W: CL159 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\PM_ProcessFlagGen.vhd":28:1:28:7|Input clearPF is unused
+@W: CL159 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\ZBControl_IRQs.vhd":19:1:19:6|Input WD_IRQ is unused
+

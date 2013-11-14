@@ -1,0 +1,411 @@
+Synopsys Actel Technology Mapper, Version mapact, Build 729R, Built Jun 20 2012 09:20:46
+Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version F-2012.03M-SP1 
+
+Mapper Startup Complete (Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF258 |Gated clock conversion disabled 
+@N: MF547 |Generated clock conversion disabled 
+
+Design Input Complete (Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Mapper Initialization Complete (Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+
+Starting Optimization and Mapping (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Removing sequential instance addressingData_0.addressload of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_filter.vhd":64:3:64:23|Net FFctrl_0.FFctrl_wrapper_inst.U0.Primary_Filter_Instance.clock_to_user_logic_temp appears to be an unidentified clock source. Assuming default frequency. 
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+@N:"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\command_process_preamble.vhd":601:2:601:3|Found counter in view:work.command_process(rtl) inst bitCounter[2:0]
+Encoding state machine state[0:9] (netlist:statemachine)
+original code -> new code
+   0000000001 -> 0000000001
+   0000000010 -> 0000000010
+   0000000100 -> 0000000100
+   0000001000 -> 0000001000
+   0000010000 -> 0000010000
+   0000100000 -> 0000100000
+   0001000000 -> 0001000000
+   0010000000 -> 0010000000
+   0100000000 -> 0100000000
+   1000000000 -> 1000000000
+Encoding state machine ff_current_state[0:5] (netlist:statemachine)
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+@N:"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\manchester_encoder.vhd":230:8:230:9|Found counter in view:work.manchester_encoder(rtl) inst bit_count[2:0]
+@N:"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\manchesterencoder_ctrl.vhd":263:2:263:3|Found counter in view:work.manchester_encoder_ctrl(rtl) inst cuentaEnvios[2:0]
+Encoding state machine state[0:6] (netlist:statemachine)
+original code -> new code
+   0000001 -> 0000001
+   0000010 -> 0000010
+   0000100 -> 0000100
+   0001000 -> 0001000
+   0010000 -> 0010000
+   0100000 -> 0100000
+   1000000 -> 1000000
+@W: MO160 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\manchesterencoder_ctrl.vhd":53:1:53:2|Register bit command2send[3] is always 0, optimizing ...
+@W: MO160 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\manchesterencoder_ctrl.vhd":53:1:53:2|Register bit command2send[2] is always 0, optimizing ...
+@N:"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\freq_ref_preamble.vhd":28:8:28:9|Found counter in view:work.frec_ref(def_arch) inst q[6:0]
+@W: MO160 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":166:6:166:7|Register bit state[0] is always 0, optimizing ...
+@W: MO160 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":166:6:166:7|Register bit state[1] is always 0, optimizing ...
+@W: MO160 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":166:6:166:7|Register bit state[2] is always 0, optimizing ...
+@W: MO160 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":166:6:166:7|Register bit state[5] is always 0, optimizing ...
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[9] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[8] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[7] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[6] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[5] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[4] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[3] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[2] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[1] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":619:2:619:3|Removing sequential instance Contention_int[0] of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN115 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":632:24:632:41|Removing instance un1_Contention_int of view:VhdlGenLib.ADD__const_cin_w10(fbk) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":605:2:605:3|Removing sequential instance ContentionExpired of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":155:2:155:3|Removing sequential instance ZB_active_D1 of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":155:2:155:3|Removing sequential instance ZB_active_D0 of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":114:2:114:3|Removing sequential instance ZB_ACK_reg of view:PrimLib.dffr(prim) in hierarchy view:work.MoM_unit(rtl) because there are no references to its outputs 
+@A: BN291 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\mom_unit_preamble.vhd":114:2:114:3|Boundary register ZB_ACK_reg packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+Encoding state machine state[0:3] (netlist:statemachine)
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@W: MO161 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\manchesterencoder_ctrl.vhd":81:2:81:13|Register bit state[6] is always 1, optimizing ...
+@W: MO160 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":113:12:113:39|Register bit ff_current_state[1] is always 0, optimizing ...
+@W: MO160 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":63:6:63:7|Register bit trigger_ulsicc is always 0, optimizing ...
+@W: MO197 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":122:12:122:37|FSM register ff_current_state[0] removed due to constant propagation
+@W: MO161 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":63:6:63:7|Register bit control_user_clock is always 1, optimizing ...
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Removing sequential instance addressingData_0.NodeAddress_1[3] of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@A: BN291 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Boundary register addressingData_0.NodeAddress_1[3] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Removing sequential instance addressingData_0.NodeAddress_1[2] of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@A: BN291 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Boundary register addressingData_0.NodeAddress_1[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Removing sequential instance addressingData_0.NodeAddress_1[1] of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@A: BN291 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Boundary register addressingData_0.NodeAddress_1[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\manchesterdecoder_preamble.vhd":118:0:118:1|Removing sequential instance md_v3_0.done_hk of view:PrimLib.dffs(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\manchesterencoder_ctrl.vhd":53:1:53:2|Removing sequential instance manchester_encoder_ctrl_0.command2send[1] of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_filter.vhd":56:3:56:24|Removing sequential instance FFctrl_0.FFctrl_wrapper_inst.U0.GEN1\.GEN2\.0\.seconday_filter_instance.Latch_For_Clock_Gating of view:IGLOO.DLN0(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_filter.vhd":48:3:48:27|Removing sequential instance FFctrl_0.FFctrl_wrapper_inst.U0.GEN1\.GEN2\.0\.seconday_filter_instance.Register_For_Clock_Gating of view:IGLOO.DFN1(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":100:12:100:37|Removing sequential instance FFctrl_0.FFctrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[2] of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":92:12:92:43|Removing sequential instance FFctrl_0.FFctrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[3] of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":85:12:85:32|Removing sequential instance FFctrl_0.FFctrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[4] of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":75:12:75:29|Removing sequential instance FFctrl_0.FFctrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[5] of view:PrimLib.dffs(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":63:6:63:7|Removing sequential instance FFctrl_0.FFctrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_fsm.vhd":63:6:63:7|Removing sequential instance FFctrl_0.FFctrl_wrapper_inst.U0.FlashFreeze_FSM_inst.Flash_Freeze_reg of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Removing sequential instance addressingData_0.NextHopAddress_1[1] of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@A: BN291 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Boundary register addressingData_0.NextHopAddress_1[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Removing sequential instance addressingData_0.NextHopAddress_1[3] of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+@A: BN291 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\hdl\adressingdata.vhd":31:2:31:3|Boundary register addressingData_0.NextHopAddress_1[3] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                              Fanout, notes                 
+--------------------------------------------------------------------------------------
+md_v3_0.new_data / Y                                    19                            
+ZBWatchDog_0.U_U_AND3_0_to_8 / Y                        19                            
+ZBControl_0.WD_CLR_i_0 / Y                              27 : 27 asynchronous set/reset
+md_v3_0.Enable_decoder / Q                              17                            
+manchester_encoder_ctrl_0.loadEncoder_i_a3_0_a3 / Y     15                            
+INBUF_0 / Y                                             84 : 82 asynchronous set/reset
+======================================================================================
+
+@N: FP130 |Promoting Net RESETZB_c on CLKINT  I_36 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+Replicating Combinational Instance manchester_encoder_ctrl_0.loadEncoder_i_a3_0_a3, fanout 15 segments 2
+Replicating Sequential Instance md_v3_0.Enable_decoder, fanout 17 segments 2
+Replicating Combinational Instance ZBControl_0.WD_CLR_i_0, fanout 27 segments 3
+Replicating Combinational Instance ZBWatchDog_0.U_U_AND3_0_to_8, fanout 19 segments 2
+Replicating Combinational Instance md_v3_0.new_data, fanout 19 segments 2
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+
+Added 0 Buffers
+Added 6 Cells via replication
+	Added 1 Sequential Cells via replication
+	Added 5 Combinational Cells via replication
+@N: BN115 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\wupu30kgates\smartgen\common\vhdl\flashfreeze_managment.vhd":63:3:63:22|Removing instance FlashFreeze_FSM_inst of view:work.FlashFreeze_FSM(netlist) because there are no references to its outputs 
+
+Finished restoring hierarchy (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+Writing Analyst data base C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\synthesis\WuPu.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+Writing EDIF Netlist and constraint files
+F-2012.03M-SP1 
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+@W: MT420 |Found inferred clock WuPu|clk with period 1000.00ns. Please declare a user-defined clock on object "p:clk"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Feb 28 19:29:50 2013
+#
+
+
+Top view:               WuPu
+Library name:           IGLOO
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.85, tree_type = balanced_tree )
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Wire load model:        IGLOO
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 492.664
+
+                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------
+WuPu|clk           1.0 MHz       58.4 MHz      1000.000      17.120        492.664     inferred     Inferred_clkgroup_0
+=======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks              |    rise  to  rise     |    fall  to  fall     |    rise  to  fall     |    fall  to  rise   
+------------------------------------------------------------------------------------------------------------------
+Starting  Ending    |  constraint  slack    |  constraint  slack    |  constraint  slack    |  constraint  slack  
+------------------------------------------------------------------------------------------------------------------
+WuPu|clk  WuPu|clk  |  1000.000    982.880  |  1000.000    997.390  |  500.000     492.665  |  500.000     494.262
+==================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: WuPu|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                   Starting                                                              Arrival            
+Instance                           Reference     Type         Pin     Net                                Time        Slack  
+                                   Clock                                                                                    
+----------------------------------------------------------------------------------------------------------------------------
+md_v3_0.shift_data                 WuPu|clk      DFN1E1C0     Q       shift_data                         0.885       492.664
+md_v3_0.mdi0                       WuPu|clk      DFN1C0       Q       mdi0                               0.885       492.932
+command_process_0.state[2]         WuPu|clk      DFN1C0       Q       state[2]                           0.885       493.402
+command_process_0.state[3]         WuPu|clk      DFN1P0       Q       state_i_0[3]                       0.885       494.137
+command_process_0.commandRX[1]     WuPu|clk      DFN0E0C0     Q       commandRX[1]                       0.785       494.262
+command_process_0.commandRX[0]     WuPu|clk      DFN0E0C0     Q       commandRX[0]                       0.785       494.375
+command_process_0.state[5]         WuPu|clk      DFN1C0       Q       state[5]                           0.885       494.433
+command_process_0.commandRX[2]     WuPu|clk      DFN0E0C0     Q       command_process_0_msgType_0[0]     0.785       494.767
+command_process_0.state[4]         WuPu|clk      DFN1E1C0     Q       state[4]                           0.885       495.078
+command_process_0.commandRX[3]     WuPu|clk      DFN0E0C0     Q       command_process_0_msgType_0[1]     0.633       495.210
+============================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                   Starting                                                  Required            
+Instance                                                                           Reference     Type         Pin     Net                    Time         Slack  
+                                                                                   Clock                                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+command_process_0.commandRX[0]                                                     WuPu|clk      DFN0E0C0     E       un1_dataclean_1        499.269      492.664
+command_process_0.commandRX[1]                                                     WuPu|clk      DFN0E0C0     E       un1_dataclean_1        499.269      492.664
+command_process_0.commandRX[2]                                                     WuPu|clk      DFN0E0C0     E       un1_dataclean_1        499.269      492.664
+command_process_0.commandRX[3]                                                     WuPu|clk      DFN0E0C0     E       un1_dataclean_1        499.269      492.664
+command_process_0.reg_command_error                                                WuPu|clk      DFN1E1C0     D       N_18                   499.353      494.262
+command_process_0.reg_short_command                                                WuPu|clk      DFN1E1C0     D       N_15                   499.353      494.874
+command_process_0.reg_long_command                                                 WuPu|clk      DFN1E1C0     D       reg_long_command_2     499.394      495.308
+command_process_0.commandRX[0]                                                     WuPu|clk      DFN0E0C0     D       mdi2_i                 499.144      495.552
+FFctrl_0.FFctrl_wrapper_inst.U0.Primary_Filter_Instance.Latch_For_Clock_Gating     WuPu|clk      DLN0         D       stop_stage_one         499.096      497.824
+manchester_encoder_0.symbol_t[7]                                                   WuPu|clk      DFN1C0       D       symbol_t_4[7]          999.353      982.880
+=================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      500.000
+    - Setup time:                            0.731
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         499.269
+
+    - Propagation time:                      6.605
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     492.665
+
+    Number of logic level(s):                2
+    Starting point:                          md_v3_0.shift_data / Q
+    Ending point:                            command_process_0.commandRX[0] / E
+    The start point is clocked by            WuPu|clk [rising] on pin CLK
+    The end   point is clocked by            WuPu|clk [falling] on pin CLK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                    Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+md_v3_0.shift_data                      DFN1E1C0     Q        Out     0.885     0.885       -         
+shift_data                              Net          -        -       0.969     -           3         
+md_v3_0.mdi0_RNIF1JF                    NOR2A        B        In      -         1.854       -         
+md_v3_0.mdi0_RNIF1JF                    NOR2A        Y        Out     0.489     2.343       -         
+md_v3_0_new_data_0                      Net          -        -       2.053     -           10        
+command_process_0.state_RNI19R72[4]     AO1B         C        In      -         4.396       -         
+command_process_0.state_RNI19R72[4]     AO1B         Y        Out     0.787     5.183       -         
+un1_dataclean_1                         Net          -        -       1.422     -           4         
+command_process_0.commandRX[0]          DFN0E0C0     E        In      -         6.605       -         
+======================================================================================================
+Total path delay (propagation time + setup) of 7.335 is 2.892(39.4%) logic and 4.444(60.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: AGL030V5_VQFP100_STD
+Report for cell WuPu.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2    39      1.0       39.0
+              AND3    17      1.0       17.0
+               AO1     9      1.0        9.0
+              AO1A     5      1.0        5.0
+              AO1B     4      1.0        4.0
+              AO1C     1      1.0        1.0
+              AOI1     1      1.0        1.0
+             AOI1B     1      1.0        1.0
+              AX1A     1      1.0        1.0
+            CLKINT     2      0.0        0.0
+               GND    13      0.0        0.0
+               INV     7      1.0        7.0
+               MX2     2      1.0        2.0
+              MX2B     8      1.0        8.0
+              MX2C     1      1.0        1.0
+              NOR2     6      1.0        6.0
+             NOR2A    33      1.0       33.0
+             NOR2B    20      1.0       20.0
+              NOR3     5      1.0        5.0
+             NOR3A     5      1.0        5.0
+             NOR3B     8      1.0        8.0
+             NOR3C     5      1.0        5.0
+               OA1     3      1.0        3.0
+              OA1A     1      1.0        1.0
+              OA1B     1      1.0        1.0
+              OA1C     4      1.0        4.0
+              OAI1     1      1.0        1.0
+               OR2     9      1.0        9.0
+              OR2A    11      1.0       11.0
+              OR2B     2      1.0        2.0
+               OR3     5      1.0        5.0
+              OR3A     2      1.0        2.0
+              OR3B     3      1.0        3.0
+              OR3C     2      1.0        2.0
+               VCC    13      0.0        0.0
+               XA1     1      1.0        1.0
+              XA1B     1      1.0        1.0
+              XA1C     1      1.0        1.0
+              XAI1     2      1.0        2.0
+             XNOR2     1      1.0        1.0
+               XO1     1      1.0        1.0
+              XO1A     2      1.0        2.0
+              XOR2    35      1.0       35.0
+
+
+          DFN0E0C0     4      1.0        4.0
+              DFN1     1      1.0        1.0
+            DFN1C0    28      1.0       28.0
+            DFN1C1     3      1.0        3.0
+          DFN1E0P0     2      1.0        2.0
+          DFN1E1C0    30      1.0       30.0
+          DFN1E1C1    24      1.0       24.0
+          DFN1E1P0     3      1.0        3.0
+            DFN1P0    16      1.0       16.0
+              DLN0     1      1.0        1.0
+                   -----          ----------
+             TOTAL   406               378.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     1
+             INBUF     4
+          INBUF_FF     1
+            OUTBUF    18
+                   -----
+             TOTAL    24
+
+
+Core Cells         : 378 of 768 (49%)
+IO Cells           : 24
+Mapper successful!
+
+At Mapper Exit (Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 57MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Feb 28 19:29:50 2013
+
+###########################################################]

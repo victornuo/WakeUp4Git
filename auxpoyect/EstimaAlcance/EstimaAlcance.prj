@@ -1,0 +1,477 @@
+KEY LIBERO "9.1"
+KEY CAPTURE "9.1.3.4"
+KEY DEFAULT_IMPORT_LOC "C:\Users\Victor\Documents\Cookies\wake_up_radio\WupPreamble\component\work\ZBHandler"
+KEY DEFAULT_OPEN_LOC "C:\Users\Victor\Documents\Libero Projects\controlFFTest\hdl"
+KEY ProjectID "c6dc5278-59b4-4ff1-b9cc-0d37ee95aa09"
+KEY HDLTechnology "VHDL"
+KEY VendorTechnology_Family "IGLOO"
+KEY VendorTechnology_Die "IS4X4M1LP"
+KEY VendorTechnology_Package "vq100"
+KEY ProjectLocation "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\EstimaAlcance"
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "WuPu::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\work\WuPu\testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1359544259"
+SIZE="2316"
+PARENT="<project>\component\work\WuPu\WuPu.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\WuPu\WuPu.cxf,actgen_cxf"
+STATE="utd"
+TIME="1359544259"
+SIZE="3774"
+ENDFILE
+VALUE "<project>\component\work\WuPu\WuPu.pdc,pdc"
+STATE="utd"
+TIME="1359544259"
+SIZE="4760"
+PARENT="<project>\component\work\WuPu\WuPu.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideDESIGNER"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\WuPu\WuPu.vhd,hdl"
+STATE="utd"
+TIME="1359544259"
+SIZE="4514"
+PARENT="<project>\component\work\WuPu\WuPu.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\designer\impl1\EstimaAlcance.pdb,pdb"
+STATE="utd"
+TIME="1358880209"
+SIZE="56832"
+ENDFILE
+VALUE "<project>\designer\impl1\WuPu.adb,adb"
+STATE="ood"
+TIME="1359544716"
+SIZE="250880"
+ENDFILE
+VALUE "<project>\designer\impl1\WuPu.pdb,pdb"
+STATE="utd"
+TIME="1359544508"
+SIZE="56832"
+ENDFILE
+VALUE "<project>\designer\impl1\WuPu_1_fp\WuPu.pro,pro"
+STATE="utd"
+TIME="1358962081"
+SIZE="2068"
+ENDFILE
+VALUE "<project>\designer\impl1\WuPu_1_fp_1\WuPu.pro,pro"
+STATE="utd"
+TIME="1359039301"
+SIZE="2072"
+ENDFILE
+VALUE "<project>\designer\impl1\WuPu_1_fp_2\WuPu.pro,pro"
+STATE="utd"
+TIME="1359045541"
+SIZE="2260"
+ENDFILE
+VALUE "<project>\designer\impl1\WuPu_fp\WuPu.pro,pro"
+STATE="utd"
+TIME="1358880286"
+SIZE="2064"
+ENDFILE
+VALUE "<project>\hdl\adressingData.vhd,hdl"
+STATE="utd"
+TIME="1340893708"
+SIZE="1752"
+ENDFILE
+VALUE "<project>\hdl\ASCII_pck.vhd,hdl"
+STATE="utd"
+TIME="1350469183"
+SIZE="3423"
+ENDFILE
+VALUE "<project>\hdl\Command_Process_preamble.vhd,hdl"
+STATE="utd"
+TIME="1357240551"
+SIZE="16441"
+ENDFILE
+VALUE "<project>\hdl\freq_ref_preamble.vhd,hdl"
+STATE="utd"
+TIME="1339078728"
+SIZE="954"
+ENDFILE
+VALUE "<project>\hdl\housekeepingCheck.vhd,hdl"
+STATE="utd"
+TIME="1340645163"
+SIZE="1161"
+ENDFILE
+VALUE "<project>\hdl\manchesterDecoder_preamble.vhd,hdl"
+STATE="utd"
+TIME="1359125183"
+SIZE="6624"
+ENDFILE
+VALUE "<project>\hdl\manchester_encoder_preamble4WuR.vhd,hdl"
+STATE="utd"
+TIME="1357234211"
+SIZE="6509"
+ENDFILE
+VALUE "<project>\hdl\Mom_unit_preamble.vhd,hdl"
+STATE="utd"
+TIME="1355761391"
+SIZE="24294"
+ENDFILE
+VALUE "<project>\hdl\Wupu_pck.vhd,hdl"
+STATE="utd"
+TIME="1359544245"
+SIZE="1679"
+ENDFILE
+VALUE "<project>\hdl\ZBControl_IRQs.vhd,hdl"
+STATE="utd"
+TIME="1354016492"
+SIZE="9637"
+ENDFILE
+VALUE "<project>\smartgen\common\vhdl\FlashFreeze_Filter.vhd,hdl"
+STATE="utd"
+TIME="1359127511"
+SIZE="1846"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\common\vhdl\FlashFreeze_FSM.vhd,hdl"
+STATE="utd"
+TIME="1359127511"
+SIZE="4548"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\common\vhdl\FlashFreeze_Managment.vhd,hdl"
+STATE="utd"
+TIME="1359127511"
+SIZE="3491"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\IOreg\IOreg.cxf,actgen_cxf"
+STATE="utd"
+TIME="1359477679"
+SIZE="1466"
+ENDFILE
+VALUE "<project>\smartgen\IOreg\IOreg.gen,gen"
+STATE="utd"
+TIME="1359477678"
+SIZE="600"
+PARENT="<project>\smartgen\IOreg\IOreg.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\IOreg\IOreg.log,log"
+STATE="utd"
+TIME="1359477679"
+SIZE="1794"
+PARENT="<project>\smartgen\IOreg\IOreg.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\IOreg\IOreg.vhd,hdl"
+STATE="utd"
+TIME="1359477679"
+SIZE="1581"
+PARENT="<project>\smartgen\IOreg\IOreg.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf,actgen_cxf"
+STATE="utd"
+TIME="1359127511"
+SIZE="2635"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement.gen,gen"
+STATE="utd"
+TIME="1359127511"
+SIZE="369"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement.log,log"
+STATE="utd"
+TIME="1359127511"
+SIZE="303"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement.vhd,hdl"
+STATE="utd"
+TIME="1359127511"
+SIZE="2774"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\LowPowerManagement\LowPowerManagement_wrapper.vhd,hdl"
+STATE="utd"
+TIME="1359127511"
+SIZE="2491"
+PARENT="<project>\smartgen\LowPowerManagement\LowPowerManagement.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\register_reg\register_reg.cxf,actgen_cxf"
+STATE="utd"
+TIME="1353597808"
+SIZE="1494"
+ENDFILE
+VALUE "<project>\smartgen\register_reg\register_reg.gen,gen"
+STATE="utd"
+TIME="1353597806"
+SIZE="596"
+PARENT="<project>\smartgen\register_reg\register_reg.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\register_reg\register_reg.log,log"
+STATE="utd"
+TIME="1353597808"
+SIZE="1804"
+PARENT="<project>\smartgen\register_reg\register_reg.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\register_reg\register_reg.vhd,hdl"
+STATE="utd"
+TIME="1353597808"
+SIZE="1598"
+PARENT="<project>\smartgen\register_reg\register_reg.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ShiftEnab\ShiftEnab.cxf,actgen_cxf"
+STATE="utd"
+TIME="1358879777"
+SIZE="1489"
+ENDFILE
+VALUE "<project>\smartgen\ShiftEnab\ShiftEnab.gen,gen"
+STATE="utd"
+TIME="1358879777"
+SIZE="596"
+PARENT="<project>\smartgen\ShiftEnab\ShiftEnab.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ShiftEnab\ShiftEnab.log,log"
+STATE="utd"
+TIME="1358879777"
+SIZE="1674"
+PARENT="<project>\smartgen\ShiftEnab\ShiftEnab.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ShiftEnab\ShiftEnab.vhd,hdl"
+STATE="utd"
+TIME="1358879777"
+SIZE="1550"
+PARENT="<project>\smartgen\ShiftEnab\ShiftEnab.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ZBWatchDog\ZBWatchDog.cxf,actgen_cxf"
+STATE="utd"
+TIME="1354016124"
+SIZE="1650"
+ENDFILE
+VALUE "<project>\smartgen\ZBWatchDog\ZBWatchDog.gen,gen"
+STATE="utd"
+TIME="1354016123"
+SIZE="678"
+PARENT="<project>\smartgen\ZBWatchDog\ZBWatchDog.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ZBWatchDog\ZBWatchDog.log,log"
+STATE="utd"
+TIME="1354016124"
+SIZE="2056"
+PARENT="<project>\smartgen\ZBWatchDog\ZBWatchDog.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ZBWatchDog\ZBWatchDog.vhd,hdl"
+STATE="utd"
+TIME="1354016124"
+SIZE="15424"
+PARENT="<project>\smartgen\ZBWatchDog\ZBWatchDog.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\stimulus\dormir_ctrl_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1311862844"
+SIZE="1549"
+ENDFILE
+VALUE "<project>\stimulus\FF_MoM_Encoder_AddresData_testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1315477441"
+SIZE="8581"
+ENDFILE
+VALUE "<project>\stimulus\MoM_Encoder_AddresData_testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1340122529"
+SIZE="7555"
+ENDFILE
+VALUE "<project>\stimulus\TB_manchester_enc_preamble.vhd,tb_hdl"
+STATE="utd"
+TIME="1340037206"
+SIZE="3410"
+ENDFILE
+VALUE "<project>\stimulus\TB_MoM_Unit_Pre.vhd,tb_hdl"
+STATE="utd"
+TIME="1340119741"
+SIZE="6864"
+ENDFILE
+VALUE "<project>\stimulus\TB_Pre_global.vhd,tb_hdl"
+STATE="utd"
+TIME="1340207260"
+SIZE="8543"
+ENDFILE
+VALUE "<project>\stimulus\TB_Pre_global_UART.vhd,tb_hdl"
+STATE="utd"
+TIME="1340721936"
+SIZE="8907"
+ENDFILE
+VALUE "<project>\stimulus\testbecnh_decoder_commandprocessor_preamble.vhd,tb_hdl"
+STATE="utd"
+TIME="1357212872"
+SIZE="6067"
+ENDFILE
+VALUE "<project>\stimulus\testbench_ZBControler.vhd,tb_hdl"
+STATE="utd"
+TIME="1340811829"
+SIZE="3628"
+ENDFILE
+VALUE "<project>\stimulus\WuPu_2R2ACK_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1327428052"
+SIZE="10679"
+ENDFILE
+VALUE "<project>\synthesis\WuPu.edn,syn_edn"
+STATE="utd"
+TIME="1359544267"
+SIZE="120914"
+ENDFILE
+VALUE "<project>\synthesis\WuPu_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1359544267"
+SIZE="375"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "WuPu::work"
+FILE "<project>\component\work\WuPu\WuPu.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\WuPu\testbench.vhd,tb_hdl"
+VALUE "<project>\component\work\WuPu\WuPu.pdc,pdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\WuPu.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+LIST WuPu
+VALUE "<project>\component\work\WuPu\testbench.vhd,tb_hdl"
+VALUE "<project>\component\work\WuPu\WuPu.pdc,pdc"
+ENDLIST
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1ps
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DumpVCD=false
+VCDFileName=power.vcd
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=C:/Actel/Libero_v9.1/Designer/lib/modelsim/precompiled/vhdl/igloo
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateViewDrawIni=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+GenerateHDLFromSchematic=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="Synplify AE"
+FUNCTION="Synthesis"
+TOOL="Synplify"
+LOCATION="C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="ModelSim AE"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Actel\Libero_v9.1\Model\win32acoem\modelsim.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="WFL"
+FUNCTION="Stimulus"
+TOOL="WFL"
+LOCATION="syncad.exe"
+PARAM="-pwflite"
+BATCH=0
+EndProfile
+NAME="FlashPro"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Actel\Libero_v9.1\Designer\bin\FlashPro.exe"
+PARAM=""
+BATCH=0
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "WuPu::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\WuPu.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+DESIGNFLOW:
+SD:WuPu::work
+ACTIVE_VIEW:1
+ENDLIST

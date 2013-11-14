@@ -1,0 +1,766 @@
+Synopsys Actel Technology Mapper, Version mapact, Build 729R, Built Jun 20 2012 09:47:40
+Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version F-2012.03M-SP1 
+
+Mapper Startup Complete (Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF258 |Gated clock conversion disabled 
+@N: MF547 |Generated clock conversion disabled 
+
+Design Input Complete (Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+
+Mapper Initialization Complete (Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+
+
+Starting Optimization and Mapping (Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+Warning: Found 1 combinational loops!
+@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\zbcntrlunittest\component\work\ringoscillator\ringoscillator.vhd":367:0:367:6|Found combinational loop during mapping at net RingOscillator_0.NAND2_0_Y
+1) instance RingOscillator_0.NAND2_0 (netlist:NAND2), output net "RingOscillator_0.NAND2_0_Y" in work.ZBCONTROLER_IRQs(rtl)
+    net        RingOscillator_0.NAND2_0_Y
+    input  pin RingOscillator_0.AO14_0/C
+    instance   RingOscillator_0.AO14_0 (cell AO14)
+    output pin RingOscillator_0.AO14_0/Y
+    net        RingOscillator_0.AO14_0_Y
+    input  pin RingOscillator_0.AO14_1/C
+    instance   RingOscillator_0.AO14_1 (cell AO14)
+    output pin RingOscillator_0.AO14_1/Y
+    net        RingOscillator_0.AO14_1_Y
+    input  pin RingOscillator_0.AO14_2/C
+    instance   RingOscillator_0.AO14_2 (cell AO14)
+    output pin RingOscillator_0.AO14_2/Y
+    net        RingOscillator_0.AO14_2_Y
+    input  pin RingOscillator_0.AO14_12/C
+    instance   RingOscillator_0.AO14_12 (cell AO14)
+    output pin RingOscillator_0.AO14_12/Y
+    net        RingOscillator_0.AO14_12_Y
+    input  pin RingOscillator_0.AO14_13/C
+    instance   RingOscillator_0.AO14_13 (cell AO14)
+    output pin RingOscillator_0.AO14_13/Y
+    net        RingOscillator_0.AO14_13_Y
+    input  pin RingOscillator_0.AO14_16/C
+    instance   RingOscillator_0.AO14_16 (cell AO14)
+    output pin RingOscillator_0.AO14_16/Y
+    net        RingOscillator_0.AO14_16_Y
+    input  pin RingOscillator_0.AO14_3/C
+    instance   RingOscillator_0.AO14_3 (cell AO14)
+    output pin RingOscillator_0.AO14_3/Y
+    net        RingOscillator_0.AO14_3_Y
+    input  pin RingOscillator_0.AO14_4/C
+    instance   RingOscillator_0.AO14_4 (cell AO14)
+    output pin RingOscillator_0.AO14_4/Y
+    net        RingOscillator_0.AO14_4_Y
+    input  pin RingOscillator_0.AO14_5/C
+    instance   RingOscillator_0.AO14_5 (cell AO14)
+    output pin RingOscillator_0.AO14_5/Y
+    net        RingOscillator_0.AO14_5_Y
+    input  pin RingOscillator_0.AO14_17/C
+    instance   RingOscillator_0.AO14_17 (cell AO14)
+    output pin RingOscillator_0.AO14_17/Y
+    net        RingOscillator_0.AO14_17_Y
+    input  pin RingOscillator_0.AO14_18/C
+    instance   RingOscillator_0.AO14_18 (cell AO14)
+    output pin RingOscillator_0.AO14_18/Y
+    net        RingOscillator_0.AO14_18_Y
+    input  pin RingOscillator_0.AO14_19/C
+    instance   RingOscillator_0.AO14_19 (cell AO14)
+    output pin RingOscillator_0.AO14_19/Y
+    net        RingOscillator_0.AO14_19_Y
+    input  pin RingOscillator_0.AO14_6/C
+    instance   RingOscillator_0.AO14_6 (cell AO14)
+    output pin RingOscillator_0.AO14_6/Y
+    net        RingOscillator_0.AO14_6_Y
+    input  pin RingOscillator_0.AO14_7/C
+    instance   RingOscillator_0.AO14_7 (cell AO14)
+    output pin RingOscillator_0.AO14_7/Y
+    net        RingOscillator_0.AO14_7_Y
+    input  pin RingOscillator_0.AO14_8/C
+    instance   RingOscillator_0.AO14_8 (cell AO14)
+    output pin RingOscillator_0.AO14_8/Y
+    net        RingOscillator_0.AO14_8_Y
+    input  pin RingOscillator_0.AO14_20/C
+    instance   RingOscillator_0.AO14_20 (cell AO14)
+    output pin RingOscillator_0.AO14_20/Y
+    net        RingOscillator_0.AO14_20_Y
+    input  pin RingOscillator_0.AO14_21/C
+    instance   RingOscillator_0.AO14_21 (cell AO14)
+    output pin RingOscillator_0.AO14_21/Y
+    net        RingOscillator_0.AO14_21_Y
+    input  pin RingOscillator_0.AO14_22/C
+    instance   RingOscillator_0.AO14_22 (cell AO14)
+    output pin RingOscillator_0.AO14_22/Y
+    net        RingOscillator_0.AO14_22_Y
+    input  pin RingOscillator_0.AO14_9/C
+    instance   RingOscillator_0.AO14_9 (cell AO14)
+    output pin RingOscillator_0.AO14_9/Y
+    net        RingOscillator_0.AO14_9_Y
+    input  pin RingOscillator_0.AO14_10/C
+    instance   RingOscillator_0.AO14_10 (cell AO14)
+    output pin RingOscillator_0.AO14_10/Y
+    net        RingOscillator_0.AO14_10_Y
+    input  pin RingOscillator_0.AO14_11/C
+    instance   RingOscillator_0.AO14_11 (cell AO14)
+    output pin RingOscillator_0.AO14_11/Y
+    net        RingOscillator_0.AO14_11_Y
+    input  pin RingOscillator_0.AO14_23/C
+    instance   RingOscillator_0.AO14_23 (cell AO14)
+    output pin RingOscillator_0.AO14_23/Y
+    net        RingOscillator_0.AO14_23_Y
+    input  pin RingOscillator_0.AO14_14/C
+    instance   RingOscillator_0.AO14_14 (cell AO14)
+    output pin RingOscillator_0.AO14_14/Y
+    net        RingOscillator_0.AO14_14_Y
+    input  pin RingOscillator_0.AO14_15/C
+    instance   RingOscillator_0.AO14_15 (cell AO14)
+    output pin RingOscillator_0.AO14_15/Y
+    net        RingOscillator_0.AO14_15_Y
+    input  pin RingOscillator_0.NAND2_0/B
+    instance   RingOscillator_0.NAND2_0 (cell NAND2)
+    output pin RingOscillator_0.NAND2_0/Y
+    net        RingOscillator_0.NAND2_0_Y
+End of loops
+@W: MT462 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\zbcntrlunittest\smartgen\common\vhdl\flashfreeze_filter.vhd":64:3:64:23|Net FFCtrl_0.FFCtrl_wrapper_inst.U0.Primary_Filter_Instance.clock_to_user_logic_temp appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\zbcntrlunittest\component\work\ringoscillator\ringoscillator.vhd":277:0:277:6|Net RingOscillator_0.AO14_15_Y appears to be an unidentified clock source. Assuming default frequency. 
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+Encoding state machine ff_current_state[0:5] (netlist:statemachine)
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+Encoding state machine state[0:3] (netlist:statemachine)
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+@N: BN362 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\zbcntrlunittest\smartgen\common\vhdl\flashfreeze_filter.vhd":56:3:56:24|Removing sequential instance FFCtrl_0.FFCtrl_wrapper_inst.U0.GEN1\.GEN2\.0\.seconday_filter_instance.Latch_For_Clock_Gating of view:IGLOO.DLN0(prim) in hierarchy view:work.ZBCONTROLER_IRQs(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\zbcntrlunittest\smartgen\common\vhdl\flashfreeze_filter.vhd":48:3:48:27|Removing sequential instance FFCtrl_0.FFCtrl_wrapper_inst.U0.GEN1\.GEN2\.0\.seconday_filter_instance.Register_For_Clock_Gating of view:IGLOO.DFN1(prim) in hierarchy view:work.ZBCONTROLER_IRQs(rtl) because there are no references to its outputs 
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+@N: FP130 |Promoting Net RingOscillator_0_CLK_OUT on CLKINT  RingOscillator_0.ringO_cnt_0.RingOscillator_0_CLK_OUT_inferred_clock 
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+Writing Analyst data base C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\ZBCntrlUnitTest\synthesis\ZBCONTROLER_IRQs.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+Writing EDIF Netlist and constraint files
+F-2012.03M-SP1 
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+Warning: Found 1 combinational loops!
+@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\zbcntrlunittest\component\work\ringoscillator\ringoscillator.vhd":277:0:277:6|Found combinational loop during mapping at net RingOscillator_0.AO14_15_Y
+1) instance AO14_15 (netlist:AO14), output net "AO14_15_Y" in work.RingOscillator(netlist)
+    net        RingOscillator_0.AO14_15_Y
+    input  pin RingOscillator_0.NAND2_0/B
+    instance   RingOscillator_0.NAND2_0 (cell NAND2)
+    output pin RingOscillator_0.NAND2_0/Y
+    net        RingOscillator_0.NAND2_0_Y
+    input  pin RingOscillator_0.AO14_0/C
+    instance   RingOscillator_0.AO14_0 (cell AO14)
+    output pin RingOscillator_0.AO14_0/Y
+    net        RingOscillator_0.AO14_0_Y
+    input  pin RingOscillator_0.AO14_1/C
+    instance   RingOscillator_0.AO14_1 (cell AO14)
+    output pin RingOscillator_0.AO14_1/Y
+    net        RingOscillator_0.AO14_1_Y
+    input  pin RingOscillator_0.AO14_2/C
+    instance   RingOscillator_0.AO14_2 (cell AO14)
+    output pin RingOscillator_0.AO14_2/Y
+    net        RingOscillator_0.AO14_2_Y
+    input  pin RingOscillator_0.AO14_12/C
+    instance   RingOscillator_0.AO14_12 (cell AO14)
+    output pin RingOscillator_0.AO14_12/Y
+    net        RingOscillator_0.AO14_12_Y
+    input  pin RingOscillator_0.AO14_13/C
+    instance   RingOscillator_0.AO14_13 (cell AO14)
+    output pin RingOscillator_0.AO14_13/Y
+    net        RingOscillator_0.AO14_13_Y
+    input  pin RingOscillator_0.AO14_16/C
+    instance   RingOscillator_0.AO14_16 (cell AO14)
+    output pin RingOscillator_0.AO14_16/Y
+    net        RingOscillator_0.AO14_16_Y
+    input  pin RingOscillator_0.AO14_3/C
+    instance   RingOscillator_0.AO14_3 (cell AO14)
+    output pin RingOscillator_0.AO14_3/Y
+    net        RingOscillator_0.AO14_3_Y
+    input  pin RingOscillator_0.AO14_4/C
+    instance   RingOscillator_0.AO14_4 (cell AO14)
+    output pin RingOscillator_0.AO14_4/Y
+    net        RingOscillator_0.AO14_4_Y
+    input  pin RingOscillator_0.AO14_5/C
+    instance   RingOscillator_0.AO14_5 (cell AO14)
+    output pin RingOscillator_0.AO14_5/Y
+    net        RingOscillator_0.AO14_5_Y
+    input  pin RingOscillator_0.AO14_17/C
+    instance   RingOscillator_0.AO14_17 (cell AO14)
+    output pin RingOscillator_0.AO14_17/Y
+    net        RingOscillator_0.AO14_17_Y
+    input  pin RingOscillator_0.AO14_18/C
+    instance   RingOscillator_0.AO14_18 (cell AO14)
+    output pin RingOscillator_0.AO14_18/Y
+    net        RingOscillator_0.AO14_18_Y
+    input  pin RingOscillator_0.AO14_19/C
+    instance   RingOscillator_0.AO14_19 (cell AO14)
+    output pin RingOscillator_0.AO14_19/Y
+    net        RingOscillator_0.AO14_19_Y
+    input  pin RingOscillator_0.AO14_6/C
+    instance   RingOscillator_0.AO14_6 (cell AO14)
+    output pin RingOscillator_0.AO14_6/Y
+    net        RingOscillator_0.AO14_6_Y
+    input  pin RingOscillator_0.AO14_7/C
+    instance   RingOscillator_0.AO14_7 (cell AO14)
+    output pin RingOscillator_0.AO14_7/Y
+    net        RingOscillator_0.AO14_7_Y
+    input  pin RingOscillator_0.AO14_8/C
+    instance   RingOscillator_0.AO14_8 (cell AO14)
+    output pin RingOscillator_0.AO14_8/Y
+    net        RingOscillator_0.AO14_8_Y
+    input  pin RingOscillator_0.AO14_20/C
+    instance   RingOscillator_0.AO14_20 (cell AO14)
+    output pin RingOscillator_0.AO14_20/Y
+    net        RingOscillator_0.AO14_20_Y
+    input  pin RingOscillator_0.AO14_21/C
+    instance   RingOscillator_0.AO14_21 (cell AO14)
+    output pin RingOscillator_0.AO14_21/Y
+    net        RingOscillator_0.AO14_21_Y
+    input  pin RingOscillator_0.AO14_22/C
+    instance   RingOscillator_0.AO14_22 (cell AO14)
+    output pin RingOscillator_0.AO14_22/Y
+    net        RingOscillator_0.AO14_22_Y
+    input  pin RingOscillator_0.AO14_9/C
+    instance   RingOscillator_0.AO14_9 (cell AO14)
+    output pin RingOscillator_0.AO14_9/Y
+    net        RingOscillator_0.AO14_9_Y
+    input  pin RingOscillator_0.AO14_10/C
+    instance   RingOscillator_0.AO14_10 (cell AO14)
+    output pin RingOscillator_0.AO14_10/Y
+    net        RingOscillator_0.AO14_10_Y
+    input  pin RingOscillator_0.AO14_11/C
+    instance   RingOscillator_0.AO14_11 (cell AO14)
+    output pin RingOscillator_0.AO14_11/Y
+    net        RingOscillator_0.AO14_11_Y
+    input  pin RingOscillator_0.AO14_23/C
+    instance   RingOscillator_0.AO14_23 (cell AO14)
+    output pin RingOscillator_0.AO14_23/Y
+    net        RingOscillator_0.AO14_23_Y
+    input  pin RingOscillator_0.AO14_14/C
+    instance   RingOscillator_0.AO14_14 (cell AO14)
+    output pin RingOscillator_0.AO14_14/Y
+    net        RingOscillator_0.AO14_14_Y
+    input  pin RingOscillator_0.AO14_15/C
+    instance   RingOscillator_0.AO14_15 (cell AO14)
+    output pin RingOscillator_0.AO14_15/Y
+    net        RingOscillator_0.AO14_15_Y
+End of loops
+@W: MT420 |Found inferred clock ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:RingOscillator_0_CLK_OUT"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Jun 14 16:50:57 2013
+#
+
+
+Top view:               ZBCONTROLER_IRQs
+Library name:           IGLOO
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.85, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        IGLOO
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.752
+
+                                                      Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                                        Frequency     Frequency     Period        Period        Slack      Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     100.0 MHz     93.0 MHz      10.000        10.752        -0.752     inferred     Inferred_clkgroup_0
+System                                                100.0 MHz     182.8 MHz     10.000        5.471         4.529      system       system_clkgroup    
+=========================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                           Ending                                             |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                             System                                             |  10.000      4.529   |  No paths    -      |  No paths    -      |  No paths    -    
+ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock  System                                             |  10.000      8.728   |  No paths    -      |  No paths    -      |  No paths    -    
+ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock  |  10.000      -0.752  |  No paths    -      |  5.000       2.824  |  No paths    -    
+=============================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                      Starting                                                                                                  Arrival           
+Instance                                                                              Reference                                             Type         Pin     Net                            Time        Slack 
+                                                                                      Clock                                                                                                                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ZBControl_0.state[1]                                                                  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1P0       Q       state[1]                       0.885       -0.752
+DFN1_0                                                                                ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1         Q       DFN1_0_Q                       0.885       0.178 
+ZBControl_0.state[0]                                                                  ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1P0       Q       state[0]                       0.697       0.873 
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.Flash_Freeze_reg                 ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1P0       Q       Flash_Freeze_reg_i_0           0.885       2.458 
+FFCtrl_0.FFCtrl_wrapper_inst.U0.Primary_Filter_Instance.Register_For_Clock_Gating     ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1         Q       stop_stage_one                 0.885       2.824 
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request             ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1E1C0     Q       FFCtrl_0_Wait_Housekeeping     0.885       3.769 
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[2]              ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1C0       Q       ff_current_state[2]            0.885       4.041 
+ZBControl_0.commandTypeIN                                                             ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1E1P0     Q       commandTypeIN                  0.885       4.529 
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[1]              ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1C0       Q       ff_current_state[1]            0.885       4.926 
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[3]              ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1C0       Q       ff_current_state[3]            0.885       5.306 
+==================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                   Starting                                                                                                         Required           
+Instance                                                                           Reference                                             Type         Pin     Net                                   Time         Slack 
+                                                                                   Clock                                                                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request          ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1E1C0     E       un1_housekeeping_request_0_sqmuxa     9.269        -0.752
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[1]           ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1C0       D       ff_current_state_ns[4]                9.353        -0.624
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.control_user_clock            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1E1P0     E       N_58                                  9.269        -0.459
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[2]           ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1C0       D       ff_current_state_ns[3]                9.311        1.105 
+DFN1_0                                                                             ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1         D       AND2_0_Y                              9.353        2.046 
+ZBControl_0.state[0]                                                               ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1P0       D       state_ns[0]                           9.311        2.692 
+FFCtrl_0.FFCtrl_wrapper_inst.U0.Primary_Filter_Instance.Latch_For_Clock_Gating     ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DLN0         D       stop_stage_one                        4.096        2.824 
+ZBControl_0.state[1]                                                               ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1P0       D       state_RNO[1]                          9.311        2.863 
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request          ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1E1C0     D       housekeeping_request_0_sqmuxa         9.395        4.953 
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[5]           ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock     DFN1P0       D       ff_current_state_RNO[5]               9.353        5.128 
+=======================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.731
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.269
+
+    - Propagation time:                      10.021
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.752
+
+    Number of logic level(s):                5
+    Starting point:                          ZBControl_0.state[1] / Q
+    Ending point:                            FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request / E
+    The start point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ZBControl_0.state[1]                                                                 DFN1P0       Q        Out     0.885     0.885       -         
+state[1]                                                                             Net          -        -       2.134     -           11        
+ZBControl_0.state_RNIIRJK[1]                                                         NOR3A        A        In      -         3.019       -         
+ZBControl_0.state_RNIIRJK[1]                                                         NOR3A        Y        Out     0.770     3.790       -         
+N_34                                                                                 Net          -        -       0.386     -           1         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B         A        In      -         4.176       -         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B         Y        Out     0.783     4.959       -         
+ZBControl_0_d_hk                                                                     Net          -        -       0.969     -           3         
+AND2_2                                                                               AND2         A        In      -         5.928       -         
+AND2_2                                                                               AND2         Y        Out     0.618     6.546       -         
+AND2_2_Y                                                                             Net          -        -       0.464     -           2         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B        B        In      -         7.010       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B        Y        Out     0.754     7.764       -         
+N_65                                                                                 Net          -        -       0.969     -           3         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request_RNO        OR3          C        In      -         8.732       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request_RNO        OR3          Y        Out     0.902     9.634       -         
+un1_housekeeping_request_0_sqmuxa                                                    Net          -        -       0.386     -           1         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request            DFN1E1C0     E        In      -         10.021      -         
+===================================================================================================================================================
+Total path delay (propagation time + setup) of 10.752 is 5.444(50.6%) logic and 5.308(49.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.522
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.478
+
+    - Propagation time:                      10.180
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.702
+
+    Number of logic level(s):                5
+    Starting point:                          ZBControl_0.state[1] / Q
+    Ending point:                            FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request / E
+    The start point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ZBControl_0.state[1]                                                                 DFN1P0       Q        Out     0.885     0.885       -         
+state[1]                                                                             Net          -        -       2.134     -           11        
+ZBControl_0.state_RNI08KF[1]                                                         NOR2         B        In      -         3.019       -         
+ZBControl_0.state_RNI08KF[1]                                                         NOR2         Y        Out     0.777     3.796       -         
+N_29                                                                                 Net          -        -       0.386     -           1         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B         B        In      -         4.183       -         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B         Y        Out     1.182     5.364       -         
+ZBControl_0_d_hk                                                                     Net          -        -       0.969     -           3         
+AND2_2                                                                               AND2         A        In      -         6.333       -         
+AND2_2                                                                               AND2         Y        Out     0.587     6.920       -         
+AND2_2_Y                                                                             Net          -        -       0.464     -           2         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B        B        In      -         7.384       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B        Y        Out     0.620     8.004       -         
+N_65                                                                                 Net          -        -       0.969     -           3         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request_RNO        OR3          C        In      -         8.973       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request_RNO        OR3          Y        Out     0.821     9.793       -         
+un1_housekeeping_request_0_sqmuxa                                                    Net          -        -       0.386     -           1         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request            DFN1E1C0     E        In      -         10.180      -         
+===================================================================================================================================================
+Total path delay (propagation time + setup) of 10.702 is 5.393(50.4%) logic and 5.308(49.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.647
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.353
+
+    - Propagation time:                      9.977
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.624
+
+    Number of logic level(s):                5
+    Starting point:                          ZBControl_0.state[1] / Q
+    Ending point:                            FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[1] / D
+    The start point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ZBControl_0.state[1]                                                                 DFN1P0     Q        Out     0.885     0.885       -         
+state[1]                                                                             Net        -        -       2.134     -           11        
+ZBControl_0.state_RNI08KF[1]                                                         NOR2       B        In      -         3.019       -         
+ZBControl_0.state_RNI08KF[1]                                                         NOR2       Y        Out     0.777     3.796       -         
+N_29                                                                                 Net        -        -       0.386     -           1         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B       B        In      -         4.183       -         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B       Y        Out     1.182     5.364       -         
+ZBControl_0_d_hk                                                                     Net        -        -       0.969     -           3         
+AND2_2                                                                               AND2       A        In      -         6.333       -         
+AND2_2                                                                               AND2       Y        Out     0.587     6.920       -         
+AND2_2_Y                                                                             Net        -        -       0.464     -           2         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B      B        In      -         7.384       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B      Y        Out     0.620     8.004       -         
+N_65                                                                                 Net        -        -       0.969     -           3         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNO[1]         OR2        B        In      -         8.973       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNO[1]         OR2        Y        Out     0.618     9.591       -         
+ff_current_state_ns[4]                                                               Net        -        -       0.386     -           1         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[1]             DFN1C0     D        In      -         9.977       -         
+=================================================================================================================================================
+Total path delay (propagation time + setup) of 10.624 is 5.316(50.0%) logic and 5.308(50.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.689
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.311
+
+    - Propagation time:                      9.896
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.585
+
+    Number of logic level(s):                5
+    Starting point:                          ZBControl_0.state[1] / Q
+    Ending point:                            FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[1] / D
+    The start point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                                 Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ZBControl_0.state[1]                                                                 DFN1P0     Q        Out     0.885     0.885       -         
+state[1]                                                                             Net        -        -       2.134     -           11        
+ZBControl_0.state_RNIIRJK[1]                                                         NOR3A      A        In      -         3.019       -         
+ZBControl_0.state_RNIIRJK[1]                                                         NOR3A      Y        Out     0.770     3.790       -         
+N_34                                                                                 Net        -        -       0.386     -           1         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B       A        In      -         4.176       -         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B       Y        Out     0.783     4.959       -         
+ZBControl_0_d_hk                                                                     Net        -        -       0.969     -           3         
+AND2_2                                                                               AND2       A        In      -         5.928       -         
+AND2_2                                                                               AND2       Y        Out     0.618     6.546       -         
+AND2_2_Y                                                                             Net        -        -       0.464     -           2         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B      B        In      -         7.010       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B      Y        Out     0.754     7.764       -         
+N_65                                                                                 Net        -        -       0.969     -           3         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNO[1]         OR2        B        In      -         8.732       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNO[1]         OR2        Y        Out     0.777     9.509       -         
+ff_current_state_ns[4]                                                               Net        -        -       0.386     -           1         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state[1]             DFN1C0     D        In      -         9.896       -         
+=================================================================================================================================================
+Total path delay (propagation time + setup) of 10.585 is 5.277(49.9%) logic and 5.308(50.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.731
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.269
+
+    - Propagation time:                      9.729
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.459
+
+    Number of logic level(s):                5
+    Starting point:                          ZBControl_0.state[1] / Q
+    Ending point:                            FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.control_user_clock / E
+    The start point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            ringO_cnt|RingOscillator_0_CLK_OUT_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ZBControl_0.state[1]                                                                 DFN1P0       Q        Out     0.885     0.885       -         
+state[1]                                                                             Net          -        -       2.134     -           11        
+ZBControl_0.state_RNIIRJK[1]                                                         NOR3A        A        In      -         3.019       -         
+ZBControl_0.state_RNIIRJK[1]                                                         NOR3A        Y        Out     0.770     3.790       -         
+N_34                                                                                 Net          -        -       0.386     -           1         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B         A        In      -         4.176       -         
+ZBControl_0.state_RNITOPE1[0]                                                        OA1B         Y        Out     0.783     4.959       -         
+ZBControl_0_d_hk                                                                     Net          -        -       0.969     -           3         
+AND2_2                                                                               AND2         A        In      -         5.928       -         
+AND2_2                                                                               AND2         Y        Out     0.618     6.546       -         
+AND2_2_Y                                                                             Net          -        -       0.464     -           2         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B        B        In      -         7.010       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.ff_current_state_RNI97NU[2]     NOR2B        Y        Out     0.754     7.764       -         
+N_65                                                                                 Net          -        -       0.969     -           3         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.control_user_clock_RNO          OR2          A        In      -         8.732       -         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.control_user_clock_RNO          OR2          Y        Out     0.610     9.342       -         
+N_58                                                                                 Net          -        -       0.386     -           1         
+FFCtrl_0.FFCtrl_wrapper_inst.U0.FlashFreeze_FSM_inst.control_user_clock              DFN1E1P0     E        In      -         9.729       -         
+===================================================================================================================================================
+Total path delay (propagation time + setup) of 10.459 is 5.151(49.2%) logic and 5.308(50.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                               Starting                                                          Arrival          
+Instance                                       Reference     Type         Pin     Net                            Time        Slack
+                                               Clock                                                                              
+----------------------------------------------------------------------------------------------------------------------------------
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0       System        DFN1C0       Q       Q_net_0[0]                     0.885       4.529
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1     System        DFN1E1C0     Q       Q_net_0[1]                     0.885       4.847
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_3     System        DFN1E1C0     Q       RingOscillator_0_CLK_OUT_i     0.885       5.625
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2       System        DFN1C0       Q       Q_net_0[2]                     0.885       6.763
+==================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                               Starting                                          Required          
+Instance                                       Reference     Type         Pin     Net            Time         Slack
+                                               Clock                                                               
+-------------------------------------------------------------------------------------------------------------------
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2       System        DFN1C0       D       XOR2_0_Y       9.353        4.529
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_3     System        DFN1E1C0     E       NU_0_1_2       9.269        6.018
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0       System        DFN1C0       D       INV_1_Y        9.353        6.049
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1     System        DFN1E1C0     D       INV_2_Y        9.353        6.503
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1     System        DFN1E1C0     E       Q_net_0[0]     9.269        6.962
+===================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.647
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         9.353
+
+    - Propagation time:                      4.824
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 4.529
+
+    Number of logic level(s):                2
+    Starting point:                          RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0 / Q
+    Ending point:                            RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2 / D
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            System [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                         Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0     DFN1C0     Q        Out     0.885     0.885       -         
+Q_net_0[0]                                   Net        -        -       1.422     -           4         
+RingOscillator_0.ringO_cnt_0.AND2_0          AND2       A        In      -         2.307       -         
+RingOscillator_0.ringO_cnt_0.AND2_0          AND2       Y        Out     0.618     2.925       -         
+AND2_0_Y                                     Net        -        -       0.386     -           1         
+RingOscillator_0.ringO_cnt_0.XOR2_0          XOR2       B        In      -         3.312       -         
+RingOscillator_0.ringO_cnt_0.XOR2_0          XOR2       Y        Out     1.125     4.437       -         
+XOR2_0_Y                                     Net        -        -       0.386     -           1         
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2     DFN1C0     D        In      -         4.824       -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 5.471 is 3.276(59.9%) logic and 2.195(40.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: AGL250V5_VQFP100_STD
+Report for cell ZBCONTROLER_IRQs.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2     4      1.0        4.0
+              AND3     1      1.0        1.0
+              AO14    24      1.0       24.0
+              AO1A     1      1.0        1.0
+              AO1D     1      1.0        1.0
+              AOI1     2      1.0        2.0
+            CLKINT     2      0.0        0.0
+               GND     9      0.0        0.0
+               INV     4      1.0        4.0
+               MX2     1      1.0        1.0
+             NAND2     1      1.0        1.0
+              NOR2     1      1.0        1.0
+             NOR2B     7      1.0        7.0
+              NOR3     2      1.0        2.0
+             NOR3A     5      1.0        5.0
+             NOR3B     2      1.0        2.0
+              OA1B     2      1.0        2.0
+               OR2     4      1.0        4.0
+              OR2A     2      1.0        2.0
+               OR3     3      1.0        3.0
+            ULSICC     1      0.0        0.0
+               VCC     9      0.0        0.0
+              XOR2     1      1.0        1.0
+
+
+              DFN1     2      1.0        2.0
+            DFN1C0     6      1.0        6.0
+          DFN1E1C0     4      1.0        4.0
+          DFN1E1P0     2      1.0        2.0
+            DFN1P0     5      1.0        5.0
+              DLN0     1      1.0        1.0
+                   -----          ----------
+             TOTAL   109                88.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     5
+          INBUF_FF     1
+            OUTBUF     6
+                   -----
+             TOTAL    12
+
+
+Core Cells         : 88 of 6144 (1%)
+IO Cells           : 12
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 101MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun 14 16:50:57 2013
+
+###########################################################]

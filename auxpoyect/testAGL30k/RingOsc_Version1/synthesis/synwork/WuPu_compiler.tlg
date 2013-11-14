@@ -1,0 +1,60 @@
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\component\work\WuPu\WuPu.vhd":17:7:17:10|Synthesizing work.wupu.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\component\work\RingOscillator\RingOscillator.vhd":17:7:17:20|Synthesizing work.ringoscillator.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\ringO_cnt\ringO_cnt.vhd":8:7:8:15|Synthesizing work.ringo_cnt.def_arch 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":13:10:13:13|Synthesizing igloo.and2.syn_black_box 
+Post processing for igloo.and2.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1472:10:1472:17|Synthesizing igloo.dfn1e1c0.syn_black_box 
+Post processing for igloo.dfn1e1c0.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":37:10:37:13|Synthesizing igloo.and3.syn_black_box 
+Post processing for igloo.and3.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1934:10:1934:12|Synthesizing igloo.inv.syn_black_box 
+Post processing for igloo.inv.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1388:10:1388:15|Synthesizing igloo.dfn1c0.syn_black_box 
+Post processing for igloo.dfn1c0.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":2817:10:2817:13|Synthesizing igloo.xor2.syn_black_box 
+Post processing for igloo.xor2.syn_black_box
+Post processing for work.ringo_cnt.def_arch
+@W: CL168 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\ringO_cnt\ringO_cnt.vhd":119:4:119:13|Pruning instance U_AND2_3_4 -- not in use ... 
+@W: CL168 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\ringO_cnt\ringO_cnt.vhd":89:4:89:13|Pruning instance U_AND2_0_1 -- not in use ... 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":2032:10:2032:14|Synthesizing igloo.nand2.syn_black_box 
+Post processing for igloo.nand2.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":235:10:235:13|Synthesizing igloo.aoi5.syn_black_box 
+Post processing for igloo.aoi5.syn_black_box
+Post processing for work.ringoscillator.rtl
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1793:10:1793:14|Synthesizing igloo.inbuf.syn_black_box 
+Post processing for igloo.inbuf.syn_black_box
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\FF\FF.vhd":8:7:8:11|Synthesizing work.ff.def_arch 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1787:10:1787:12|Synthesizing igloo.gnd.syn_black_box 
+Post processing for igloo.gnd.syn_black_box
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\FF\FF_wrapper.vhd":35:7:35:16|Synthesizing work.ff_wrapper.def_arch 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\common\vhdl\FlashFreeze_Managment.vhd":8:7:8:27|Synthesizing work.flashfreeze_managment.trans 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\common\vhdl\FlashFreeze_Filter.vhd":7:7:7:24|Synthesizing work.flashfreeze_filter.trans 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":2858:10:2858:15|Synthesizing igloo.clkint.syn_black_box 
+Post processing for igloo.clkint.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1667:10:1667:13|Synthesizing igloo.dln0.syn_black_box 
+Post processing for igloo.dln0.syn_black_box
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":1379:10:1379:13|Synthesizing igloo.dfn1.syn_black_box 
+Post processing for igloo.dfn1.syn_black_box
+Post processing for work.flashfreeze_filter.trans
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\common\vhdl\FlashFreeze_FSM.vhd":6:7:6:21|Synthesizing work.flashfreeze_fsm.trans 
+@N: CD234 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\common\vhdl\FlashFreeze_FSM.vhd":43:16:43:17|Using user defined encoding for type state_type
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\common\vhdl\FlashFreeze_FSM.vhd":52:12:52:23|Signal flash_freeze in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\common\vhdl\FlashFreeze_FSM.vhd":130:12:130:25|OTHERS clause is not synthesized 
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":3669:10:3669:15|Synthesizing igloo.ulsicc.syn_black_box 
+Post processing for igloo.ulsicc.syn_black_box
+Post processing for work.flashfreeze_fsm.trans
+Post processing for work.flashfreeze_managment.trans
+Post processing for work.ff_wrapper.def_arch
+@N: CD630 :"C:\Microsemi\Libero_v11.1\Synopsys\synplify_H201303M1\lib\proasic\igloo.vhd":3843:10:3843:17|Synthesizing igloo.inbuf_ff.syn_black_box 
+Post processing for igloo.inbuf_ff.syn_black_box
+Post processing for work.ff.def_arch
+Post processing for work.wupu.rtl
+@N: CL201 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version1\smartgen\common\vhdl\FlashFreeze_FSM.vhd":63:6:63:7|Trying to extract state machine for register ff_current_state
+Extracted state machine for register ff_current_state
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101

@@ -1,0 +1,103 @@
+%%% protect protected_file
+#OPTIONS:"|-prodtype|synplify_pro|-top|work.WuPu|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\bin\\c_vhdl.exe":1340008694
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\location.map":1340021840
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\std.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\snps_haps_pkg.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\std1164.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\numeric.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\umr_capim.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\arith.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\unsigned.vhd":1340008994
+1 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\Wupu_pck.vhd"
+2 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\adressingData.vhd"
+3 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\Command_Process_preamble.vhd"
+4 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\housekeepingCheck.vhd"
+5 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\smartgen\common\vhdl\FlashFreeze_FSM.vhd"
+6 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\smartgen\common\vhdl\FlashFreeze_Filter.vhd"
+7 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\smartgen\common\vhdl\FlashFreeze_Managment.vhd"
+8 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\smartgen\LowPowerManagement\LowPowerManagement_wrapper.vhd"
+9 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\smartgen\LowPowerManagement\LowPowerManagement.vhd"
+10 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\manchester_encoder.vhd"
+11 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\ManchesterEncoder_ctrl.vhd"
+12 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\freq_ref_preamble.vhd"
+13 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\manchesterDecoder_preamble.vhd"
+14 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\Mom_unit_preamble.vhd"
+15 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\ASCII_pck.vhd"
+16 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\hdl\ZBControl_IRQs.vhd"
+17 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\smartgen\ZBWatchDog\ZBWatchDog.vhd"
+18 "C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\component\work\WuPu\WuPu.vhd"
+
+# Dependency Lists (Uses list)
+1 -1
+2 1 
+3 1 
+4 -1
+5 -1
+6 -1
+7 5 6 
+8 7 
+9 8 
+10 1 
+11 1 
+12 -1
+13 12 1 
+14 1 
+15 -1
+16 15 
+17 -1
+18 2 3 4 9 10 11 13 14 16 17 
+
+# Dependency Lists (Users Of)
+1 14 13 11 10 3 2 
+2 18 
+3 18 
+4 18 
+5 7 
+6 7 
+7 8 
+8 9 
+9 18 
+10 18 
+11 18 
+12 13 
+13 18 
+14 18 
+15 16 
+16 18 
+17 18 
+18 -1
+
+# Design Unit to File Association
+arch work addressingdata symplified 2
+module work addressingdata 2
+arch work command_process rtl 3
+module work command_process 3
+arch work housekeepingcheck def_arch 4
+module work housekeepingcheck 4
+arch work flashfreeze_fsm trans 5
+module work flashfreeze_fsm 5
+arch work flashfreeze_filter trans 6
+module work flashfreeze_filter 6
+arch work flashfreeze_managment trans 7
+module work flashfreeze_managment 7
+arch work lowpowermanagement_wrapper def_arch 8
+module work lowpowermanagement_wrapper 8
+arch work lowpowermanagement def_arch 9
+module work lowpowermanagement 9
+arch work manchester_encoder rtl 10
+module work manchester_encoder 10
+arch work manchester_encoder_ctrl rtl 11
+module work manchester_encoder_ctrl 11
+arch work frec_ref def_arch 12
+module work frec_ref 12
+arch work md_v3 v1 13
+module work md_v3 13
+arch work mom_unit rtl 14
+module work mom_unit 14
+arch work zbcontrol symplified 16
+module work zbcontrol 16
+arch work zbwatchdog def_arch 17
+module work zbwatchdog 17
+arch work wupu rtl 18
+module work wupu 18

@@ -1,0 +1,2 @@
+vhdl isim_temp "manchester_enc.vhd"
+vhdl isim_temp "TB_manchester_enc.vhd"

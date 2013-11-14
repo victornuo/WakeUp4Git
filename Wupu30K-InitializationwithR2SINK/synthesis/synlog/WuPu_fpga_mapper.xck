@@ -1,0 +1,3 @@
+CKID0001:@|S:LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.Primary_Filter_Instance.Gate_For_Clock_Gating@|E:ZBControl_0.state[1]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001
+CKID0002:@|S:RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_3@|E:InintialMsgInjector_0.aux5@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002
+CKID0003:@|S:RingOscillator_0.AO14_15@|E:RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003

@@ -1,0 +1,4 @@
+@W: CL168 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version0_Reset_mod0\smartgen\ringO_cnt\ringO_cnt.vhd":84:4:84:13|Pruning instance U_AND2_0_1 -- not in use ... 
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version0_Reset_mod0\smartgen\common\vhdl\FlashFreeze_FSM.vhd":52:12:52:23|Signal flash_freeze in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version0_Reset_mod0\smartgen\common\vhdl\FlashFreeze_FSM.vhd":130:12:130:25|OTHERS clause is not synthesized 
+

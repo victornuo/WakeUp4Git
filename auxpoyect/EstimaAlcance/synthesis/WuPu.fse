@@ -1,0 +1,40 @@
+
+fsm_encoding {1636631} onehot
+
+fsm_state_encoding {1636631} wait_on_ff {000001}
+
+fsm_state_encoding {1636631} persistent_ff {000010}
+
+fsm_state_encoding {1636631} house_keep_to_user_logic {000100}
+
+fsm_state_encoding {1636631} stop_clock_to_user {001000}
+
+fsm_state_encoding {1636631} trigger_ulsicc_state {010000}
+
+fsm_state_encoding {1636631} turn_on_user_clock {100000}
+
+fsm_registers {1636631} {ff_current_state[0]}  {ff_current_state[1]}  {ff_current_state[2]}  {ff_current_state[3]}  {ff_current_state[4]}  {ff_current_state[5]} 
+
+fsm_encoding {1417821782} onehot
+
+fsm_state_encoding {1417821782} nodata {0000000001}
+
+fsm_state_encoding {1417821782} first_header {0000000010}
+
+fsm_state_encoding {1417821782} second_header {0000000100}
+
+fsm_state_encoding {1417821782} third_header {0000001000}
+
+fsm_state_encoding {1417821782} last_header {0000010000}
+
+fsm_state_encoding {1417821782} first_command {0000100000}
+
+fsm_state_encoding {1417821782} second_command {0001000000}
+
+fsm_state_encoding {1417821782} third_command {0010000000}
+
+fsm_state_encoding {1417821782} full_command {0100000000}
+
+fsm_state_encoding {1417821782} addressing {1000000000}
+
+fsm_registers {1417821782} {state[0]}  {state[1]}  {state[2]}  {state[3]}  {state[4]}  {state[5]}  {state[6]}  {state[7]}  {state[8]}  {state[9]} 

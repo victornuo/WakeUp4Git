@@ -1,0 +1,12 @@
+V3 5
+FL C:/Users/Victor/Documents/Cookies/wake_up_radio/auxpoyect/manchester_enc/manchester_enc.vhd 2011/09/01.15:10:39 K.39
+AR work/manchester_encoder/rtl 1311238137 \
+      FL C:/Users/Victor/Documents/Cookies/wake_up_radio/auxpoyect/manchester_enc/manchester_enc.vhd \
+      EN work/manchester_encoder 1311238136
+EN work/MoM_unit 1314882672 \
+      FL C:/Users/Victor/Documents/Cookies/wake_up_radio/auxpoyect/manchester_enc/manchester_enc.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/STD_LOGIC_UNSIGNED 1217055547 \
+      PH ieee/NUMERIC_STD 1217055545
+AR work/MoM_unit/RTL 1314882673 \
+      FL C:/Users/Victor/Documents/Cookies/wake_up_radio/auxpoyect/manchester_enc/manchester_enc.vhd \
+      EN work/MoM_unit 1314882672

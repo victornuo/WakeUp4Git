@@ -1,0 +1,240 @@
+***************************************************************************
+                               Status Report
+                          Thu Feb 28 19:30:00 2013 ***************************************************************************
+
+Product: Designer
+Release: v10.1 SP3
+Version: 10.1.3.1
+File Name: C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\designer\impl1\WuPu.adb
+Design Name: WuPu  Design State: compile
+Last Saved: Thu Feb 28 19:24:33 2013
+
+***** Device Data **************************************************
+
+Family: IGLOO  Die: AGL030V5  Package: 100 VQFP
+Speed: STD  Voltage: 1.5
+
+Restrict JTAG Pins: YES
+Restrict Probe Pins: YES
+
+Junction Temperature Range:   COM
+Voltage Range:   COM
+
+***** Import Variables *********************************************
+
+Source File(s) Imported on Thu Feb 28 19:29:57 2013:
+        C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\synthesis\WuPu.edn
+        C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\synthesis\WuPu_sdc.sdc
+
+
+***** CAE Variables ************************************************
+
+Back Annotation File: N/A
+
+
+***** Bitstream Variables ******************************************
+
+Bitstream File: N/A
+     Lock Mode: OFF
+
+
+***** Compile Variables ********************************************
+
+Netlist PIN properties overwrite existing properties: 0
+
+Compile Output:
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : IGLOO
+Device      : AGL030V5
+Package     : 100 VQFP
+Source      :
+C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\synthesis\WuPu.edn
+
+C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\wupu30Kgates\synthesis\WuPu_sdc.sdc
+Format      : EDIF
+Topcell     : WuPu
+Speed grade : STD
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Warning: CMP201: Net FFctrl_0/N_FlashFreeze drives no load.
+Warning: Top level port Sel_address<1> is not connected to any IO pad
+Warning: Top level port Sel_address<0> is not connected to any IO pad
+Warning: Top level port uC_commandReady is not connected to any IO pad
+Warning: Top level port uC_commandType is not connected to any IO pad
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        32
+
+    Total macros optimized  32
+
+Warning: CMP503: Remapped 24 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+         pin on the enable flip-flop is not being driven by a global net.
+
+There were 0 error(s) and 6 warning(s) in this design.
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:    370  Total:    768   (48.18%)
+    IO (W/ clocks)             Used:     24  Total:     77   (31.17%)
+    GLOBAL (Chip)              Used:      3  Total:      6   (50.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 3      | 6  (50.00%)*
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 258          | 258
+    SEQ     | 112          | 112
+
+I/O Function:
+
+    Type                          | w/o register  | w/ register  | w/ DDR register
+    ------------------------------|---------------|--------------|----------------
+    Input I/O                     | 6             | 0            | 0
+    Output I/O                    | 18            | 0            | 0
+    Bidirectional I/O             | 0             | 0            | 0
+    Differential Input I/O Pairs  | 0             | 0            | 0
+    Differential Output I/O Pairs | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVCMOS15                        | 1.50v | N/A   | 6     | 18     | 0
+
+I/O Placement:
+
+    Locked  :   0
+    Placed  :   1 (  4.17% )
+    UnPlaced:  23 ( 95.83% )
+
+Net information report:
+=======================
+
+The following nets drive enable flip-flops that have been remapped to a 2-tile implementation:
+    EffCnt  Type          Name
+    --------------------------
+    9       SET/RESET_NET Net   : ZBControl_0.N_90_1
+                          Driver: ZBControl_0/state_RNINE3L_1[0]
+    8       SET/RESET_NET Net   : state_RNINE3L_0[0]
+                          Driver: ZBControl_0/state_RNINE3L_0[0]
+    7       SET/RESET_NET Net   : ZBControl_0.N_90_0
+                          Driver: ZBControl_0/state_RNINE3L[0]
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    110     CLK_NET       Net   : FFctrl_0_CLK_GATED
+                          Driver:
+FFctrl_0/FFctrl_wrapper_inst/U0/Primary_Filter_Instance/Gate_For_Clock_Gating_Clkint
+                          Source: NETLIST
+    85      SET/RESET_NET Net   : RESETZB_c
+                          Driver: INBUF_0_RNI9C35
+                          Source: NETLIST
+    3       INT_NET       Net   : clk_c
+                          Driver: clk_pad
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    11      INT_NET       Net   : ZBWatchDog_0/NU_9_to_17
+                          Driver: ZBWatchDog_0/U_U_AND3_9_to_17
+    10      INT_NET       Net   : md_v3_0_new_data_0
+                          Driver: md_v3_0/mdi0_RNIF1JF
+    10      INT_NET       Net   : ZBWatchDog_0/NU_0_to_8_0
+                          Driver: ZBWatchDog_0/U_U_AND3_0_to_8_0
+    9       INT_NET       Net   : md_v3_0_new_data
+                          Driver: md_v3_0/mdi0_RNIF1JF_0
+    9       SET/RESET_NET Net   : state_RNINE3L_0[0]
+                          Driver: ZBControl_0/state_RNINE3L_0[0]
+    9       SET/RESET_NET Net   : ZBControl_0.N_90_0
+                          Driver: ZBControl_0/state_RNINE3L[0]
+    9       SET/RESET_NET Net   : ZBControl_0.N_90_1
+                          Driver: ZBControl_0/state_RNINE3L_1[0]
+    9       INT_NET       Net   : md_v3_0/Enable_decoder_0
+                          Driver: md_v3_0/Enable_decoder_0
+    9       INT_NET       Net   : ZBControl_0/state[1]
+                          Driver: ZBControl_0/state[1]
+    9       INT_NET       Net   : ZBControl_0/state[0]
+                          Driver: ZBControl_0/state[0]
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    11      INT_NET       Net   : ZBWatchDog_0/NU_9_to_17
+                          Driver: ZBWatchDog_0/U_U_AND3_9_to_17
+    10      INT_NET       Net   : md_v3_0_new_data_0
+                          Driver: md_v3_0/mdi0_RNIF1JF
+    10      INT_NET       Net   : ZBWatchDog_0/NU_0_to_8_0
+                          Driver: ZBWatchDog_0/U_U_AND3_0_to_8_0
+    9       INT_NET       Net   : md_v3_0_new_data
+                          Driver: md_v3_0/mdi0_RNIF1JF_0
+    9       SET/RESET_NET Net   : state_RNINE3L_0[0]
+                          Driver: ZBControl_0/state_RNINE3L_0[0]
+    9       SET/RESET_NET Net   : ZBControl_0.N_90_0
+                          Driver: ZBControl_0/state_RNINE3L[0]
+    9       SET/RESET_NET Net   : ZBControl_0.N_90_1
+                          Driver: ZBControl_0/state_RNINE3L_1[0]
+    9       INT_NET       Net   : md_v3_0/Enable_decoder_0
+                          Driver: md_v3_0/Enable_decoder_0
+    9       INT_NET       Net   : ZBControl_0/state[1]
+                          Driver: ZBControl_0/state[1]
+    9       INT_NET       Net   : ZBControl_0/state[0]
+                          Driver: ZBControl_0/state[0]
+====================
+Flash*Freeze report:
+====================
+
+Info: This design uses Flash*Freeze type 1.
+The Flash*Freeze port name is "Flash_Freeze_N".
+
+====================
+
+

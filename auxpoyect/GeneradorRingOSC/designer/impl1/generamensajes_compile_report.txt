@@ -1,0 +1,243 @@
+***************************************************************************
+                               Status Report
+                          Thu Oct 10 18:22:24 2013 ***************************************************************************
+
+Product: Designer
+Release: v11.1
+Version: 11.1.0.14
+File Name: C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\designer\impl1\generamensajes.adb
+Design Name: generamensajes  Design State: compile
+Last Saved: Thu Oct 10 18:15:57 2013
+
+***** Device Data **************************************************
+
+Family: IGLOO  Die: M1AGL600V2  Package: 484 FBGA
+Speed: STD  Voltage: 1.2~1.5
+
+Restrict JTAG Pins: YES
+Restrict Probe Pins: YES
+
+Junction Temperature Range:   COM
+Voltage Range:   COM
+
+***** Import Variables *********************************************
+
+Source File(s) Imported on Thu Oct 10 18:22:16 2013:
+        C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\synthesis\generamensajes.edn
+        C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\synthesis\generamensajes_sdc.sdc
+
+
+***** CAE Variables ************************************************
+
+Back Annotation File: N/A
+
+
+***** Bitstream Variables ******************************************
+
+Bitstream File: N/A
+     Lock Mode: OFF
+
+
+***** Compile Variables ********************************************
+
+Netlist PIN properties overwrite existing properties: 0
+
+Compile Output:
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : IGLOO
+Device      : M1AGL600V2
+Package     : 484 FBGA
+Source      : C:\Users\Victor
+Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\synthesis\generamensajes.edn
+              C:\Users\Victor
+Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\synthesis\generamensajes_sdc.sdc
+Format      : EDIF
+Topcell     : generamensajes
+Speed grade : STD
+Temp        : 0:25:70
+Voltage     : 1.58:1.20:1.14
+
+Keep Existing Physical Constraints : Yes
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Info: BLK007: No CoreConsole Database file imported for an M1 device.
+Combiner is turned off (switch COB_DO_COB = 0). Skipping optimizations. Only netlist
+legalization will be performed.
+WARNING: Combiner is turned-off, tie-off will not be done
+WARNING: Combiner is turned-off, logic combining will not be done
+WARNING: Combiner is turned-off, gobbler will not be done
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                0
+  - Inverters:              1
+  - Tieoff:                 0
+  - Logic combining:        0
+
+    Total macros optimized  1
+
+There were 0 error(s) and 0 warning(s) in this design.
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:    412  Total:  13824   (2.98%)
+    IO (W/ clocks)             Used:     29  Total:    235   (12.34%)
+    Differential IO            Used:      0  Total:     60   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      3  Total:     18   (16.67%)
+    PLL                        Used:      0  Total:      1   (0.00%)
+    RAM/FIFO                   Used:      0  Total:     24   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 3      | 6  (50.00%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 319          | 319
+    SEQ     | 93           | 93
+
+I/O Function:
+
+    Type                          | w/o register  | w/ register  | w/ DDR register
+    ------------------------------|---------------|--------------|----------------
+    Input I/O                     | 14            | 0            | 0
+    Output I/O                    | 15            | 0            | 0
+    Bidirectional I/O             | 0             | 0            | 0
+    Differential Input I/O Pairs  | 0             | 0            | 0
+    Differential Output I/O Pairs | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVCMOS33                        | 3.30v | N/A   | 14    | 15     | 0
+
+I/O Placement:
+
+    Locked  :  29 ( 100.00% )
+    Placed  :   0
+    UnPlaced:   0
+
+Net information report:
+=======================
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    94      SET/RESET_NET Net   : INBUF_0_Y
+                          Driver: INBUF_0_RNI3ULF
+                          Source: NETLIST
+    91      CLK_NET       Net   : CLK_OUT_c
+                          Driver: RingOscillator_0/ringO_cnt_0/DFN1E1C0_NU_3_RNIFSD1
+                          Source: NETLIST
+    51      INT_NET       Net   : EN_c
+                          Driver: EN_pad_RNI70RA
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    14      INT_NET       Net   : contador_0_milisegundos1000
+                          Driver: contador_0/cuenta1000_RNI4MLP3[10]
+    12      INT_NET       Net   : manchesterEncoderComplete_0/state[6]
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_ctrl_0/state[6]
+    11      INT_NET       Net   : manchesterEncoderComplete_0/load_i_1
+                          Driver:
+manchesterEncoderComplete_0/manchester_encoder_ctrl_0/state_RNIN7UC2[3]
+    10      INT_NET       Net   : TX_Active_c
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_0/encoder_busy
+    10      INT_NET       Net   : manchesterEncoderComplete_0/state[3]
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_ctrl_0/state[3]
+    9       INT_NET       Net   : contador_0_milisegundos100
+                          Driver: contador_0/cuenta100_RNI9M913[1]
+    9       INT_NET       Net   : manchesterEncoderComplete_0/manchester_encoder_ctrl_0_dout[7]
+                          Driver:
+manchesterEncoderComplete_0/manchester_encoder_0/parityBit_m5_i_o4
+    9       INT_NET       Net   : manchesterEncoderComplete_0/manchester_encoder_0_TXbuff_free
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_0/TXbuff_free
+    9       INT_NET       Net   : manchesterEncoderComplete_0/manchester_encoder_0/manchesterRef
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_0/manchesterRef
+    8       INT_NET       Net   : manchesterEncoderComplete_0/manchester_encoder_ctrl_0_dout[6]
+                          Driver:
+manchesterEncoderComplete_0/manchester_encoder_ctrl_0/state_RNIFVUM[5]
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    14      INT_NET       Net   : contador_0_milisegundos1000
+                          Driver: contador_0/cuenta1000_RNI4MLP3[10]
+    12      INT_NET       Net   : manchesterEncoderComplete_0/state[6]
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_ctrl_0/state[6]
+    11      INT_NET       Net   : manchesterEncoderComplete_0/load_i_1
+                          Driver:
+manchesterEncoderComplete_0/manchester_encoder_ctrl_0/state_RNIN7UC2[3]
+    10      INT_NET       Net   : TX_Active_c
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_0/encoder_busy
+    10      INT_NET       Net   : manchesterEncoderComplete_0/state[3]
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_ctrl_0/state[3]
+    9       INT_NET       Net   : contador_0_milisegundos100
+                          Driver: contador_0/cuenta100_RNI9M913[1]
+    9       INT_NET       Net   : manchesterEncoderComplete_0/manchester_encoder_ctrl_0_dout[7]
+                          Driver:
+manchesterEncoderComplete_0/manchester_encoder_0/parityBit_m5_i_o4
+    9       INT_NET       Net   : manchesterEncoderComplete_0/manchester_encoder_0_TXbuff_free
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_0/TXbuff_free
+    9       INT_NET       Net   : manchesterEncoderComplete_0/manchester_encoder_0/manchesterRef
+                          Driver: manchesterEncoderComplete_0/manchester_encoder_0/manchesterRef
+    8       INT_NET       Net   : manchesterEncoderComplete_0/manchester_encoder_ctrl_0_dout[6]
+                          Driver:
+manchesterEncoderComplete_0/manchester_encoder_ctrl_0/state_RNIFVUM[5]
+====================
+Flash*Freeze report:
+====================
+
+The design does not use the Flash*Freeze feature.
+
+====================
+
+

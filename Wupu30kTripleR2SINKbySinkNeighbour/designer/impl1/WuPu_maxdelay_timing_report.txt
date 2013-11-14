@@ -1,0 +1,138 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.1
+Microsemi Corporation - Microsemi Libero Software Release v11.1 (Version 11.1.0.14)
+Copyright (c) 1989-2013
+Date: Thu Aug 08 19:09:02 2013
+
+
+Design: WuPu
+Family: IGLOO
+Die: AGL030V5
+Package: 100 VQFP
+Temperature: COM
+Voltage: COM
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Condition: BEST
+Max Operating Condition: WORST
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+                            Input to Output
+Min Delay (ns):             2.304
+Max Delay (ns):             13.954
+
+END SUMMARY
+-----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+Path 1
+  From:                        RX
+  To:                          AddOKflag
+  Delay (ns):                  13.954
+  Slack (ns):
+  Arrival (ns):                13.954
+  Required (ns):
+
+Path 2
+  From:                        RST
+  To:                          IRQ2
+  Delay (ns):                  12.333
+  Slack (ns):
+  Arrival (ns):                12.333
+  Required (ns):
+
+Path 3
+  From:                        R2SINKTimeout
+  To:                          IRQ2
+  Delay (ns):                  11.631
+  Slack (ns):
+  Arrival (ns):                11.631
+  Required (ns):
+
+Path 4
+  From:                        RST
+  To:                          IRQ0
+  Delay (ns):                  11.130
+  Slack (ns):
+  Arrival (ns):                11.130
+  Required (ns):
+
+Path 5
+  From:                        R2SINKTimeout
+  To:                          IRQ0
+  Delay (ns):                  10.360
+  Slack (ns):
+  Arrival (ns):                10.360
+  Required (ns):
+
+
+Expanded Path 1
+  From: RX
+  To: AddOKflag
+  data required time                             N/C
+  data arrival time                          -   13.954
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        RX (r)
+               +     0.000          net: RX
+  0.000                        RX_pad/U0/U0:PAD (r)
+               +     1.136          cell: ADLIB:IOPAD_IN
+  1.136                        RX_pad/U0/U0:Y (r)
+               +     0.000          net: RX_pad/U0/NET1
+  1.136                        RX_pad/U0/U1:YIN (r)
+               +     0.188          cell: ADLIB:IOIN_IB
+  1.324                        RX_pad/U0/U1:Y (r)
+               +     2.668          net: RX_c_c
+  3.992                        housekeepingCheck_0/Result_5_1:B (r)
+               +     0.643          cell: ADLIB:NOR3A
+  4.635                        housekeepingCheck_0/Result_5_1:Y (f)
+               +     0.228          net: housekeepingCheck_0/Result_5_1
+  4.863                        housekeepingCheck_0/Result_5_3:A (f)
+               +     0.792          cell: ADLIB:NOR3A
+  5.655                        housekeepingCheck_0/Result_5_3:Y (f)
+               +     0.215          net: housekeepingCheck_0/Result_5_3
+  5.870                        housekeepingCheck_0/Result_5:A (f)
+               +     0.561          cell: ADLIB:NOR3C
+  6.431                        housekeepingCheck_0/Result_5:Y (f)
+               +     0.355          net: housekeepingCheck_0_Result_5
+  6.786                        housekeepingCheck_0/Result:A (f)
+               +     0.711          cell: ADLIB:NOR2B
+  7.497                        housekeepingCheck_0/Result:Y (f)
+               +     3.031          net: AddOKflag_c
+  10.528                       AddOKflag_pad/U0/U1:D (f)
+               +     0.916          cell: ADLIB:IOTRI_OB_EB
+  11.444                       AddOKflag_pad/U0/U1:DOUT (f)
+               +     0.000          net: AddOKflag_pad/U0/NET1
+  11.444                       AddOKflag_pad/U0/U0:D (f)
+               +     2.510          cell: ADLIB:IOPAD_TRI
+  13.954                       AddOKflag_pad/U0/U0:PAD (f)
+               +     0.000          net: AddOKflag
+  13.954                       AddOKflag (f)
+                                    
+  13.954                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          RX (r)
+                                    
+  N/C                          AddOKflag (f)
+                                    
+  N/C                          data required time
+
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

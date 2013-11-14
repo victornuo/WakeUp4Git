@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>RingOscillator</header>
+  <drc>
+    <status>C:\Microsemi\Libero_v11.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin NAND2_0:A</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/RingOscillator/pins/NAND2_0:A</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_v11.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin NAND2_0:B</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/RingOscillator/pins/NAND2_0:B</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_v11.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin NAND2_0:Y</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/RingOscillator/pins/NAND2_0:Y</crossprobe>
+  </drc>
+</drcreport>

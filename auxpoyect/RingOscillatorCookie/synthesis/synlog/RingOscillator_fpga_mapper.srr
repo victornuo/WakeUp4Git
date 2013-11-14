@@ -1,0 +1,592 @@
+Synopsys Actel Technology Mapper, Version mapact, Build 729R, Built Jun 20 2012 09:20:46
+Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version F-2012.03M-SP1 
+
+Mapper Startup Complete (Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 49MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF258 |Gated clock conversion disabled 
+@N: MF547 |Generated clock conversion disabled 
+
+Design Input Complete (Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Mapper Initialization Complete (Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+
+Starting Optimization and Mapping (Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 56MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+Warning: Found 1 combinational loops!
+@W: BN137 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\ringoscillator\component\work\ringoscillator\ringoscillator.vhd":367:0:367:6|Found combinational loop during mapping at net NAND2_0_Y
+1) instance NAND2_0 (netlist:NAND2), output net "NAND2_0_Y" in work.RingOscillator(rtl)
+    net        NAND2_0_Y
+    input  pin AO14_0/C
+    instance   AO14_0 (cell AO14)
+    output pin AO14_0/Y
+    net        AO14_0_Y
+    input  pin AO14_1/C
+    instance   AO14_1 (cell AO14)
+    output pin AO14_1/Y
+    net        AO14_1_Y
+    input  pin AO14_2/C
+    instance   AO14_2 (cell AO14)
+    output pin AO14_2/Y
+    net        AO14_2_Y
+    input  pin AO14_12/C
+    instance   AO14_12 (cell AO14)
+    output pin AO14_12/Y
+    net        AO14_12_Y
+    input  pin AO14_13/C
+    instance   AO14_13 (cell AO14)
+    output pin AO14_13/Y
+    net        AO14_13_Y
+    input  pin AO14_16/C
+    instance   AO14_16 (cell AO14)
+    output pin AO14_16/Y
+    net        AO14_16_Y
+    input  pin AO14_3/C
+    instance   AO14_3 (cell AO14)
+    output pin AO14_3/Y
+    net        AO14_3_Y
+    input  pin AO14_4/C
+    instance   AO14_4 (cell AO14)
+    output pin AO14_4/Y
+    net        AO14_4_Y
+    input  pin AO14_5/C
+    instance   AO14_5 (cell AO14)
+    output pin AO14_5/Y
+    net        AO14_5_Y
+    input  pin AO14_17/C
+    instance   AO14_17 (cell AO14)
+    output pin AO14_17/Y
+    net        AO14_17_Y
+    input  pin AO14_18/C
+    instance   AO14_18 (cell AO14)
+    output pin AO14_18/Y
+    net        AO14_18_Y
+    input  pin AO14_19/C
+    instance   AO14_19 (cell AO14)
+    output pin AO14_19/Y
+    net        AO14_19_Y
+    input  pin AO14_6/C
+    instance   AO14_6 (cell AO14)
+    output pin AO14_6/Y
+    net        AO14_6_Y
+    input  pin AO14_7/C
+    instance   AO14_7 (cell AO14)
+    output pin AO14_7/Y
+    net        AO14_7_Y
+    input  pin AO14_8/C
+    instance   AO14_8 (cell AO14)
+    output pin AO14_8/Y
+    net        AO14_8_Y
+    input  pin AO14_20/C
+    instance   AO14_20 (cell AO14)
+    output pin AO14_20/Y
+    net        AO14_20_Y
+    input  pin AO14_21/C
+    instance   AO14_21 (cell AO14)
+    output pin AO14_21/Y
+    net        AO14_21_Y
+    input  pin AO14_22/C
+    instance   AO14_22 (cell AO14)
+    output pin AO14_22/Y
+    net        AO14_22_Y
+    input  pin AO14_9/C
+    instance   AO14_9 (cell AO14)
+    output pin AO14_9/Y
+    net        AO14_9_Y
+    input  pin AO14_10/C
+    instance   AO14_10 (cell AO14)
+    output pin AO14_10/Y
+    net        AO14_10_Y
+    input  pin AO14_11/C
+    instance   AO14_11 (cell AO14)
+    output pin AO14_11/Y
+    net        AO14_11_Y
+    input  pin AO14_23/C
+    instance   AO14_23 (cell AO14)
+    output pin AO14_23/Y
+    net        AO14_23_Y
+    input  pin AO14_14/C
+    instance   AO14_14 (cell AO14)
+    output pin AO14_14/Y
+    net        AO14_14_Y
+    input  pin AO14_15/C
+    instance   AO14_15 (cell AO14)
+    output pin AO14_15/Y
+    net        AO14_15_Y
+    input  pin NAND2_0/B
+    instance   NAND2_0 (cell NAND2)
+    output pin NAND2_0/Y
+    net        NAND2_0_Y
+End of loops
+@W: MT462 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\ringoscillator\component\work\ringoscillator\ringoscillator.vhd":267:0:267:6|Net AO14_15_Y appears to be an unidentified clock source. Assuming default frequency. 
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+Writing Analyst data base C:\Users\Victor\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillator\synthesis\RingOscillator.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+Writing EDIF Netlist and constraint files
+F-2012.03M-SP1 
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 56MB)
+
+Warning: Found 1 combinational loops!
+@W: BN137 :"c:\users\victor\documents\cookies\wake_up_radio\auxpoyect\ringoscillator\component\work\ringoscillator\ringoscillator.vhd":267:0:267:6|Found combinational loop during mapping at net AO14_15_Y
+1) instance AO14_15 (netlist:AO14), output net "AO14_15_Y" in work.RingOscillator(rtl)
+    net        AO14_15_Y
+    input  pin NAND2_0/B
+    instance   NAND2_0 (cell NAND2)
+    output pin NAND2_0/Y
+    net        NAND2_0_Y
+    input  pin AO14_0/C
+    instance   AO14_0 (cell AO14)
+    output pin AO14_0/Y
+    net        AO14_0_Y
+    input  pin AO14_1/C
+    instance   AO14_1 (cell AO14)
+    output pin AO14_1/Y
+    net        AO14_1_Y
+    input  pin AO14_2/C
+    instance   AO14_2 (cell AO14)
+    output pin AO14_2/Y
+    net        AO14_2_Y
+    input  pin AO14_12/C
+    instance   AO14_12 (cell AO14)
+    output pin AO14_12/Y
+    net        AO14_12_Y
+    input  pin AO14_13/C
+    instance   AO14_13 (cell AO14)
+    output pin AO14_13/Y
+    net        AO14_13_Y
+    input  pin AO14_16/C
+    instance   AO14_16 (cell AO14)
+    output pin AO14_16/Y
+    net        AO14_16_Y
+    input  pin AO14_3/C
+    instance   AO14_3 (cell AO14)
+    output pin AO14_3/Y
+    net        AO14_3_Y
+    input  pin AO14_4/C
+    instance   AO14_4 (cell AO14)
+    output pin AO14_4/Y
+    net        AO14_4_Y
+    input  pin AO14_5/C
+    instance   AO14_5 (cell AO14)
+    output pin AO14_5/Y
+    net        AO14_5_Y
+    input  pin AO14_17/C
+    instance   AO14_17 (cell AO14)
+    output pin AO14_17/Y
+    net        AO14_17_Y
+    input  pin AO14_18/C
+    instance   AO14_18 (cell AO14)
+    output pin AO14_18/Y
+    net        AO14_18_Y
+    input  pin AO14_19/C
+    instance   AO14_19 (cell AO14)
+    output pin AO14_19/Y
+    net        AO14_19_Y
+    input  pin AO14_6/C
+    instance   AO14_6 (cell AO14)
+    output pin AO14_6/Y
+    net        AO14_6_Y
+    input  pin AO14_7/C
+    instance   AO14_7 (cell AO14)
+    output pin AO14_7/Y
+    net        AO14_7_Y
+    input  pin AO14_8/C
+    instance   AO14_8 (cell AO14)
+    output pin AO14_8/Y
+    net        AO14_8_Y
+    input  pin AO14_20/C
+    instance   AO14_20 (cell AO14)
+    output pin AO14_20/Y
+    net        AO14_20_Y
+    input  pin AO14_21/C
+    instance   AO14_21 (cell AO14)
+    output pin AO14_21/Y
+    net        AO14_21_Y
+    input  pin AO14_22/C
+    instance   AO14_22 (cell AO14)
+    output pin AO14_22/Y
+    net        AO14_22_Y
+    input  pin AO14_9/C
+    instance   AO14_9 (cell AO14)
+    output pin AO14_9/Y
+    net        AO14_9_Y
+    input  pin AO14_10/C
+    instance   AO14_10 (cell AO14)
+    output pin AO14_10/Y
+    net        AO14_10_Y
+    input  pin AO14_11/C
+    instance   AO14_11 (cell AO14)
+    output pin AO14_11/Y
+    net        AO14_11_Y
+    input  pin AO14_23/C
+    instance   AO14_23 (cell AO14)
+    output pin AO14_23/Y
+    net        AO14_23_Y
+    input  pin AO14_14/C
+    instance   AO14_14 (cell AO14)
+    output pin AO14_14/Y
+    net        AO14_14_Y
+    input  pin AO14_15/C
+    instance   AO14_15 (cell AO14)
+    output pin AO14_15/Y
+    net        AO14_15_Y
+End of loops
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Feb 28 12:53:45 2013
+#
+
+
+Top view:               RingOscillator
+Library name:           IGLOO_V2
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.14, P = 3.70, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        igloo
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.942
+
+                   Requested     Estimated     Requested     Estimated                Clock      Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type       Group          
+----------------------------------------------------------------------------------------------------------------
+System             100.0 MHz     91.4 MHz      10.000        10.942        -0.942     system     system_clkgroup
+================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------
+System    System  |  10.000      -0.942  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                             Arrival           
+Instance                      Reference     Type         Pin     Net               Time        Slack 
+                              Clock                                                                  
+-----------------------------------------------------------------------------------------------------
+clkCouter_0.DFN1C0_NU_0       System        DFN1C0       Q       DFN1C0_NU_0       1.771       -0.942
+clkCouter_0.DFN1E1C0_NU_1     System        DFN1E1C0     Q       DFN1E1C0_NU_1     1.771       -0.307
+clkCouter_0.DFN1C0_NU_2       System        DFN1C0       Q       DFN1C0_NU_2       1.771       3.527 
+clkCouter_0.DFN1E1C0_NU_3     System        DFN1E1C0     Q       CLK_OUT_c         1.771       4.016 
+=====================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                           Required           
+Instance                      Reference     Type         Pin     Net             Time         Slack 
+                              Clock                                                                 
+----------------------------------------------------------------------------------------------------
+clkCouter_0.DFN1C0_NU_2       System        DFN1C0       D       XOR2_0_Y        8.705        -0.942
+clkCouter_0.DFN1E1C0_NU_3     System        DFN1E1C0     E       NU_0_1_2        8.538        2.036 
+clkCouter_0.DFN1C0_NU_0       System        DFN1C0       D       INV_1_Y         8.705        2.099 
+clkCouter_0.DFN1E1C0_NU_1     System        DFN1E1C0     D       INV_2_Y         8.705        3.005 
+clkCouter_0.DFN1E1C0_NU_1     System        DFN1E1C0     E       DFN1C0_NU_0     8.538        3.924 
+clkCouter_0.DFN1E1C0_NU_3     System        DFN1E1C0     D       INV_0_Y         8.705        4.016 
+====================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            1.295
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         8.705
+
+    - Propagation time:                      9.647
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -0.942
+
+    Number of logic level(s):                2
+    Starting point:                          clkCouter_0.DFN1C0_NU_0 / Q
+    Ending point:                            clkCouter_0.DFN1C0_NU_2 / D
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            System [rising] on pin CLK
+
+Instance / Net                         Pin      Pin               Arrival     No. of    
+Name                        Type       Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+clkCouter_0.DFN1C0_NU_0     DFN1C0     Q        Out     1.771     1.771       -         
+DFN1C0_NU_0                 Net        -        -       2.844     -           4         
+clkCouter_0.AND2_0          AND2       A        In      -         4.615       -         
+clkCouter_0.AND2_0          AND2       Y        Out     1.236     5.851       -         
+AND2_0_Y                    Net        -        -       0.773     -           1         
+clkCouter_0.XOR2_0          XOR2       B        In      -         6.624       -         
+clkCouter_0.XOR2_0          XOR2       Y        Out     2.251     8.875       -         
+XOR2_0_Y                    Net        -        -       0.773     -           1         
+clkCouter_0.DFN1C0_NU_2     DFN1C0     D        In      -         9.647       -         
+========================================================================================
+Total path delay (propagation time + setup) of 10.942 is 6.553(59.9%) logic and 4.389(40.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            1.295
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         8.705
+
+    - Propagation time:                      9.012
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.307
+
+    Number of logic level(s):                2
+    Starting point:                          clkCouter_0.DFN1E1C0_NU_1 / Q
+    Ending point:                            clkCouter_0.DFN1C0_NU_2 / D
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            System [rising] on pin CLK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+clkCouter_0.DFN1E1C0_NU_1     DFN1E1C0     Q        Out     1.771     1.771       -         
+DFN1E1C0_NU_1                 Net          -        -       1.938     -           3         
+clkCouter_0.AND2_0            AND2         B        In      -         3.708       -         
+clkCouter_0.AND2_0            AND2         Y        Out     1.508     5.216       -         
+AND2_0_Y                      Net          -        -       0.773     -           1         
+clkCouter_0.XOR2_0            XOR2         B        In      -         5.989       -         
+clkCouter_0.XOR2_0            XOR2         Y        Out     2.251     8.240       -         
+XOR2_0_Y                      Net          -        -       0.773     -           1         
+clkCouter_0.DFN1C0_NU_2       DFN1C0       D        In      -         9.012       -         
+============================================================================================
+Total path delay (propagation time + setup) of 10.307 is 6.824(66.2%) logic and 3.483(33.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            1.462
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         8.538
+
+    - Propagation time:                      6.502
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 2.036
+
+    Number of logic level(s):                1
+    Starting point:                          clkCouter_0.DFN1C0_NU_0 / Q
+    Ending point:                            clkCouter_0.DFN1E1C0_NU_3 / E
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            System [rising] on pin CLK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+clkCouter_0.DFN1C0_NU_0       DFN1C0       Q        Out     1.771     1.771       -         
+DFN1C0_NU_0                   Net          -        -       2.844     -           4         
+clkCouter_0.U_AND3_0_1_2      AND3         A        In      -         4.615       -         
+clkCouter_0.U_AND3_0_1_2      AND3         Y        Out     1.115     5.730       -         
+NU_0_1_2                      Net          -        -       0.773     -           1         
+clkCouter_0.DFN1E1C0_NU_3     DFN1E1C0     E        In      -         6.502       -         
+============================================================================================
+Total path delay (propagation time + setup) of 7.964 is 4.347(54.6%) logic and 3.617(45.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            1.295
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         8.705
+
+    - Propagation time:                      6.607
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 2.099
+
+    Number of logic level(s):                1
+    Starting point:                          clkCouter_0.DFN1C0_NU_0 / Q
+    Ending point:                            clkCouter_0.DFN1C0_NU_0 / D
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            System [rising] on pin CLK
+
+Instance / Net                         Pin      Pin               Arrival     No. of    
+Name                        Type       Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+clkCouter_0.DFN1C0_NU_0     DFN1C0     Q        Out     1.771     1.771       -         
+DFN1C0_NU_0                 Net        -        -       2.844     -           4         
+clkCouter_0.INV_1           INV        A        In      -         4.615       -         
+clkCouter_0.INV_1           INV        Y        Out     1.219     5.834       -         
+INV_1_Y                     Net        -        -       0.773     -           1         
+clkCouter_0.DFN1C0_NU_0     DFN1C0     D        In      -         6.607       -         
+========================================================================================
+Total path delay (propagation time + setup) of 7.901 is 4.285(54.2%) logic and 3.617(45.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            1.462
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         8.538
+
+    - Propagation time:                      5.939
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 2.600
+
+    Number of logic level(s):                1
+    Starting point:                          clkCouter_0.DFN1E1C0_NU_1 / Q
+    Ending point:                            clkCouter_0.DFN1E1C0_NU_3 / E
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            System [rising] on pin CLK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+clkCouter_0.DFN1E1C0_NU_1     DFN1E1C0     Q        Out     1.771     1.771       -         
+DFN1E1C0_NU_1                 Net          -        -       1.938     -           3         
+clkCouter_0.U_AND3_0_1_2      AND3         B        In      -         3.708       -         
+clkCouter_0.U_AND3_0_1_2      AND3         Y        Out     1.458     5.166       -         
+NU_0_1_2                      Net          -        -       0.773     -           1         
+clkCouter_0.DFN1E1C0_NU_3     DFN1E1C0     E        In      -         5.939       -         
+============================================================================================
+Total path delay (propagation time + setup) of 7.400 is 4.690(63.4%) logic and 2.710(36.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: M1AGL600V2_FBGA484_STD
+Report for cell RingOscillator.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2     1      1.0        1.0
+              AND3     1      1.0        1.0
+              AO14    24      1.0       24.0
+               GND     2      0.0        0.0
+               INV     3      1.0        3.0
+             NAND2     1      1.0        1.0
+               VCC     2      0.0        0.0
+              XOR2     1      1.0        1.0
+
+
+            DFN1C0     2      1.0        2.0
+          DFN1E1C0     2      1.0        2.0
+                   -----          ----------
+             TOTAL    39                35.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     1
+            OUTBUF     1
+                   -----
+             TOTAL     2
+
+
+Core Cells         : 35 of 13824 (0%)
+IO Cells           : 2
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 24 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Time elapsed 0h:00m:00s; Memory used current: 23MB peak: 56MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Feb 28 12:53:45 2013
+
+###########################################################]

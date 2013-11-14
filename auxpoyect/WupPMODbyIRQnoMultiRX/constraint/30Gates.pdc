@@ -1,0 +1,27 @@
+# Actel Physical design constraints file
+# Generated file
+
+# Version: 9.1 SP3 9.1.3.4
+# Family: IGLOO , Die: AGL250V5 , Package: 100 VQFP
+# Date generated: Tue Jul 03 16:40:23 2012 
+
+
+# 
+# IO banks setting
+# 
+
+
+# 
+# I/O constraints
+# 
+
+
+#
+# Non IO constraints
+#
+
+
+#
+# Old IO constraints, commented out for reference
+#
+

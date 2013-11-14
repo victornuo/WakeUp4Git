@@ -1,0 +1,38 @@
+Target Part: AGL250V5_VQFP100_STD
+Report for cell RingOscProyect.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AX1C    13      1.0       13.0
+              BUFF     2      1.0        2.0
+               GND     2      0.0        0.0
+               INV     1      1.0        1.0
+              NOR2     4      1.0        4.0
+             NOR2B     4      1.0        4.0
+             NOR3A     2      1.0        2.0
+             NOR3B     1      1.0        1.0
+             NOR3C    15      1.0       15.0
+               VCC     2      0.0        0.0
+              XOR2    16      1.0       16.0
+
+
+            DFN1C0    21      1.0       21.0
+          DFN1E1C0     9      1.0        9.0
+                   -----          ----------
+             TOTAL    92                88.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     1
+             INBUF     1
+            OUTBUF    11
+                   -----
+             TOTAL    13
+
+
+Core Cells         : 88 of 6144 (1%)
+IO Cells           : 13
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+

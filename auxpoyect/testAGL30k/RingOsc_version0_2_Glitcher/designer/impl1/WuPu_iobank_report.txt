@@ -1,0 +1,46 @@
+********************************************************************
+                            I/O Bank Report
+********************************************************************
+  
+Product: Designer
+Release: v11.1
+Version: 11.1.0.14
+Date: Mon Aug 05 12:57:52 2013
+Design Name: WuPu  Family: IGLOO  Die: AGL030V5  Package: 100 VQFP
+
+
+I/O Function:
+
+    Type                          | w/o register  | w/ register  | w/ DDR register
+    ------------------------------|---------------|--------------|----------------
+    Input I/O                     | 3             | 0            | 0
+    Output I/O                    | 7             | 0            | 0
+    Bidirectional I/O             | 0             | 0            | 0
+    Differential Input I/O Pairs  | 0             | 0            | 0
+    Differential Output I/O Pairs | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVCMOS15                        | 1.50v | N/A   | 3     | 7      | 0
+
+I/O Bank Resource Usage:
+
+          |   Voltages    | Single I/Os  | Diff I/O Pairs |        Vref I/Os
+          |-------|-------|------|-------|-------|--------|------|-------|----------
+          | Vcci  | Vref  | Used | Total | Used  | Total  | Used | Total | Vref Pins
+    ------|-------|-------|------|-------|-------|--------|------|-------|----------
+    Bank0 | 1.50v | N/A   | 5    | 38    | 0     | 0      | N/A  | N/A   | N/A
+    Bank1 | 1.50v | N/A   | 5    | 39    | 0     | 0      | N/A  | N/A   | N/A
+
+I/O Voltage Usage:
+
+       Voltages    |     I/Os
+    -------|-------|------|-------
+     Vcci  | Vref  | Used | Total
+    -------|-------|------|-------
+     1.50v | N/A   | 10   | 77
+

@@ -1,0 +1,6 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+@N: BN115 :"c:\users\victor ros\documents\cookies\wake_up_radio\wupu30k-initializationwithr2sink\smartgen\common\vhdl\flashfreeze_managment.vhd":87:9:87:32|Removing instance GEN1\.GEN2\.0\.seconday_filter_instance of view:work.FlashFreeze_Filter_GEN1\.GEN2\.0\.seconday_filter_instance(trans) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor ros\documents\cookies\wake_up_radio\wupu30k-initializationwithr2sink\smartgen\common\vhdl\flashfreeze_filter.vhd":56:3:56:24|Removing sequential instance Latch_For_Clock_Gating of view:IGLOO.DLN0(prim) in hierarchy view:work.FlashFreeze_Filter_GEN1\.GEN2\.0\.seconday_filter_instance(trans) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor ros\documents\cookies\wake_up_radio\wupu30k-initializationwithr2sink\smartgen\common\vhdl\flashfreeze_filter.vhd":48:3:48:27|Removing sequential instance Register_For_Clock_Gating of view:IGLOO.DFN1(prim) in hierarchy view:work.FlashFreeze_Filter_GEN1\.GEN2\.0\.seconday_filter_instance(trans) because there are no references to its outputs 
+@N: BN225 |Writing default property annotation file C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\synthesis\WuPu.sap.

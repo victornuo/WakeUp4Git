@@ -1,0 +1,37 @@
+%%% protect protected_file
+#OPTIONS:"|-prodtype|synplify_pro|-top|work.RingOscProyect|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\bin64\\c_vhdl.exe":1340008706
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\location.map":1340021840
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\std.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\snps_haps_pkg.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\std1164.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\numeric.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\umr_capim.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\arith.vhd":1340008994
+#CUR:"C:\\Microsemi\\Libero_v10.1\\Synopsys\\synplify_F201203MSP1\\lib\\vhd\\unsigned.vhd":1340008994
+1 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillatorCookie\hdl\ledbartimer.vhd"
+2 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillatorCookie\hdl\clkCouter_mod.vhd"
+3 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillatorCookie\component\work\RingOscillator\RingOscillator.vhd"
+4 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillatorCookie\component\work\RingOscProyect\RingOscProyect.vhd"
+
+# Dependency Lists (Uses list)
+1 -1
+2 -1
+3 2 
+4 1 3 
+
+# Dependency Lists (Users Of)
+1 4 
+2 3 
+3 4 
+4 -1
+
+# Design Unit to File Association
+arch work ledbartimer behavioral 1
+module work ledbartimer 1
+arch work clkcouter def_arch 2
+module work clkcouter 2
+arch work ringoscillator rtl 3
+module work ringoscillator 3
+arch work ringoscproyect rtl 4
+module work ringoscproyect 4

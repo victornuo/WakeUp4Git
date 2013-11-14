@@ -1,0 +1,27 @@
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd":17:7:17:31|Synthesizing work.manchesterencodercomplete.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":10:7:10:29|Synthesizing work.manchester_encoder_ctrl.rtl 
+@N: CD231 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":34:16:34:17|Using onehot encoding for type state_type (free="1000000")
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":71:44:71:51|Signal load_din in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":125:35:125:42|Signal load_din in the sensitivity list is not used in the process
+@W: CG296 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":125:19:125:25|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":233:11:233:24|Referenced variable nexthopaddress is not in sensitivity list
+Post processing for work.manchester_encoder_ctrl.rtl
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":12:7:12:24|Synthesizing work.manchester_encoder.rtl 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":51:7:51:18|Signal rstn_freqref is undriven 
+Post processing for work.manchester_encoder.rtl
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":13:10:13:13|Synthesizing igloo.and2.syn_black_box 
+Post processing for igloo.and2.syn_black_box
+Post processing for work.manchesterencodercomplete.rtl
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":234:8:234:9|Optimizing register bit bit_count(3) to a constant 0
+@W: CL260 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":234:8:234:9|Pruning register bit 3 of bit_count(3 downto 0)  
+@W: CL159 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd":20:1:20:6|Input enable is unused
+@N: CL201 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd":64:6:64:7|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 7 reachable states with original encodings of:
+   0000001
+   0000010
+   0000100
+   0001000
+   0010000
+   0100000
+   1000000

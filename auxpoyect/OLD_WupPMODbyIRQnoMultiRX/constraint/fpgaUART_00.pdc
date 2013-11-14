@@ -1,0 +1,1523 @@
+# Actel Physical design constraints file
+# Generated file
+
+# Version: 9.1 SP3 9.1.3.4
+# Family: IGLOO , Die: AGL250V5 , Package: 100 VQFP
+# Date generated: Thu Oct 18 18:20:48 2012 
+
+
+# 
+# IO banks setting
+# 
+
+set_iobank Bank0  \
+    -vcci 3.30    \
+    -fixed no
+
+set_iobank Bank1  \
+    -vcci 3.30    \
+    -fixed no
+
+set_iobank Bank2  \
+    -vcci 3.30    \
+    -fixed no
+
+set_iobank Bank3  \
+    -vcci 3.30    \
+    -fixed no
+
+
+# 
+# I/O constraints
+# 
+
+set_io ActivateZB      \
+    -pinname 82        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL Down     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io ActivateuC      \
+    -pinname 81        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL Down     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io CommandReady2uC  \
+    -pinname 20         \
+    -fixed yes          \
+    -iostd LVCMOS33     \
+    -OUT_DRIVE 6        \
+    -OUT_LOAD 5         \
+    -REGISTER No        \
+    -RES_PULL Down      \
+    -SKEW Off           \
+    -SLEW High          \
+    -DIRECTION Output
+
+
+set_io CommandType2uC  \
+    -pinname 86        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io HK_CommandProc  \
+    -pinname 79        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io HK_Decoder      \
+    -pinname 78        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io HK_Encoder      \
+    -pinname 77        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io HK_FF           \
+    -pinname 76        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io HK_Mom          \
+    -pinname 15        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io HK_ZBHandler    \
+    -pinname 16        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io {MoMstateLed[0]}  \
+    -pinname 83          \
+    -fixed yes           \
+    -iostd LVCMOS33      \
+    -OUT_DRIVE 6         \
+    -OUT_LOAD 5          \
+    -REGISTER No         \
+    -RES_PULL None       \
+    -SKEW Off            \
+    -SLEW High           \
+    -DIRECTION Output
+
+
+set_io {MoMstateLed[1]}  \
+    -pinname 84          \
+    -fixed yes           \
+    -iostd LVCMOS33      \
+    -OUT_DRIVE 6         \
+    -OUT_LOAD 5          \
+    -REGISTER No         \
+    -RES_PULL None       \
+    -SKEW Off            \
+    -SLEW High           \
+    -DIRECTION Output
+
+
+set_io {MoMstateLed[2]}  \
+    -pinname 85          \
+    -fixed yes           \
+    -iostd LVCMOS33      \
+    -OUT_DRIVE 6         \
+    -OUT_LOAD 5          \
+    -REGISTER No         \
+    -RES_PULL None       \
+    -SKEW Off            \
+    -SLEW High           \
+    -DIRECTION Output
+
+
+set_io RESETZB         \
+    -pinname 19        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL Up       \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io RFSwitch        \
+    -pinname 62        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io RST            \
+    -pinname 58       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -REGISTER No      \
+    -RES_PULL Up      \
+    -DIRECTION Input
+
+
+set_io RX             \
+    -pinname 91       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -REGISTER Yes     \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io RX_uart        \
+    -pinname 3        \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -REGISTER No      \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io {Sel_address[0]}  \
+    -pinname 72          \
+    -fixed yes           \
+    -iostd LVCMOS33      \
+    -REGISTER No         \
+    -RES_PULL Down       \
+    -DIRECTION Input
+
+
+set_io {Sel_address[1]}  \
+    -pinname 73          \
+    -fixed yes           \
+    -iostd LVCMOS33      \
+    -REGISTER No         \
+    -RES_PULL Down       \
+    -DIRECTION Input
+
+
+set_io Status_flag     \
+    -pinname 4         \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io TX              \
+    -pinname 98        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io TXMODE          \
+    -pinname 63        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL Up       \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io TX_UART         \
+    -pinname 2         \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL Up       \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io Wakeup         \
+    -iostd LVCMOS33   \
+    -REGISTER No      \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io WupuFull        \
+    -pinname 80        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 6       \
+    -OUT_LOAD 5        \
+    -REGISTER No       \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io clk            \
+    -pinname 97       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -REGISTER No      \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io uC_commandReady  \
+    -pinname 64         \
+    -fixed yes          \
+    -iostd LVCMOS33     \
+    -REGISTER No        \
+    -RES_PULL Down      \
+    -DIRECTION Input
+
+
+set_io uC_commandType  \
+    -pinname 65        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -REGISTER No       \
+    -RES_PULL Down     \
+    -DIRECTION Input
+
+
+
+#
+# Non IO constraints
+#
+
+assign_quadrant_clock -net clk_c -quadrant UL -fixed yes -color 16744448 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[5]} -fixed no 63 6 
+set_location ZBHandler_0/CentSec_0/DFN1C0_NU_6 -fixed no 83 5 
+set_location {manchester_encoder_0/rsr_RNO[15]} -fixed no 58 19 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II[5]} -fixed no 46 9 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_1/U0 -fixed no 87 14 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4_RNO[5]} -fixed no 121 16 
+set_location {md_v3_0/error_counter[1]} -fixed no 75 36 
+set_location {command_process_0/state_RNO[4]} -fixed no 99 38 
+set_location {MoM_unit_0/Contention_int_RNII9P43[5]} -fixed no 66 35 
+set_location {MoM_unit_0/commandToSend_RNO_2[1]} -fixed no 86 27 
+set_location {MoM_unit_0/commandToSend[0]} -fixed no 84 23 
+set_location {command_process_0/state_RNO[7]} -fixed no 101 37 
+set_location ZBHandler_0/COREUART_0/CUARTi01_RNIGFS5 -fixed no 57 6 
+set_location {MoM_unit_0/state_RNI10L[3]} -fixed no 75 32 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii_RNIPMVB[1]} -fixed no 45 14 
+set_location {MoM_unit_0/state_RNO_10[0]} -fixed no 74 24 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8[4]} -fixed no 113 18 
+set_location {manchester_encoder_0/bit_count_RNI92HF[1]} -fixed no 53 31 
+set_location md_v3_0/mdi4_RNIRRM5 -fixed no 80 43 
+set_location command_process_0/addOK_reg_RNO -fixed no 97 28 
+set_location MoM_unit_0/un1_Contention_int_I_39 -fixed no 64 40 
+set_location manchester_encoder_0/un1_symbol_t_I_43 -fixed no 58 32 
+set_location {ZBHandler_0/ZBControl_0/atCommand_2[4]} -fixed no 121 15 
+set_location {manchester_encoder_0/rsr[23]} -fixed no 45 23 
+set_location {manchester_encoder_0/rsr[14]} -fixed no 59 19 
+set_location {command_process_0/state[3]} -fixed no 91 38 
+set_location ZBHandler_0/ZBWaitTime_0/MX2_3 -fixed no 97 13 
+set_location {command_process_0/state_RNIL0T61[1]} -fixed no 89 33 
+set_location {manchester_encoder_0/rsr_RNO[21]} -fixed no 45 20 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11[4]} -fixed no 117 6 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10_RNO[4]} -fixed no 115 6 
+set_location ZBHandler_0/CentSec_0/U_AND3_3_4_5 -fixed no 80 13 
+set_location {MoM_unit_0/state_RNO_1[0]} -fixed no 77 23 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9_RNO[1]} -fixed no 87 4 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3[1]} -fixed no 37 7 
+set_location {manchester_encoder_0/rsr[3]} -fixed no 63 22 
+set_location {command_process_0/state_RNO_1[8]} -fixed no 91 36 
+set_location command_process_0/newMessage_RNIM14D -fixed no 87 36 
+set_location ZBHandler_0/COREUART_0/CUARTo0ol/CUARTi1II_RNO -fixed no 58 7 
+set_location LowPowerManagement_0/Flash_Freeze_Enabled_Inv -fixed no 3 49 
+set_location {addressingData_0/NextHopAddress_1[1]} -fixed no 88 23 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0_RNID20A[1]} -fixed no 71 6 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTOO0I[0]} -fixed no 54 15 
+set_location ZBHandler_0/ZBControl_0/EnableZBTimer -fixed no 86 15 
+set_location {command_process_0/state_RNIOH4T1[0]} -fixed no 88 38 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[9]} -fixed no 60 10 
+set_location {ZBHandler_0/ZBControl_0/state_RNO[1]} -fixed no 87 20 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4_RNO[2]} -fixed no 48 27 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTOO0I_RNI74C31[0]} -fixed no 53 8 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II[2]} -fixed no 43 10 
+set_location {manchester_encoder_0/rsr[15]} -fixed no 57 20 
+set_location {command_process_0/state_RNO_0[1]} -fixed no 90 34 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[9]} -fixed no 60 11 
+set_location md_v3_0/mdi4_RNO_0 -fixed no 77 41 
+set_location {command_process_0/bitCounter[4]} -fixed no 108 35 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6_RNO[0]} -fixed no 111 21 
+set_location manchester_encoder_0/un1_bit_count_I_13 -fixed no 48 34 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO[3]} -fixed no 75 4 
+set_location {manchester_encoder_0/rsr_RNO[2]} -fixed no 61 22 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO_0[7]} -fixed no 62 8 
+set_location MoM_unit_0/uC_ACK_reg_RNIFOF7 -fixed no 79 25 
+set_location {md_v3_0/fre_ref_0/q_RNI70E[6]} -fixed no 83 43 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10[0]} -fixed no 39 26 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD[2]} -fixed no 49 10 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11[1]} -fixed no 84 8 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_4/U1 -fixed no 80 12 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[11]} -fixed no 61 13 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO -fixed no 73 6 
+set_location {command_process_0/state_RNI0T0D1[8]} -fixed no 89 37 
+set_location {addressingData_0/NodeAddress_1_RNO[2]} -fixed no 114 30 
+set_location {MoM_unit_0/state[7]} -fixed no 81 28 
+set_location command_process_0/ParityRX_RNO_3 -fixed no 100 36 
+set_location {MoM_unit_0/state_RNO_0[2]} -fixed no 79 20 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_5 -fixed no 79 6 
+set_location {manchester_encoder_0/rsr_RNO[1]} -fixed no 61 16 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNIQ186[3]} -fixed no 76 6 
+set_location manchester_encoder_0/sendingMsg -fixed no 59 28 
+set_location {manchester_encoder_0/rsr_RNO[28]} -fixed no 49 23 
+set_location {ZBHandler_0/COREUART_0/CUARTo1l[5]} -fixed no 79 9 
+set_location ZBHandler_0/ZBControl_0/un1_next_state_0_sqmuxa_1_iv_i_s_i_a2_1_0 -fixed no 92 19 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_7 -fixed no 74 8 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II[4]} -fixed no 47 8 
+set_location {manchester_encoder_0/rsr_RNO[26]} -fixed no 48 25 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10_RNO[2]} -fixed no 43 8 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11_RNO[6]} -fixed no 93 6 
+set_location {manchester_encoder_0/symbol_t[7]} -fixed no 59 34 
+set_location {md_v3_0/fre_ref_0/q_RNIS16[2]} -fixed no 83 41 
+set_location {command_process_0/state_RNO[3]} -fixed no 90 39 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNI50P6[0]} -fixed no 54 9 
+set_location ZBHandler_0/ZBControl_0/d_hk_1_RNO -fixed no 101 20 
+set_location ZBHandler_0/CentSec_0/U_U_AND3_0_to_8 -fixed no 84 13 
+set_location manchester_encoder_0/encoder_busy_RNO -fixed no 73 32 
+set_location manchester_encoder_0/un1_symbol_t_I_33 -fixed no 62 36 
+set_location ZBHandler_0/ZBWaitTime_0/XOR2_2 -fixed no 97 11 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii_RNO[0]} -fixed no 44 14 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD_RNI06J3[0]} -fixed no 49 11 
+set_location {manchester_encoder_0/symbol_t_RNO[4]} -fixed no 59 29 
+set_location {manchester_encoder_0/rsr[36]} -fixed no 50 19 
+set_location md_v3_0/fre_ref_0/CEO_RNI3IQ3 -fixed no 76 39 
+set_location {ZBHandler_0/ZBControl_0/state_keep_RNI6S971_0[1]} -fixed no 99 21 
+set_location {md_v3_0/error_counter_RNO[1]} -fixed no 75 37 
+set_location {manchester_encoder_0/rsr_RNO[11]} -fixed no 64 22 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II[6]} -fixed no 46 11 
+set_location md_v3_0/EndOfMsg_RNO -fixed no 72 37 
+set_location {command_process_0/state_RNO_0[6]} -fixed no 102 42 
+set_location {manchester_encoder_0/rsr[32]} -fixed no 46 18 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state[4]} -fixed no 59 45 
+set_location {command_process_0/addressRX_RNO[8]} -fixed no 91 30 
+set_location manchester_encoder_0/un1_symbol_t_I_21 -fixed no 62 28 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARToi[0]} -fixed no 88 9 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0[5]} -fixed no 73 4 
+set_location {md_v3_0/fre_ref_0/q_RNI7T3[0]} -fixed no 84 41 
+set_location command_process_0/addOK_reg_RNO_5 -fixed no 96 26 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool_RNO[0]} -fixed no 52 12 
+set_location {MoM_unit_0/state_RNO_1[1]} -fixed no 74 27 
+set_location manchester_encoder_0/un1_bit_count_I_33 -fixed no 49 32 
+set_location {command_process_0/addressRX[9]} -fixed no 90 29 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNIP4J7[2]} -fixed no 74 16 
+set_location {manchester_encoder_0/rsr[10]} -fixed no 60 22 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_3/U1 -fixed no 79 12 
+set_location {manchester_encoder_0/symbol_t_RNO[2]} -fixed no 62 35 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[4]} -fixed no 65 7 
+set_location ZBHandler_0/CentSec_0/XOR2_2 -fixed no 86 14 
+set_location {MoM_unit_0/state[1]} -fixed no 75 28 
+set_location {command_process_0/state_RNIL96G6[1]} -fixed no 88 32 
+set_location ZBHandler_0/ZBWaitTime_0/DFN1E0C0_ND_7 -fixed no 101 10 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7_RNO[0]} -fixed no 109 20 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/housekeeping_request_RNO -fixed no 67 34 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10_RNO[5]} -fixed no 69 14 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_8 -fixed no 79 7 
+set_location {manchester_encoder_0/rsr[38]} -fixed no 51 21 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3[3]} -fixed no 113 11 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool_RNO_0[1]} -fixed no 53 10 
+set_location {manchester_encoder_0/rsr_RNO[18]} -fixed no 47 34 
+set_location md_v3_0/fre_ref_0/CEO_RNICBPK -fixed no 75 39 
+set_location manchester_encoder_0/un1_symbol_t_I_51 -fixed no 60 36 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5_RNO[0]} -fixed no 111 23 
+set_location {manchester_encoder_0/rsr_RNO[16]} -fixed no 56 20 
+set_location {command_process_0/bitCounter_RNO_0[3]} -fixed no 109 32 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNIU64A[7]} -fixed no 65 9 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/Primary_Filter_Instance/Register_For_Clock_Gating -fixed no 52 43 
+set_location ZBHandler_0/CentSec_0/INV_1 -fixed no 84 14 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9_RNO[4]} -fixed no 114 18 
+set_location ZBHandler_0/WaitTimeMx_0/BUFF_SelAux_0_0_inst -fixed no 93 19 
+set_location MoM_unit_0/un1_Contention_int_I_27 -fixed no 68 36 
+set_location {MoM_unit_0/state_RNIUV91[3]} -fixed no 74 33 
+set_location {MoM_unit_0/state_RNIS16B3[0]} -fixed no 67 35 
+set_location md_v3_0/mdi0_RNO -fixed no 75 41 
+set_location ZBHandler_0/CentSec_0/INV_2 -fixed no 87 13 
+set_location command_process_0/ParityRX_RNO_1 -fixed no 99 36 
+set_location {MoM_unit_0/state_RNO_0[7]} -fixed no 76 31 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii[3]} -fixed no 54 8 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii_RNO[2]} -fixed no 45 15 
+set_location {md_v3_0/fre_ref_0/q_RNO[4]} -fixed no 90 42 
+set_location {md_v3_0/error_counter[0]} -fixed no 77 36 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[1]} -fixed no 73 18 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3_RNO[4]} -fixed no 120 15 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7_RNO[1]} -fixed no 48 5 
+set_location {MoM_unit_0/Contention_int[9]} -fixed no 67 38 
+set_location {md_v3_0/error_counter_RNO_0[3]} -fixed no 75 34 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool_RNII14D[0]} -fixed no 55 11 
+set_location {MoM_unit_0/state_RNO_0[1]} -fixed no 75 27 
+set_location {MoM_unit_0/Contention_int[0]} -fixed no 67 36 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNIIOCU[0]} -fixed no 77 9 
+set_location manchester_encoder_0/Cout_RNO -fixed no 58 31 
+set_location md_v3_0/mdi5 -fixed no 72 35 
+set_location {MoM_unit_0/state_RNITVK[1]} -fixed no 77 32 
+set_location {manchester_encoder_0/rsr_RNO[4]} -fixed no 63 21 
+set_location {command_process_0/state_RNO[1]} -fixed no 91 33 
+set_location manchester_encoder_0/un1_bit_count_I_1 -fixed no 53 35 
+set_location {command_process_0/addressRX_RNO[6]} -fixed no 87 29 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9_RNO[3]} -fixed no 105 5 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_2 -fixed no 72 6 
+set_location {MoM_unit_0/state_RNO_0[3]} -fixed no 74 30 
+set_location {MoM_unit_0/state_RNIOU151_1[0]} -fixed no 66 30 
+set_location {MoM_unit_0/Contention_int_RNILKJ11[0]} -fixed no 66 36 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTIlo0[4]} -fixed no 72 8 
+set_location {manchester_encoder_0/rsr_RNO_0[8]} -fixed no 60 20 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4[1]} -fixed no 36 9 
+set_location {command_process_0/bitCounter[0]} -fixed no 107 32 
+set_location {ZBHandler_0/COREUART_0/CUARTo1l[2]} -fixed no 73 9 
+set_location MoM_unit_0/un1_Contention_int_I_38 -fixed no 69 43 
+set_location {manchester_encoder_0/symbol_t_RNO[1]} -fixed no 59 32 
+set_location {manchester_encoder_0/rsr_RNO[3]} -fixed no 63 23 
+set_location {manchester_encoder_0/rsr[27]} -fixed no 49 24 
+set_location md_v3_0/mdi4 -fixed no 79 43 
+set_location manchester_encoder_0/encoder_busy -fixed no 72 32 
+set_location ZBHandler_0/CentSec_0/XOR2_1 -fixed no 83 6 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0[0]} -fixed no 73 7 
+set_location {MoM_unit_0/state_RNO_2[2]} -fixed no 80 21 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7[5]} -fixed no 69 18 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5_RNO[3]} -fixed no 110 9 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNO[1]} -fixed no 80 8 
+set_location {manchester_encoder_0/rsr_RNO[7]} -fixed no 62 18 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNO[5]} -fixed no 71 11 
+set_location MoM_unit_0/un1_Contention_int_I_1 -fixed no 68 35 
+set_location ZBHandler_0/ZBWaitTime_0/XOR2_1 -fixed no 100 8 
+set_location {MoM_unit_0/state_RNIL8E22[6]} -fixed no 78 31 
+set_location manchester_encoder_0/un1_bit_count_I_10 -fixed no 53 34 
+set_location ZBHandler_0/COREUART_0/un1_cuartlo1 -fixed no 59 7 
+set_location ZBHandler_0/ZBWaitTime_0/U_AND2A_Tcnt_2_RNI9HN4 -fixed no 132 27 
+set_location MoM_unit_0/ContentionExpired_RNI3QSD -fixed no 64 37 
+set_location ZBHandler_0/CentSec_0/XOR2_3 -fixed no 79 11 
+set_location {addressingData_0/NodeAddress_1[3]} -fixed no 98 26 
+set_location {command_process_0/state[2]} -fixed no 89 35 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8[3]} -fixed no 105 4 
+set_location {ZBHandler_0/ZBControl_0/state_keep_RNI29JH2[1]} -fixed no 100 20 
+set_location {MoM_unit_0/commandToSend_RNIU355[0]} -fixed no 80 24 
+set_location {command_process_0/addressRX[3]} -fixed no 87 30 
+set_location command_process_0/addOK_reg_RNO_10 -fixed no 94 27 
+set_location {command_process_0/state_RNO_0[4]} -fixed no 100 38 
+set_location manchester_encoder_0/un1_symbol_t_I_44 -fixed no 59 31 
+set_location {md_v3_0/fre_ref_0/q[0]} -fixed no 83 40 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_9 -fixed no 78 7 
+set_location ZBHandler_0/ZBWaitTime_0/MX2_2 -fixed no 97 10 
+set_location {command_process_0/state_RNI5MJB[8]} -fixed no 86 37 
+set_location {command_process_0/addressRX[4]} -fixed no 92 31 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTLLO0 -fixed no 71 13 
+set_location manchester_encoder_0/mdo -fixed no 56 30 
+set_location ZBHandler_0/COREUART_0/CUARTlioL/CUARTll -fixed no 62 14 
+set_location {command_process_0/bitCounter_RNO[1]} -fixed no 108 31 
+set_location ZBHandler_0/ZBControl_0/start_RNO -fixed no 92 15 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9[3]} -fixed no 104 6 
+set_location {command_process_0/state_RNI3E3A1[0]} -fixed no 92 37 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9[4]} -fixed no 115 18 
+set_location {MoM_unit_0/state_RNO_3[6]} -fixed no 72 26 
+set_location {ZBHandler_0/ZBControl_0/state[1]} -fixed no 88 20 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5[5]} -fixed no 70 16 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0[3]} -fixed no 70 6 
+set_location {command_process_0/bitCounter[3]} -fixed no 109 33 
+set_location MoM_unit_0/uCcommandinQueue -fixed no 85 28 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNI7TQA4[5]} -fixed no 67 33 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX[3]} -fixed no 76 7 
+set_location manchester_encoder_0/un1_bit_count_I_23 -fixed no 51 34 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_7/U0 -fixed no 82 4 
+set_location {manchester_encoder_0/rsr[24]} -fixed no 46 25 
+set_location {manchester_encoder_0/bit_count[1]} -fixed no 54 32 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0_RNO[2]} -fixed no 70 8 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTIlo0[0]} -fixed no 71 10 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNILMI6[2]} -fixed no 57 46 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToo1i[6]} -fixed no 47 12 
+set_location {manchester_encoder_0/bit_count_RNO[3]} -fixed no 50 32 
+set_location {command_process_0/addressRX_RNO[2]} -fixed no 93 29 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II[3]} -fixed no 47 9 
+set_location manchester_encoder_0/un1_bit_count_I_30 -fixed no 48 31 
+set_location {manchester_encoder_0/symbol_t[1]} -fixed no 59 35 
+set_location {command_process_0/commandRX[0]} -fixed no 88 31 
+set_location {MoM_unit_0/Contention_int[5]} -fixed no 65 41 
+set_location {md_v3_0/fre_ref_0/q_RNO[1]} -fixed no 82 42 
+set_location {command_process_0/state_RNO[5]} -fixed no 99 42 
+set_location MoM_unit_0/command_In_Queue_RNINBF81 -fixed no 82 24 
+set_location ZBHandler_0/COREUART_0/CUARTiooL.un1_csn -fixed no 70 14 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11[2]} -fixed no 45 10 
+set_location ZBHandler_0/CentSec_0/XOR2_6 -fixed no 82 5 
+set_location command_process_0/PARITY_BIT_COUNTER.un3_newdata_i_i_a2 -fixed no 92 34 
+set_location {command_process_0/state_RNO_0[7]} -fixed no 100 37 
+set_location {command_process_0/addressRX_RNO[14]} -fixed no 88 30 
+set_location {command_process_0/state_RNO_1[1]} -fixed no 89 34 
+set_location {manchester_encoder_0/rsr[25]} -fixed no 47 26 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNIQDEI[3]} -fixed no 55 9 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii[0]} -fixed no 44 13 
+set_location {MoM_unit_0/state_RNO_3[0]} -fixed no 75 22 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6_RNO[3]} -fixed no 108 8 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARToi_RNO[1]} -fixed no 89 10 
+set_location MoM_unit_0/un1_Contention_int_I_58 -fixed no 66 41 
+set_location ZBHandler_0/COREUART_0/CUARTlioL/CUARTil -fixed no 86 11 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTIlo0[3]} -fixed no 77 6 
+set_location {manchester_encoder_0/rsr_RNO[5]} -fixed no 62 20 
+set_location {manchester_encoder_0/rsr[19]} -fixed no 46 34 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARToi_RNO[2]} -fixed no 88 8 
+set_location {manchester_encoder_0/rsr_RNO[30]} -fixed no 46 22 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX[4]} -fixed no 116 6 
+set_location {MoM_unit_0/state_RNO_2[0]} -fixed no 76 25 
+set_location manchester_encoder_0/un1_symbol_t_I_34 -fixed no 60 32 
+set_location {MoM_unit_0/commandToSend_RNI9RLH_0[0]} -fixed no 83 23 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6_RNO[1]} -fixed no 38 10 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO_0[8]} -fixed no 63 12 
+set_location ZBHandler_0/ZBWaitTime_0/U_AND3A_Tcnt -fixed no 101 11 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6[0]} -fixed no 110 21 
+set_location {md_v3_0/fre_ref_0/q_RNO[6]} -fixed no 84 45 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10_RNO[1]} -fixed no 86 5 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10_RNO[6]} -fixed no 94 5 
+set_location ZBHandler_0/COREUART_0/CUARTi01 -fixed no 51 9 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11_RNO[4]} -fixed no 117 5 
+set_location {addressingData_0/NodeAddress_1_RNO[3]} -fixed no 98 25 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNO[0]} -fixed no 57 42 
+set_location {command_process_0/state_RNIL4K31[8]} -fixed no 86 36 
+set_location {command_process_0/bitCounter_RNO_0[2]} -fixed no 106 33 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3[4]} -fixed no 119 14 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_10/U0 -fixed no 83 12 
+set_location {manchester_encoder_0/rsr_RNO[9]} -fixed no 58 21 
+set_location {md_v3_0/fre_ref_0/q[5]} -fixed no 92 43 
+set_location manchester_encoder_0/un1_bit_count_I_8 -fixed no 47 31 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7[3]} -fixed no 106 6 
+set_location command_process_0/ParityRX_RNO_2 -fixed no 98 36 
+set_location ZBHandler_0/ZBWaitTime_0/DFN1C0_ND_1 -fixed no 99 9 
+set_location {command_process_0/state_RNI8S4C[8]} -fixed no 87 35 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNO[3]} -fixed no 75 6 
+set_location {MoM_unit_0/state_RNO_4[0]} -fixed no 76 22 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii[1]} -fixed no 56 7 
+set_location ZBHandler_0/ZBWaitTime_0/MX2_4 -fixed no 98 9 
+set_location {manchester_encoder_0/rsr[6]} -fixed no 63 18 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToo1i[3]} -fixed no 48 9 
+set_location {MoM_unit_0/state_RNIBGK1[4]} -fixed no 71 30 
+set_location {manchester_encoder_0/symbol_t_RNIQJDI4[3]} -fixed no 59 30 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD_RNIITVA1_0[0]} -fixed no 94 20 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10[1]} -fixed no 86 6 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNIOK0D[0]} -fixed no 78 9 
+set_location {command_process_0/addressRX_RNO[10]} -fixed no 88 26 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5_RNO[4]} -fixed no 118 17 
+set_location {manchester_encoder_0/rsr[5]} -fixed no 63 19 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8_RNO[0]} -fixed no 107 20 
+set_location command_process_0/addOK_reg -fixed no 94 33 
+set_location {command_process_0/Store_address.addressRX_4[0]} -fixed no 89 31 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_4/U0 -fixed no 80 11 
+set_location {command_process_0/state_RNO[6]} -fixed no 101 42 
+set_location {ZBHandler_0/ZBControl_0/atCommand_1[3]} -fixed no 114 8 
+set_location {MoM_unit_0/Contention_int[8]} -fixed no 66 38 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_4 -fixed no 73 8 
+set_location {md_v3_0/error_counter_RNIBDU2[3]} -fixed no 75 35 
+set_location {MoM_unit_0/Contention_int_RNO[1]} -fixed no 68 41 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTOO0I[1]} -fixed no 54 16 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX[1]} -fixed no 79 8 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_3 -fixed no 74 6 
+set_location {manchester_encoder_0/rsr_RNO_0[15]} -fixed no 58 20 
+set_location command_process_0/addOK_reg_RNO_6 -fixed no 98 27 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO[4]} -fixed no 74 3 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARToi_RNO[3]} -fixed no 88 11 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0 -fixed no 73 5 
+set_location {md_v3_0/fre_ref_0/q[3]} -fixed no 90 44 
+set_location ZBHandler_0/ZBControl_0/ZBcontrolActive_2_sqmuxa_i_0_a2 -fixed no 92 16 
+set_location {manchester_encoder_0/rsr[20]} -fixed no 45 32 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNIMQI6[3]} -fixed no 57 44 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7[2]} -fixed no 26 22 
+set_location {MoM_unit_0/state_RNI27A66[7]} -fixed no 82 26 
+set_location {MoM_unit_0/state_RNO[5]} -fixed no 78 22 
+set_location md_v3_0/ctd1 -fixed no 80 41 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTIlo0[2]} -fixed no 74 9 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool[0]} -fixed no 53 12 
+set_location ZBHandler_0/ZBWaitTime_0/DFN1C0_ND_6 -fixed no 99 7 
+set_location MoM_unit_0/un1_Contention_int_I_40 -fixed no 67 39 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX[6]} -fixed no 90 7 
+set_location {command_process_0/addressRX[14]} -fixed no 89 30 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II_RNO[5]} -fixed no 46 10 
+set_location command_process_0/addOK_reg_RNO_16 -fixed no 97 30 
+set_location manchester_encoder_0/un1_bit_count_I_29 -fixed no 49 33 
+set_location ZBHandler_0/ZBControl_0/ActivateZB_RNO -fixed no 96 22 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii_RNO[3]} -fixed no 47 15 
+set_location housekeepingCheck_0/Result_1 -fixed no 72 33 
+set_location {ZBHandler_0/ZBControl_0/state_RNI58VR1[0]} -fixed no 91 21 
+set_location {manchester_encoder_0/rsr_RNO_0[7]} -fixed no 61 19 
+set_location {MoM_unit_0/Contention_int_RNO[9]} -fixed no 68 38 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD_RNI05JC[0]} -fixed no 48 11 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTLLO0_RNO -fixed no 70 13 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNIRJ9C[0]} -fixed no 53 7 
+set_location {MoM_unit_0/state[0]} -fixed no 78 25 
+set_location {manchester_encoder_0/rsr_RNO_0[9]} -fixed no 58 22 
+set_location {MoM_unit_0/state_RNI4SB6[7]} -fixed no 69 31 
+set_location MoM_unit_0/command_In_Queue -fixed no 82 25 
+set_location {MoM_unit_0/state[6]} -fixed no 72 29 
+set_location {MoM_unit_0/commandToSend_RNIU34K2[0]} -fixed no 79 31 
+set_location {command_process_0/state_RNIKCG21[0]} -fixed no 93 37 
+set_location {command_process_0/addressRX_RNO[3]} -fixed no 86 30 
+set_location {MoM_unit_0/commandToSend_RNO_0[1]} -fixed no 83 26 
+set_location ZBHandler_0/COREUART_0/CUARTo0ol/CUARTi00i_RNO -fixed no 54 10 
+set_location manchester_encoder_0/un1_symbol_t_I_1 -fixed no 61 29 
+set_location {ZBHandler_0/ZBControl_0/state_keep_RNI10SD1[1]} -fixed no 95 20 
+set_location ZBHandler_0/CentSec_0/U_AND2_6_7 -fixed no 84 4 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3[5]} -fixed no 122 16 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_3/U0 -fixed no 78 12 
+set_location ZBHandler_0/CentSec_0/XOR2_0 -fixed no 84 6 
+set_location md_v3_0/rx_error -fixed no 73 38 
+set_location {manchester_encoder_0/rsr[33]} -fixed no 47 20 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6_RNO[4]} -fixed no 116 18 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[3]} -fixed no 73 16 
+set_location {command_process_0/state_RNIT37I[5]} -fixed no 100 42 
+set_location md_v3_0/mdi2 -fixed no 77 38 
+set_location command_process_0/addOK_reg_RNO_12 -fixed no 97 26 
+set_location {MoM_unit_0/state_RNO[4]} -fixed no 80 31 
+set_location {md_v3_0/fre_ref_0/q[2]} -fixed no 84 42 
+set_location {MoM_unit_0/Contention_int_RNI1TL71[0]} -fixed no 65 37 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToo1i[5]} -fixed no 45 8 
+set_location {command_process_0/addressRX[5]} -fixed no 83 30 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7[4]} -fixed no 112 18 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNO[5]} -fixed no 58 42 
+set_location {MoM_unit_0/state_RNO[7]} -fixed no 80 28 
+set_location {ZBHandler_0/ZBControl_0/atCommand_2[5]} -fixed no 122 17 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool_RNO[1]} -fixed no 54 11 
+set_location {md_v3_0/fre_ref_0/q_RNO_0[2]} -fixed no 85 43 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9_RNO[0]} -fixed no 67 20 
+set_location {MoM_unit_0/state_RNO_0[5]} -fixed no 77 21 
+set_location {MoM_unit_0/commandToSend_RNITK0A[0]} -fixed no 76 24 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0_RNO_0[2]} -fixed no 70 9 
+set_location {md_v3_0/fre_ref_0/q_RNI954[1]} -fixed no 84 43 
+set_location command_process_0/newMessage -fixed no 95 34 
+set_location {ZBHandler_0/ZBControl_0/atCommand_2[2]} -fixed no 107 29 
+set_location md_v3_0/mdi3 -fixed no 78 40 
+set_location md_v3_0/mdi1 -fixed no 77 39 
+set_location command_process_0/addOK_reg_RNO_3 -fixed no 96 28 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II[1]} -fixed no 41 10 
+set_location {command_process_0/bitCounter_RNIQE2H[2]} -fixed no 108 33 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNO[1]} -fixed no 55 6 
+set_location command_process_0/addOK_reg_RNO_14 -fixed no 96 30 
+set_location {manchester_encoder_0/symbol_t[8]} -fixed no 61 34 
+set_location ZBHandler_0/ZBControl_0/LoadWaitTime_RNO_1 -fixed no 97 18 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNO[2]} -fixed no 55 5 
+set_location {MoM_unit_0/state_RNI7G92[4]} -fixed no 77 29 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0[4]} -fixed no 74 4 
+set_location ZBHandler_0/ZBWaitTime_0/OR2_0 -fixed no 99 10 
+set_location MoM_unit_0/uC_ACK_reg_RNIDKA2_0 -fixed no 75 29 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5[3]} -fixed no 109 8 
+set_location {MoM_unit_0/state_RNO_2[6]} -fixed no 72 27 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARToi[2]} -fixed no 87 9 
+set_location {manchester_encoder_0/rsr_RNO[34]} -fixed no 48 19 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii_RNIAB7U[3]} -fixed no 47 14 
+set_location {md_v3_0/fre_ref_0/q_RNO_0[6]} -fixed no 91 42 
+set_location {command_process_0/addressRX[0]} -fixed no 90 30 
+set_location MoM_unit_0/un1_nodeaddress_10 -fixed no 99 27 
+set_location manchester_encoder_0/un1_bit_count_I_14 -fixed no 50 35 
+set_location {ZBHandler_0/ZBControl_0/atCommand_1[2]} -fixed no 106 30 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6[2]} -fixed no 45 27 
+set_location {command_process_0/addressRX[11]} -fixed no 90 27 
+set_location {ZBHandler_0/ZBControl_0/state_keep_RNIS1D03[1]} -fixed no 93 20 
+set_location MoM_unit_0/commandToSend_0_sqmuxa_i_o2 -fixed no 86 29 
+set_location manchester_encoder_0/sendingMsg_RNIFMBJ4 -fixed no 60 31 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state[5]} -fixed no 59 43 
+set_location {addressingData_0/NextHopAddress_1_RNO[1]} -fixed no 87 24 
+set_location {manchester_encoder_0/rsr_RNO[32]} -fixed no 46 19 
+set_location {md_v3_0/error_counter_RNO[0]} -fixed no 77 37 
+set_location {MoM_unit_0/commandToSend_RNO_0[0]} -fixed no 84 24 
+set_location {command_process_0/bitCounter[2]} -fixed no 107 34 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6_RNO[5]} -fixed no 70 15 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO[2]} -fixed no 69 5 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[8]} -fixed no 64 11 
+set_location {manchester_encoder_0/symbol_t_RNO[8]} -fixed no 61 32 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11_RNO[1]} -fixed no 85 7 
+set_location ZBHandler_0/ZBWaitTime_0/U_AND2A_Tcnt_2 -fixed no 102 11 
+set_location ZBHandler_0/ZBWaitTime_0/MX2_1 -fixed no 100 11 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[4]} -fixed no 65 8 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool_RNIGVRF1[0]} -fixed no 54 7 
+set_location {MoM_unit_0/state_RNO_1[5]} -fixed no 79 23 
+set_location {manchester_encoder_0/rsr_RNO[20]} -fixed no 46 33 
+set_location MoM_unit_0/commandQueue_2_sqmuxa_i_o2_0 -fixed no 87 27 
+set_location command_process_0/newMessage_RNIT5LR1 -fixed no 88 37 
+set_location {command_process_0/state[6]} -fixed no 101 43 
+set_location command_process_0/ParityRX_RNO_0 -fixed no 98 35 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[8]} -fixed no 63 11 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX[0]} -fixed no 37 27 
+set_location {command_process_0/addressRX_RNO[5]} -fixed no 81 30 
+set_location {command_process_0/addressRX_RNO[12]} -fixed no 91 28 
+set_location MoM_unit_0/ContentionExpired_RNO -fixed no 64 35 
+set_location {command_process_0/state_RNO[8]} -fixed no 91 35 
+set_location manchester_encoder_0/un1_bit_count_I_6 -fixed no 50 34 
+set_location md_v3_0/mdi0 -fixed no 74 41 
+set_location ZBHandler_0/ZBControl_0/uC_ACK_RNO -fixed no 93 21 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNI5325[1]} -fixed no 74 17 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4_RNO[1]} -fixed no 36 8 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II_RNO[1]} -fixed no 42 10 
+set_location manchester_encoder_0/un1_bit_count_I_11 -fixed no 47 30 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II_RNO[6]} -fixed no 45 11 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_1 -fixed no 72 7 
+set_location md_v3_0/EndOfMsg_RNIGDH9 -fixed no 74 37 
+set_location manchester_encoder_0/un1_bit_count_I_34 -fixed no 49 35 
+set_location {manchester_encoder_0/rsr[7]} -fixed no 61 18 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state[0]} -fixed no 58 43 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[11]} -fixed no 62 12 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II_RNO[2]} -fixed no 44 10 
+set_location {MoM_unit_0/Contention_int_RNO[7]} -fixed no 64 41 
+set_location ZBHandler_0/COREUART_0/CUARTo0ol/CUARTi00i -fixed no 53 9 
+set_location {MoM_unit_0/state_RNO_4[7]} -fixed no 78 29 
+set_location manchester_encoder_0/un1_bit_count_I_26 -fixed no 49 30 
+set_location {manchester_encoder_0/rsr_RNO[8]} -fixed no 60 19 
+set_location {md_v3_0/fre_ref_0/q_RNO_0[4]} -fixed no 89 43 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNO[3]} -fixed no 58 44 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9[2]} -fixed no 42 8 
+set_location ZBHandler_0/CentSec_0/U_AND2_1_2 -fixed no 85 12 
+set_location manchester_encoder_0/sendingMsg_RNIFMBJ4_0 -fixed no 66 29 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9[5]} -fixed no 69 15 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0[0]} -fixed no 72 4 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARToi[1]} -fixed no 89 9 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3_RNO[3]} -fixed no 114 11 
+set_location {manchester_encoder_0/rsr_RNO_0[2]} -fixed no 62 23 
+set_location {addressingData_0/NodeAddress_1[2]} -fixed no 113 30 
+set_location {ZBHandler_0/ZBControl_0/atCommand_2[3]} -fixed no 115 10 
+set_location {manchester_encoder_0/rsr[29]} -fixed no 47 22 
+set_location {command_process_0/addressRX[2]} -fixed no 94 29 
+set_location {MoM_unit_0/state_RNO[1]} -fixed no 74 28 
+set_location manchester_encoder_0/un1_bit_count_I_17 -fixed no 50 31 
+set_location {command_process_0/addressRX_RNO[1]} -fixed no 82 30 
+set_location {command_process_0/bitCounter_RNIROES[1]} -fixed no 107 33 
+set_location {MoM_unit_0/state_RNI4KV55[2]} -fixed no 80 30 
+set_location {MoM_unit_0/state_RNI1JCR2[6]} -fixed no 78 27 
+set_location {MoM_unit_0/commandToSend_RNO_1[1]} -fixed no 85 27 
+set_location md_v3_0/Enable_decoder -fixed no 74 36 
+set_location md_v3_0/Enable_decoder_RNI9KB9 -fixed no 79 42 
+set_location {addressingData_0/NextHopAddress_1_RNO[3]} -fixed no 88 22 
+set_location ZBHandler_0/ZBWaitTime_0/AND2_0 -fixed no 99 11 
+set_location {md_v3_0/fre_ref_0/q_RNO[5]} -fixed no 92 42 
+set_location {manchester_encoder_0/rsr[1]} -fixed no 62 16 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii_RNO[1]} -fixed no 45 13 
+set_location MoM_unit_0/commandSource_RNIRTVK -fixed no 74 23 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6[5]} -fixed no 69 16 
+set_location {manchester_encoder_0/rsr_RNO[10]} -fixed no 60 21 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[12]} -fixed no 62 10 
+set_location MoM_unit_0/un1_Contention_int_I_50 -fixed no 67 40 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0[3]} -fixed no 75 5 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTOO0I[2]} -fixed no 53 16 
+set_location ZBHandler_0/ZBControl_0/d_hk_1_RNO_2 -fixed no 101 19 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNIF325[5]} -fixed no 64 8 
+set_location md_v3_0/rx_error_0 -fixed no 74 39 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/trigger_ulsicc_RNO -fixed no 55 44 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4[0]} -fixed no 112 24 
+set_location {manchester_encoder_0/rsr[11]} -fixed no 64 21 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10_RNO[0]} -fixed no 66 22 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[5]} -fixed no 64 6 
+set_location {manchester_encoder_0/bit_count[5]} -fixed no 52 29 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD[6]} -fixed no 48 12 
+set_location {ZBHandler_0/COREUART_0/CUARTo1l[1]} -fixed no 80 7 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToo1i[4]} -fixed no 48 7 
+set_location manchester_encoder_0/sendingMsg_RNO -fixed no 60 27 
+set_location {command_process_0/addressRX[6]} -fixed no 88 29 
+set_location {MoM_unit_0/Contention_int_RNO[3]} -fixed no 66 45 
+set_location {manchester_encoder_0/rsr[37]} -fixed no 51 19 
+set_location {ZBHandler_0/COREUART_0/CUARTo1l[6]} -fixed no 75 8 
+set_location {command_process_0/state[1]} -fixed no 90 33 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARToi_RNIG4J7[2]} -fixed no 88 10 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3_RNO[2]} -fixed no 107 28 
+set_location MoM_unit_0/uC_ACK_reg_RNIDKA2 -fixed no 74 29 
+set_location MoM_unit_0/commandQueue_flag_RNO -fixed no 84 25 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7[0]} -fixed no 108 20 
+set_location manchester_encoder_0/un1_bit_count_I_31 -fixed no 52 34 
+set_location ZBHandler_0/ZBWaitTime_0/DFN1C0_ND_2 -fixed no 101 9 
+set_location {MoM_unit_0/state_RNIVCG5D[7]} -fixed no 80 27 
+set_location {manchester_encoder_0/rsr_RNO[29]} -fixed no 48 22 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/housekeeping_request -fixed no 66 33 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5_RNO[2]} -fixed no 47 28 
+set_location {MoM_unit_0/state_RNIA0A1[6]} -fixed no 79 32 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0[1]} -fixed no 69 9 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[6]} -fixed no 63 8 
+set_location ZBHandler_0/CentSec_0/U_AND3_0_1_2 -fixed no 85 14 
+set_location ZBHandler_0/ZBWaitTime_0/MX2_5 -fixed no 96 13 
+set_location {MoM_unit_0/Contention_int_RNO[8]} -fixed no 65 39 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/Flash_Freeze_reg -fixed no 56 43 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool[1]} -fixed no 53 11 
+set_location {MoM_unit_0/state_RNO_0[0]} -fixed no 76 23 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11_RNO[0]} -fixed no 39 27 
+set_location {manchester_encoder_0/symbol_t[6]} -fixed no 60 33 
+set_location {manchester_encoder_0/rsr_RNO_0[14]} -fixed no 59 18 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_8/U1 -fixed no 85 6 
+set_location MoM_unit_0/un1_Contention_int_I_41 -fixed no 69 40 
+set_location ZBHandler_0/ZBWaitTime_0/MX2_6 -fixed no 98 8 
+set_location manchester_encoder_0/mdo_RNO -fixed no 56 31 
+set_location {command_process_0/state_ns_i_0_o2[1]} -fixed no 98 37 
+set_location ZBHandler_0/ZBControl_0/LoadWaitTime_RNO -fixed no 100 18 
+set_location {manchester_encoder_0/rsr_RNO_0[3]} -fixed no 64 23 
+set_location {manchester_encoder_0/rsr_RNO_0[13]} -fixed no 68 19 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state[1]} -fixed no 66 34 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0_RNO[1]} -fixed no 68 8 
+set_location MoM_unit_0/COMMAND_QUEUE_P.command_In_Queue_5_0_a2_0 -fixed no 87 26 
+set_location {command_process_0/state_RNO[2]} -fixed no 89 36 
+set_location {md_v3_0/fre_ref_0/q_RNI567[4]} -fixed no 91 44 
+set_location command_process_0/N_379_i_i_a2 -fixed no 86 35 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11_RNO[2]} -fixed no 44 9 
+set_location {MoM_unit_0/state[4]} -fixed no 78 30 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[0]} -fixed no 75 18 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7[1]} -fixed no 47 4 
+set_location {MoM_unit_0/state_RNO_6[7]} -fixed no 76 30 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARToi_RNO[0]} -fixed no 89 8 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNIKII6[1]} -fixed no 56 44 
+set_location command_process_0/newMessage_RNO -fixed no 95 35 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0[2]} -fixed no 68 6 
+set_location {MoM_unit_0/state_RNI00L[3]} -fixed no 73 29 
+set_location {MoM_unit_0/state_RNO_0[4]} -fixed no 78 32 
+set_location md_v3_0/Enable_decoder_RNO -fixed no 73 36 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9_RNO[2]} -fixed no 32 12 
+set_location command_process_0/addOK_reg_RNO_7 -fixed no 99 28 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNIP186[2]} -fixed no 69 7 
+set_location {MoM_unit_0/state_RNIM4995[2]} -fixed no 81 29 
+set_location {manchester_encoder_0/bit_count_RNO[5]} -fixed no 50 29 
+set_location {manchester_encoder_0/rsr_RNO[33]} -fixed no 47 19 
+set_location {manchester_encoder_0/rsr_RNO[24]} -fixed no 45 24 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/control_user_clock -fixed no 63 34 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO_0[5]} -fixed no 72 3 
+set_location {manchester_encoder_0/bit_count_RNO[4]} -fixed no 50 30 
+set_location {MoM_unit_0/state_RNI1GV[6]} -fixed no 73 28 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6[3]} -fixed no 107 7 
+set_location {manchester_encoder_0/rsr[34]} -fixed no 48 20 
+set_location {command_process_0/addressRX_RNO[7]} -fixed no 82 28 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0_RNIK186[0]} -fixed no 70 4 
+set_location {manchester_encoder_0/rsr_RNO[19]} -fixed no 46 35 
+set_location command_process_0/addOK_reg_RNO_11 -fixed no 98 29 
+set_location {ZBHandler_0/COREUART_0/CUARTo1l[4]} -fixed no 71 7 
+set_location {manchester_encoder_0/rsr_RNO[22]} -fixed no 44 21 
+set_location {command_process_0/addressRX[1]} -fixed no 95 29 
+set_location {ZBHandler_0/ZBControl_0/atCommand_2_RNO[2]} -fixed no 107 30 
+set_location {ZBHandler_0/ZBControl_0/state_RNO_0[1]} -fixed no 87 21 
+set_location {MoM_unit_0/Contention_int_RNO[6]} -fixed no 63 38 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNI1HAP[9]} -fixed no 59 11 
+set_location MoM_unit_0/commandSource_RNIDRE13 -fixed no 75 23 
+set_location manchester_encoder_0/un1_bit_count_I_24 -fixed no 49 31 
+set_location {manchester_encoder_0/rsr_RNO[6]} -fixed no 64 18 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO_0[0]} -fixed no 71 5 
+set_location {manchester_encoder_0/bit_count_RNO[2]} -fixed no 52 33 
+set_location {command_process_0/state_RNIU95G1[2]} -fixed no 92 36 
+set_location ZBHandler_0/ZBControl_0/LoadWaitTime_RNO_2 -fixed no 99 18 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6[4]} -fixed no 111 18 
+set_location {MoM_unit_0/state_RNO_2[1]} -fixed no 76 28 
+set_location {manchester_encoder_0/rsr[35]} -fixed no 49 20 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNI6FPM[8]} -fixed no 64 10 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARToi[3]} -fixed no 87 11 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_9/U1 -fixed no 83 13 
+set_location md_v3_0/fre_ref_0/CEO -fixed no 76 40 
+set_location {md_v3_0/fre_ref_0/q[6]} -fixed no 84 44 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNIRPL8[2]} -fixed no 77 8 
+set_location {MoM_unit_0/state_RNO_1[6]} -fixed no 71 29 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11[0]} -fixed no 39 28 
+set_location MoM_unit_0/command_In_Queue_RNO -fixed no 83 24 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii[1]} -fixed no 46 13 
+set_location {MoM_unit_0/state_RNIL8E22_0[6]} -fixed no 72 28 
+set_location {MoM_unit_0/commandToSend_RNO_1[0]} -fixed no 86 24 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_5/U1 -fixed no 80 14 
+set_location md_v3_0/mdi5_RNO -fixed no 73 35 
+set_location {MoM_unit_0/commandToSend_RNI5EH4[1]} -fixed no 78 21 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNO[4]} -fixed no 117 7 
+set_location {manchester_encoder_0/symbol_t[5]} -fixed no 62 34 
+set_location MoM_unit_0/un1_commandtosend19_i_o2_0 -fixed no 86 26 
+set_location {MoM_unit_0/state[5]} -fixed no 78 23 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/trigger_ulsicc -fixed no 55 43 
+set_location md_v3_0/mdi0_RNIF1J7 -fixed no 75 42 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5[2]} -fixed no 46 28 
+set_location {MoM_unit_0/state_RNI8AL22[2]} -fixed no 79 26 
+set_location manchester_encoder_0/un1_symbol_t_I_53 -fixed no 63 32 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNO[1]} -fixed no 67 32 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToo1i[0]} -fixed no 50 9 
+set_location {manchester_encoder_0/rsr_RNO[14]} -fixed no 60 18 
+set_location {md_v3_0/fre_ref_0/q_RNO_1[6]} -fixed no 85 44 
+set_location {manchester_encoder_0/bit_count_RNI3M55[5]} -fixed no 53 30 
+set_location {ZBHandler_0/ZBControl_0/atCommand_2_RNO[1]} -fixed no 47 13 
+set_location {MoM_unit_0/Contention_int[3]} -fixed no 66 44 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5[4]} -fixed no 117 17 
+set_location MoM_unit_0/un1_Contention_int_I_33 -fixed no 64 39 
+set_location MoM_unit_0/commandSource -fixed no 81 23 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[0]} -fixed no 74 19 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNIE64A[3]} -fixed no 73 15 
+set_location {manchester_encoder_0/rsr_RNO_0[4]} -fixed no 62 21 
+set_location ZBHandler_0/ZBWaitTime_0/MX2_0 -fixed no 101 8 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state[3]} -fixed no 57 43 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3[2]} -fixed no 49 27 
+set_location {manchester_encoder_0/rsr_RNO[12]} -fixed no 65 20 
+set_location ZBHandler_0/ZBControl_0/start_RNIIQJD -fixed no 20 19 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii[2]} -fixed no 46 15 
+set_location {MoM_unit_0/state_RNIBNV21[2]} -fixed no 80 26 
+set_location housekeepingCheck_0/Result_4 -fixed no 71 31 
+set_location {command_process_0/state[4]} -fixed no 99 37 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNIDUGU[10]} -fixed no 62 13 
+set_location command_process_0/ParityRX_RNIIG93 -fixed no 96 35 
+set_location manchester_encoder_0/un1_bit_count_I_21 -fixed no 54 34 
+set_location {md_v3_0/fre_ref_0/q_RNO[2]} -fixed no 85 42 
+set_location {manchester_encoder_0/rsr_RNO_0[6]} -fixed no 64 19 
+set_location MoM_unit_0/command_In_Queue_RNIRR15 -fixed no 69 30 
+set_location {manchester_encoder_0/rsr_RNO_0[10]} -fixed no 61 21 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4_RNO[4]} -fixed no 119 15 
+set_location {command_process_0/state_RNIMR9D3[2]} -fixed no 87 38 
+set_location {command_process_0/state_RNIB1LD[3]} -fixed no 88 36 
+set_location manchester_encoder_0/un1_symbol_t_I_40 -fixed no 60 30 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3_RNO[1]} -fixed no 38 7 
+set_location {command_process_0/addressRX_RNO[13]} -fixed no 90 28 
+set_location {MoM_unit_0/state_RNO_7[0]} -fixed no 77 25 
+set_location {manchester_encoder_0/rsr[30]} -fixed no 47 21 
+set_location {MoM_unit_0/commandToSend_RNO[0]} -fixed no 85 23 
+set_location ZBHandler_0/CentSec_0/DFN1C0_NU_2 -fixed no 85 13 
+set_location {md_v3_0/error_counter_RNO[3]} -fixed no 74 34 
+set_location {manchester_encoder_0/rsr[8]} -fixed no 59 20 
+set_location {manchester_encoder_0/rsr[16]} -fixed no 56 21 
+set_location manchester_encoder_0/un1_bit_count_I_27 -fixed no 51 35 
+set_location {manchester_encoder_0/bit_count_RNI5M55[3]} -fixed no 52 31 
+set_location {command_process_0/state_RNO_2[8]} -fixed no 90 35 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10[3]} -fixed no 88 4 
+set_location command_process_0/newMessage_RNO_1 -fixed no 94 34 
+set_location {MoM_unit_0/Contention_int_RNO[4]} -fixed no 67 41 
+set_location {manchester_encoder_0/rsr[12]} -fixed no 66 20 
+set_location {ZBHandler_0/ZBControl_0/atCommand_1[1]} -fixed no 48 13 
+set_location ZBHandler_0/ZBWaitTime_0/DFN1E1C0_ND_4 -fixed no 98 12 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii[0]} -fixed no 52 6 
+set_location {md_v3_0/fre_ref_0/q_RNO[0]} -fixed no 82 40 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[10]} -fixed no 59 12 
+set_location {md_v3_0/error_counter_RNO_0[2]} -fixed no 77 34 
+set_location command_process_0/addOK_reg_RNO_0 -fixed no 96 27 
+set_location md_v3_0/mdi1_RNI742B -fixed no 76 38 
+set_location {manchester_encoder_0/rsr_RNO_0[1]} -fixed no 61 17 
+set_location MoM_unit_0/command_In_Queue_RNITBC5 -fixed no 68 29 
+set_location ZBHandler_0/ZBControl_0/WEN -fixed no 71 14 
+set_location {MoM_unit_0/Contention_int_RNO[5]} -fixed no 65 42 
+set_location {command_process_0/state_RNO[0]} -fixed no 94 37 
+set_location ZBHandler_0/ZBWaitTime_0/XOR2_0 -fixed no 99 8 
+set_location MoM_unit_0/commandToSend_0_sqmuxa_i_a2 -fixed no 88 27 
+set_location MoM_unit_0/command_In_Queue_RNIICU3 -fixed no 73 23 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[3]} -fixed no 72 16 
+set_location {MoM_unit_0/state_RNIT2BV[7]} -fixed no 75 25 
+set_location {manchester_encoder_0/rsr[18]} -fixed no 47 35 
+set_location {md_v3_0/fre_ref_0/q_RNO_1[2]} -fixed no 85 41 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9[6]} -fixed no 94 4 
+set_location ZBHandler_0/ZBWaitTime_0/OR2_2 -fixed no 96 12 
+set_location {md_v3_0/fre_ref_0/q_RNO[3]} -fixed no 89 44 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTOO0I_RNIHSOA[0]} -fixed no 53 15 
+set_location {MoM_unit_0/commandToSend_RNO[1]} -fixed no 84 27 
+set_location {command_process_0/state_RNIBAON[5]} -fixed no 89 38 
+set_location {MoM_unit_0/state_RNO[6]} -fixed no 71 28 
+set_location {manchester_encoder_0/rsr[21]} -fixed no 44 20 
+set_location ZBHandler_0/ZBWaitTime_0/U_NOR3_0_1_2 -fixed no 100 9 
+set_location manchester_encoder_0/un1_bit_count_I_5 -fixed no 53 33 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9_RNO[5]} -fixed no 68 15 
+set_location {ZBHandler_0/ZBControl_0/atCommand_2[1]} -fixed no 39 8 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO_0[12]} -fixed no 61 11 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNO[0]} -fixed no 53 6 
+set_location {command_process_0/state_RNII3LN6[0]} -fixed no 82 29 
+set_location ZBHandler_0/ZBControl_0/d_hk_1_RNO_3 -fixed no 98 20 
+set_location MoM_unit_0/un1_Contention_int_I_42 -fixed no 66 39 
+set_location manchester_encoder_0/Cout_RNI8MII1 -fixed no 76 32 
+set_location md_v3_0/ctd2 -fixed no 78 41 
+set_location {manchester_encoder_0/rsr_RNO[23]} -fixed no 45 22 
+set_location {command_process_0/state_RNO_0[5]} -fixed no 100 43 
+set_location ZBHandler_0/ZBWaitTime_0/AND2A_0 -fixed no 102 10 
+set_location {MoM_unit_0/state_RNI60A1[7]} -fixed no 81 25 
+set_location manchester_encoder_0/Cout_RNITU0L3 -fixed no 49 34 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD[4]} -fixed no 47 6 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4[3]} -fixed no 111 10 
+set_location ZBHandler_0/COREUART_0/CUARTo0ol/CUARTi1II -fixed no 58 8 
+set_location MoM_unit_0/uC_ACK_reg -fixed no 91 23 
+set_location {manchester_encoder_0/rsr_RNO_0[11]} -fixed no 65 21 
+set_location ZBHandler_0/ZBControl_0/EnableZBTimer_RNO -fixed no 87 15 
+set_location {MoM_unit_0/commandToSend_RNI9RLH[0]} -fixed no 88 28 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD_RNI36J3[4]} -fixed no 47 7 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10[5]} -fixed no 69 13 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[1]} -fixed no 74 18 
+set_location {md_v3_0/fre_ref_0/q_RNI9NA[4]} -fixed no 91 43 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8[1]} -fixed no 86 3 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5[1]} -fixed no 37 10 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii_RNI7IVH[2]} -fixed no 46 14 
+set_location ZBHandler_0/COREUART_0/CUARTlioL/CUARTil_RNIF081 -fixed no 85 11 
+set_location ZBHandler_0/ZBWaitTime_0/XNOR2_0 -fixed no 98 13 
+set_location {manchester_encoder_0/bit_count_RNO[1]} -fixed no 55 33 
+set_location {ZBHandler_0/COREUART_0/CUARTo1l[0]} -fixed no 70 10 
+set_location MoM_unit_0/un1_Contention_int_I_44 -fixed no 69 42 
+set_location {command_process_0/addressRX[12]} -fixed no 92 28 
+set_location {MoM_unit_0/state_RNI40L[6]} -fixed no 80 29 
+set_location manchester_encoder_0/Cout -fixed no 60 29 
+set_location {MoM_unit_0/state_RNO_9[0]} -fixed no 77 22 
+set_location {MoM_unit_0/state_RNO_2[5]} -fixed no 76 21 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/Primary_Filter_Instance/Gate_For_Clock_Gating_Clkint -fixed no 2 26 
+set_location ZBHandler_0/ZBControl_0/ActivateZB_RNO_2 -fixed no 97 21 
+set_location {manchester_encoder_0/bit_count[4]} -fixed no 51 31 
+set_location {manchester_encoder_0/symbol_t[4]} -fixed no 62 29 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0_RNO[3]} -fixed no 69 6 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool_RNI9RFC[0]} -fixed no 54 12 
+set_location MoM_unit_0/uCcommandinQueue_RNO_4 -fixed no 81 32 
+set_location {command_process_0/addressRX_RNO[15]} -fixed no 92 29 
+set_location {ZBHandler_0/ZBControl_0/state_keep_RNI1LV33[1]} -fixed no 99 19 
+set_location ZBHandler_0/ZBControl_0/start_RNIIQJD_0 -fixed no 1 27 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11[6]} -fixed no 92 7 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_8/U0 -fixed no 85 5 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5[0]} -fixed no 112 21 
+set_location MoM_unit_0/uC_active_D0 -fixed no 67 30 
+set_location {md_v3_0/error_counter_RNIIAS5[1]} -fixed no 76 36 
+set_location {manchester_encoder_0/symbol_t[3]} -fixed no 73 31 
+set_location {manchester_encoder_0/bit_count[3]} -fixed no 51 32 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II[0]} -fixed no 42 9 
+set_location {addressingData_0/NodeAddress_1[1]} -fixed no 98 30 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNIV9M8[4]} -fixed no 76 9 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_10/U1 -fixed no 83 11 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNI4S1R[10]} -fixed no 60 12 
+set_location ZBHandler_0/ZBControl_0/start_RNI99S8 -fixed no 72 14 
+set_location {ZBHandler_0/COREUART_0/CUARTo1l[3]} -fixed no 77 7 
+set_location {MoM_unit_0/state_RNIKHJ9D[7]} -fixed no 86 25 
+set_location housekeepingCheck_0/Result_2 -fixed no 71 32 
+set_location {manchester_encoder_0/symbol_t_RNIDCTA1[3]} -fixed no 75 33 
+set_location {manchester_encoder_0/rsr_RNO_0[12]} -fixed no 65 19 
+set_location {command_process_0/bitCounter_RNO[4]} -fixed no 109 35 
+set_location {manchester_encoder_0/rsr_RNO_0[5]} -fixed no 62 19 
+set_location {manchester_encoder_0/rsr[2]} -fixed no 62 22 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11_RNO[3]} -fixed no 88 3 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II_RNO[0]} -fixed no 41 9 
+set_location {manchester_encoder_0/rsr_RNO[13]} -fixed no 67 19 
+set_location ZBHandler_0/COREUART_0/CUARTo0ol/CUARTi1II_RNI80E41 -fixed no 49 8 
+set_location {command_process_0/state_RNIJB3C[0]} -fixed no 92 38 
+set_location {addressingData_0/NextHopAddress_1[3]} -fixed no 87 22 
+set_location {addressingData_0/NodeAddress_1_RNO[1]} -fixed no 98 31 
+set_location {MoM_unit_0/Contention_int_RNITK532[3]} -fixed no 65 36 
+set_location {ZBHandler_0/ZBControl_0/state_RNO_0[0]} -fixed no 89 21 
+set_location MoM_unit_0/un1_Contention_int_I_47 -fixed no 67 43 
+set_location {command_process_0/state[0]} -fixed no 93 38 
+set_location md_v3_0/fre_ref_0/CEO_RNO -fixed no 75 40 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[10]} -fixed no 60 13 
+set_location {MoM_unit_0/commandToSend_RNIHCU3[0]} -fixed no 80 22 
+set_location ZBHandler_0/ZBWaitTime_0/U_NOR2_1_2 -fixed no 100 10 
+set_location {MoM_unit_0/state_RNIK8Q7[7]} -fixed no 80 25 
+set_location {command_process_0/state_RNO_0[0]} -fixed no 94 38 
+set_location {MoM_unit_0/state_RNIMOGV7[2]} -fixed no 79 27 
+set_location {md_v3_0/error_counter_RNO[2]} -fixed no 77 35 
+set_location {MoM_unit_0/Contention_int_RNIUHRA3[5]} -fixed no 64 38 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0_RNO[0]} -fixed no 74 7 
+set_location {MoM_unit_0/state_RNO_1[7]} -fixed no 79 28 
+set_location md_v3_0/ctd0_RNO_0 -fixed no 77 43 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/Primary_Filter_Instance/Gate_For_Clock_Gating -fixed no 54 43 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTIlo0[1]} -fixed no 80 6 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[7]} -fixed no 64 9 
+set_location manchester_encoder_0/un1_symbol_t_I_38 -fixed no 57 33 
+set_location {ZBHandler_0/ZBControl_0/state_RNO[0]} -fixed no 89 22 
+set_location {MoM_unit_0/Contention_int_RNI80I11[3]} -fixed no 66 43 
+set_location manchester_encoder_0/un1_symbol_t_I_36 -fixed no 58 33 
+set_location {ZBHandler_0/ZBControl_0/atCommand_2_RNO[3]} -fixed no 114 9 
+set_location {MoM_unit_0/state_RNO_3[2]} -fixed no 79 21 
+set_location {command_process_0/state_RNO_0[8]} -fixed no 91 34 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool_RNO_0[0]} -fixed no 53 13 
+set_location {MoM_unit_0/commandToSend_RNIOI0V[1]} -fixed no 76 27 
+set_location {command_process_0/commandRX[1]} -fixed no 89 32 
+set_location MoM_unit_0/un1_Contention_int_I_34 -fixed no 68 42 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_6 -fixed no 72 9 
+set_location {MoM_unit_0/commandToSend_RNISAF9[0]} -fixed no 72 31 
+set_location {command_process_0/addressRX[8]} -fixed no 92 30 
+set_location {MoM_unit_0/Contention_int_RNO[0]} -fixed no 68 37 
+set_location {MoM_unit_0/Contention_int[6]} -fixed no 63 39 
+set_location md_v3_0/mdi4_RNO -fixed no 78 42 
+set_location {md_v3_0/error_counter_RNI7TT2[1]} -fixed no 76 35 
+set_location md_v3_0/ctd0 -fixed no 78 43 
+set_location {md_v3_0/fre_ref_0/q[1]} -fixed no 83 42 
+set_location {command_process_0/bitCounter_RNI0F2H[4]} -fixed no 108 34 
+set_location {manchester_encoder_0/symbol_t_RNO[3]} -fixed no 61 30 
+set_location {command_process_0/bitCounter_RNO[2]} -fixed no 106 34 
+set_location {md_v3_0/error_counter[3]} -fixed no 74 35 
+set_location {manchester_encoder_0/rsr_RNO_0[16]} -fixed no 56 19 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8[5]} -fixed no 68 16 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNIRJ9C[2]} -fixed no 56 8 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_9/U0 -fixed no 83 14 
+set_location command_process_0/addOK_reg_RNO_1 -fixed no 98 28 
+set_location command_process_0/ParityRX -fixed no 97 34 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD[5]} -fixed no 46 7 
+set_location {manchester_encoder_0/rsr_RNO[37]} -fixed no 51 18 
+set_location {MoM_unit_0/state_RNIOU151_0[0]} -fixed no 66 28 
+set_location {MoM_unit_0/state_RNIPAQ8[5]} -fixed no 79 24 
+set_location {MoM_unit_0/state_RNIOU151[0]} -fixed no 67 28 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO_1[0]} -fixed no 71 3 
+set_location {command_process_0/commandRX_RNO[1]} -fixed no 90 31 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNI1H8A[10]} -fixed no 61 12 
+set_location MoM_unit_0/uC_active_D1_RNI35N1 -fixed no 68 30 
+set_location ZBHandler_0/CentSec_0/U_AND3_6_7_8 -fixed no 84 5 
+set_location {MoM_unit_0/commandQueue[1]} -fixed no 84 26 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTl1ii[3]} -fixed no 48 14 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_5/U0 -fixed no 79 14 
+set_location manchester_encoder_0/mdo_RNO_0 -fixed no 56 29 
+set_location {MoM_unit_0/state_RNO_1[4]} -fixed no 77 33 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNO[6]} -fixed no 91 7 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8[2]} -fixed no 31 12 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4_RNO[3]} -fixed no 112 10 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state[2]} -fixed no 58 45 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9[1]} -fixed no 87 5 
+set_location command_process_0/addOK_reg_RNO_15 -fixed no 93 32 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11[3]} -fixed no 76 5 
+set_location command_process_0/addOK_reg_RNO_13 -fixed no 100 29 
+set_location MoM_unit_0/un1_Contention_int_I_60 -fixed no 66 40 
+set_location {command_process_0/addressRX_RNO[9]} -fixed no 91 29 
+set_location {manchester_encoder_0/rsr[26]} -fixed no 49 25 
+set_location {command_process_0/state_RNO_0[3]} -fixed no 90 38 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0_RNIK186_0[0]} -fixed no 69 8 
+set_location {MoM_unit_0/state_RNI30V1[4]} -fixed no 73 26 
+set_location {command_process_0/addressRX[13]} -fixed no 89 28 
+set_location ZBHandler_0/COREUART_0/CUARTlioL/CUARTil_RNO -fixed no 87 10 
+set_location {manchester_encoder_0/rsr[22]} -fixed no 44 22 
+set_location manchester_encoder_0/Cout_RNI0LKN2 -fixed no 57 21 
+set_location manchester_encoder_0/un1_bit_count_I_15 -fixed no 54 33 
+set_location {MoM_unit_0/commandQueue[0]} -fixed no 85 24 
+set_location {command_process_0/state_RNIOFOQ3[0]} -fixed no 107 35 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10[4]} -fixed no 116 5 
+set_location {manchester_encoder_0/bit_count[2]} -fixed no 52 32 
+set_location {ZBHandler_0/ZBControl_0/state_RNI5JR5[0]} -fixed no 89 20 
+set_location ZBHandler_0/ZBWaitTime_0/U_INV_EN -fixed no 84 12 
+set_location MoM_unit_0/un1_Contention_int_I_52 -fixed no 65 40 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/Primary_Filter_Instance/Latch_For_Clock_Gating -fixed no 53 43 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD[1]} -fixed no 47 11 
+set_location {MoM_unit_0/Contention_int[4]} -fixed no 67 42 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[6]} -fixed no 62 7 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11[5]} -fixed no 70 12 
+set_location {command_process_0/addressRX_RNO[11]} -fixed no 89 27 
+set_location {manchester_encoder_0/rsr[9]} -fixed no 59 21 
+set_location {command_process_0/state_RNIGLLD[8]} -fixed no 90 37 
+set_location {command_process_0/state[5]} -fixed no 99 43 
+set_location {command_process_0/addressRX[10]} -fixed no 89 26 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_1/U1 -fixed no 86 13 
+set_location MoM_unit_0/uC_ACK_reg_RNI6V4B_0 -fixed no 79 29 
+set_location {manchester_encoder_0/symbol_t_RNI6MG9[0]} -fixed no 63 30 
+set_location MoM_unit_0/uCcommandinQueue_RNO_2 -fixed no 82 31 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD_RNIITVA1[0]} -fixed no 94 15 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6_RNO[2]} -fixed no 45 28 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10_RNO[3]} -fixed no 88 5 
+set_location ZBHandler_0/ZBControl_0/start_RNO_0 -fixed no 93 15 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7_RNO[5]} -fixed no 69 17 
+set_location {command_process_0/state_RNIATKD[2]} -fixed no 90 36 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToo1i[1]} -fixed no 42 11 
+set_location {command_process_0/addressRX[15]} -fixed no 93 28 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8[0]} -fixed no 106 20 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNI48LC[4]} -fixed no 64 7 
+set_location {MoM_unit_0/state_RNO_0[6]} -fixed no 71 27 
+set_location {manchester_encoder_0/symbol_t[0]} -fixed no 62 31 
+set_location {manchester_encoder_0/rsr_RNO[35]} -fixed no 49 21 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNI3406[12]} -fixed no 62 11 
+set_location {MoM_unit_0/Contention_int_RNIHA4K[1]} -fixed no 67 44 
+set_location {manchester_encoder_0/rsr[28]} -fixed no 49 22 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II_RNO[4]} -fixed no 46 8 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO[0]} -fixed no 71 4 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10[6]} -fixed no 94 6 
+set_location ZBHandler_0/ZBWaitTime_0/DFN1E1C0_ND_3 -fixed no 97 12 
+set_location MoM_unit_0/un1_Contention_int_I_35 -fixed no 66 42 
+set_location {MoM_unit_0/Contention_int[7]} -fixed no 63 41 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNO_0[3]} -fixed no 55 8 
+set_location {manchester_encoder_0/symbol_t_RNI0SRN[5]} -fixed no 61 33 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4[4]} -fixed no 119 16 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX[2]} -fixed no 69 10 
+set_location md_v3_0/ctd0_RNO -fixed no 77 42 
+set_location {md_v3_0/fre_ref_0/q[4]} -fixed no 90 43 
+set_location {command_process_0/state[8]} -fixed no 92 35 
+set_location ZBHandler_0/AND2A_0 -fixed no 86 12 
+set_location {command_process_0/addressRX[7]} -fixed no 83 28 
+set_location {MoM_unit_0/state_RNO_3[5]} -fixed no 79 22 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8_RNO[5]} -fixed no 68 17 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO_1[2]} -fixed no 68 5 
+set_location ZBHandler_0/ZBControl_0/d_hk_1_RNO_0 -fixed no 99 20 
+set_location {MoM_unit_0/state_RNICMCR[7]} -fixed no 77 26 
+set_location {manchester_encoder_0/rsr[13]} -fixed no 67 18 
+set_location {MoM_unit_0/state_RNI20A1[2]} -fixed no 76 33 
+set_location {ZBHandler_0/ZBControl_0/state_RNIMGV2[0]} -fixed no 2 27 
+set_location {MoM_unit_0/state_RNO_8[0]} -fixed no 74 22 
+set_location {MoM_unit_0/state_RNO_3[7]} -fixed no 75 30 
+set_location MoM_unit_0/uCcommandinQueue_RNO_1 -fixed no 83 31 
+set_location {MoM_unit_0/commandToSend_RNO_3[1]} -fixed no 87 28 
+set_location ZBHandler_0/ZBWaitTime_0/OR2_1 -fixed no 99 12 
+set_location ZBHandler_0/CentSec_0/XOR2_4 -fixed no 79 13 
+set_location {ZBHandler_0/ZBControl_0/state_RNISC9A1[0]} -fixed no 90 21 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNIR96F[5]} -fixed no 63 7 
+set_location ZBHandler_0/ZBControl_0/d_hk_1_RNO_1 -fixed no 101 21 
+set_location {manchester_encoder_0/rsr_RNO[0]} -fixed no 60 17 
+set_location {MoM_unit_0/commandQueue_RNO[1]} -fixed no 85 26 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD[0]} -fixed no 50 10 
+set_location housekeepingCheck_0/Result -fixed no 68 32 
+set_location {manchester_encoder_0/symbol_t[2]} -fixed no 73 33 
+set_location {manchester_encoder_0/symbol_t_RNIDG1J[3]} -fixed no 74 32 
+set_location {MoM_unit_0/state_RNO_5[7]} -fixed no 78 28 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNIRJ9C_0[2]} -fixed no 57 8 
+set_location manchester_encoder_0/un1_bit_count_I_7 -fixed no 48 33 
+set_location command_process_0/addOK_reg_RNO_8 -fixed no 99 29 
+set_location md_v3_0/ctd2_RNO_0 -fixed no 80 40 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNO[2]} -fixed no 68 10 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool_RNO_1[1]} -fixed no 52 11 
+set_location {MoM_unit_0/state_RNO_1[2]} -fixed no 80 19 
+set_location {MoM_unit_0/state_RNO[3]} -fixed no 73 30 
+set_location MoM_unit_0/uCcommandinQueue_RNO_3 -fixed no 84 29 
+set_location command_process_0/newMessage_RNO_0 -fixed no 94 35 
+set_location MoM_unit_0/commandQueue_flag -fixed no 83 25 
+set_location MoM_unit_0/uCcommandinQueue_RNO_0 -fixed no 83 29 
+set_location {MoM_unit_0/Contention_int_RNIUU5K[9]} -fixed no 67 37 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8_RNO[1]} -fixed no 86 4 
+set_location {ZBHandler_0/ZBControl_0/atCommand_11_RNO[5]} -fixed no 69 12 
+set_location {ZBHandler_0/ZBControl_0/atCommand_6[1]} -fixed no 47 5 
+set_location ZBHandler_0/ZBControl_0/ActivateZB_RNO_0 -fixed no 95 21 
+set_location {command_process_0/state_RNI85NJ[3]} -fixed no 88 34 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4_RNO[0]} -fixed no 111 24 
+set_location md_v3_0/done_hk_RNO -fixed no 71 35 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3_RNO[5]} -fixed no 123 17 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNO[3]} -fixed no 55 7 
+set_location {ZBHandler_0/ZBControl_0/state[0]} -fixed no 88 21 
+set_location {manchester_encoder_0/rsr_RNO[31]} -fixed no 46 21 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToool_RNIP5GG1[0]} -fixed no 54 6 
+set_location {MoM_unit_0/commandToSend_RNI9UR4[0]} -fixed no 72 30 
+set_location {manchester_encoder_0/bit_count[0]} -fixed no 54 30 
+set_location {md_v3_0/fre_ref_0/q_RNO_0[1]} -fixed no 82 41 
+set_location MoM_unit_0/un1_Contention_int_I_36 -fixed no 67 45 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTIlo0[5]} -fixed no 78 8 
+set_location md_v3_0/EndOfMsg_RNID9BB -fixed no 74 38 
+set_location manchester_encoder_0/un1_symbol_t_I_49 -fixed no 61 31 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNIHFB61[3]} -fixed no 55 10 
+set_location manchester_encoder_0/sendingMsg_RNI2FRB1 -fixed no 60 28 
+set_location manchester_encoder_0/Cout_RNIHO322 -fixed no 77 31 
+set_location manchester_encoder_0/Cout_RNI0LKN2_0 -fixed no 48 21 
+set_location md_v3_0/Enable_decoder_RNIQ0N9 -fixed no 78 39 
+set_location md_v3_0/EndOfMsg_RNIVJ7H -fixed no 73 39 
+set_location MoM_unit_0/nexthopaddress_8 -fixed no 89 29 
+set_location {command_process_0/bitCounter_RNO[0]} -fixed no 106 32 
+set_location md_v3_0/EndOfMsg_RNINHJK -fixed no 75 38 
+set_location {manchester_encoder_0/rsr_RNO[27]} -fixed no 50 25 
+set_location command_process_0/addOK_reg_RNO_9 -fixed no 96 29 
+set_location MoM_unit_0/commandSource_RNI60HH2 -fixed no 79 30 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7_RNO[3]} -fixed no 107 6 
+set_location {command_process_0/state[7]} -fixed no 101 38 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD_RNITOC5[1]} -fixed no 48 10 
+set_location {command_process_0/state_RNO_3[8]} -fixed no 91 37 
+set_location {command_process_0/state_RNI3E3A1_0[0]} -fixed no 94 36 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0[2]} -fixed no 71 8 
+set_location MoM_unit_0/ContentionExpired -fixed no 64 36 
+set_location command_process_0/addOK_reg_RNO_4 -fixed no 97 27 
+set_location {ZBHandler_0/ZBControl_0/atCommand_9[0]} -fixed no 66 21 
+set_location {MoM_unit_0/commandToSend_RNO_2[0]} -fixed no 87 25 
+set_location {MoM_unit_0/Contention_int_RNO[2]} -fixed no 68 43 
+set_location {command_process_0/addressRX_RNO[4]} -fixed no 91 31 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO[5]} -fixed no 73 3 
+set_location {MoM_unit_0/state_RNI6GK1[2]} -fixed no 81 26 
+set_location {MoM_unit_0/commandToSend_RNIPKQ31[0]} -fixed no 81 24 
+set_location {manchester_encoder_0/bit_count_RNI1M55[1]} -fixed no 53 32 
+set_location {MoM_unit_0/state_RNI80A1[5]} -fixed no 73 34 
+set_location {MoM_unit_0/state_RNI9KV55[7]} -fixed no 81 31 
+set_location {MoM_unit_0/state[2]} -fixed no 81 20 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX[5]} -fixed no 72 12 
+set_location md_v3_0/ctd1_RNO -fixed no 79 41 
+set_location {manchester_encoder_0/rsr_RNO[38]} -fixed no 51 20 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8_RNO[4]} -fixed no 113 19 
+set_location {command_process_0/state_RNI33C51[0]} -fixed no 87 37 
+set_location md_v3_0/shift_data -fixed no 76 41 
+set_location {manchester_encoder_0/rsr_RNO[36]} -fixed no 50 20 
+set_location {MoM_unit_0/Contention_int_RNIO65K[9]} -fixed no 66 37 
+set_location {MoM_unit_0/state_RNO_4[5]} -fixed no 80 23 
+set_location MoM_unit_0/command_In_Queue_RNIJ2H04 -fixed no 86 28 
+set_location md_v3_0/done_hk -fixed no 72 34 
+set_location {MoM_unit_0/Contention_int[2]} -fixed no 68 44 
+set_location INBUF_0_RNI9C35 -fixed no 131 26 
+set_location ZBHandler_0/COREUART_0/CUARTi01_RNO -fixed no 52 9 
+set_location {md_v3_0/error_counter_RNO_0[1]} -fixed no 76 37 
+set_location {ZBHandler_0/ZBControl_0/atCommand_3[0]} -fixed no 112 23 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5_RNO[1]} -fixed no 36 10 
+set_location command_process_0/addOK_reg_RNO_2 -fixed no 97 29 
+set_location ZBHandler_0/ZBWaitTime_0/DFN1E1C0_ND_5 -fixed no 98 10 
+set_location {command_process_0/bitCounter_RNO[3]} -fixed no 110 32 
+set_location {command_process_0/bitCounter[1]} -fixed no 108 32 
+set_location {MoM_unit_0/state_RNIT2BV_0[7]} -fixed no 78 26 
+set_location {MoM_unit_0/state_RNINPD41[7]} -fixed no 77 28 
+set_location md_v3_0/ctd2_RNO -fixed no 79 40 
+set_location {MoM_unit_0/state_RNO_2[7]} -fixed no 75 31 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7_RNO[2]} -fixed no 26 23 
+set_location {manchester_encoder_0/rsr[31]} -fixed no 46 20 
+set_location {MoM_unit_0/state_RNO[2]} -fixed no 80 20 
+set_location {MoM_unit_0/state_RNITAS3M[7]} -fixed no 85 25 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[7]} -fixed no 63 9 
+set_location MoM_unit_0/uC_ACK_reg_RNI6V4B -fixed no 76 29 
+set_location command_process_0/newMessage_RNO_2 -fixed no 93 35 
+set_location {MoM_unit_0/commandToSend_RNIG52H[1]} -fixed no 73 22 
+set_location {ZBHandler_0/ZBControl_0/selWaitTime_1_RNO[0]} -fixed no 92 21 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTI0II_RNO[3]} -fixed no 48 8 
+set_location {ZBHandler_0/ZBControl_0/DATA2TX_RNO[0]} -fixed no 38 27 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[12]} -fixed no 61 10 
+set_location {md_v3_0/error_counter[2]} -fixed no 76 34 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol_RNO[2]} -fixed no 75 16 
+set_location housekeepingCheck_0/Result_5 -fixed no 70 31 
+set_location {manchester_encoder_0/bit_count_RNO[0]} -fixed no 55 31 
+set_location ZBHandler_0/CentSec_0/XOR2_5 -fixed no 82 12 
+set_location {MoM_unit_0/state[3]} -fixed no 74 31 
+set_location {manchester_encoder_0/rsr_RNO[17]} -fixed no 56 22 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii[2]} -fixed no 57 7 
+set_location {ZBHandler_0/ZBControl_0/atCommand_10[2]} -fixed no 44 8 
+set_location {manchester_encoder_0/rsr_RNO[25]} -fixed no 47 25 
+set_location {MoM_unit_0/Contention_int[1]} -fixed no 69 41 
+set_location md_v3_0/mdi2_RNO -fixed no 78 38 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8_RNO[3]} -fixed no 106 5 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4[2]} -fixed no 48 28 
+set_location {MoM_unit_0/state_RNO_5[0]} -fixed no 75 24 
+set_location {MoM_unit_0/state_RNIUIA01[7]} -fixed no 81 27 
+set_location {ZBHandler_0/ZBControl_0/atCommand_4[5]} -fixed no 120 16 
+set_location ZBHandler_0/ZBWaitTime_0/U_NOR3_3_4_5 -fixed no 98 11 
+set_location {MoM_unit_0/commandToSend_RNIRTVK[1]} -fixed no 76 26 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARTo0ii_RNO_0[2]} -fixed no 56 6 
+set_location {manchester_encoder_0/rsr[17]} -fixed no 47 33 
+set_location ZBHandler_0/ZBControl_0/uC_ACK_RNO_0 -fixed no 94 21 
+set_location {ZBHandler_0/COREUART_0/CUARTo0ol/CUARToo1i[2]} -fixed no 49 9 
+set_location MoM_unit_0/uC_active_D1 -fixed no 67 31 
+set_location {MoM_unit_0/commandToSend[1]} -fixed no 83 27 
+set_location command_process_0/ParityRX_RNO -fixed no 96 34 
+set_location {MoM_unit_0/Contention_int_RNILKJ11[5]} -fixed no 65 38 
+set_location {manchester_encoder_0/rsr[0]} -fixed no 60 16 
+set_location ZBHandler_0/ZBControl_0/d_hk_1_RNO_4 -fixed no 97 19 
+set_location ZBHandler_0/CentSec_0/U_U_AND3_1_to_8 -fixed no 84 11 
+set_location INV_0 -fixed no 130 29 
+set_location {ZBHandler_0/ZBControl_0/atCommand_7_RNO[4]} -fixed no 111 17 
+set_location ZBHandler_0/COREUART_0/CUARTIIOL/CUARTl0o0_RNO_0 -fixed no 74 5 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARToio0_RNI148G[1]} -fixed no 70 7 
+set_location ZBHandler_0/ZBControl_0/LoadWaitTime_RNO_0 -fixed no 98 18 
+set_location {ZBHandler_0/ZBControl_0/atCommand_8_RNO[2]} -fixed no 30 12 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNO[4]} -fixed no 60 44 
+set_location {ZBHandler_0/ZBControl_0/state_keep_RNI6S971[1]} -fixed no 100 19 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTolo0_RNO_0[2]} -fixed no 70 5 
+set_location {ZBHandler_0/COREUART_0/CUARTIIOL/CUARTIlo0[6]} -fixed no 75 7 
+set_location {ZBHandler_0/ZBControl_0/atCommand_5_RNO[5]} -fixed no 96 16 
+set_location ZBHandler_0/CentSec_0/INV_0 -fixed no 78 13 
+set_location {MoM_unit_0/commandToSend_RNICAUO[1]} -fixed no 77 27 
+set_location ZBHandler_0/ZBControl_0/OEN -fixed no 58 6 
+set_location {manchester_encoder_0/rsr[4]} -fixed no 63 20 
+set_location {MoM_unit_0/state_RNI10L[5]} -fixed no 78 33 
+set_location ZBHandler_0/ZBControl_0/ActivateZB_RNO_1 -fixed no 96 21 
+set_location {command_process_0/bitCounter_RNO_0[4]} -fixed no 109 34 
+set_location md_v3_0/EndOfMsg -fixed no 73 37 
+set_location {command_process_0/bitCounter_RNO_0[1]} -fixed no 107 31 
+set_location {MoM_unit_0/state_RNO_6[0]} -fixed no 78 24 
+set_location {ZBHandler_0/ZBControl_0/DATAREAD[3]} -fixed no 47 10 
+set_location ZBHandler_0/CentSec_0/DFN1E1C0_NU_7/U1 -fixed no 83 4 
+set_location MoM_unit_0/uCcommandinQueue_RNO -fixed no 84 28 
+set_location {MoM_unit_0/state_RNO[0]} -fixed no 77 24 
+set_location md_v3_0/shift_data_RNO -fixed no 77 40 
+set_location {MoM_unit_0/state_RNI4GV[5]} -fixed no 74 25 
+set_location {manchester_encoder_0/symbol_t_RNIJ9AE[8]} -fixed no 60 34 
+set_location {ZBHandler_0/COREUART_0/CUARTlioL/CUARTol[2]} -fixed no 74 15 
+set_location {LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ff_current_state_RNO[2]} -fixed no 59 44 
+set_multitile_location ZBHandler_0/ZBControl_0/LoadWaitTime -location 100 17 -tile ZBHandler_0/ZBControl_0/LoadWaitTime/U0 0 0 -tile ZBHandler_0/ZBControl_0/LoadWaitTime/U1 -1 0 -fixed no 
+set_multitile_location {ZBHandler_0/ZBControl_0/selWaitTime_1[0]} -location 91 20 -tile {ZBHandler_0/ZBControl_0/selWaitTime_1\[0\]/U1 1 0} -tile {ZBHandler_0/ZBControl_0/selWaitTime_1\[0\]/U0 0 0} -fixed no 
+set_multitile_location ZBHandler_0/ZBControl_0/uC_ACK -location 91 22 -tile ZBHandler_0/ZBControl_0/uC_ACK/U0 0 0 -tile ZBHandler_0/ZBControl_0/uC_ACK/U1 1 0 -fixed no 
+set_multitile_location ZBHandler_0/ZBControl_0/start -location 93 14 -tile ZBHandler_0/ZBControl_0/start/U0 0 0 -tile ZBHandler_0/ZBControl_0/start/U1 -1 0 -fixed no 
+set_location LowPowerManagement_0/LowPowerManagement_wrapper_inst/U0/FlashFreeze_FSM_inst/ULSICC_INSTANCE_0 -fixed yes 105 1 
+set_multitile_location ZBHandler_0/ZBControl_0/d_hk_1 -location 100 22 -tile ZBHandler_0/ZBControl_0/d_hk_1/U0 0 0 -tile ZBHandler_0/ZBControl_0/d_hk_1/U1 0 -1 -fixed no 
+set_multitile_location ZBHandler_0/ZBControl_0/ActivateZB -location 97 23 -tile ZBHandler_0/ZBControl_0/ActivateZB/U0 0 0 -tile ZBHandler_0/ZBControl_0/ActivateZB/U1 0 -1 -fixed no 
+
+#
+# Old IO constraints, commented out for reference
+#
+
+# set_iobank Bank0 -vcci 3.30 -fixed no 
+# set_iobank Bank1 -vcci 3.30 -fixed no 
+# set_iobank Bank2 -vcci 3.30 -fixed no 
+# set_iobank Bank3 -vcci 3.30 -fixed no 
+# set_io ActivateZB -pinname 82 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL Down -SKEW Off -SLEW High -DIRECTION Output 
+# set_io ActivateuC -pinname 81 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL Down -SKEW Off -SLEW High -DIRECTION Output 
+# set_io CommandReady2uC -pinname 20 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL Down -SKEW Off -SLEW High -DIRECTION Output 
+# set_io CommandType2uC -pinname 86 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io HK_CommandProc -pinname 79 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io HK_Decoder -pinname 78 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io HK_Encoder -pinname 77 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io HK_FF -pinname 76 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io HK_Mom -pinname 15 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io HK_ZBHandler -pinname 16 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io {MoMstateLed[0]} -pinname 83 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io {MoMstateLed[1]} -pinname 84 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io {MoMstateLed[2]} -pinname 85 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io RESETZB -pinname 19 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL Up -SKEW Off -SLEW High -DIRECTION Output 
+# set_io RFSwitch -pinname 62 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io RST -pinname 58 -fixed yes -iostd LVCMOS33 -REGISTER No -RES_PULL Up -DIRECTION Input 
+# set_io RX -pinname 91 -fixed yes -iostd LVCMOS33 -REGISTER Yes -RES_PULL None -DIRECTION Input 
+# set_io RX_uart -pinname 3 -fixed yes -iostd LVCMOS33 -REGISTER No -RES_PULL None -DIRECTION Input 
+# set_io {Sel_address[0]} -pinname 72 -fixed yes -iostd LVCMOS33 -REGISTER No -RES_PULL Down -DIRECTION Input 
+# set_io {Sel_address[1]} -pinname 73 -fixed yes -iostd LVCMOS33 -REGISTER No -RES_PULL Down -DIRECTION Input 
+# set_io Status_flag -pinname 4 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io TX -pinname 98 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io TXMODE -pinname 63 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL Up -SKEW Off -SLEW High -DIRECTION Output 
+# set_io TX_UART -pinname 2 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL Up -SKEW Off -SLEW High -DIRECTION Output 
+# set_io Wakeup -iostd LVCMOS33 -REGISTER No -RES_PULL None -DIRECTION Input 
+# set_io WupuFull -pinname 80 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 6 -OUT_LOAD 5 -REGISTER No -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io clk -pinname 97 -fixed yes -iostd LVCMOS33 -REGISTER No -RES_PULL None -DIRECTION Input 
+# set_io uC_commandReady -pinname 64 -fixed yes -iostd LVCMOS33 -REGISTER No -RES_PULL Down -DIRECTION Input 
+# set_io uC_commandType -pinname 65 -fixed yes -iostd LVCMOS33 -REGISTER No -RES_PULL Down -DIRECTION Input 

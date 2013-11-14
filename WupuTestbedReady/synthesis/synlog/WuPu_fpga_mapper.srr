@@ -1,0 +1,876 @@
+Synopsys Microsemi Technology Mapper, Version mapact, Build 974R, Built May 21 2013 10:19:34
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version H-2013.03M-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+Warning: Found 1 combinational loops!
+@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\smartgen\muxswitcthring\muxswitcthring.vhd":32:4:32:13|Found combinational loop during mapping at net RingOscillator_0.muxSwitcthRing_0_Result
+1) instance RingOscillator_0.muxSwitcthRing_0.MX2_Result (view:work.WuPu(rtl)), output net "RingOscillator_0.muxSwitcthRing_0_Result" in work.WuPu(rtl)
+    net        RingOscillator_0.muxSwitcthRing_0_Result
+    input  pin RingOscillator_0.AO14_0/C
+    instance   RingOscillator_0.AO14_0 (cell AO14)
+    output pin RingOscillator_0.AO14_0/Y
+    net        RingOscillator_0.AO14_0_Y
+    input  pin RingOscillator_0.AO14_1/C
+    instance   RingOscillator_0.AO14_1 (cell AO14)
+    output pin RingOscillator_0.AO14_1/Y
+    net        RingOscillator_0.AO14_1_Y
+    input  pin RingOscillator_0.AO14_2/C
+    instance   RingOscillator_0.AO14_2 (cell AO14)
+    output pin RingOscillator_0.AO14_2/Y
+    net        RingOscillator_0.AO14_2_Y
+    input  pin RingOscillator_0.AO14_12/C
+    instance   RingOscillator_0.AO14_12 (cell AO14)
+    output pin RingOscillator_0.AO14_12/Y
+    net        RingOscillator_0.AO14_12_Y
+    input  pin RingOscillator_0.AO14_13/C
+    instance   RingOscillator_0.AO14_13 (cell AO14)
+    output pin RingOscillator_0.AO14_13/Y
+    net        RingOscillator_0.AO14_13_Y
+    input  pin RingOscillator_0.AO14_16/C
+    instance   RingOscillator_0.AO14_16 (cell AO14)
+    output pin RingOscillator_0.AO14_16/Y
+    net        RingOscillator_0.AO14_16_Y
+    input  pin RingOscillator_0.AO14_3/C
+    instance   RingOscillator_0.AO14_3 (cell AO14)
+    output pin RingOscillator_0.AO14_3/Y
+    net        RingOscillator_0.AO14_3_Y
+    input  pin RingOscillator_0.AO14_4/C
+    instance   RingOscillator_0.AO14_4 (cell AO14)
+    output pin RingOscillator_0.AO14_4/Y
+    net        RingOscillator_0.AO14_4_Y
+    input  pin RingOscillator_0.AO14_5/C
+    instance   RingOscillator_0.AO14_5 (cell AO14)
+    output pin RingOscillator_0.AO14_5/Y
+    net        RingOscillator_0.AO14_5_Y
+    input  pin RingOscillator_0.AO14_17/C
+    instance   RingOscillator_0.AO14_17 (cell AO14)
+    output pin RingOscillator_0.AO14_17/Y
+    net        RingOscillator_0.AO14_17_Y
+    input  pin RingOscillator_0.AO14_18/C
+    instance   RingOscillator_0.AO14_18 (cell AO14)
+    output pin RingOscillator_0.AO14_18/Y
+    net        RingOscillator_0.AO14_18_Y
+    input  pin RingOscillator_0.AO14_19/C
+    instance   RingOscillator_0.AO14_19 (cell AO14)
+    output pin RingOscillator_0.AO14_19/Y
+    net        RingOscillator_0.AO14_19_Y
+    input  pin RingOscillator_0.AO14_6/C
+    instance   RingOscillator_0.AO14_6 (cell AO14)
+    output pin RingOscillator_0.AO14_6/Y
+    net        RingOscillator_0.AO14_6_Y
+    input  pin RingOscillator_0.AO14_7/C
+    instance   RingOscillator_0.AO14_7 (cell AO14)
+    output pin RingOscillator_0.AO14_7/Y
+    net        RingOscillator_0.AO14_7_Y
+    input  pin RingOscillator_0.AO14_8/C
+    instance   RingOscillator_0.AO14_8 (cell AO14)
+    output pin RingOscillator_0.AO14_8/Y
+    net        RingOscillator_0.AO14_8_Y
+    input  pin RingOscillator_0.AO14_20/C
+    instance   RingOscillator_0.AO14_20 (cell AO14)
+    output pin RingOscillator_0.AO14_20/Y
+    net        RingOscillator_0.AO14_20_Y
+    input  pin RingOscillator_0.AO14_21/C
+    instance   RingOscillator_0.AO14_21 (cell AO14)
+    output pin RingOscillator_0.AO14_21/Y
+    net        RingOscillator_0.AO14_21_Y
+    input  pin RingOscillator_0.AO14_22/C
+    instance   RingOscillator_0.AO14_22 (cell AO14)
+    output pin RingOscillator_0.AO14_22/Y
+    net        RingOscillator_0.AO14_22_Y
+    input  pin RingOscillator_0.AO14_9/C
+    instance   RingOscillator_0.AO14_9 (cell AO14)
+    output pin RingOscillator_0.AO14_9/Y
+    net        RingOscillator_0.AO14_9_Y
+    input  pin RingOscillator_0.AO14_10/C
+    instance   RingOscillator_0.AO14_10 (cell AO14)
+    output pin RingOscillator_0.AO14_10/Y
+    net        RingOscillator_0.AO14_10_Y
+    input  pin RingOscillator_0.AO14_11/C
+    instance   RingOscillator_0.AO14_11 (cell AO14)
+    output pin RingOscillator_0.AO14_11/Y
+    net        RingOscillator_0.AO14_11_Y
+    input  pin RingOscillator_0.AO14_23/C
+    instance   RingOscillator_0.AO14_23 (cell AO14)
+    output pin RingOscillator_0.AO14_23/Y
+    net        RingOscillator_0.AO14_23_Y
+    input  pin RingOscillator_0.AO14_14/C
+    instance   RingOscillator_0.AO14_14 (cell AO14)
+    output pin RingOscillator_0.AO14_14/Y
+    net        RingOscillator_0.AO14_14_Y
+    input  pin RingOscillator_0.AO14_15/C
+    instance   RingOscillator_0.AO14_15 (cell AO14)
+    output pin RingOscillator_0.AO14_15/Y
+    net        RingOscillator_0.AO14_15_Y
+    input  pin RingOscillator_0.NAND2_0/B
+    instance   RingOscillator_0.NAND2_0 (cell NAND2)
+    output pin RingOscillator_0.NAND2_0/Y
+    net        RingOscillator_0.NAND2_0_Y
+    input  pin RingOscillator_0.muxSwitcthRing_0.MX2_Result/A
+    instance   RingOscillator_0.muxSwitcthRing_0.MX2_Result (cell MX2)
+    output pin RingOscillator_0.muxSwitcthRing_0.MX2_Result/Y
+    net        RingOscillator_0.muxSwitcthRing_0_Result
+End of loops
+@W: MT462 :"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\smartgen\common\vhdl\flashfreeze_filter.vhd":64:3:64:23|Net LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.Primary_Filter_Instance.clock_to_user_logic_temp appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\component\work\ringoscillator\ringoscillator.vhd":291:0:291:6|Net RingOscillator_0.AO14_15_Y appears to be an unidentified clock source. Assuming default frequency. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+@N:"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\hdl\command_process_parity0_modified.vhd":617:2:617:3|Found counter in view:work.command_process(rtl) inst bitCounter[3:0]
+Encoding state machine state[0:9] (view:work.command_process(rtl))
+original code -> new code
+   0000000001 -> 0000000001
+   0000000010 -> 0000000010
+   0000000100 -> 0000000100
+   0000001000 -> 0000001000
+   0000010000 -> 0000010000
+   0000100000 -> 0000100000
+   0001000000 -> 0001000000
+   0010000000 -> 0010000000
+   0100000000 -> 0100000000
+   1000000000 -> 1000000000
+Encoding state machine ff_current_state[0:5] (view:work.FlashFreeze_FSM(trans))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+@N:"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\hdl\manchester_encoder.vhd":228:8:228:9|Found counter in view:work.manchester_encoder(rtl) inst bit_count[2:0]
+@N:"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\hdl\manchesterencoder_ctrl.vhd":263:2:263:3|Found counter in view:work.manchester_encoder_ctrl(rtl) inst cuentaEnvios[2:0]
+Encoding state machine state[0:6] (view:work.manchester_encoder_ctrl(rtl))
+original code -> new code
+   0000001 -> 0000001
+   0000010 -> 0000010
+   0000100 -> 0000100
+   0001000 -> 0001000
+   0010000 -> 0010000
+   0100000 -> 0100000
+   1000000 -> 1000000
+@N:"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\hdl\manchesterdecoder_0tostart_v5.vhd":210:1:210:2|Found counter in view:work.md_v5(rtl) inst error_counter[3:0]
+@N:"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\hdl\freq_ref_preamble.vhd":28:8:28:9|Found counter in view:work.frec_ref(def_arch) inst q[3:0]
+@N:"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\hdl\mom_unit_indirectack_inic0mod.vhd":462:2:462:3|Found counter in view:work.MoM_unit(rtl) inst Contention_int[7:0]
+@N:"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\hdl\mom_unit_indirectack_inic0mod.vhd":411:2:411:3|Found counter in view:work.MoM_unit(rtl) inst aux_timeOut[12:0]
+Encoding state machine state[0:5] (view:work.MoM_unit(rtl))
+original code -> new code
+   000001 -> 000001
+   000010 -> 000010
+   000100 -> 000100
+   001000 -> 001000
+   010000 -> 010000
+   100000 -> 100000
+Encoding state machine state[0:2] (view:work.ZBControl(symplified))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+@N: BN362 :"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\smartgen\common\vhdl\flashfreeze_fsm.vhd":63:6:63:7|Removing sequential instance LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.FlashFreeze_FSM_inst.housekeeping_request of view:PrimLib.dffr(prim) in hierarchy view:work.WuPu(rtl) because there are no references to its outputs 
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 113MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name     Fanout, notes                   
+---------------------------------------------------------------
+md_v4_0.error_flag / Q         29                              
+INBUF_0 / Y                    155 : 152 asynchronous set/reset
+===============================================================
+
+@N: FP130 |Promoting Net RESETZB_c on CLKINT  I_70 
+@N: FP130 |Promoting Net CLK_GATED_0 on CLKINT  RingOscillator_0.ringO_cnt_0.CLK_GATED_0_inferred_clock 
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+
+Replicating Sequential Instance md_v4_0.error_flag, fanout 29 segments 2
+
+Added 0 Buffers
+Added 1 Cells via replication
+	Added 1 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 160 clock pin(s) of sequential element(s)
+0 instances converted, 160 sequential instances remain driven by gated/generated clocks
+
+= Non-Gated/Non-Generated Clocks =
+************** None **************
+----------------------------------
+==================================
+========================================================================================================================================================================================= Gated/Generated Clocks =========================================================================================================================================================================================
+Clock Tree ID     Driving Element                                                                                           Drive Element Type     Fanout     Sample Instance                                                                                               Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.Primary_Filter_Instance.Gate_For_Clock_Gating     AND2                   145        DFN1C0_0                                                                                                      Clock conversion disabled                                                                                                     
+@K:CKID0002       RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_3                                                                DFN1E1C0               11         LowPowerManagement_0.LowPowerManagement_wrapper_inst.U0.Primary_Filter_Instance.Register_For_Clock_Gating     No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0003       RingOscillator_0.AO14_15                                                                                  AO14                   4          RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1                                                                    Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+==========================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\synthesis\WuPu.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
+
+Writing EDIF Netlist and constraint files
+H-2013.03M-1 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+
+Warning: Found 1 combinational loops!
+@W: BN137 :"c:\users\victor ros\documents\cookies\wake_up_radio\wuputestbedready\smartgen\muxswitcthring\muxswitcthring.vhd":32:4:32:13|Found combinational loop during mapping at net RingOscillator_0.muxSwitcthRing_0.muxSwitcthRing_0_Result
+1) instance MX2_Result (view:work.muxSwitcthRing(netlist)), output net "muxSwitcthRing_0_Result" in work.muxSwitcthRing(netlist)
+    net        RingOscillator_0.muxSwitcthRing_0_Result
+    input  pin RingOscillator_0.AO14_0/C
+    instance   RingOscillator_0.AO14_0 (cell AO14)
+    output pin RingOscillator_0.AO14_0/Y
+    net        RingOscillator_0.AO14_0_Y
+    input  pin RingOscillator_0.AO14_1/C
+    instance   RingOscillator_0.AO14_1 (cell AO14)
+    output pin RingOscillator_0.AO14_1/Y
+    net        RingOscillator_0.AO14_1_Y
+    input  pin RingOscillator_0.AO14_2/C
+    instance   RingOscillator_0.AO14_2 (cell AO14)
+    output pin RingOscillator_0.AO14_2/Y
+    net        RingOscillator_0.AO14_2_Y
+    input  pin RingOscillator_0.AO14_12/C
+    instance   RingOscillator_0.AO14_12 (cell AO14)
+    output pin RingOscillator_0.AO14_12/Y
+    net        RingOscillator_0.AO14_12_Y
+    input  pin RingOscillator_0.AO14_13/C
+    instance   RingOscillator_0.AO14_13 (cell AO14)
+    output pin RingOscillator_0.AO14_13/Y
+    net        RingOscillator_0.AO14_13_Y
+    input  pin RingOscillator_0.AO14_16/C
+    instance   RingOscillator_0.AO14_16 (cell AO14)
+    output pin RingOscillator_0.AO14_16/Y
+    net        RingOscillator_0.AO14_16_Y
+    input  pin RingOscillator_0.AO14_3/C
+    instance   RingOscillator_0.AO14_3 (cell AO14)
+    output pin RingOscillator_0.AO14_3/Y
+    net        RingOscillator_0.AO14_3_Y
+    input  pin RingOscillator_0.AO14_4/C
+    instance   RingOscillator_0.AO14_4 (cell AO14)
+    output pin RingOscillator_0.AO14_4/Y
+    net        RingOscillator_0.AO14_4_Y
+    input  pin RingOscillator_0.AO14_5/C
+    instance   RingOscillator_0.AO14_5 (cell AO14)
+    output pin RingOscillator_0.AO14_5/Y
+    net        RingOscillator_0.AO14_5_Y
+    input  pin RingOscillator_0.AO14_17/C
+    instance   RingOscillator_0.AO14_17 (cell AO14)
+    output pin RingOscillator_0.AO14_17/Y
+    net        RingOscillator_0.AO14_17_Y
+    input  pin RingOscillator_0.AO14_18/C
+    instance   RingOscillator_0.AO14_18 (cell AO14)
+    output pin RingOscillator_0.AO14_18/Y
+    net        RingOscillator_0.AO14_18_Y
+    input  pin RingOscillator_0.AO14_19/C
+    instance   RingOscillator_0.AO14_19 (cell AO14)
+    output pin RingOscillator_0.AO14_19/Y
+    net        RingOscillator_0.AO14_19_Y
+    input  pin RingOscillator_0.AO14_6/C
+    instance   RingOscillator_0.AO14_6 (cell AO14)
+    output pin RingOscillator_0.AO14_6/Y
+    net        RingOscillator_0.AO14_6_Y
+    input  pin RingOscillator_0.AO14_7/C
+    instance   RingOscillator_0.AO14_7 (cell AO14)
+    output pin RingOscillator_0.AO14_7/Y
+    net        RingOscillator_0.AO14_7_Y
+    input  pin RingOscillator_0.AO14_8/C
+    instance   RingOscillator_0.AO14_8 (cell AO14)
+    output pin RingOscillator_0.AO14_8/Y
+    net        RingOscillator_0.AO14_8_Y
+    input  pin RingOscillator_0.AO14_20/C
+    instance   RingOscillator_0.AO14_20 (cell AO14)
+    output pin RingOscillator_0.AO14_20/Y
+    net        RingOscillator_0.AO14_20_Y
+    input  pin RingOscillator_0.AO14_21/C
+    instance   RingOscillator_0.AO14_21 (cell AO14)
+    output pin RingOscillator_0.AO14_21/Y
+    net        RingOscillator_0.AO14_21_Y
+    input  pin RingOscillator_0.AO14_22/C
+    instance   RingOscillator_0.AO14_22 (cell AO14)
+    output pin RingOscillator_0.AO14_22/Y
+    net        RingOscillator_0.AO14_22_Y
+    input  pin RingOscillator_0.AO14_9/C
+    instance   RingOscillator_0.AO14_9 (cell AO14)
+    output pin RingOscillator_0.AO14_9/Y
+    net        RingOscillator_0.AO14_9_Y
+    input  pin RingOscillator_0.AO14_10/C
+    instance   RingOscillator_0.AO14_10 (cell AO14)
+    output pin RingOscillator_0.AO14_10/Y
+    net        RingOscillator_0.AO14_10_Y
+    input  pin RingOscillator_0.AO14_11/C
+    instance   RingOscillator_0.AO14_11 (cell AO14)
+    output pin RingOscillator_0.AO14_11/Y
+    net        RingOscillator_0.AO14_11_Y
+    input  pin RingOscillator_0.AO14_23/C
+    instance   RingOscillator_0.AO14_23 (cell AO14)
+    output pin RingOscillator_0.AO14_23/Y
+    net        RingOscillator_0.AO14_23_Y
+    input  pin RingOscillator_0.AO14_14/C
+    instance   RingOscillator_0.AO14_14 (cell AO14)
+    output pin RingOscillator_0.AO14_14/Y
+    net        RingOscillator_0.AO14_14_Y
+    input  pin RingOscillator_0.AO14_15/C
+    instance   RingOscillator_0.AO14_15 (cell AO14)
+    output pin RingOscillator_0.AO14_15/Y
+    net        RingOscillator_0.AO14_15_Y
+    input  pin RingOscillator_0.NAND2_0/B
+    instance   RingOscillator_0.NAND2_0 (cell NAND2)
+    output pin RingOscillator_0.NAND2_0/Y
+    net        RingOscillator_0.muxSwitcthRing_0.NAND2_0_Y
+    input  pin RingOscillator_0.muxSwitcthRing_0.MX2_Result/A
+    instance   RingOscillator_0.muxSwitcthRing_0.MX2_Result (cell MX2)
+    output pin RingOscillator_0.muxSwitcthRing_0.MX2_Result/Y
+    net        RingOscillator_0.muxSwitcthRing_0.muxSwitcthRing_0_Result
+End of loops
+@W: MT420 |Found inferred clock ringO_cnt|CLK_GATED_0_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:CLK_GATED_0"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Nov 13 14:49:39 2013
+#
+
+
+Top view:               WuPu
+Library name:           IGLOO
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.85, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        IGLOO
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -6.813
+
+                                         Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                           Frequency     Frequency     Period        Period        Slack      Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------------
+ringO_cnt|CLK_GATED_0_inferred_clock     100.0 MHz     42.3 MHz      10.000        23.625        -6.813     inferred     Inferred_clkgroup_0
+System                                   100.0 MHz     182.8 MHz     10.000        5.471         4.529      system       system_clkgroup    
+============================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                      |    rise  to  rise    |    fall  to  fall    |    rise  to  fall    |    fall  to  rise  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                              Ending                                |  constraint  slack   |  constraint  slack   |  constraint  slack   |  constraint  slack 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                System                                |  10.000      4.529   |  No paths    -       |  No paths    -       |  No paths    -     
+ringO_cnt|CLK_GATED_0_inferred_clock  System                                |  10.000      8.728   |  No paths    -       |  No paths    -       |  No paths    -     
+ringO_cnt|CLK_GATED_0_inferred_clock  ringO_cnt|CLK_GATED_0_inferred_clock  |  10.000      -6.413  |  10.000      -0.263  |  5.000       -6.579  |  5.000       -6.813
+======================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: ringO_cnt|CLK_GATED_0_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                          Starting                                                                            Arrival           
+Instance                                                                  Reference                                Type         Pin     Net                   Time        Slack 
+                                                                          Clock                                                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+md_v4_0.mdi2                                                              ringO_cnt|CLK_GATED_0_inferred_clock     DFN0E1C0     Q       mdi2                  0.785       -6.813
+MoM_unit_0.Contention_int[1]                                              ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E0C0     Q       Contention_int[1]     0.885       -6.579
+manchesterEncoderComplete_0.manchester_encoder_ctrl_0.cuentaEnvios[1]     ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E1C0     Q       cuentaEnvios[1]       0.885       -6.412
+md_v4_0.error_flag                                                        ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E1C0     Q       bit_error_1           0.885       -6.338
+MoM_unit_0.Contention_int[5]                                              ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E0C0     Q       Contention_int[5]     0.885       -6.315
+MoM_unit_0.Contention_int[6]                                              ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E0C0     Q       Contention_int[6]     0.885       -6.029
+md_v4_0.dataFiltered                                                      ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E1C0     Q       dataFiltered          0.885       -5.992
+manchesterEncoderComplete_0.manchester_encoder_ctrl_0.cuentaEnvios[0]     ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E1C0     Q       cuentaEnvios[0]       0.697       -5.953
+MoM_unit_0.aux_timeOut[0]                                                 ringO_cnt|CLK_GATED_0_inferred_clock     DFN1C0       Q       aux_timeOut[0]        0.697       -5.867
+md_v4_0.newDataEdgeAux                                                    ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E0C0     Q       newDataEdgeAux        0.885       -5.848
+================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                                         Required           
+Instance                            Reference                                Type         Pin     Net                Time         Slack 
+                                    Clock                                                                                               
+----------------------------------------------------------------------------------------------------------------------------------------
+command_process_0.bitCounter[0]     ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E1C0     E       bitCountere        4.478        -6.813
+command_process_0.bitCounter[1]     ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E1C0     E       bitCountere        4.478        -6.813
+command_process_0.bitCounter[2]     ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E1C0     E       bitCountere        4.478        -6.813
+command_process_0.bitCounter[3]     ringO_cnt|CLK_GATED_0_inferred_clock     DFN1E1C0     E       bitCountere        4.478        -6.813
+command_process_0.addressRX[0]      ringO_cnt|CLK_GATED_0_inferred_clock     DFN0E1C0     D       commandRX_3[0]     4.144        -6.579
+command_process_0.commandRX[0]      ringO_cnt|CLK_GATED_0_inferred_clock     DFN0E0C0     D       commandRX_3[0]     4.144        -6.579
+command_process_0.addressRX[1]      ringO_cnt|CLK_GATED_0_inferred_clock     DFN0E1C0     D       addressRX_3[1]     4.144        -6.501
+command_process_0.addressRX[2]      ringO_cnt|CLK_GATED_0_inferred_clock     DFN0E1C0     D       addressRX_3[2]     4.144        -6.501
+command_process_0.addressRX[3]      ringO_cnt|CLK_GATED_0_inferred_clock     DFN0E1C0     D       addressRX_3[3]     4.144        -6.501
+command_process_0.addressRX[4]      ringO_cnt|CLK_GATED_0_inferred_clock     DFN0E1C0     D       addressRX_3[4]     4.144        -6.501
+========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.522
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.478
+
+    - Propagation time:                      11.291
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.813
+
+    Number of logic level(s):                5
+    Starting point:                          md_v4_0.mdi2 / Q
+    Ending point:                            command_process_0.bitCounter[0] / E
+    The start point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [rising] on pin CLK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+md_v4_0.mdi2                                 DFN0E1C0     Q        Out     0.785     0.785       -         
+mdi2                                         Net          -        -       2.005     -           9         
+command_process_0.un2_dataclean_5_i_a2_2     NOR3A        C        In      -         2.790       -         
+command_process_0.un2_dataclean_5_i_a2_2     NOR3A        Y        Out     0.860     3.650       -         
+N_435                                        Net          -        -       1.710     -           6         
+command_process_0.state_RNIT01B2[6]          AO1D         C        In      -         5.360       -         
+command_process_0.state_RNIT01B2[6]          AO1D         Y        Out     0.787     6.148       -         
+N_58                                         Net          -        -       0.464     -           2         
+command_process_0.state_RNI74MS2[9]          AO1D         C        In      -         6.611       -         
+command_process_0.state_RNI74MS2[9]          AO1D         Y        Out     0.787     7.398       -         
+N_60                                         Net          -        -       0.464     -           2         
+command_process_0.state_RNI8Q4N3[1]          NOR3B        A        In      -         7.862       -         
+command_process_0.state_RNI8Q4N3[1]          NOR3B        Y        Out     0.800     8.662       -         
+N_122                                        Net          -        -       0.386     -           1         
+command_process_0.state_RNIKASFB[1]          OR3          C        In      -         9.048       -         
+command_process_0.state_RNIKASFB[1]          OR3          Y        Out     0.821     9.868       -         
+bitCountere                                  Net          -        -       1.422     -           4         
+command_process_0.bitCounter[0]              DFN1E1C0     E        In      -         11.291      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 11.813 is 5.362(45.4%) logic and 6.450(54.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.522
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.478
+
+    - Propagation time:                      11.291
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.813
+
+    Number of logic level(s):                5
+    Starting point:                          md_v4_0.mdi2 / Q
+    Ending point:                            command_process_0.bitCounter[3] / E
+    The start point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [rising] on pin CLK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+md_v4_0.mdi2                                 DFN0E1C0     Q        Out     0.785     0.785       -         
+mdi2                                         Net          -        -       2.005     -           9         
+command_process_0.un2_dataclean_5_i_a2_2     NOR3A        C        In      -         2.790       -         
+command_process_0.un2_dataclean_5_i_a2_2     NOR3A        Y        Out     0.860     3.650       -         
+N_435                                        Net          -        -       1.710     -           6         
+command_process_0.state_RNIT01B2[6]          AO1D         C        In      -         5.360       -         
+command_process_0.state_RNIT01B2[6]          AO1D         Y        Out     0.787     6.148       -         
+N_58                                         Net          -        -       0.464     -           2         
+command_process_0.state_RNI74MS2[9]          AO1D         C        In      -         6.611       -         
+command_process_0.state_RNI74MS2[9]          AO1D         Y        Out     0.787     7.398       -         
+N_60                                         Net          -        -       0.464     -           2         
+command_process_0.state_RNI8Q4N3[1]          NOR3B        A        In      -         7.862       -         
+command_process_0.state_RNI8Q4N3[1]          NOR3B        Y        Out     0.800     8.662       -         
+N_122                                        Net          -        -       0.386     -           1         
+command_process_0.state_RNIKASFB[1]          OR3          C        In      -         9.048       -         
+command_process_0.state_RNIKASFB[1]          OR3          Y        Out     0.821     9.868       -         
+bitCountere                                  Net          -        -       1.422     -           4         
+command_process_0.bitCounter[3]              DFN1E1C0     E        In      -         11.291      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 11.813 is 5.362(45.4%) logic and 6.450(54.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.522
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.478
+
+    - Propagation time:                      11.291
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.813
+
+    Number of logic level(s):                5
+    Starting point:                          md_v4_0.mdi2 / Q
+    Ending point:                            command_process_0.bitCounter[2] / E
+    The start point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [rising] on pin CLK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+md_v4_0.mdi2                                 DFN0E1C0     Q        Out     0.785     0.785       -         
+mdi2                                         Net          -        -       2.005     -           9         
+command_process_0.un2_dataclean_5_i_a2_2     NOR3A        C        In      -         2.790       -         
+command_process_0.un2_dataclean_5_i_a2_2     NOR3A        Y        Out     0.860     3.650       -         
+N_435                                        Net          -        -       1.710     -           6         
+command_process_0.state_RNIT01B2[6]          AO1D         C        In      -         5.360       -         
+command_process_0.state_RNIT01B2[6]          AO1D         Y        Out     0.787     6.148       -         
+N_58                                         Net          -        -       0.464     -           2         
+command_process_0.state_RNI74MS2[9]          AO1D         C        In      -         6.611       -         
+command_process_0.state_RNI74MS2[9]          AO1D         Y        Out     0.787     7.398       -         
+N_60                                         Net          -        -       0.464     -           2         
+command_process_0.state_RNI8Q4N3[1]          NOR3B        A        In      -         7.862       -         
+command_process_0.state_RNI8Q4N3[1]          NOR3B        Y        Out     0.800     8.662       -         
+N_122                                        Net          -        -       0.386     -           1         
+command_process_0.state_RNIKASFB[1]          OR3          C        In      -         9.048       -         
+command_process_0.state_RNIKASFB[1]          OR3          Y        Out     0.821     9.868       -         
+bitCountere                                  Net          -        -       1.422     -           4         
+command_process_0.bitCounter[2]              DFN1E1C0     E        In      -         11.291      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 11.813 is 5.362(45.4%) logic and 6.450(54.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.522
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.478
+
+    - Propagation time:                      11.291
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.813
+
+    Number of logic level(s):                5
+    Starting point:                          md_v4_0.mdi2 / Q
+    Ending point:                            command_process_0.bitCounter[1] / E
+    The start point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [rising] on pin CLK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+md_v4_0.mdi2                                 DFN0E1C0     Q        Out     0.785     0.785       -         
+mdi2                                         Net          -        -       2.005     -           9         
+command_process_0.un2_dataclean_5_i_a2_2     NOR3A        C        In      -         2.790       -         
+command_process_0.un2_dataclean_5_i_a2_2     NOR3A        Y        Out     0.860     3.650       -         
+N_435                                        Net          -        -       1.710     -           6         
+command_process_0.state_RNIT01B2[6]          AO1D         C        In      -         5.360       -         
+command_process_0.state_RNIT01B2[6]          AO1D         Y        Out     0.787     6.148       -         
+N_58                                         Net          -        -       0.464     -           2         
+command_process_0.state_RNI74MS2[9]          AO1D         C        In      -         6.611       -         
+command_process_0.state_RNI74MS2[9]          AO1D         Y        Out     0.787     7.398       -         
+N_60                                         Net          -        -       0.464     -           2         
+command_process_0.state_RNI8Q4N3[1]          NOR3B        A        In      -         7.862       -         
+command_process_0.state_RNI8Q4N3[1]          NOR3B        Y        Out     0.800     8.662       -         
+N_122                                        Net          -        -       0.386     -           1         
+command_process_0.state_RNIKASFB[1]          OR3          C        In      -         9.048       -         
+command_process_0.state_RNIKASFB[1]          OR3          Y        Out     0.821     9.868       -         
+bitCountere                                  Net          -        -       1.422     -           4         
+command_process_0.bitCounter[1]              DFN1E1C0     E        In      -         11.291      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 11.813 is 5.362(45.4%) logic and 6.450(54.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.856
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.144
+
+    - Propagation time:                      10.722
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -6.579
+
+    Number of logic level(s):                5
+    Starting point:                          MoM_unit_0.Contention_int[1] / Q
+    Ending point:                            command_process_0.addressRX[0] / D
+    The start point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            ringO_cnt|CLK_GATED_0_inferred_clock [falling] on pin CLK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+MoM_unit_0.Contention_int[1]             DFN1E0C0     Q        Out     0.885     0.885       -         
+Contention_int[1]                        Net          -        -       1.422     -           4         
+MoM_unit_0.Contention_int_RNIOPU9[7]     NOR2B        B        In      -         2.307       -         
+MoM_unit_0.Contention_int_RNIOPU9[7]     NOR2B        Y        Out     0.754     3.061       -         
+un2_contentiontimeexpired_2              Net          -        -       0.386     -           1         
+MoM_unit_0.Contention_int_RNIADTJ[2]     NOR3B        B        In      -         3.447       -         
+MoM_unit_0.Contention_int_RNIADTJ[2]     NOR3B        Y        Out     0.729     4.176       -         
+un2_contentiontimeexpired_5              Net          -        -       1.422     -           4         
+MoM_unit_0.state_RNIE9081_0[4]           AOI1B        A        In      -         5.598       -         
+MoM_unit_0.state_RNIE9081_0[4]           AOI1B        Y        Out     1.121     6.719       -         
+r_N_7                                    Net          -        -       0.464     -           2         
+command_process_0.un2_m2_i_a3            OR2          A        In      -         7.183       -         
+command_process_0.un2_m2_i_a3            OR2          Y        Out     0.436     7.619       -         
+un2_N_7_i                                Net          -        -       2.053     -           10        
+command_process_0.Store_m1_e             AND2         A        In      -         9.672       -         
+command_process_0.Store_m1_e             AND2         Y        Out     0.587     10.259      -         
+commandRX_3[0]                           Net          -        -       0.464     -           2         
+command_process_0.addressRX[0]           DFN0E1C0     D        In      -         10.722      -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 11.579 is 5.368(46.4%) logic and 6.210(53.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                               Starting                                             Arrival          
+Instance                                       Reference     Type         Pin     Net               Time        Slack
+                                               Clock                                                                 
+---------------------------------------------------------------------------------------------------------------------
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0       System        DFN1C0       Q       NU_0              0.885       4.529
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1     System        DFN1E1C0     Q       NU_1              0.885       4.847
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_3     System        DFN1E1C0     Q       CLK_GATED_0_i     0.885       5.653
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2       System        DFN1C0       Q       NU_2              0.885       6.763
+=====================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                               Starting                                        Required          
+Instance                                       Reference     Type         Pin     Net          Time         Slack
+                                               Clock                                                             
+-----------------------------------------------------------------------------------------------------------------
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2       System        DFN1C0       D       XOR2_0_Y     9.353        4.529
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_3     System        DFN1E1C0     E       NU_0_1_2     9.269        6.018
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0       System        DFN1C0       D       INV_1_Y      9.353        6.049
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1     System        DFN1E1C0     D       INV_2_Y      9.353        6.503
+RingOscillator_0.ringO_cnt_0.DFN1E1C0_NU_1     System        DFN1E1C0     E       NU_0         9.269        6.962
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.647
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         9.353
+
+    - Propagation time:                      4.824
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 4.529
+
+    Number of logic level(s):                2
+    Starting point:                          RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0 / Q
+    Ending point:                            RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2 / D
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            System [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                         Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_0     DFN1C0     Q        Out     0.885     0.885       -         
+NU_0                                         Net        -        -       1.422     -           4         
+RingOscillator_0.ringO_cnt_0.AND2_0          AND2       A        In      -         2.307       -         
+RingOscillator_0.ringO_cnt_0.AND2_0          AND2       Y        Out     0.618     2.925       -         
+AND2_0_Y                                     Net        -        -       0.386     -           1         
+RingOscillator_0.ringO_cnt_0.XOR2_0          XOR2       B        In      -         3.312       -         
+RingOscillator_0.ringO_cnt_0.XOR2_0          XOR2       Y        Out     1.125     4.437       -         
+XOR2_0_Y                                     Net        -        -       0.386     -           1         
+RingOscillator_0.ringO_cnt_0.DFN1C0_NU_2     DFN1C0     D        In      -         4.824       -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 5.471 is 3.276(59.9%) logic and 2.195(40.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: AGL030V5_VQFP100_STD
+Report for cell WuPu.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2    18      1.0       18.0
+             AND2A     1      1.0        1.0
+              AND3     2      1.0        2.0
+               AO1    19      1.0       19.0
+              AO14    24      1.0       24.0
+              AO1A    10      1.0       10.0
+              AO1B     2      1.0        2.0
+              AO1C     8      1.0        8.0
+              AO1D     6      1.0        6.0
+              AOI1     5      1.0        5.0
+             AOI1B     3      1.0        3.0
+               AX1     2      1.0        2.0
+              AX1A     4      1.0        4.0
+              AX1B     5      1.0        5.0
+              AX1C     1      1.0        1.0
+              AX1D     2      1.0        2.0
+              AX1E     1      1.0        1.0
+            CLKINT     3      0.0        0.0
+               GND    24      0.0        0.0
+               INV    11      1.0       11.0
+               MX2    16      1.0       16.0
+              MX2A     1      1.0        1.0
+              MX2B     4      1.0        4.0
+              MX2C     2      1.0        2.0
+             NAND2     1      1.0        1.0
+              NOR2    16      1.0       16.0
+             NOR2A    64      1.0       64.0
+             NOR2B    41      1.0       41.0
+              NOR3    15      1.0       15.0
+             NOR3A    28      1.0       28.0
+             NOR3B    21      1.0       21.0
+             NOR3C    10      1.0       10.0
+               OA1     8      1.0        8.0
+              OA1A     4      1.0        4.0
+              OA1B     3      1.0        3.0
+              OA1C     8      1.0        8.0
+              OAI1     2      1.0        2.0
+               OR2    24      1.0       24.0
+              OR2A    17      1.0       17.0
+              OR2B    14      1.0       14.0
+               OR3    11      1.0       11.0
+              OR3A     9      1.0        9.0
+              OR3B     8      1.0        8.0
+              OR3C     4      1.0        4.0
+            ULSICC     1      0.0        0.0
+               VCC    24      0.0        0.0
+               XA1     3      1.0        3.0
+              XA1A     3      1.0        3.0
+              XA1B     5      1.0        5.0
+              XA1C     1      1.0        1.0
+             XNOR2     5      1.0        5.0
+             XNOR3     1      1.0        1.0
+               XO1     2      1.0        2.0
+              XO1A     2      1.0        2.0
+              XOR2    15      1.0       15.0
+              XOR3     1      1.0        1.0
+
+
+          DFN0E0C0     4      1.0        4.0
+          DFN0E1C0    14      1.0       14.0
+              DFN1     1      1.0        1.0
+            DFN1C0    59      1.0       59.0
+          DFN1E0C0    17      1.0       17.0
+          DFN1E1C0    47      1.0       47.0
+          DFN1E1P0     4      1.0        4.0
+            DFN1P0    13      1.0       13.0
+              DLN0     1      1.0        1.0
+                   -----          ----------
+             TOTAL   705               653.0
+
+
+  IO Cell usage:
+              cell count
+             BIBUF     1
+             INBUF    12
+          INBUF_FF     1
+            OUTBUF    19
+                   -----
+             TOTAL    33
+
+
+Core Cells         : 653 of 768 (85%)
+IO Cells           : 33
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 48MB peak: 114MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Nov 13 14:49:39 2013
+
+###########################################################]

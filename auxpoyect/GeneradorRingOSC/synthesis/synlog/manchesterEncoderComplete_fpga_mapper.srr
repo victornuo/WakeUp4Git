@@ -1,0 +1,546 @@
+Synopsys Actel Technology Mapper, Version mapact, Build 729R, Built Jun 20 2012 09:47:40
+Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version F-2012.03M-SP1 
+
+Mapper Startup Complete (Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF258 |Gated clock conversion disabled 
+@N: MF547 |Generated clock conversion disabled 
+
+Design Input Complete (Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+
+Mapper Initialization Complete (Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+
+
+Starting Optimization and Mapping (Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+@N:"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\generadorringosc\hdl\manchester_encoder.vhd":234:8:234:9|Found counter in view:work.manchester_encoder(rtl) inst bit_count[2:0]
+@N:"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\generadorringosc\hdl\manchesterencoder_ctrl.vhd":261:2:261:3|Found counter in view:work.manchester_encoder_ctrl(rtl) inst cuentaEnvios[2:0]
+Encoding state machine state[0:6] (netlist:statemachine)
+original code -> new code
+   0000001 -> 0000001
+   0000010 -> 0000010
+   0000100 -> 0000100
+   0001000 -> 0001000
+   0010000 -> 0010000
+   0100000 -> 0100000
+   1000000 -> 1000000
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name     Fanout, notes                 
+-------------------------------------------------------------
+rstn_pad / Y                   39 : 39 asynchronous set/reset
+=============================================================
+
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+Buffering rstn_c, fanout 39 segments 2
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Added 1 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+Writing Analyst data base C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\synthesis\manchesterEncoderComplete.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+Writing EDIF Netlist and constraint files
+F-2012.03M-SP1 
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+@W: MT420 |Found inferred clock manchesterEncoderComplete|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Jun 03 14:44:26 2013
+#
+
+
+Top view:               manchesterEncoderComplete
+Library name:           IGLOO_V2
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.14, P = 3.70, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        igloo
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -19.693
+
+                                  Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                    Frequency     Frequency     Period        Period        Slack       Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------
+manchesterEncoderComplete|clk     100.0 MHz     33.7 MHz      10.000        29.693        -19.693     inferred     Inferred_clkgroup_0
+======================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                        |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                       Ending                         |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------
+manchesterEncoderComplete|clk  manchesterEncoderComplete|clk  |  10.000      -19.693  |  No paths    -      |  No paths    -      |  No paths    -    
+======================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: manchesterEncoderComplete|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                              Starting                                                                         Arrival            
+Instance                                      Reference                         Type         Pin     Net                       Time        Slack  
+                                              Clock                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------
+manchester_encoder_ctrl_0.state[1]            manchesterEncoderComplete|clk     DFN1C0       Q       state[1]                  1.771       -19.693
+manchester_encoder_ctrl_0.state[3]            manchesterEncoderComplete|clk     DFN1C0       Q       state[3]                  1.771       -18.444
+manchester_encoder_ctrl_0.state[5]            manchesterEncoderComplete|clk     DFN1C0       Q       state[5]                  1.771       -18.223
+manchester_encoder_0.symbol_t[3]              manchesterEncoderComplete|clk     DFN1C0       Q       symbol_t[3]               1.771       -17.476
+manchester_encoder_0.encoder_busy             manchesterEncoderComplete|clk     DFN1E1C0     Q       TX_Active_net_0_i_0_c     1.771       -17.455
+manchester_encoder_0.symbol_t[2]              manchesterEncoderComplete|clk     DFN1C0       Q       symbol_t[2]               1.771       -17.434
+manchester_encoder_ctrl_0.cuentaEnvios[0]     manchesterEncoderComplete|clk     DFN1E1C0     Q       cuentaEnvios[0]           1.771       -17.305
+manchester_encoder_0.symbol_t[0]              manchesterEncoderComplete|clk     DFN1C0       Q       symbol_t[0]               1.771       -17.142
+manchester_encoder_ctrl_0.cuentaEnvios[1]     manchesterEncoderComplete|clk     DFN1E1C0     Q       cuentaEnvios[1]           1.395       -16.854
+manchester_encoder_ctrl_0.cuentaEnvios[2]     manchesterEncoderComplete|clk     DFN1E1C0     Q       cuentaEnvios[2]           1.771       -16.812
+==================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                                                 Required            
+Instance                              Reference                         Type         Pin     Net               Time         Slack  
+                                      Clock                                                                                        
+-----------------------------------------------------------------------------------------------------------------------------------
+manchester_encoder_0.symbol_t[5]      manchesterEncoderComplete|clk     DFN1C0       D       symbol_t_4[5]     8.705        -19.693
+manchester_encoder_0.bit_count[0]     manchesterEncoderComplete|clk     DFN1E1C0     E       bit_counte        8.538        -15.843
+manchester_encoder_0.bit_count[1]     manchesterEncoderComplete|clk     DFN1E1C0     E       bit_counte        8.538        -15.843
+manchester_encoder_0.bit_count[2]     manchesterEncoderComplete|clk     DFN1E1C0     E       bit_counte        8.538        -15.843
+manchester_encoder_0.symbol_t[4]      manchesterEncoderComplete|clk     DFN1C0       D       I_24              8.705        -15.734
+manchester_encoder_0.symbol_t[2]      manchesterEncoderComplete|clk     DFN1C0       D       symbol_t_4[2]     8.705        -15.647
+manchester_encoder_0.symbol_t[3]      manchesterEncoderComplete|clk     DFN1C0       D       I_23              8.705        -15.580
+manchester_encoder_0.bit_count[0]     manchesterEncoderComplete|clk     DFN1E1C0     D       N_112             8.789        -15.108
+manchester_encoder_0.bit_count[2]     manchesterEncoderComplete|clk     DFN1E1C0     D       N_114             8.789        -15.012
+manchester_encoder_0.symbol_t[1]      manchesterEncoderComplete|clk     DFN1C0       D       symbol_t_4[1]     8.622        -14.628
+===================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            1.295
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.705
+
+    - Propagation time:                      28.399
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -19.693
+
+    Number of logic level(s):                9
+    Starting point:                          manchester_encoder_ctrl_0.state[1] / Q
+    Ending point:                            manchester_encoder_0.symbol_t[5] / D
+    The start point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+    The end   point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                           Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+manchester_encoder_ctrl_0.state[1]             DFN1C0     Q        Out     1.771     1.771       -         
+state[1]                                       Net        -        -       3.074     -           5         
+manchester_encoder_ctrl_0.state_RNIKH7V[5]     NOR2       B        In      -         4.845       -         
+manchester_encoder_ctrl_0.state_RNIKH7V[5]     NOR2       Y        Out     1.554     6.398       -         
+loadEncoder_i_a3_0_a3_0                        Net        -        -       2.844     -           4         
+manchester_encoder_0.encoder_busy_RNI64H52     NOR3B      B        In      -         9.242       -         
+manchester_encoder_0.encoder_busy_RNI64H52     NOR3B      Y        Out     1.499     10.742      -         
+manchesterRef_1_sqmuxa_1_1                     Net        -        -       0.773     -           1         
+manchester_encoder_0.encoder_busy_RNIQKA16     NOR3A      A        In      -         11.514      -         
+manchester_encoder_0.encoder_busy_RNIQKA16     NOR3A      Y        Out     1.595     13.109      -         
+manchesterRef_1_sqmuxa                         Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_1          AND2       B        In      -         14.037      -         
+manchester_encoder_0.un1_symbol_t.I_1          AND2       Y        Out     1.240     15.277      -         
+DWACT_ADD_CI_0_TMP[0]                          Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_31         NOR2B      A        In      -         16.204      -         
+manchester_encoder_0.un1_symbol_t.I_31         NOR2B      Y        Out     1.174     17.378      -         
+DWACT_ADD_CI_0_g_array_1[0]                    Net        -        -       1.938     -           3         
+manchester_encoder_0.un1_symbol_t.I_33         NOR2B      A        In      -         19.315      -         
+manchester_encoder_0.un1_symbol_t.I_33         NOR2B      Y        Out     1.174     20.489      -         
+DWACT_ADD_CI_0_g_array_2[0]                    Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_30         NOR2B      A        In      -         21.416      -         
+manchester_encoder_0.un1_symbol_t.I_30         NOR2B      Y        Out     1.174     22.590      -         
+DWACT_ADD_CI_0_g_array_12_1[0]                 Net        -        -       0.773     -           1         
+manchester_encoder_0.un1_symbol_t.I_26         XOR2       B        In      -         23.362      -         
+manchester_encoder_0.un1_symbol_t.I_26         XOR2       Y        Out     2.251     25.613      -         
+I_26                                           Net        -        -       0.773     -           1         
+manchester_encoder_0.symbol_t_RNO[5]           NOR2A      A        In      -         26.386      -         
+manchester_encoder_0.symbol_t_RNO[5]           NOR2A      Y        Out     1.240     27.626      -         
+symbol_t_4[5]                                  Net        -        -       0.773     -           1         
+manchester_encoder_0.symbol_t[5]               DFN1C0     D        In      -         28.399      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 29.693 is 15.966(53.8%) logic and 13.728(46.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            1.295
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.705
+
+    - Propagation time:                      27.150
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -18.444
+
+    Number of logic level(s):                9
+    Starting point:                          manchester_encoder_ctrl_0.state[3] / Q
+    Ending point:                            manchester_encoder_0.symbol_t[5] / D
+    The start point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+    The end   point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+
+Instance / Net                                                Pin      Pin               Arrival     No. of    
+Name                                               Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------
+manchester_encoder_ctrl_0.state[3]                 DFN1C0     Q        Out     1.771     1.771       -         
+state[3]                                           Net        -        -       4.268     -           11        
+manchester_encoder_0.manchesterRef_1_sqmuxa_a0     NOR2A      A        In      -         6.039       -         
+manchester_encoder_0.manchesterRef_1_sqmuxa_a0     NOR2A      Y        Out     1.508     7.547       -         
+manchesterRef_1_sqmuxa_a0                          Net        -        -       0.773     -           1         
+manchester_encoder_0.encoder_busy_RNI64H52         NOR3B      C        In      -         8.319       -         
+manchester_encoder_0.encoder_busy_RNI64H52         NOR3B      Y        Out     1.174     9.493       -         
+manchesterRef_1_sqmuxa_1_1                         Net        -        -       0.773     -           1         
+manchester_encoder_0.encoder_busy_RNIQKA16         NOR3A      A        In      -         10.265      -         
+manchester_encoder_0.encoder_busy_RNIQKA16         NOR3A      Y        Out     1.595     11.861      -         
+manchesterRef_1_sqmuxa                             Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_1              AND2       B        In      -         12.788      -         
+manchester_encoder_0.un1_symbol_t.I_1              AND2       Y        Out     1.240     14.028      -         
+DWACT_ADD_CI_0_TMP[0]                              Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_31             NOR2B      A        In      -         14.955      -         
+manchester_encoder_0.un1_symbol_t.I_31             NOR2B      Y        Out     1.174     16.129      -         
+DWACT_ADD_CI_0_g_array_1[0]                        Net        -        -       1.938     -           3         
+manchester_encoder_0.un1_symbol_t.I_33             NOR2B      A        In      -         18.067      -         
+manchester_encoder_0.un1_symbol_t.I_33             NOR2B      Y        Out     1.174     19.240      -         
+DWACT_ADD_CI_0_g_array_2[0]                        Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_30             NOR2B      A        In      -         20.167      -         
+manchester_encoder_0.un1_symbol_t.I_30             NOR2B      Y        Out     1.174     21.341      -         
+DWACT_ADD_CI_0_g_array_12_1[0]                     Net        -        -       0.773     -           1         
+manchester_encoder_0.un1_symbol_t.I_26             XOR2       B        In      -         22.113      -         
+manchester_encoder_0.un1_symbol_t.I_26             XOR2       Y        Out     2.251     24.364      -         
+I_26                                               Net        -        -       0.773     -           1         
+manchester_encoder_0.symbol_t_RNO[5]               NOR2A      A        In      -         25.137      -         
+manchester_encoder_0.symbol_t_RNO[5]               NOR2A      Y        Out     1.240     26.377      -         
+symbol_t_4[5]                                      Net        -        -       0.773     -           1         
+manchester_encoder_0.symbol_t[5]                   DFN1C0     D        In      -         27.150      -         
+===============================================================================================================
+Total path delay (propagation time + setup) of 28.444 is 15.594(54.8%) logic and 12.851(45.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            1.295
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.705
+
+    - Propagation time:                      26.929
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -18.223
+
+    Number of logic level(s):                9
+    Starting point:                          manchester_encoder_ctrl_0.state[5] / Q
+    Ending point:                            manchester_encoder_0.symbol_t[5] / D
+    The start point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+    The end   point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                           Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+manchester_encoder_ctrl_0.state[5]             DFN1C0     Q        Out     1.771     1.771       -         
+state[5]                                       Net        -        -       1.938     -           3         
+manchester_encoder_ctrl_0.state_RNIKH7V[5]     NOR2       A        In      -         3.708       -         
+manchester_encoder_ctrl_0.state_RNIKH7V[5]     NOR2       Y        Out     1.219     4.928       -         
+loadEncoder_i_a3_0_a3_0                        Net        -        -       2.844     -           4         
+manchester_encoder_0.encoder_busy_RNI64H52     NOR3B      B        In      -         7.772       -         
+manchester_encoder_0.encoder_busy_RNI64H52     NOR3B      Y        Out     1.499     9.271       -         
+manchesterRef_1_sqmuxa_1_1                     Net        -        -       0.773     -           1         
+manchester_encoder_0.encoder_busy_RNIQKA16     NOR3A      A        In      -         10.044      -         
+manchester_encoder_0.encoder_busy_RNIQKA16     NOR3A      Y        Out     1.595     11.639      -         
+manchesterRef_1_sqmuxa                         Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_1          AND2       B        In      -         12.566      -         
+manchester_encoder_0.un1_symbol_t.I_1          AND2       Y        Out     1.240     13.807      -         
+DWACT_ADD_CI_0_TMP[0]                          Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_31         NOR2B      A        In      -         14.734      -         
+manchester_encoder_0.un1_symbol_t.I_31         NOR2B      Y        Out     1.174     15.907      -         
+DWACT_ADD_CI_0_g_array_1[0]                    Net        -        -       1.938     -           3         
+manchester_encoder_0.un1_symbol_t.I_33         NOR2B      A        In      -         17.845      -         
+manchester_encoder_0.un1_symbol_t.I_33         NOR2B      Y        Out     1.174     19.019      -         
+DWACT_ADD_CI_0_g_array_2[0]                    Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_30         NOR2B      A        In      -         19.946      -         
+manchester_encoder_0.un1_symbol_t.I_30         NOR2B      Y        Out     1.174     21.119      -         
+DWACT_ADD_CI_0_g_array_12_1[0]                 Net        -        -       0.773     -           1         
+manchester_encoder_0.un1_symbol_t.I_26         XOR2       B        In      -         21.892      -         
+manchester_encoder_0.un1_symbol_t.I_26         XOR2       Y        Out     2.251     24.143      -         
+I_26                                           Net        -        -       0.773     -           1         
+manchester_encoder_0.symbol_t_RNO[5]           NOR2A      A        In      -         24.916      -         
+manchester_encoder_0.symbol_t_RNO[5]           NOR2A      Y        Out     1.240     26.156      -         
+symbol_t_4[5]                                  Net        -        -       0.773     -           1         
+manchester_encoder_0.symbol_t[5]               DFN1C0     D        In      -         26.929      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 28.223 is 15.631(55.4%) logic and 12.592(44.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            1.295
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.705
+
+    - Propagation time:                      26.181
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -17.476
+
+    Number of logic level(s):                9
+    Starting point:                          manchester_encoder_0.symbol_t[3] / Q
+    Ending point:                            manchester_encoder_0.symbol_t[5] / D
+    The start point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+    The end   point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                           Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+manchester_encoder_0.symbol_t[3]               DFN1C0     Q        Out     1.771     1.771       -         
+symbol_t[3]                                    Net        -        -       1.938     -           3         
+manchester_encoder_0.symbol_t_RNI5IGP[0]       NOR2       B        In      -         3.708       -         
+manchester_encoder_0.symbol_t_RNI5IGP[0]       NOR2       Y        Out     1.554     5.262       -         
+un9_encoder_busy_2                             Net        -        -       0.773     -           1         
+manchester_encoder_0.symbol_t_RNILEIC2[0]      NOR3C      C        In      -         6.035       -         
+manchester_encoder_0.symbol_t_RNILEIC2[0]      NOR3C      Y        Out     1.599     7.634       -         
+un9_encoder_busy                               Net        -        -       1.938     -           3         
+manchester_encoder_0.encoder_busy_RNIQKA16     NOR3A      B        In      -         9.572       -         
+manchester_encoder_0.encoder_busy_RNIQKA16     NOR3A      Y        Out     0.865     10.437      -         
+manchesterRef_1_sqmuxa                         Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_1          AND2       B        In      -         11.364      -         
+manchester_encoder_0.un1_symbol_t.I_1          AND2       Y        Out     1.508     12.871      -         
+DWACT_ADD_CI_0_TMP[0]                          Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_31         NOR2B      A        In      -         13.799      -         
+manchester_encoder_0.un1_symbol_t.I_31         NOR2B      Y        Out     1.236     15.035      -         
+DWACT_ADD_CI_0_g_array_1[0]                    Net        -        -       1.938     -           3         
+manchester_encoder_0.un1_symbol_t.I_33         NOR2B      A        In      -         16.973      -         
+manchester_encoder_0.un1_symbol_t.I_33         NOR2B      Y        Out     1.236     18.209      -         
+DWACT_ADD_CI_0_g_array_2[0]                    Net        -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_30         NOR2B      A        In      -         19.136      -         
+manchester_encoder_0.un1_symbol_t.I_30         NOR2B      Y        Out     1.236     20.372      -         
+DWACT_ADD_CI_0_g_array_12_1[0]                 Net        -        -       0.773     -           1         
+manchester_encoder_0.un1_symbol_t.I_26         XOR2       B        In      -         21.145      -         
+manchester_encoder_0.un1_symbol_t.I_26         XOR2       Y        Out     2.251     23.396      -         
+I_26                                           Net        -        -       0.773     -           1         
+manchester_encoder_0.symbol_t_RNO[5]           NOR2A      A        In      -         24.168      -         
+manchester_encoder_0.symbol_t_RNO[5]           NOR2A      Y        Out     1.240     25.409      -         
+symbol_t_4[5]                                  Net        -        -       0.773     -           1         
+manchester_encoder_0.symbol_t[5]               DFN1C0     D        In      -         26.181      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 27.476 is 15.790(57.5%) logic and 11.685(42.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            1.295
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.705
+
+    - Propagation time:                      26.160
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -17.455
+
+    Number of logic level(s):                8
+    Starting point:                          manchester_encoder_0.encoder_busy / Q
+    Ending point:                            manchester_encoder_0.symbol_t[5] / D
+    The start point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+    The end   point is clocked by            manchesterEncoderComplete|clk [rising] on pin CLK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+manchester_encoder_0.encoder_busy              DFN1E1C0     Q        Out     1.771     1.771       -         
+TX_Active_net_0_i_0_c                          Net          -        -       4.790     -           12        
+manchester_encoder_0.encoder_busy_RNI64H52     NOR3B        A        In      -         6.561       -         
+manchester_encoder_0.encoder_busy_RNI64H52     NOR3B        Y        Out     1.541     8.102       -         
+manchesterRef_1_sqmuxa_1_1                     Net          -        -       0.773     -           1         
+manchester_encoder_0.encoder_busy_RNIQKA16     NOR3A        A        In      -         8.875       -         
+manchester_encoder_0.encoder_busy_RNIQKA16     NOR3A        Y        Out     1.541     10.416      -         
+manchesterRef_1_sqmuxa                         Net          -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_1          AND2         B        In      -         11.343      -         
+manchester_encoder_0.un1_symbol_t.I_1          AND2         Y        Out     1.508     12.850      -         
+DWACT_ADD_CI_0_TMP[0]                          Net          -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_31         NOR2B        A        In      -         13.778      -         
+manchester_encoder_0.un1_symbol_t.I_31         NOR2B        Y        Out     1.236     15.014      -         
+DWACT_ADD_CI_0_g_array_1[0]                    Net          -        -       1.938     -           3         
+manchester_encoder_0.un1_symbol_t.I_33         NOR2B        A        In      -         16.952      -         
+manchester_encoder_0.un1_symbol_t.I_33         NOR2B        Y        Out     1.236     18.188      -         
+DWACT_ADD_CI_0_g_array_2[0]                    Net          -        -       0.927     -           2         
+manchester_encoder_0.un1_symbol_t.I_30         NOR2B        A        In      -         19.115      -         
+manchester_encoder_0.un1_symbol_t.I_30         NOR2B        Y        Out     1.236     20.351      -         
+DWACT_ADD_CI_0_g_array_12_1[0]                 Net          -        -       0.773     -           1         
+manchester_encoder_0.un1_symbol_t.I_26         XOR2         B        In      -         21.124      -         
+manchester_encoder_0.un1_symbol_t.I_26         XOR2         Y        Out     2.251     23.375      -         
+I_26                                           Net          -        -       0.773     -           1         
+manchester_encoder_0.symbol_t_RNO[5]           NOR2A        A        In      -         24.147      -         
+manchester_encoder_0.symbol_t_RNO[5]           NOR2A        Y        Out     1.240     25.388      -         
+symbol_t_4[5]                                  Net          -        -       0.773     -           1         
+manchester_encoder_0.symbol_t[5]               DFN1C0       D        In      -         26.160      -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 27.455 is 14.855(54.1%) logic and 12.600(45.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: M1AGL600V2_FBGA484_STD
+Report for cell manchesterEncoderComplete.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2     2      1.0        2.0
+               AO1     5      1.0        5.0
+              AO1A     3      1.0        3.0
+              AO1B     1      1.0        1.0
+              AO1C     4      1.0        4.0
+              AOI1     1      1.0        1.0
+              AX1D     1      1.0        1.0
+              AX1E     1      1.0        1.0
+              BUFF     1      1.0        1.0
+               GND     3      0.0        0.0
+               INV     3      1.0        3.0
+               MX2     6      1.0        6.0
+              MX2B     4      1.0        4.0
+              NOR2     5      1.0        5.0
+             NOR2A    19      1.0       19.0
+             NOR2B    11      1.0       11.0
+              NOR3     1      1.0        1.0
+             NOR3A     9      1.0        9.0
+             NOR3B     3      1.0        3.0
+             NOR3C     2      1.0        2.0
+               OA1     3      1.0        3.0
+              OA1A     1      1.0        1.0
+              OA1C     1      1.0        1.0
+               OR2     5      1.0        5.0
+              OR2A     1      1.0        1.0
+              OR2B     3      1.0        3.0
+               OR3     5      1.0        5.0
+              OR3A     5      1.0        5.0
+              OR3B     2      1.0        2.0
+              OR3C     1      1.0        1.0
+               VCC     3      0.0        0.0
+               XA1     1      1.0        1.0
+             XNOR2     1      1.0        1.0
+              XO1A     1      1.0        1.0
+              XOR2     7      1.0        7.0
+
+
+            DFN1C0    14      1.0       14.0
+          DFN1E1C0    23      1.0       23.0
+          DFN1E1P0     1      1.0        1.0
+            DFN1P0     1      1.0        1.0
+                   -----          ----------
+             TOTAL   164               158.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     1
+             INBUF    13
+            OUTBUF     3
+                   -----
+             TOTAL    17
+
+
+Core Cells         : 158 of 13824 (1%)
+IO Cells           : 17
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 24 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 102MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 03 14:44:26 2013
+
+###########################################################]

@@ -1,0 +1,86 @@
+%%% protect protected_file
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|work.generamensajes|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\bin64\\c_vhdl.exe":1369122254
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\location.map":1369131036
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\std.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\snps_haps_pkg.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\std1164.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\numeric.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\umr_capim.vhd":1369122142
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\arith.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\unsigned.vhd":1369121912
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\hdl\\Wupu_pck.vhd":1381491147
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\hdl\\detectorflanco.vhd":1367924857
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\proasic\\igloo.vhd":1369120620
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\smartgen\\muxRefTime\\muxRefTime.vhd":1367922513
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\smartgen\\ringO_cnt\\ringO_cnt.vhd":1367938309
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\hdl\\counter.vhd":1368697471
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\hdl\\controlbloque.vhd":1375978225
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\hdl\\manchester_encoder.vhd":1370265680
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\hdl\\ManchesterEncoder_ctrl.vhd":1370263301
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\component\\work\\manchesterEncoderComplete\\manchesterEncoderComplete.vhd":1381420018
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\component\\work\\RingOscillator\\RingOscillator.vhd":1367932471
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\GeneradorRingOSC\\component\\work\\generamensajes\\generamensajes.vhd":1381491170
+0 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\Wupu_pck.vhd" vhdl
+1 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\counter.vhd" vhdl
+2 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\controlbloque.vhd" vhdl
+3 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\detectorflanco.vhd" vhdl
+4 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\manchester_encoder.vhd" vhdl
+5 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\hdl\ManchesterEncoder_ctrl.vhd" vhdl
+6 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd" vhdl
+7 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\smartgen\muxRefTime\muxRefTime.vhd" vhdl
+8 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\smartgen\ringO_cnt\ringO_cnt.vhd" vhdl
+9 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\RingOscillator\RingOscillator.vhd" vhdl
+10 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\GeneradorRingOSC\component\work\generamensajes\generamensajes.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+2 0 
+3 -1
+4 0 
+5 0 
+6 4 5 
+7 -1
+8 -1
+9 8 
+10 1 2 3 6 7 9 
+
+# Dependency Lists (Users Of)
+0 5 4 2 1 
+1 10 
+2 10 
+3 10 
+4 6 
+5 6 
+6 10 
+7 10 
+8 9 
+9 10 
+10 -1
+
+# Design Unit to File Association
+arch work contador def_arch 1
+module work contador 1
+arch work control controlada 2
+module work control 2
+arch work detectorflanco def_arch 3
+module work detectorflanco 3
+arch work manchester_encoder rtl 4
+module work manchester_encoder 4
+arch work manchester_encoder_ctrl rtl 5
+module work manchester_encoder_ctrl 5
+arch work manchesterencodercomplete rtl 6
+module work manchesterencodercomplete 6
+arch work muxreftime def_arch 7
+module work muxreftime 7
+arch work ringo_cnt def_arch 8
+module work ringo_cnt 8
+arch work ringoscillator rtl 9
+module work ringoscillator 9
+arch work generamensajes rtl 10
+module work generamensajes 10
+
+
+# Configuration files used

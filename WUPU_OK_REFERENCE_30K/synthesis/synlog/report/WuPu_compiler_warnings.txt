@@ -1,0 +1,35 @@
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\ZBControl_IRQs.vhd":119:96:119:101|Signal wd_irq in the sensitivity list is not used in the process
+@W: CL168 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\smartgen\ringO_cnt\ringO_cnt.vhd":84:4:84:13|Pruning instance U_AND2_0_1 -- not in use ... 
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\Mom_unit_indirectACK.vhd":230:73:230:79|Signal rx_port in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\Mom_unit_indirectACK.vhd":230:98:230:114|Signal contentionexpired in the sensitivity list is not used in the process
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\Mom_unit_indirectACK.vhd":230:117:230:131|Signal channelfreetime in the sensitivity list is not used in the process
+@W: CG296 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\Mom_unit_indirectACK.vhd":230:16:230:22|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\Mom_unit_indirectACK.vhd":273:6:273:26|Referenced variable contentiontimeexpired is not in sensitivity list
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\Mom_unit_indirectACK.vhd":82:7:82:17|Signal channelfree is undriven 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\Mom_unit_indirectACK.vhd":83:7:83:23|Signal contentionexpired is undriven 
+@W: CL240 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\Mom_unit_indirectACK.vhd":83:7:83:23|ContentionExpired is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\manchesterDecoder_0toStart_v5.vhd":58:7:58:23|Signal rst_error_counter is undriven 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\manchesterDecoder_0toStart_v5.vhd":60:7:60:20|Signal enable_freqref is undriven 
+@W: CD638 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\manchesterDecoder_0toStart_v5.vhd":64:7:64:14|Signal rx_error is undriven 
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd":41:10:41:13|Component declarations with different initial values are not supported.  Port b of component and2 may have been given a different initial value in two different component declarations
+@W: CD275 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\smartgen\common\vhdl\FlashFreeze_Filter.vhd":27:11:27:14|Component declarations with different initial values are not supported.  Port b of component and2 may have been given a different initial value in two different component declarations
+@W: CD434 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\smartgen\common\vhdl\FlashFreeze_FSM.vhd":52:12:52:23|Signal flash_freeze in the sensitivity list is not used in the process
+@W: CD604 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\smartgen\common\vhdl\FlashFreeze_FSM.vhd":130:12:130:25|OTHERS clause is not synthesized 
+@W: CD604 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":54:4:54:17|OTHERS clause is not synthesized 
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NextHopAddress(0) to a constant 0
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NextHopAddress(4) to a constant 0
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NextHopAddress(5) to a constant 0
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NextHopAddress(6) to a constant 0
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NextHopAddress(7) to a constant 0
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NodeAddress(0) to a constant 0
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NodeAddress(4) to a constant 0
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NodeAddress(5) to a constant 0
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NodeAddress(6) to a constant 0
+@W: CL190 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Optimizing register bit NodeAddress(7) to a constant 0
+@W: CL279 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Pruning register bits 7 to 4 of NextHopAddress(7 downto 0)  
+@W: CL260 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Pruning register bit 0 of NextHopAddress(7 downto 0)  
+@W: CL279 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Pruning register bits 7 to 4 of NodeAddress(7 downto 0)  
+@W: CL260 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Pruning register bit 0 of NodeAddress(7 downto 0)  
+@W: CL260 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\adressingData.vhd":31:2:31:3|Pruning register bit 2 of NextHopAddress(3 downto 1)  
+@W: CL159 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-ControlledRing\hdl\ZBControl_IRQs.vhd":19:1:19:6|Input WD_IRQ is unused
+

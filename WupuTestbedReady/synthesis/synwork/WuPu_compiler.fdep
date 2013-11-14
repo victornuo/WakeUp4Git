@@ -1,0 +1,170 @@
+%%% protect protected_file
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|work.WuPu|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\bin64\\c_vhdl.exe":1369118654
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\location.map":1369127436
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\std.vhd":1369118312
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\snps_haps_pkg.vhd":1369118312
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\std1164.vhd":1369118312
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\numeric.vhd":1369118312
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\umr_capim.vhd":1369118542
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\arith.vhd":1369118312
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\unsigned.vhd":1369118312
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\Wupu_pck.vhd":1372772504
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\housekeepingCheck.vhd":1384180364
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\proasic\\igloo.vhd":1369117020
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\InitialMsgInjector.vhd":1384349796
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\smartgen\\common\\vhdl\\FlashFreeze_FSM.vhd":1316617195
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\smartgen\\common\\vhdl\\FlashFreeze_Filter.vhd":1316617195
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\freq_ref_preamble.vhd":1368019395
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\smartgen\\CuentaEnvios\\CuentaEnvios.vhd":1384178268
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\edgedetector.vhd":1384177476
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\PM_ProcessFlagGen.vhd":1384184067
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\smartgen\\muxSwitcthRing\\muxSwitcthRing.vhd":1375791020
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\smartgen\\ringO_cnt\\ringO_cnt.vhd":1367847832
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\ZBControl_IRQs.vhd":1379421215
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\adressingDataTestbed.vhd":1376058377
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\Command_Process_Parity0_modified.vhd":1370001706
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\smartgen\\common\\vhdl\\FlashFreeze_Managment.vhd":1316617195
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\smartgen\\LowPowerManagement\\LowPowerManagement_wrapper.vhd":1316617195
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\smartgen\\LowPowerManagement\\LowPowerManagement.vhd":1316617195
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\manchester_encoder.vhd":1370250566
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\ManchesterEncoder_ctrl.vhd":1370249503
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\component\\work\\manchesterEncoderComplete\\manchesterEncoderComplete.vhd":1372693339
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\manchesterDecoder_0toStart_v5.vhd":1375796692
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\hdl\\Mom_unit_indirectACK_Inic0Mod.vhd":1384350521
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\component\\work\\PerformanceMeasure\\PerformanceMeasure.vhd":1384278788
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\component\\work\\RingOscillator\\RingOscillator.vhd":1375791231
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\WupuTestbedReady\\component\\work\\WuPu\\WuPu.vhd":1384350569
+0 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Wupu_pck.vhd" vhdl
+1 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\adressingDataTestbed.vhd" vhdl
+2 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Command_Process_Parity0_modified.vhd" vhdl
+3 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\housekeepingCheck.vhd" vhdl
+4 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\InitialMsgInjector.vhd" vhdl
+5 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\common\vhdl\FlashFreeze_FSM.vhd" vhdl
+6 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\common\vhdl\FlashFreeze_Filter.vhd" vhdl
+7 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\common\vhdl\FlashFreeze_Managment.vhd" vhdl
+8 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\LowPowerManagement\LowPowerManagement_wrapper.vhd" vhdl
+9 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\LowPowerManagement\LowPowerManagement.vhd" vhdl
+10 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\manchester_encoder.vhd" vhdl
+11 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\ManchesterEncoder_ctrl.vhd" vhdl
+12 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd" vhdl
+13 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\freq_ref_preamble.vhd" vhdl
+14 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\manchesterDecoder_0toStart_v5.vhd" vhdl
+15 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\Mom_unit_indirectACK_Inic0Mod.vhd" vhdl
+16 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\CuentaEnvios\CuentaEnvios.vhd" vhdl
+17 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\edgedetector.vhd" vhdl
+18 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\component\work\PerformanceMeasure\PerformanceMeasure.vhd" vhdl
+19 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\PM_ProcessFlagGen.vhd" vhdl
+20 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\muxSwitcthRing\muxSwitcthRing.vhd" vhdl
+21 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\smartgen\ringO_cnt\ringO_cnt.vhd" vhdl
+22 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\component\work\RingOscillator\RingOscillator.vhd" vhdl
+23 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\hdl\ZBControl_IRQs.vhd" vhdl
+24 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\WupuTestbedReady\component\work\WuPu\WuPu.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+2 0 
+3 -1
+4 -1
+5 -1
+6 -1
+7 5 6 
+8 7 
+9 8 
+10 0 
+11 0 
+12 10 11 
+13 -1
+14 13 0 
+15 0 
+16 -1
+17 -1
+18 16 17 
+19 -1
+20 -1
+21 -1
+22 20 21 
+23 -1
+24 1 2 3 4 9 12 14 15 18 19 22 23 
+
+# Dependency Lists (Users Of)
+0 15 14 11 10 2 1 
+1 24 
+2 24 
+3 24 
+4 24 
+5 7 
+6 7 
+7 8 
+8 9 
+9 24 
+10 12 
+11 12 
+12 24 
+13 14 
+14 24 
+15 24 
+16 18 
+17 18 
+18 24 
+19 24 
+20 22 
+21 22 
+22 24 
+23 24 
+24 -1
+
+# Design Unit to File Association
+arch work addressingdata symplified 1
+module work addressingdata 1
+arch work command_process rtl 2
+module work command_process 2
+arch work housekeepingcheck def_arch 3
+module work housekeepingcheck 3
+arch work inintialmsginjector symplified 4
+module work inintialmsginjector 4
+arch work flashfreeze_fsm trans 5
+module work flashfreeze_fsm 5
+arch work flashfreeze_filter trans 6
+module work flashfreeze_filter 6
+arch work flashfreeze_managment trans 7
+module work flashfreeze_managment 7
+arch work lowpowermanagement_wrapper def_arch 8
+module work lowpowermanagement_wrapper 8
+arch work lowpowermanagement def_arch 9
+module work lowpowermanagement 9
+arch work manchester_encoder rtl 10
+module work manchester_encoder 10
+arch work manchester_encoder_ctrl rtl 11
+module work manchester_encoder_ctrl 11
+arch work manchesterencodercomplete rtl 12
+module work manchesterencodercomplete 12
+arch work frec_ref def_arch 13
+module work frec_ref 13
+arch work md_v5 rtl 14
+module work md_v5 14
+arch work mom_unit rtl 15
+module work mom_unit 15
+arch work cuentaenvios def_arch 16
+module work cuentaenvios 16
+arch work edgedetector rtl 17
+module work edgedetector 17
+arch work performancemeasure rtl 18
+module work performancemeasure 18
+arch work processflaggen rtl 19
+module work processflaggen 19
+arch work muxswitcthring def_arch 20
+module work muxswitcthring 20
+arch work ringo_cnt def_arch 21
+module work ringo_cnt 21
+arch work ringoscillator rtl 22
+module work ringoscillator 22
+arch work zbcontrol symplified 23
+module work zbcontrol 23
+arch work wupu rtl 24
+module work wupu 24
+
+
+# Configuration files used

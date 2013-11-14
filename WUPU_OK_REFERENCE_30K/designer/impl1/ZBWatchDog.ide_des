@@ -1,0 +1,8 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\wupu30k-IRQ0_Falling_InternallPull-up\designer\impl1\ZBWatchDog.adb"
+LIST SOURCE_FILES
+ENDLIST
+LIST OPTIONAL_FILES
+ENDLIST
+LIST VCD_FILES
+ENDLIST

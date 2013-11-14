@@ -1,0 +1,88 @@
+
+fsm_encoding {1818521851} onehot
+
+fsm_state_encoding {1818521851} nodata {0000000001}
+
+fsm_state_encoding {1818521851} first_header {0000000010}
+
+fsm_state_encoding {1818521851} second_header {0000000100}
+
+fsm_state_encoding {1818521851} third_header {0000001000}
+
+fsm_state_encoding {1818521851} last_header {0000010000}
+
+fsm_state_encoding {1818521851} first_command {0000100000}
+
+fsm_state_encoding {1818521851} second_command {0001000000}
+
+fsm_state_encoding {1818521851} third_command {0010000000}
+
+fsm_state_encoding {1818521851} full_command {0100000000}
+
+fsm_state_encoding {1818521851} addressing {1000000000}
+
+fsm_registers {1818521851} {state[0]}  {state[1]}  {state[2]}  {state[3]}  {state[4]}  {state[5]}  {state[6]}  {state[7]}  {state[8]}  {state[9]} 
+
+fsm_encoding {11636632} onehot
+
+fsm_state_encoding {11636632} wait_on_ff {000001}
+
+fsm_state_encoding {11636632} persistent_ff {000010}
+
+fsm_state_encoding {11636632} house_keep_to_user_logic {000100}
+
+fsm_state_encoding {11636632} stop_clock_to_user {001000}
+
+fsm_state_encoding {11636632} trigger_ulsicc_state {010000}
+
+fsm_state_encoding {11636632} turn_on_user_clock {100000}
+
+fsm_registers {11636632} {ff_current_state[0]}  {ff_current_state[1]}  {ff_current_state[2]}  {ff_current_state[3]}  {ff_current_state[4]}  {ff_current_state[5]} 
+
+fsm_encoding {23666663} onehot
+
+fsm_state_encoding {23666663} free {0000001}
+
+fsm_state_encoding {23666663} loadpreamble1 {0000010}
+
+fsm_state_encoding {23666663} sendpreamble1 {0000100}
+
+fsm_state_encoding {23666663} loadheaderandcommand {0001000}
+
+fsm_state_encoding {23666663} sendheaderandcommand {0010000}
+
+fsm_state_encoding {23666663} loadaddress {0100000}
+
+fsm_state_encoding {23666663} sendaddress {1000000}
+
+fsm_registers {23666663} {state[0]}  {state[1]}  {state[2]}  {state[3]}  {state[4]}  {state[5]}  {state[6]} 
+
+fsm_encoding {2614261424} onehot
+
+fsm_state_encoding {2614261424} mom_standby {00000001}
+
+fsm_state_encoding {2614261424} contention {00000010}
+
+fsm_state_encoding {2614261424} sending_msg {00000100}
+
+fsm_state_encoding {2614261424} waitingack {00001000}
+
+fsm_state_encoding {2614261424} wakeupcomm_wuroff {00010000}
+
+fsm_state_encoding {2614261424} wakeupcomm_wuron {00100000}
+
+fsm_state_encoding {2614261424} waitingtimeout_wuron {01000000}
+
+fsm_state_encoding {2614261424} waitingtimeout_wuroff {10000000}
+
+fsm_registers {2614261424} {state[0]}  {state[1]}  {state[2]}  {state[3]}  {state[4]}  {state[5]}  {state[6]}  {state[7]} 
+
+fsm_encoding {1610821085} sequential
+
+fsm_state_encoding {1610821085} radiooff {00}
+
+fsm_state_encoding {1610821085} radioon {01}
+
+fsm_state_encoding {1610821085} resetflags {10}
+
+fsm_registers {1610821085} {state[1]}  {state[0]} 

@@ -1,0 +1,13 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\designer\impl1\WuPu.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\synthesis\WuPu.edn;edn"
+VALUE "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\component\work\WuPu\WuPu.pdc;pdc"
+VALUE "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\synthesis\WuPu_sdc.sdc;sdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\synthesis\WuPu_sdc.sdc;Used"
+VALUE "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\WupPMODbyIRQnoMultiRX\component\work\WuPu\WuPu.pdc;Used"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

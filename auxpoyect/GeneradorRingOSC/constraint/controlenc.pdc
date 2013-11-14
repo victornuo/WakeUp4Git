@@ -1,0 +1,238 @@
+# Actel Physical design constraints file
+# Generated file
+
+# Version: 9.1 SP3 9.1.3.4
+# Family: IGLOO , Die: M1AGL600V2 , Package: 484 FBGA
+# Date generated: Mon Nov 05 17:27:15 2012 
+
+
+# 
+# IO banks setting
+# 
+
+
+# 
+# I/O constraints
+# 
+
+set_io Clk            \
+    -pinname E4       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io EN             \
+    -pinname D14      \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io PAD            \
+    -pinname T9       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io adress1        \
+    -pinname D15      \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io adress2        \
+    -pinname G14      \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io adress3        \
+    -pinname E14      \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io adress4        \
+    -pinname F14      \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io b_modo         \
+    -pinname D18      \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io b_msg          \
+    -pinname D17      \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io d_hk            \
+    -pinname F11       \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io {din[0]}       \
+    -pinname F16      \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io {din[1]}       \
+    -pinname E17      \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io dout            \
+    -pinname H11       \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io extern_msg     \
+    -pinname H4       \
+    -fixed yes        \
+    -iostd LVCMOS33   \
+    -RES_PULL None    \
+    -DIRECTION Input
+
+
+set_io led1            \
+    -pinname E10       \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io led2            \
+    -pinname F10       \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io led3            \
+    -pinname U8        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io led4            \
+    -pinname W5        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io leddin0         \
+    -pinname V5        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+set_io leddin1         \
+    -pinname V4        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 12      \
+    -OUT_LOAD 5        \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
+    -DIRECTION Output
+
+
+
+#
+# Non IO constraints
+#
+
+
+#
+# Old IO constraints, commented out for reference
+#
+
+# set_io Clk -pinname E4 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io EN -pinname D14 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io PAD -pinname T9 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io adress1 -pinname D15 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io adress2 -pinname G14 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io adress3 -pinname E14 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io adress4 -pinname F14 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io b_modo -pinname D18 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io b_msg -pinname D17 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io d_hk -pinname F11 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io {din[0]} -pinname F16 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io {din[1]} -pinname E17 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io dout -pinname H11 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io led1 -pinname E10 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io led2 -pinname F10 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io led3 -pinname U8 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io led4 -pinname W5 -fixed yes -iostd LVCMOS33 -OUT_DRIVE 12 -OUT_LOAD 5 -RES_PULL None -SKEW Off -SLEW High -DIRECTION Output 
+# set_io leddin0 -pinname V5 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 
+# set_io leddin1 -pinname V4 -fixed yes -iostd LVCMOS33 -RES_PULL None -DIRECTION Input 

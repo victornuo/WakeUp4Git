@@ -1,0 +1,59 @@
+# Microsemi I/O Physical Design Constraints file
+# Auto Generated User I/O Constraints file
+
+# Version: v11.1 11.1.0.14
+# Family: IGLOO , Die: AGL030V5 , Package: 100 VQFP
+# Date generated: Tue Aug 06 14:47:28 2013 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+set_io RESETZB         \
+    -REGISTER No       \
+    -RES_PULL Up       \
+    -DIRECTION OUTPUT
+
+
+set_io RST            \
+    -REGISTER No      \
+    -DIRECTION INPUT
+
+
+
+#
+# Non IO constraints
+#
+
+
+#
+# Old IO constraints, commented out for reference
+#
+
+# set_io RESETZB -REGISTER No -RES_PULL Up -DIRECTION OUTPUT 
+# set_io RST -REGISTER No -DIRECTION INPUT 

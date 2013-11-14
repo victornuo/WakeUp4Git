@@ -1,0 +1,28 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 974R, Built May 21 2013 10:19:34
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version H-2013.03M-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version3\synthesis\WuPu_scck.rpt 
+Printing clock  summary report in "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version3\synthesis\WuPu_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+@N: BN115 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version3\smartgen\common\vhdl\flashfreeze_managment.vhd":87:9:87:32|Removing instance GEN1\.GEN2\.0\.seconday_filter_instance of view:work.FlashFreeze_Filter_GEN1\.GEN2\.0\.seconday_filter_instance(trans) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version3\smartgen\common\vhdl\flashfreeze_filter.vhd":56:3:56:24|Removing sequential instance Latch_For_Clock_Gating of view:IGLOO.DLN0(prim) in hierarchy view:work.FlashFreeze_Filter_GEN1\.GEN2\.0\.seconday_filter_instance(trans) because there are no references to its outputs 
+@N: BN362 :"c:\users\victor ros\documents\cookies\wake_up_radio\auxpoyect\testagl30k\ringosc_version3\smartgen\common\vhdl\flashfreeze_filter.vhd":48:3:48:27|Removing sequential instance Register_For_Clock_Gating of view:IGLOO.DFN1(prim) in hierarchy view:work.FlashFreeze_Filter_GEN1\.GEN2\.0\.seconday_filter_instance(trans) because there are no references to its outputs 
+Finished Pre Mapping Phase.@N: BN225 |Writing default property annotation file C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\testAGL30k\RingOsc_Version3\synthesis\WuPu.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 45MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jul 29 17:29:05 2013
+
+###########################################################]

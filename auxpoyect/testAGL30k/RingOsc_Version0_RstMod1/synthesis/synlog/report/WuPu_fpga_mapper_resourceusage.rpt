@@ -1,0 +1,42 @@
+Target Part: AGL030V5_VQFP100_STD
+Report for cell WuPu.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2     2      1.0        2.0
+              AND3     1      1.0        1.0
+              AO14    24      1.0       24.0
+              AO1A     1      1.0        1.0
+              AOI1     1      1.0        1.0
+            CLKINT     2      0.0        0.0
+               GND     8      0.0        0.0
+               INV     4      1.0        4.0
+             NAND2     1      1.0        1.0
+             NOR2B     6      1.0        6.0
+               OR2     4      1.0        4.0
+              OR2A     1      1.0        1.0
+            ULSICC     1      0.0        0.0
+               VCC     8      0.0        0.0
+              XOR2     1      1.0        1.0
+
+
+              DFN1     1      1.0        1.0
+            DFN1C0     6      1.0        6.0
+          DFN1E1C0     4      1.0        4.0
+          DFN1E1P0     1      1.0        1.0
+            DFN1P0     3      1.0        3.0
+              DLN0     1      1.0        1.0
+                   -----          ----------
+             TOTAL    81                62.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     1
+          INBUF_FF     1
+            OUTBUF     8
+                   -----
+             TOTAL    10
+
+
+Core Cells         : 62 of 768 (8%)
+IO Cells           : 10

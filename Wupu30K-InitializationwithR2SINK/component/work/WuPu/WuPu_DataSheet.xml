@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="datasheet.xsl"?>
+<datasheet>
+  <header>WuPu</header>
+  <project-settings>
+    <fam>IGLOO</fam>
+    <die>AGL030V5</die>
+    <package>100 VQFP</package>
+    <speed-grade>STD</speed-grade>
+    <voltage>1.5</voltage>
+    <hdl-type>VHDL</hdl-type>
+    <project-description>
+    </project-description>
+    <location>C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/Wupu30K-InitializationwithR2SINK/component/work/WuPu</location>
+    <state>GENERATED ( Fri Nov 08 15:49:11 2013 )</state>
+    <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
+  </project-settings>
+  <site-map>
+  </site-map>
+  <fileset>
+    <name>HDL File(s)</name>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\component\work\manchesterEncoderComplete\manchesterEncoderComplete.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\component\work\RingOscillator\RingOscillator.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\component\work\WuPu\WuPu.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\adressingData.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\adressingDataTestbed.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\ASCII_pck.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\clkCouter_mod.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\Command_Process_Parity0_modified.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\freq_ref_preamble.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\housekeepingCheck.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\InitialMsgInjector.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\manchesterDecoder_0toStart.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\manchesterDecoder_0toStart_clk1.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\manchesterDecoder_0toStart_v5.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\ManchesterEncoder_ctrl.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\manchester_encoder.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\Mom_unit_indirectACK.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\Mom_unit_indirectACK_Inic0Mod.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\Wupu_pck.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\hdl\ZBControl_IRQs.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\smartgen\common\vhdl\FlashFreeze_Filter.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\smartgen\common\vhdl\FlashFreeze_FSM.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\smartgen\common\vhdl\FlashFreeze_Managment.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\smartgen\CuentaEnvios\CuentaEnvios.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\smartgen\LowPowerManagement\LowPowerManagement.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\smartgen\LowPowerManagement\LowPowerManagement_wrapper.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\smartgen\muxSwitcthRing\muxSwitcthRing.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\smartgen\register_reg\register_reg.vhd</file>
+    <file>C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\Wupu30K-InitializationwithR2SINK\smartgen\ringO_cnt\ringO_cnt.vhd</file>
+  </fileset>
+  <io>
+    <port-name>Q[5]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>IRQ0</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Q[6]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>RST</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>IRQ2</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Q[1]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>CLK_GATED</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>selAdd[2]</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>RX_OUT</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>IRQ3</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>selAdd[1]</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>NWKrRouteTimeout</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Q[0]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Wakeup</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Q[4]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Q[7]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Q[8]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>f32</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>f59</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>AddOKflag</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>uC_commandType</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>R2SINKTimeout</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Q[3]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>uC_commandReady</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>IRQ1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>selAdd[0]</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Q[2]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>TX</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>RESETZB</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>CTRL1</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>Decoder_hk</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>selExp[0]</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>RX</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>LedMochila</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <io>
+    <port-name>selExp[1]</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS15</io-standard>
+  </io>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>addressingData</core-exttype>
+    <core-location>hdl\adressingDataTestbed.vhd</core-location>
+    <core-name>addressingData_0</core-name>
+  </core>
+  <core type="AdlibModule">
+    <core-type>AdlibModule</core-type>
+    <core-exttype>BIBUF</core-exttype>
+    <core-name>BIBUF_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>command_process</core-exttype>
+    <core-location>hdl\Command_Process_Parity0_modified.vhd</core-location>
+    <core-name>command_process_0</core-name>
+  </core>
+  <core type="ComponentModule">
+    <core-type>ComponentModule</core-type>
+    <core-exttype>SmartGen</core-exttype>
+    <core-location>C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/Wupu30K-InitializationwithR2SINK/smartgen/CuentaEnvios</core-location>
+    <core-name>CuentaEnvios_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>housekeepingCheck</core-exttype>
+    <core-location>hdl\housekeepingCheck.vhd</core-location>
+    <core-name>housekeepingCheck_0</core-name>
+  </core>
+  <core type="AdlibModule">
+    <core-type>AdlibModule</core-type>
+    <core-exttype>INBUF</core-exttype>
+    <core-name>INBUF_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>InintialMsgInjector</core-exttype>
+    <core-location>hdl\InitialMsgInjector.vhd</core-location>
+    <core-name>InintialMsgInjector_0</core-name>
+  </core>
+  <core type="ComponentModule">
+    <core-type>ComponentModule</core-type>
+    <core-exttype>SmartGen</core-exttype>
+    <core-location>C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/Wupu30K-InitializationwithR2SINK/smartgen/LowPowerManagement</core-location>
+    <core-name>LowPowerManagement_0</core-name>
+  </core>
+  <core type="ComponentModule">
+    <core-type>ComponentModule</core-type>
+    <core-exttype>SmartDesign</core-exttype>
+    <core-location>C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/Wupu30K-InitializationwithR2SINK/component/work/manchesterEncoderComplete</core-location>
+    <core-name>manchesterEncoderComplete_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>md_v5</core-exttype>
+    <core-location>hdl\manchesterDecoder_0toStart_v5.vhd</core-location>
+    <core-name>md_v4_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>MoM_unit</core-exttype>
+    <core-location>hdl\Mom_unit_indirectACK_Inic0Mod.vhd</core-location>
+    <core-name>MoM_unit_0</core-name>
+  </core>
+  <core type="AdlibModule">
+    <core-type>AdlibModule</core-type>
+    <core-exttype>OR2</core-exttype>
+    <core-name>OR2_0</core-name>
+  </core>
+  <core type="ComponentModule">
+    <core-type>ComponentModule</core-type>
+    <core-exttype>SmartDesign</core-exttype>
+    <core-location>C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/Wupu30K-InitializationwithR2SINK/component/work/RingOscillator</core-location>
+    <core-name>RingOscillator_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>ZBControl</core-exttype>
+    <core-location>hdl\ZBControl_IRQs.vhd</core-location>
+    <core-name>ZBControl_0</core-name>
+  </core>
+  <memorysystem>
+    <title>Memory Map for WuPu</title>
+    <description>The project does not contain any subsystems.</description>
+  </memorysystem>
+</datasheet>

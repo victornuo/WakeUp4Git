@@ -1,0 +1,2 @@
+vhdl isim_temp "plantilla_dat2uc.vhd"
+vhdl isim_temp "addressinsymple.vhd"

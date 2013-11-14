@@ -1,0 +1,370 @@
+KEY LIBERO "10.1"
+KEY CAPTURE "10.1.3.1"
+KEY DEFAULT_IMPORT_LOC "\\SERVIDORDISCOS\Alumnos\Laura\copiageneramensajes28junio\hdl"
+KEY DEFAULT_OPEN_LOC "C:\Users\Victor\Documents\Libero Projects\controlFFTest\hdl"
+KEY ProjectID "1b9515b5-a8da-450b-8eb8-ad1e35a0e614"
+KEY HDLTechnology "VHDL"
+KEY VendorTechnology_Family "IGLOO"
+KEY VendorTechnology_Die "M1IS6X6M2LPLV"
+KEY VendorTechnology_Package "fg484"
+KEY VendorTechnology_Speed ""
+KEY VendorTechnology_DieVoltage ""
+KEY VendorTechnology_IO_DEFT_STD ""
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_TEMPR ""
+KEY VendorTechnology_VOLTR ""
+KEY ProjectLocation "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\generarapido"
+KEY ProjectDescription ""
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "generamensajes::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\work\generamensajes\generamensajes.cxf,actgen_cxf"
+STATE="utd"
+TIME="1367918546"
+SIZE="4195"
+ENDFILE
+VALUE "<project>\component\work\manchesterEncoderComplete\manchesterEncoderComplete.cxf,actgen_cxf"
+STATE="utd"
+TIME="1367918546"
+SIZE="2559"
+ENDFILE
+VALUE "<project>\component\work\RingOscillator\RingOscillator.cxf,actgen_cxf"
+STATE="utd"
+TIME="1367918546"
+SIZE="1347"
+ENDFILE
+VALUE "<project>\constraint\controlenc.pdc,pdc"
+STATE="utd"
+TIME="1352132835"
+SIZE="6227"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideDESIGNER"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+ENDFILE
+VALUE "<project>\designer\impl1\generamensajes.adb,adb"
+STATE="ood"
+TIME="1362047409"
+SIZE="286720"
+ENDFILE
+VALUE "<project>\designer\impl1\generamensajes.pdb,pdb"
+STATE="ood"
+TIME="1359544791"
+SIZE="922112"
+ENDFILE
+VALUE "<project>\designer\impl1\generamensajes_1_fp\generamensajes.pro,pro"
+STATE="utd"
+TIME="1367859364"
+SIZE="2114"
+ENDFILE
+VALUE "<project>\designer\impl1\generamensajes_1_fp_1\generamensajes.pro,pro"
+STATE="utd"
+TIME="1367859364"
+SIZE="0"
+ENDFILE
+VALUE "<project>\designer\impl1\generamensajes_1_fp_2\generamensajes.pro,pro"
+STATE="utd"
+TIME="1367859364"
+SIZE="0"
+ENDFILE
+VALUE "<project>\designer\impl1\generamensajes_fp\generamensajes.pro,pro"
+STATE="utd"
+TIME="1367859364"
+SIZE="0"
+ENDFILE
+VALUE "<project>\designer\impl1\RingOscillator.ide_des,ide_des"
+STATE="utd"
+TIME="1367918546"
+SIZE="240"
+ENDFILE
+VALUE "<project>\hdl\controlbloque.vhd,hdl"
+STATE="utd"
+TIME="1367918509"
+SIZE="1806"
+ENDFILE
+VALUE "<project>\hdl\counter.vhd,hdl"
+STATE="utd"
+TIME="1367917352"
+SIZE="838"
+ENDFILE
+VALUE "<project>\hdl\detectorflanco.vhd,hdl"
+STATE="utd"
+TIME="1342625746"
+SIZE="2168"
+ENDFILE
+VALUE "<project>\hdl\ManchesterEncoder_ctrl.vhd,hdl"
+STATE="utd"
+TIME="1367918518"
+SIZE="7225"
+ENDFILE
+VALUE "<project>\hdl\manchester_encoder.vhd,hdl"
+STATE="utd"
+TIME="1367918345"
+SIZE="7540"
+ENDFILE
+VALUE "<project>\hdl\manchester_encoder_preamble4WuR.vhd,hdl"
+STATE="utd"
+TIME="1357240002"
+SIZE="6504"
+ENDFILE
+VALUE "<project>\hdl\Wupu_pck.vhd,hdl"
+STATE="utd"
+TIME="1367918436"
+SIZE="2591"
+ENDFILE
+VALUE "<project>\smartgen\newCore\newCore.cxf,actgen_cxf"
+STATE="utd"
+TIME="1362047678"
+SIZE="1332"
+ENDFILE
+VALUE "<project>\smartgen\newCore\newCore.gen,gen"
+STATE="utd"
+TIME="1362047677"
+SIZE="691"
+PARENT="<project>\smartgen\newCore\newCore.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\newCore\newCore.log,log"
+STATE="utd"
+TIME="1362047678"
+SIZE="2089"
+PARENT="<project>\smartgen\newCore\newCore.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\newCore\newCore.vhd,hdl"
+STATE="utd"
+TIME="1362047678"
+SIZE="2597"
+PARENT="<project>\smartgen\newCore\newCore.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ringO_cnt\ringO_cnt.cxf,actgen_cxf"
+STATE="utd"
+TIME="1367917606"
+SIZE="824"
+ENDFILE
+VALUE "<project>\smartgen\ringO_cnt\ringO_cnt.gen,gen"
+STATE="utd"
+TIME="1367917606"
+SIZE="694"
+PARENT="<project>\smartgen\ringO_cnt\ringO_cnt.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ringO_cnt\ringO_cnt.log,log"
+STATE="utd"
+TIME="1367917606"
+SIZE="2027"
+PARENT="<project>\smartgen\ringO_cnt\ringO_cnt.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\ringO_cnt\ringO_cnt.vhd,hdl"
+STATE="utd"
+TIME="1367917606"
+SIZE="3627"
+PARENT="<project>\smartgen\ringO_cnt\ringO_cnt.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\synthesis\generamensajes.edn,syn_edn"
+STATE="ood"
+TIME="1359544736"
+SIZE="160821"
+ENDFILE
+VALUE "<project>\synthesis\generamensajes_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1359544736"
+SIZE="376"
+ENDFILE
+VALUE "<project>\synthesis\generamensajes_syn.prj,prj"
+STATE="utd"
+TIME="1367859364"
+SIZE="1178"
+ENDFILE
+VALUE "<project>\viewdraw\sym\contador.1,sym"
+STATE="utd"
+TIME="1340291846"
+SIZE="937"
+ENDFILE
+VALUE "<project>\viewdraw\sym\control.1,sym"
+STATE="utd"
+TIME="1342610712"
+SIZE="0"
+ENDFILE
+VALUE "<project>\viewdraw\sym\detectorflanco.1,sym"
+STATE="utd"
+TIME="1342619860"
+SIZE="1342"
+ENDFILE
+VALUE "<project>\viewdraw\sym\manchester_encoder.1,sym"
+STATE="utd"
+TIME="1340291843"
+SIZE="1683"
+ENDFILE
+ENDLIST
+LIST UsedFile
+VALUE "<project>\hdl\manchester_encoder_preamble4WuR.vhd,manchester_encoder"
+ENDLIST
+LIST NewModulesInfo
+LIST "manchesterEncoderComplete::work"
+FILE "<project>\component\work\manchesterEncoderComplete\manchesterEncoderComplete.cxf,actgen_cxf"
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1ps
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="C:\Microsemi\Libero_v10.1\SoftConsole\Eclipse\eclipse.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="Synplify Pro AE"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro AE"
+LOCATION="C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="ModelSim AE"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_v10.1\Model\win32acoem\modelsim.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="WFL"
+FUNCTION="Stimulus"
+TOOL="WFL"
+LOCATION="syncad.exe"
+PARAM="-p waveform"
+BATCH=0
+EndProfile
+NAME="FlashPro"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_v10.1\Designer\bin\FlashPro.exe"
+PARAM=""
+BATCH=0
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "manchesterEncoderComplete::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+StartPage;StartPage
+SmartDesign;generamensajes
+SmartDesign;RingOscillator
+SmartDesign;manchesterEncoderComplete
+ACTIVEVIEW;generamensajes
+ENDLIST
+LIST ModuleSubBlockList
+LIST "contador::work","hdl\counter.vhd","FALSE","FALSE"
+ENDLIST
+LIST "control::work","hdl\controlbloque.vhd","FALSE","FALSE"
+ENDLIST
+LIST "detectorflanco::work","hdl\detectorflanco.vhd","FALSE","FALSE"
+ENDLIST
+LIST "generamensajes::work","component\work\generamensajes\generamensajes.cxf","TRUE","FALSE"
+SUBBLOCK "contador::work","hdl\counter.vhd","FALSE","FALSE"
+SUBBLOCK "control::work","hdl\controlbloque.vhd","FALSE","FALSE"
+SUBBLOCK "detectorflanco::work","hdl\detectorflanco.vhd","FALSE","FALSE"
+SUBBLOCK "RingOscillator::work","component\work\RingOscillator\RingOscillator.cxf","TRUE","FALSE"
+SUBBLOCK "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.cxf","TRUE","FALSE"
+ENDLIST
+LIST "manchester_encoder::work","hdl\manchester_encoder_preamble4WuR.vhd","FALSE","FALSE"
+ENDLIST
+LIST "manchester_encoder_ctrl::work","hdl\ManchesterEncoder_ctrl.vhd","FALSE","FALSE"
+ENDLIST
+LIST "manchesterEncoderComplete::work","component\work\manchesterEncoderComplete\manchesterEncoderComplete.cxf","TRUE","FALSE"
+SUBBLOCK "manchester_encoder::work","","FALSE","FALSE"
+SUBBLOCK "manchester_encoder_ctrl::work","hdl\ManchesterEncoder_ctrl.vhd","FALSE","FALSE"
+ENDLIST
+LIST "newCore::work","smartgen\newCore\newCore.vhd","TRUE","FALSE"
+ENDLIST
+LIST "ringO_cnt::work","smartgen\ringO_cnt\ringO_cnt.vhd","TRUE","FALSE"
+ENDLIST
+LIST "RingOscillator::work","component\work\RingOscillator\RingOscillator.cxf","TRUE","FALSE"
+SUBBLOCK "ringO_cnt::work","smartgen\ringO_cnt\ringO_cnt.vhd","TRUE","FALSE"
+ENDLIST
+LIST "Wupu_pck::work","hdl\Wupu_pck.vhd","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST

@@ -1,0 +1,17 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillatorCookie\component\work\RingOscProyect\RingOscProyect.vhd":17:7:17:20|Top entity is set to RingOscProyect.
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillatorCookie\component\work\RingOscProyect\RingOscProyect.vhd":17:7:17:20|Synthesizing work.ringoscproyect.rtl 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillatorCookie\component\work\RingOscillator\RingOscillator.vhd":17:7:17:20|Synthesizing work.ringoscillator.rtl 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":2032:10:2032:14|Synthesizing igloo.nand2.syn_black_box 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillatorCookie\hdl\clkCouter_mod.vhd":8:7:8:15|Synthesizing work.clkcouter.def_arch 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":37:10:37:13|Synthesizing igloo.and3.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1472:10:1472:17|Synthesizing igloo.dfn1e1c0.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1934:10:1934:12|Synthesizing igloo.inv.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1388:10:1388:15|Synthesizing igloo.dfn1c0.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":2817:10:2817:13|Synthesizing igloo.xor2.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":13:10:13:13|Synthesizing igloo.and2.syn_black_box 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":91:10:91:13|Synthesizing igloo.ao14.syn_black_box 
+@N: CD630 :"C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\RingOscillatorCookie\hdl\ledbartimer.vhd":20:7:20:17|Synthesizing work.ledbartimer.behavioral 
+@N: CD630 :"C:\Microsemi\Libero_v10.1\Synopsys\synplify_F201203MSP1\lib\proasic\igloo.vhd":1793:10:1793:14|Synthesizing igloo.inbuf.syn_black_box 
+

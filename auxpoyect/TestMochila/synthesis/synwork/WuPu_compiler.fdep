@@ -1,0 +1,76 @@
+%%% protect protected_file
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|work.WuPu|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\bin64\\c_vhdl.exe":1369122254
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\location.map":1369131036
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\std.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\snps_haps_pkg.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\std1164.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\numeric.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\umr_capim.vhd":1369122142
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\arith.vhd":1369121912
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\vhd\\unsigned.vhd":1369121912
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\TestMochila\\smartgen\\common\\vhdl\\FlashFreeze_FSM.vhd":1380708874
+#CUR:"C:\\Microsemi\\Libero_v11.1\\Synopsys\\synplify_H201303M1\\lib\\proasic\\igloo.vhd":1369120620
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\TestMochila\\smartgen\\common\\vhdl\\FlashFreeze_Filter.vhd":1380708874
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\TestMochila\\smartgen\\muxSwitcthRing\\muxSwitcthRing.vhd":1375794620
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\TestMochila\\smartgen\\ringO_cnt\\ringO_cnt.vhd":1367851432
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\TestMochila\\smartgen\\common\\vhdl\\FlashFreeze_Managment.vhd":1380708874
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\TestMochila\\smartgen\\newCore\\newCore_wrapper.vhd":1380708874
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\TestMochila\\smartgen\\newCore\\newCore.vhd":1380708874
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\TestMochila\\component\\work\\RingOscillator\\RingOscillator.vhd":1375794831
+#CUR:"C:\\Users\\Victor Ros\\Documents\\Cookies\\wake_up_radio\\auxpoyect\\TestMochila\\component\\work\\WuPu\\WuPu.vhd":1380710004
+0 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\TestMochila\smartgen\common\vhdl\FlashFreeze_FSM.vhd" vhdl
+1 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\TestMochila\smartgen\common\vhdl\FlashFreeze_Filter.vhd" vhdl
+2 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\TestMochila\smartgen\common\vhdl\FlashFreeze_Managment.vhd" vhdl
+3 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\TestMochila\smartgen\newCore\newCore_wrapper.vhd" vhdl
+4 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\TestMochila\smartgen\newCore\newCore.vhd" vhdl
+5 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\TestMochila\smartgen\muxSwitcthRing\muxSwitcthRing.vhd" vhdl
+6 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\TestMochila\smartgen\ringO_cnt\ringO_cnt.vhd" vhdl
+7 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\TestMochila\component\work\RingOscillator\RingOscillator.vhd" vhdl
+8 "C:\Users\Victor Ros\Documents\Cookies\wake_up_radio\auxpoyect\TestMochila\component\work\WuPu\WuPu.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 0 1 
+3 2 
+4 3 
+5 -1
+6 -1
+7 5 6 
+8 4 7 
+
+# Dependency Lists (Users Of)
+0 2 
+1 2 
+2 3 
+3 4 
+4 8 
+5 7 
+6 7 
+7 8 
+8 -1
+
+# Design Unit to File Association
+arch work flashfreeze_fsm trans 0
+module work flashfreeze_fsm 0
+arch work flashfreeze_filter trans 1
+module work flashfreeze_filter 1
+arch work flashfreeze_managment trans 2
+module work flashfreeze_managment 2
+arch work newcore_wrapper def_arch 3
+module work newcore_wrapper 3
+arch work newcore def_arch 4
+module work newcore 4
+arch work muxswitcthring def_arch 5
+module work muxswitcthring 5
+arch work ringo_cnt def_arch 6
+module work ringo_cnt 6
+arch work ringoscillator rtl 7
+module work ringoscillator 7
+arch work wupu rtl 8
+module work wupu 8
+
+
+# Configuration files used
