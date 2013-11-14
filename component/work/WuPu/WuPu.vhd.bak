@@ -1,0 +1,537 @@
+-- Version: 9.1 SP3 9.1.3.4
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+library igloo;
+use igloo.all;
+
+library COREUART_LIB;
+use work.wupu_coreuart_0_components.all;
+
+entity WuPu is
+
+    port( Wakeup          : in    std_logic;
+          clk             : in    std_logic;
+          TX              : out   std_logic;
+          RX              : in    std_logic;
+          uC_commandType  : in    std_logic;
+          uCstatus        : in    std_logic;
+          ZBSleepFake     : in    std_logic;
+          ActivateuC      : out   std_logic;
+          CommandType2uC  : out   std_logic;
+          CommandReady2uC : out   std_logic;
+          RFSwitch        : out   std_logic;
+          WupuFull        : out   std_logic;
+          Status_flag     : out   std_logic;
+          uC_commandReady : in    std_logic;
+          RST             : in    std_logic;
+          addOK           : out   std_logic;
+          TXMODE          : out   std_logic;
+          TX_UART         : out   std_logic;
+          RX_uart         : in    std_logic;
+          ActivateZB      : out   std_logic;
+          MoMstateLed     : out   std_logic_vector(2 downto 0);
+          Sel_address     : in    std_logic_vector(1 downto 0)
+        );
+
+end WuPu;
+
+architecture DEF_ARCH of WuPu is 
+
+  component INV
+    port( A : in    std_logic := 'U';
+          Y : out   std_logic
+        );
+  end component;
+
+  component ZBWaitTime
+    port( Aclr   : in    std_logic := 'U';
+          Sload  : in    std_logic := 'U';
+          Clock  : in    std_logic := 'U';
+          Tcnt   : out   std_logic;
+          Enable : in    std_logic := 'U';
+          Data   : in    std_logic_vector(6 downto 0) := (others => 'U');
+          Q      : out   std_logic_vector(6 downto 0)
+        );
+  end component;
+
+  component GND
+    port( Y : out   std_logic
+        );
+  end component;
+
+  component LowPowerManagement
+    port( Flash_Freeze_N    : in    std_logic := 'U';
+          RST_N             : in    std_logic := 'U';
+          CLK               : in    std_logic := 'U';
+          CLK_GATED         : out   std_logic;
+          Done_Housekeeping : in    std_logic := 'U';
+          Wait_Housekeeping : out   std_logic;
+          SleepActive       : out   std_logic
+        );
+  end component;
+
+  component WuPu_COREUART_0_COREUART
+    generic (BAUD_VAL_FRCTN_EN:integer := 0; FAMILY:integer := 0; 
+        RX_FIFO:integer := 0; RX_LEGACY_MODE:integer := 0; 
+        TX_FIFO:integer := 0);
+
+    port( BIT8              : in    std_logic := 'U';
+          CLK               : in    std_logic := 'U';
+          CSN               : in    std_logic := 'U';
+          ODD_N_EVEN        : in    std_logic := 'U';
+          OEN               : in    std_logic := 'U';
+          OVERFLOW          : out   std_logic;
+          PARITY_EN         : in    std_logic := 'U';
+          PARITY_ERR        : out   std_logic;
+          RESET_N           : in    std_logic := 'U';
+          RX                : in    std_logic := 'U';
+          RXRDY             : out   std_logic;
+          TX                : out   std_logic;
+          TXRDY             : out   std_logic;
+          WEN               : in    std_logic := 'U';
+          FRAMING_ERR       : out   std_logic;
+          BAUD_VAL          : in    std_logic_vector(12 downto 0) := (others => 'U');
+          DATA_IN           : in    std_logic_vector(7 downto 0) := (others => 'U');
+          DATA_OUT          : out   std_logic_vector(7 downto 0);
+          BAUD_VAL_FRACTION : in    std_logic_vector(2 downto 0) := (others => 'U')
+        );
+  end component;
+
+  component CentSec
+    port( Aclr   : in    std_logic := 'U';
+          Clock  : in    std_logic := 'U';
+          Tcnt   : out   std_logic;
+          Enable : in    std_logic := 'U';
+          Q      : out   std_logic_vector(19 downto 0)
+        );
+  end component;
+
+  component AND2A
+    port( A : in    std_logic := 'U';
+          B : in    std_logic := 'U';
+          Y : out   std_logic
+        );
+  end component;
+
+  component VCC
+    port( Y : out   std_logic
+        );
+  end component;
+
+  component INBUF
+    port( PAD : in    std_logic := 'U';
+          Y   : out   std_logic
+        );
+  end component;
+
+    signal \ActivateuC\, addressingData_0_addressload, 
+        \addressingData_0_NextHopAddress_[15]\, 
+        \addressingData_0_NextHopAddress_[14]\, 
+        \addressingData_0_NextHopAddress_[13]\, 
+        \addressingData_0_NextHopAddress_[12]\, 
+        \addressingData_0_NextHopAddress_[11]\, 
+        \addressingData_0_NextHopAddress_[10]\, 
+        \addressingData_0_NextHopAddress_[9]\, 
+        \addressingData_0_NextHopAddress_[8]\, 
+        \addressingData_0_NextHopAddress_[7]\, 
+        \addressingData_0_NextHopAddress_[6]\, 
+        \addressingData_0_NextHopAddress_[5]\, 
+        \addressingData_0_NextHopAddress_[4]\, 
+        \addressingData_0_NextHopAddress_[3]\, 
+        \addressingData_0_NextHopAddress_[2]\, 
+        \addressingData_0_NextHopAddress_[1]\, 
+        \addressingData_0_NextHopAddress_[0]\, 
+        \addressingData_0_NodeAddress_[15]\, 
+        \addressingData_0_NodeAddress_[14]\, 
+        \addressingData_0_NodeAddress_[13]\, 
+        \addressingData_0_NodeAddress_[12]\, 
+        \addressingData_0_NodeAddress_[11]\, 
+        \addressingData_0_NodeAddress_[10]\, 
+        \addressingData_0_NodeAddress_[9]\, 
+        \addressingData_0_NodeAddress_[8]\, 
+        \addressingData_0_NodeAddress_[7]\, 
+        \addressingData_0_NodeAddress_[6]\, 
+        \addressingData_0_NodeAddress_[5]\, 
+        \addressingData_0_NodeAddress_[4]\, 
+        \addressingData_0_NodeAddress_[3]\, 
+        \addressingData_0_NodeAddress_[2]\, 
+        \addressingData_0_NodeAddress_[1]\, 
+        \addressingData_0_NodeAddress_[0]\, AND2A_0_Y, 
+        CentSec_0_Tcnt, \CommandReady2uC\, \CommandType2uC\, 
+        command_process_0_Busy, command_process_0_d_hk, 
+        command_process_0_endOfMessage, 
+        \command_process_0_msgType_0_[1]\, 
+        \command_process_0_msgType_0_[0]\, 
+        command_process_0_newMsg, \COREUART_0_DATA_OUT_[7]\, 
+        \COREUART_0_DATA_OUT_[6]\, \COREUART_0_DATA_OUT_[5]\, 
+        \COREUART_0_DATA_OUT_[4]\, \COREUART_0_DATA_OUT_[3]\, 
+        \COREUART_0_DATA_OUT_[2]\, \COREUART_0_DATA_OUT_[1]\, 
+        \COREUART_0_DATA_OUT_[0]\, COREUART_0_RXRDY, 
+        COREUART_0_TXRDY, DataProcessed, 
+        housekeepingCheck_0_Result, INBUF_0_Y, 
+        LowPowerManagement_0_CLK_GATED, 
+        LowPowerManagement_0_Wait_Housekeeping, 
+        manchester_encoder_0_d_hk, manchester_encoder_0_end_msg, 
+        md_v3_0_bit_error, md_v3_0_dout, md_v3_0_d_hk, 
+        md_v3_0_new_data, \MoM_unit_0_commandToEncoder_[1]\, 
+        \MoM_unit_0_commandToEncoder_[0]\, MoM_unit_0_d_hk, 
+        MoM_unit_0_Enable_encoder, MoM_unit_0_RX_processed, 
+        MoM_unit_0_TX_load, \RFSwitch\, \WaitTimeMx_0_Result_[6]\, 
+        \WaitTimeMx_0_Result_[5]\, \WaitTimeMx_0_Result_[4]\, 
+        \WaitTimeMx_0_Result_[3]\, \WaitTimeMx_0_Result_[2]\, 
+        \WaitTimeMx_0_Result_[1]\, \WaitTimeMx_0_Result_[0]\, 
+        ZBControl_0_CSN, \ZBControl_0_DATA_TX_[7]\, 
+        \ZBControl_0_DATA_TX_[6]\, \ZBControl_0_DATA_TX_[5]\, 
+        \ZBControl_0_DATA_TX_[4]\, \ZBControl_0_DATA_TX_[3]\, 
+        \ZBControl_0_DATA_TX_[2]\, \ZBControl_0_DATA_TX_[1]\, 
+        \ZBControl_0_DATA_TX_[0]\, ZBControl_0_d_hk, 
+        ZBControl_0_EnableZBTimer, ZBControl_0_LoadWaitTime, 
+        ZBControl_0_OEN, \ZBControl_0_selWaitTime_[1]\, 
+        \ZBControl_0_selWaitTime_[0]\, ZBControl_0_uC_ACK, 
+        ZBControl_0_WEN, ZBWaitTime_0_Tcnt, GND_net, VCC_net
+         : std_logic;
+    signal nc24, nc1, nc8, nc13, nc16, nc19, nc25, nc20, nc27, 
+        nc9, nc22, nc14, nc5, nc21, nc15, nc3, nc10, nc7, nc17, 
+        nc4, nc12, nc2, nc23, nc18, nc26, nc6, nc11 : std_logic;
+
+begin 
+
+    ActivateuC <= \ActivateuC\;
+    CommandType2uC <= \CommandType2uC\;
+    CommandReady2uC <= \CommandReady2uC\;
+    WupuFull <= DataProcessed;
+    addOK <= GND_net;
+    TXMODE <= VCC_net;
+
+    md_v3_0 : entity work.md_v3
+      port map(mdi => RX, EoM => command_process_0_endOfMessage, 
+        bit_error => md_v3_0_bit_error, dout => md_v3_0_dout, 
+        new_data => md_v3_0_new_data, rst => INBUF_0_Y, clk => 
+        LowPowerManagement_0_CLK_GATED, d_hk => md_v3_0_d_hk);
+    
+    WaitTimeMx_0 : entity work.WaitTimeMx
+      port map(Data0_port(6) => VCC_net, Data0_port(5) => VCC_net, 
+        Data0_port(4) => VCC_net, Data0_port(3) => VCC_net, 
+        Data0_port(2) => VCC_net, Data0_port(1) => VCC_net, 
+        Data0_port(0) => VCC_net, Data1_port(6) => GND_net, 
+        Data1_port(5) => GND_net, Data1_port(4) => VCC_net, 
+        Data1_port(3) => GND_net, Data1_port(2) => GND_net, 
+        Data1_port(1) => GND_net, Data1_port(0) => GND_net, 
+        Data2_port(6) => GND_net, Data2_port(5) => GND_net, 
+        Data2_port(4) => GND_net, Data2_port(3) => GND_net, 
+        Data2_port(2) => GND_net, Data2_port(1) => GND_net, 
+        Data2_port(0) => VCC_net, Sel(1) => 
+        \ZBControl_0_selWaitTime_[1]\, Sel(0) => 
+        \ZBControl_0_selWaitTime_[0]\, Result(6) => 
+        \WaitTimeMx_0_Result_[6]\, Result(5) => 
+        \WaitTimeMx_0_Result_[5]\, Result(4) => 
+        \WaitTimeMx_0_Result_[4]\, Result(3) => 
+        \WaitTimeMx_0_Result_[3]\, Result(2) => 
+        \WaitTimeMx_0_Result_[2]\, Result(1) => 
+        \WaitTimeMx_0_Result_[1]\, Result(0) => 
+        \WaitTimeMx_0_Result_[0]\);
+    
+    INV_0 : INV
+      port map(A => \RFSwitch\, Y => RFSwitch);
+    
+    ZBWaitTime_0 : ZBWaitTime
+      port map(Aclr => INBUF_0_Y, Sload => 
+        ZBControl_0_LoadWaitTime, Clock => 
+        LowPowerManagement_0_CLK_GATED, Tcnt => ZBWaitTime_0_Tcnt, 
+        Enable => CentSec_0_Tcnt, Data(6) => 
+        \WaitTimeMx_0_Result_[6]\, Data(5) => 
+        \WaitTimeMx_0_Result_[5]\, Data(4) => 
+        \WaitTimeMx_0_Result_[4]\, Data(3) => 
+        \WaitTimeMx_0_Result_[3]\, Data(2) => 
+        \WaitTimeMx_0_Result_[2]\, Data(1) => 
+        \WaitTimeMx_0_Result_[1]\, Data(0) => 
+        \WaitTimeMx_0_Result_[0]\, Q(6) => nc24, Q(5) => nc1, 
+        Q(4) => nc8, Q(3) => nc13, Q(2) => nc16, Q(1) => nc19, 
+        Q(0) => nc25);
+    
+    \GND\ : GND
+      port map(Y => GND_net);
+    
+    housekeepingCheck_0 : entity work.housekeepingCheck
+      port map(Data1 => command_process_0_d_hk, Data2 => 
+        LowPowerManagement_0_Wait_Housekeeping, Data3 => 
+        manchester_encoder_0_d_hk, Data4 => MoM_unit_0_d_hk, 
+        Data5 => md_v3_0_d_hk, Data6 => ZBControl_0_d_hk, Result
+         => housekeepingCheck_0_Result);
+    
+    LowPowerManagement_0 : LowPowerManagement
+      port map(Flash_Freeze_N => Wakeup, RST_N => INBUF_0_Y, CLK
+         => clk, CLK_GATED => LowPowerManagement_0_CLK_GATED, 
+        Done_Housekeeping => housekeepingCheck_0_Result, 
+        Wait_Housekeeping => 
+        LowPowerManagement_0_Wait_Housekeeping, SleepActive => 
+        Status_flag);
+    
+    COREUART_0 : WuPu_COREUART_0_COREUART
+      generic map(BAUD_VAL_FRCTN_EN => 0, FAMILY => 20,
+         RX_FIFO => 0, RX_LEGACY_MODE => 0, TX_FIFO => 0)
+
+      port map(BIT8 => GND_net, CLK => 
+        LowPowerManagement_0_CLK_GATED, CSN => ZBControl_0_CSN, 
+        ODD_N_EVEN => GND_net, OEN => ZBControl_0_OEN, OVERFLOW
+         => OPEN, PARITY_EN => GND_net, PARITY_ERR => OPEN, 
+        RESET_N => INBUF_0_Y, RX => RX_uart, RXRDY => 
+        COREUART_0_RXRDY, TX => TX_UART, TXRDY => 
+        COREUART_0_TXRDY, WEN => ZBControl_0_WEN, FRAMING_ERR => 
+        OPEN, BAUD_VAL(12) => GND_net, BAUD_VAL(11) => GND_net, 
+        BAUD_VAL(10) => GND_net, BAUD_VAL(9) => GND_net, 
+        BAUD_VAL(8) => GND_net, BAUD_VAL(7) => GND_net, 
+        BAUD_VAL(6) => GND_net, BAUD_VAL(5) => VCC_net, 
+        BAUD_VAL(4) => GND_net, BAUD_VAL(3) => GND_net, 
+        BAUD_VAL(2) => GND_net, BAUD_VAL(1) => VCC_net, 
+        BAUD_VAL(0) => VCC_net, DATA_IN(7) => 
+        \ZBControl_0_DATA_TX_[7]\, DATA_IN(6) => 
+        \ZBControl_0_DATA_TX_[6]\, DATA_IN(5) => 
+        \ZBControl_0_DATA_TX_[5]\, DATA_IN(4) => 
+        \ZBControl_0_DATA_TX_[4]\, DATA_IN(3) => 
+        \ZBControl_0_DATA_TX_[3]\, DATA_IN(2) => 
+        \ZBControl_0_DATA_TX_[2]\, DATA_IN(1) => 
+        \ZBControl_0_DATA_TX_[1]\, DATA_IN(0) => 
+        \ZBControl_0_DATA_TX_[0]\, DATA_OUT(7) => 
+        \COREUART_0_DATA_OUT_[7]\, DATA_OUT(6) => 
+        \COREUART_0_DATA_OUT_[6]\, DATA_OUT(5) => 
+        \COREUART_0_DATA_OUT_[5]\, DATA_OUT(4) => 
+        \COREUART_0_DATA_OUT_[4]\, DATA_OUT(3) => 
+        \COREUART_0_DATA_OUT_[3]\, DATA_OUT(2) => 
+        \COREUART_0_DATA_OUT_[2]\, DATA_OUT(1) => 
+        \COREUART_0_DATA_OUT_[1]\, DATA_OUT(0) => 
+        \COREUART_0_DATA_OUT_[0]\, BAUD_VAL_FRACTION(2) => 
+        GND_net, BAUD_VAL_FRACTION(1) => GND_net, 
+        BAUD_VAL_FRACTION(0) => GND_net);
+    
+    command_process_0 : entity work.command_process
+      port map(din => md_v3_0_dout, newData => md_v3_0_new_data, 
+        dataClean => MoM_unit_0_RX_processed, bitError => 
+        md_v3_0_bit_error, endOfMessage => 
+        command_process_0_endOfMessage, newMsg => 
+        command_process_0_newMsg, Busy => command_process_0_Busy, 
+        clk => LowPowerManagement_0_CLK_GATED, rst => INBUF_0_Y, 
+        AddOKflag => OPEN, d_hk => command_process_0_d_hk, 
+        nodeAddress(15) => \addressingData_0_NodeAddress_[15]\, 
+        nodeAddress(14) => \addressingData_0_NodeAddress_[14]\, 
+        nodeAddress(13) => \addressingData_0_NodeAddress_[13]\, 
+        nodeAddress(12) => \addressingData_0_NodeAddress_[12]\, 
+        nodeAddress(11) => \addressingData_0_NodeAddress_[11]\, 
+        nodeAddress(10) => \addressingData_0_NodeAddress_[10]\, 
+        nodeAddress(9) => \addressingData_0_NodeAddress_[9]\, 
+        nodeAddress(8) => \addressingData_0_NodeAddress_[8]\, 
+        nodeAddress(7) => \addressingData_0_NodeAddress_[7]\, 
+        nodeAddress(6) => \addressingData_0_NodeAddress_[6]\, 
+        nodeAddress(5) => \addressingData_0_NodeAddress_[5]\, 
+        nodeAddress(4) => \addressingData_0_NodeAddress_[4]\, 
+        nodeAddress(3) => \addressingData_0_NodeAddress_[3]\, 
+        nodeAddress(2) => \addressingData_0_NodeAddress_[2]\, 
+        nodeAddress(1) => \addressingData_0_NodeAddress_[1]\, 
+        nodeAddress(0) => \addressingData_0_NodeAddress_[0]\, 
+        msgType(1) => \command_process_0_msgType_0_[1]\, 
+        msgType(0) => \command_process_0_msgType_0_[0]\);
+    
+    CentSec_0 : CentSec
+      port map(Aclr => AND2A_0_Y, Clock => 
+        LowPowerManagement_0_CLK_GATED, Tcnt => CentSec_0_Tcnt, 
+        Enable => ZBControl_0_EnableZBTimer, Q(19) => nc20, Q(18)
+         => nc27, Q(17) => nc9, Q(16) => nc22, Q(15) => nc14, 
+        Q(14) => nc5, Q(13) => nc21, Q(12) => nc15, Q(11) => nc3, 
+        Q(10) => nc10, Q(9) => nc7, Q(8) => nc17, Q(7) => nc4, 
+        Q(6) => nc12, Q(5) => nc2, Q(4) => nc23, Q(3) => nc18, 
+        Q(2) => nc26, Q(1) => nc6, Q(0) => nc11);
+    
+    MoM_unit_0 : entity work.MoM_unit
+      port map(RX_port => RX, RX_active => command_process_0_Busy, 
+        RX_commandReady => command_process_0_newMsg, 
+        uC_commandType => uC_commandType, uC_commandInput => 
+        uC_commandReady, uC_active => uCstatus, activate_uC => 
+        \ActivateuC\, TX_messageEnd => 
+        manchester_encoder_0_end_msg, commandType2uC => 
+        \CommandType2uC\, commandReady2uC => \CommandReady2uC\, 
+        uCcommandinQueue => DataProcessed, Enable_encoder => 
+        MoM_unit_0_Enable_encoder, RF_selector => \RFSwitch\, 
+        TX_load => MoM_unit_0_TX_load, RX_processed => 
+        MoM_unit_0_RX_processed, uC_ACK => ZBControl_0_uC_ACK, 
+        d_hk => MoM_unit_0_d_hk, clk => 
+        LowPowerManagement_0_CLK_GATED, rst => INBUF_0_Y, 
+        RX_commandType(1) => \command_process_0_msgType_0_[1]\, 
+        RX_commandType(0) => \command_process_0_msgType_0_[0]\, 
+        NodeAddress(15) => \addressingData_0_NodeAddress_[15]\, 
+        NodeAddress(14) => \addressingData_0_NodeAddress_[14]\, 
+        NodeAddress(13) => \addressingData_0_NodeAddress_[13]\, 
+        NodeAddress(12) => \addressingData_0_NodeAddress_[12]\, 
+        NodeAddress(11) => \addressingData_0_NodeAddress_[11]\, 
+        NodeAddress(10) => \addressingData_0_NodeAddress_[10]\, 
+        NodeAddress(9) => \addressingData_0_NodeAddress_[9]\, 
+        NodeAddress(8) => \addressingData_0_NodeAddress_[8]\, 
+        NodeAddress(7) => \addressingData_0_NodeAddress_[7]\, 
+        NodeAddress(6) => \addressingData_0_NodeAddress_[6]\, 
+        NodeAddress(5) => \addressingData_0_NodeAddress_[5]\, 
+        NodeAddress(4) => \addressingData_0_NodeAddress_[4]\, 
+        NodeAddress(3) => \addressingData_0_NodeAddress_[3]\, 
+        NodeAddress(2) => \addressingData_0_NodeAddress_[2]\, 
+        NodeAddress(1) => \addressingData_0_NodeAddress_[1]\, 
+        NodeAddress(0) => \addressingData_0_NodeAddress_[0]\, 
+        nextHopAddress(15) => 
+        \addressingData_0_NextHopAddress_[15]\, 
+        nextHopAddress(14) => 
+        \addressingData_0_NextHopAddress_[14]\, 
+        nextHopAddress(13) => 
+        \addressingData_0_NextHopAddress_[13]\, 
+        nextHopAddress(12) => 
+        \addressingData_0_NextHopAddress_[12]\, 
+        nextHopAddress(11) => 
+        \addressingData_0_NextHopAddress_[11]\, 
+        nextHopAddress(10) => 
+        \addressingData_0_NextHopAddress_[10]\, nextHopAddress(9)
+         => \addressingData_0_NextHopAddress_[9]\, 
+        nextHopAddress(8) => 
+        \addressingData_0_NextHopAddress_[8]\, nextHopAddress(7)
+         => \addressingData_0_NextHopAddress_[7]\, 
+        nextHopAddress(6) => 
+        \addressingData_0_NextHopAddress_[6]\, nextHopAddress(5)
+         => \addressingData_0_NextHopAddress_[5]\, 
+        nextHopAddress(4) => 
+        \addressingData_0_NextHopAddress_[4]\, nextHopAddress(3)
+         => \addressingData_0_NextHopAddress_[3]\, 
+        nextHopAddress(2) => 
+        \addressingData_0_NextHopAddress_[2]\, nextHopAddress(1)
+         => \addressingData_0_NextHopAddress_[1]\, 
+        nextHopAddress(0) => 
+        \addressingData_0_NextHopAddress_[0]\, 
+        commandToEncoder(1) => \MoM_unit_0_commandToEncoder_[1]\, 
+        commandToEncoder(0) => \MoM_unit_0_commandToEncoder_[0]\, 
+        MoMState(2) => MoMstateLed(2), MoMState(1) => 
+        MoMstateLed(1), MoMState(0) => MoMstateLed(0));
+    
+    AND2A_0 : AND2A
+      port map(A => ZBControl_0_LoadWaitTime, B => INBUF_0_Y, Y
+         => AND2A_0_Y);
+    
+    addressingData_0 : entity work.addressingData
+      port map(addressload => addressingData_0_addressload, clk
+         => LowPowerManagement_0_CLK_GATED, rst => INBUF_0_Y, 
+        NodeAddress(15) => \addressingData_0_NodeAddress_[15]\, 
+        NodeAddress(14) => \addressingData_0_NodeAddress_[14]\, 
+        NodeAddress(13) => \addressingData_0_NodeAddress_[13]\, 
+        NodeAddress(12) => \addressingData_0_NodeAddress_[12]\, 
+        NodeAddress(11) => \addressingData_0_NodeAddress_[11]\, 
+        NodeAddress(10) => \addressingData_0_NodeAddress_[10]\, 
+        NodeAddress(9) => \addressingData_0_NodeAddress_[9]\, 
+        NodeAddress(8) => \addressingData_0_NodeAddress_[8]\, 
+        NodeAddress(7) => \addressingData_0_NodeAddress_[7]\, 
+        NodeAddress(6) => \addressingData_0_NodeAddress_[6]\, 
+        NodeAddress(5) => \addressingData_0_NodeAddress_[5]\, 
+        NodeAddress(4) => \addressingData_0_NodeAddress_[4]\, 
+        NodeAddress(3) => \addressingData_0_NodeAddress_[3]\, 
+        NodeAddress(2) => \addressingData_0_NodeAddress_[2]\, 
+        NodeAddress(1) => \addressingData_0_NodeAddress_[1]\, 
+        NodeAddress(0) => \addressingData_0_NodeAddress_[0]\, 
+        NextHopAddress(15) => 
+        \addressingData_0_NextHopAddress_[15]\, 
+        NextHopAddress(14) => 
+        \addressingData_0_NextHopAddress_[14]\, 
+        NextHopAddress(13) => 
+        \addressingData_0_NextHopAddress_[13]\, 
+        NextHopAddress(12) => 
+        \addressingData_0_NextHopAddress_[12]\, 
+        NextHopAddress(11) => 
+        \addressingData_0_NextHopAddress_[11]\, 
+        NextHopAddress(10) => 
+        \addressingData_0_NextHopAddress_[10]\, NextHopAddress(9)
+         => \addressingData_0_NextHopAddress_[9]\, 
+        NextHopAddress(8) => 
+        \addressingData_0_NextHopAddress_[8]\, NextHopAddress(7)
+         => \addressingData_0_NextHopAddress_[7]\, 
+        NextHopAddress(6) => 
+        \addressingData_0_NextHopAddress_[6]\, NextHopAddress(5)
+         => \addressingData_0_NextHopAddress_[5]\, 
+        NextHopAddress(4) => 
+        \addressingData_0_NextHopAddress_[4]\, NextHopAddress(3)
+         => \addressingData_0_NextHopAddress_[3]\, 
+        NextHopAddress(2) => 
+        \addressingData_0_NextHopAddress_[2]\, NextHopAddress(1)
+         => \addressingData_0_NextHopAddress_[1]\, 
+        NextHopAddress(0) => 
+        \addressingData_0_NextHopAddress_[0]\, sel(1) => 
+        Sel_address(1), sel(0) => Sel_address(0));
+    
+    \VCC\ : VCC
+      port map(Y => VCC_net);
+    
+    manchester_encoder_0 : entity work.manchester_encoder
+      port map(load => MoM_unit_0_TX_load, enable => 
+        MoM_unit_0_Enable_encoder, end_msg => 
+        manchester_encoder_0_end_msg, d_hk => 
+        manchester_encoder_0_d_hk, dout => TX, clk => 
+        LowPowerManagement_0_CLK_GATED, rst => INBUF_0_Y, din(1)
+         => \MoM_unit_0_commandToEncoder_[1]\, din(0) => 
+        \MoM_unit_0_commandToEncoder_[0]\, nextHopAddress(15) => 
+        \addressingData_0_NextHopAddress_[15]\, 
+        nextHopAddress(14) => 
+        \addressingData_0_NextHopAddress_[14]\, 
+        nextHopAddress(13) => 
+        \addressingData_0_NextHopAddress_[13]\, 
+        nextHopAddress(12) => 
+        \addressingData_0_NextHopAddress_[12]\, 
+        nextHopAddress(11) => 
+        \addressingData_0_NextHopAddress_[11]\, 
+        nextHopAddress(10) => 
+        \addressingData_0_NextHopAddress_[10]\, nextHopAddress(9)
+         => \addressingData_0_NextHopAddress_[9]\, 
+        nextHopAddress(8) => 
+        \addressingData_0_NextHopAddress_[8]\, nextHopAddress(7)
+         => \addressingData_0_NextHopAddress_[7]\, 
+        nextHopAddress(6) => 
+        \addressingData_0_NextHopAddress_[6]\, nextHopAddress(5)
+         => \addressingData_0_NextHopAddress_[5]\, 
+        nextHopAddress(4) => 
+        \addressingData_0_NextHopAddress_[4]\, nextHopAddress(3)
+         => \addressingData_0_NextHopAddress_[3]\, 
+        nextHopAddress(2) => 
+        \addressingData_0_NextHopAddress_[2]\, nextHopAddress(1)
+         => \addressingData_0_NextHopAddress_[1]\, 
+        nextHopAddress(0) => 
+        \addressingData_0_NextHopAddress_[0]\);
+    
+    INBUF_0 : INBUF
+      port map(PAD => RST, Y => INBUF_0_Y);
+    
+    ZBControl_0 : entity work.ZBControl
+      port map(uC_commandType => OPEN, uC_commandInput => OPEN, 
+        uC_active => OPEN, ActivateZB => ActivateZB, 
+        selWaitTime(1) => \ZBControl_0_selWaitTime_[1]\, 
+        selWaitTime(0) => \ZBControl_0_selWaitTime_[0]\, 
+        LoadWaitTime => ZBControl_0_LoadWaitTime, EnableZBTimer
+         => ZBControl_0_EnableZBTimer, activate_uC => 
+        \ActivateuC\, commandType2uC => \CommandType2uC\, 
+        commandReady2uC => \CommandReady2uC\, uCcommandinQueue
+         => DataProcessed, ZBTimeout => ZBWaitTime_0_Tcnt, uC_ACK
+         => ZBControl_0_uC_ACK, DATA_TX(7) => 
+        \ZBControl_0_DATA_TX_[7]\, DATA_TX(6) => 
+        \ZBControl_0_DATA_TX_[6]\, DATA_TX(5) => 
+        \ZBControl_0_DATA_TX_[5]\, DATA_TX(4) => 
+        \ZBControl_0_DATA_TX_[4]\, DATA_TX(3) => 
+        \ZBControl_0_DATA_TX_[3]\, DATA_TX(2) => 
+        \ZBControl_0_DATA_TX_[2]\, DATA_TX(1) => 
+        \ZBControl_0_DATA_TX_[1]\, DATA_TX(0) => 
+        \ZBControl_0_DATA_TX_[0]\, DATA_RX(7) => 
+        \COREUART_0_DATA_OUT_[7]\, DATA_RX(6) => 
+        \COREUART_0_DATA_OUT_[6]\, DATA_RX(5) => 
+        \COREUART_0_DATA_OUT_[5]\, DATA_RX(4) => 
+        \COREUART_0_DATA_OUT_[4]\, DATA_RX(3) => 
+        \COREUART_0_DATA_OUT_[3]\, DATA_RX(2) => 
+        \COREUART_0_DATA_OUT_[2]\, DATA_RX(1) => 
+        \COREUART_0_DATA_OUT_[1]\, DATA_RX(0) => 
+        \COREUART_0_DATA_OUT_[0]\, WEN => ZBControl_0_WEN, OEN
+         => ZBControl_0_OEN, CSN => ZBControl_0_CSN, TX_RDY => 
+        COREUART_0_TXRDY, RX_RDY => COREUART_0_RXRDY, 
+        ZBSleepsFake => ZBSleepFake, clk => 
+        LowPowerManagement_0_CLK_GATED, rst => INBUF_0_Y, d_hk
+         => ZBControl_0_d_hk);
+    
+
+end DEF_ARCH; 

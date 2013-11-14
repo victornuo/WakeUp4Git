@@ -1,0 +1,56 @@
+ ** Message System Log
+ ** Database: 
+ ** Date:   Mon May 20 19:34:30 2013
+
+
+****************
+Macro Parameters
+****************
+
+Name                            : ZBWatchDog
+Family                          : PA3LCLP
+Output Format                   : VHDL
+Type                            : Linear
+Variation                       : Compact
+Async Clear                     : Active High
+Async Preset                    : None
+Sync Load                       : None
+Count Enable                    : Active High
+Clock                           : Rising
+Terminal Count                  : Active High
+Updown                          : None
+Width                           : 19
+Direction                       : Up
+
+*************
+Fanin Control
+*************
+
+Signal      Buffering   Max Load   Signal Width
+------      ---------   --------   ------------
+Aclr          None                      1
+Clock         None                      1
+
+**************
+Compile Report
+**************
+
+Warning:  CMP503: Remapped 16 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE pin on the enable flip-flop is not being driven by a global net.
+
+Netlist Resource Report
+=======================
+
+    CORE                       Used:     74  Total:   6144   (1.20%)
+    IO (W/ clocks)             Used:      0  Total:     68   (0.00%)
+    Differential IO            Used:      0  Total:     13   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      0  Total:     18   (0.00%)
+    PLL                        Used:      0  Total:      1   (0.00%)
+    RAM/FIFO                   Used:      0  Total:      8   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Wrote VHDL netlist to C:/Users/Victor Ros/Documents/Cookies/wake_up_radio/WUPUMultiMsgInternalOSC/smartgen\ZBWatchDog\ZBWatchDog.vhd.
+
+ ** Log Ended:   Mon May 20 19:34:30 2013
+
