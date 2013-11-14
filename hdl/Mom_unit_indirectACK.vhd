@@ -58,7 +58,7 @@ ARCHITECTURE RTL of MoM_unit is
 
 --constant CONTENTION_TIME	: integer := (BITTIME_OOK*(FCLK_ENC/10**6))/2;
 
-type state_type is (Inic0, MoM_StandBy, Contention, Sending_MSG, WaitingACK, WakeupCOMM, WaitingTimeout);
+type state_type is (MoM_StandBy, Contention, Sending_MSG, WaitingACK, WakeupCOMM, WaitingTimeout);
 signal state, next_state : state_type; 
 
 signal TX_enable : std_logic;
@@ -138,7 +138,7 @@ d_hk <= Mom_Free;
 	SYNC_PROC: process (rstn, clk)
 	begin
       if (rstn = '0') then
-         state <= Inic0;
+         state <= MoM_StandBy;
       elsif (clk'event and clk = '1') then
            state <= next_state;
       end if;
@@ -153,22 +153,16 @@ d_hk <= Mom_Free;
 	---------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------
 	
-	NEXT_STATE_DECODE: process 	(state, TX_Active, commandType, ZB_active, timeOutACK, NACKCnt, command2send,
-	commandReceived, commandSource, uc_CommandType, RX_addressOK, RX_commandType, SINKNeighbor, rstn )
+	NEXT_STATE_DECODE: process 
+	(state, TX_Active, commandType, ZB_active, timeOutACK, NACKCnt, command2send,
+	commandReceived, commandSource, uc_CommandType, RX_addressOK, RX_commandType, SINKNeighbor )
 	begin
       --declare default state for next_state to avoid latches
       next_state <= state;  --default is to stay in current state
       --insert statements to decode next_state
       --below is a simple example
       case (state) is
-        
-		when Inic0 =>
-			MoMState <= "111"; -- para q funcione el indirect ACK tengo q reenviar
-			if rstn = '1' then
-				next_state <= Contention;
-			end if; 
-			
-		when MoM_StandBy =>
+        when MoM_StandBy =>
 			MoMState <= "111"; -- para q funcione el indirect ACK tengo q reenviar
 			if commandReceived = '1'and (commandSource = uc or (RX_commandType = NWKrRoute) or (RX_addressOK = '1')) then -- voy a Contention 
 				next_state <= Contention; 
@@ -233,36 +227,11 @@ d_hk <= Mom_Free;
    end process;
    
    --MEALY State-Machine - Outputs based on state and inputs
-	OUTPUT_DECODE: process (state,  commandSource, TX_Active, RX_addressOK, RX_port, RX_commandType, ContentionExpired, ChannelFreeTime, rstn)
+	OUTPUT_DECODE: process (state,  commandSource, TX_Active, RX_addressOK, RX_port, RX_commandType, ContentionExpired, ChannelFreeTime)
 	begin
 		--insert statements to decode internal output signals
       --below is simple example
-		if (state = Inic0) then
-			if rstn = '0' then
-				WaitingACKEnab <= '0';
-				ContentionEnab <= '0'; 
-				NACKCounterEnab <= '1'; 
-				RF_selector <= '1';
-				TX_load <= '1';
-				TX_enable <= '0';
-				clean_command <= '0';
-				-- reg_command_enab <= '0';
-				commandReady2ZB <= '0';
-				Mom_Free <= '0';
-			else
-				WaitingACKEnab <= '0';
-				ContentionEnab <= '0'; 
-				NACKCounterEnab <= '1'; 
-				RF_selector <= '1';
-				TX_load <= '0';
-				TX_enable <= '1';
-				clean_command <= '0';
-				-- reg_command_enab <= '0';
-				commandReady2ZB <= '0';
-				Mom_Free <= '0';
-			end if;
-			
-		elsif (state = MoM_StandBy) then
+		if (state = MoM_StandBy) then
 			if  (RX_commandType = R2SINK and RX_addressOK = '0' and commandSource = RX) then -- recibo un r2sink q no es para mi
 				WaitingACKEnab <= '0';
 				ContentionEnab <= '0'; 

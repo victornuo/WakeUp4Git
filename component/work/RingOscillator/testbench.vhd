@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Actel SmartDesign Tue Aug 06 15:13:51 2013
+-- Created by Actel SmartDesign Wed May 08 16:21:02 2013
 -- Testbench Template
 -- This is a basic testbench that instantiates your design with basic 
 -- clock and reset pins connected.  If your design has special
@@ -25,7 +25,6 @@ architecture behavioral of testbench is
         port( 
             -- Inputs
             RESET_N : in std_logic;
-            Enable_N : in std_logic;
 
             -- Outputs
             CLK_OUT : out std_logic
@@ -60,7 +59,6 @@ begin
         port map( 
             -- Inputs
             RESET_N => NSYSRESET,
-            Enable_N => '0',
 
             -- Outputs
             CLK_OUT =>  open

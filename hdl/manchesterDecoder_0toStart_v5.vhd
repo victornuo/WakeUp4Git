@@ -147,7 +147,7 @@ elsif clk'event and clk = '1' then
 end if ;
 end process ;
 
-d_hk <= not ( receiving or mdi);
+d_hk <= not receiving;
 
 
 -- CONTADOR JOHNSON

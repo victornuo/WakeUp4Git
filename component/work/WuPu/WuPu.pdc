@@ -1,9 +1,9 @@
 # Microsemi I/O Physical Design Constraints file
 # Auto Generated User I/O Constraints file
 
-# Version: v11.1 SP3 11.1.3.1
-# Family: IGLOO , Die: AGL030V5 , Package: 100 VQFP
-# Date generated: Wed Nov 13 14:49:29 2013 
+# Version: v11.1 11.1.0.14
+# Family: IGLOO , Die: AGL250V5 , Package: 100 VQFP
+# Date generated: Fri Jul 26 12:49:00 2013 
 
 
 # 
@@ -33,6 +33,11 @@
 # The I/Os in this section are unplaced or placed but are not locked
 # the other listed attributes have been applied
 # 
+
+set_io IRQ0            \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
 
 set_io IRQ1            \
     -RES_PULL Up       \
@@ -70,6 +75,16 @@ set_io RST            \
     -DIRECTION INPUT
 
 
+set_io {Sel_address[0]}  \
+    -RES_PULL Down       \
+    -DIRECTION INPUT
+
+
+set_io {Sel_address[1]}  \
+    -RES_PULL Up         \
+    -DIRECTION INPUT
+
+
 set_io TX              \
     -RES_PULL Down     \
     -DIRECTION OUTPUT
@@ -95,6 +110,7 @@ set_io uC_commandType  \
 # Old IO constraints, commented out for reference
 #
 
+# set_io IRQ0 -RES_PULL Down -DIRECTION OUTPUT 
 # set_io IRQ1 -RES_PULL Up -DIRECTION OUTPUT 
 # set_io IRQ2 -RES_PULL Down -DIRECTION OUTPUT 
 # set_io IRQ3 -RES_PULL Down -DIRECTION OUTPUT 
@@ -102,6 +118,8 @@ set_io uC_commandType  \
 # set_io R2SINKTimeout -RES_PULL Down -DIRECTION INPUT 
 # set_io RESETZB -REGISTER No -RES_PULL Up -DIRECTION OUTPUT 
 # set_io RST -REGISTER No -DIRECTION INPUT 
+# set_io {Sel_address[0]} -RES_PULL Down -DIRECTION INPUT 
+# set_io {Sel_address[1]} -RES_PULL Up -DIRECTION INPUT 
 # set_io TX -RES_PULL Down -DIRECTION OUTPUT 
 # set_io uC_commandReady -RES_PULL Down -DIRECTION INPUT 
 # set_io uC_commandType -RES_PULL Down -DIRECTION INPUT 

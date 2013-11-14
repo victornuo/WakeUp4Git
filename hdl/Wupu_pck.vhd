@@ -37,11 +37,11 @@ package Wupu_pck is
 	 -- CONTION 5% DE BIT TIME
 	
 	constant FTIMEOUTACK	: integer := 200; -- frecuencia del TIMEOUTACK(200 HZ --> T 5ms)
-	constant FCLK	: integer := 1400000; -- frecuencia del CLK (11.0592 MHZ)
+	constant FCLK	: integer := 1500000; -- frecuencia del CLK (11.0592 MHZ)
 	
-	constant FCLK_ENC	: integer := 1400000; -- frecuencia del CLK 2
-	constant FCLK_DEC	: integer := 1400000; -- frecuencia del CLK 
-	constant FCLK_R	: real := 1.4; -- frecuencia del CLK 
+	constant FCLK_ENC	: integer := 1500000; -- frecuencia del CLK 2
+	constant FCLK_DEC	: integer := 1500000; -- frecuencia del CLK 
+	constant FCLK_R	: real := 1.5; -- frecuencia del CLK 
 	constant BITTIME_IR	: integer := 600; -- tiempo de bit en us
 	constant BITTIME_OOK : integer := 76; --416; -- tiempo de bit en us
 	constant BITTIME_OOK_R : real := 76.0; --416; -- tiempo de bit en us

@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Tue Aug 06 15:13:51 2013
--- Version: v11.1 11.1.0.14
+-- Created by SmartDesign Wed May 08 16:21:02 2013
+-- Version: 10.1 SP3 10.1.3.1
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -18,10 +18,9 @@ entity RingOscillator is
     -- Port list
     port(
         -- Inputs
-        Enable_N : in  std_logic;
-        RESET_N  : in  std_logic;
+        RESET_N : in  std_logic;
         -- Outputs
-        CLK_OUT  : out std_logic
+        CLK_OUT : out std_logic
         );
 end RingOscillator;
 ----------------------------------------------------------------------
@@ -41,18 +40,6 @@ component AO14
         C : in  std_logic;
         -- Outputs
         Y : out std_logic
-        );
-end component;
--- muxSwitcthRing
-component muxSwitcthRing
-    -- Port list
-    port(
-        -- Inputs
-        Data0_port : in  std_logic;
-        Data1_port : in  std_logic;
-        Sel0       : in  std_logic;
-        -- Outputs
-        Result     : out std_logic
         );
 end component;
 -- NAND2
@@ -80,42 +67,41 @@ end component;
 ----------------------------------------------------------------------
 -- Signal declarations
 ----------------------------------------------------------------------
-signal AO14_0_Y                : std_logic;
-signal AO14_1_Y                : std_logic;
-signal AO14_2_Y                : std_logic;
-signal AO14_3_Y                : std_logic;
-signal AO14_4_Y                : std_logic;
-signal AO14_5_Y                : std_logic;
-signal AO14_6_Y                : std_logic;
-signal AO14_7_Y                : std_logic;
-signal AO14_8_Y                : std_logic;
-signal AO14_9_Y                : std_logic;
-signal AO14_10_Y               : std_logic;
-signal AO14_11_Y               : std_logic;
-signal AO14_12_Y               : std_logic;
-signal AO14_13_Y               : std_logic;
-signal AO14_14_Y               : std_logic;
-signal AO14_15_Y               : std_logic;
-signal AO14_16_Y               : std_logic;
-signal AO14_17_Y               : std_logic;
-signal AO14_18_Y               : std_logic;
-signal AO14_19_Y               : std_logic;
-signal AO14_20_Y               : std_logic;
-signal AO14_21_Y               : std_logic;
-signal AO14_22_Y               : std_logic;
-signal AO14_23_Y               : std_logic;
-signal CLK_OUT_net_0           : std_logic_vector(3 to 3);
-signal muxSwitcthRing_0_Result : std_logic;
-signal NAND2_0_Y               : std_logic;
-signal CLK_OUT_net_1           : std_logic;
-signal Q_slice_0               : std_logic_vector(0 to 0);
-signal Q_slice_1               : std_logic_vector(1 to 1);
-signal Q_slice_2               : std_logic_vector(2 to 2);
-signal Q_net_0                 : std_logic_vector(3 downto 0);
+signal AO14_0_Y      : std_logic;
+signal AO14_1_Y      : std_logic;
+signal AO14_2_Y      : std_logic;
+signal AO14_3_Y      : std_logic;
+signal AO14_4_Y      : std_logic;
+signal AO14_5_Y      : std_logic;
+signal AO14_6_Y      : std_logic;
+signal AO14_7_Y      : std_logic;
+signal AO14_8_Y      : std_logic;
+signal AO14_9_Y      : std_logic;
+signal AO14_10_Y     : std_logic;
+signal AO14_11_Y     : std_logic;
+signal AO14_12_Y     : std_logic;
+signal AO14_13_Y     : std_logic;
+signal AO14_14_Y     : std_logic;
+signal AO14_15_Y     : std_logic;
+signal AO14_16_Y     : std_logic;
+signal AO14_17_Y     : std_logic;
+signal AO14_18_Y     : std_logic;
+signal AO14_19_Y     : std_logic;
+signal AO14_20_Y     : std_logic;
+signal AO14_21_Y     : std_logic;
+signal AO14_22_Y     : std_logic;
+signal AO14_23_Y     : std_logic;
+signal CLK_OUT_net_0 : std_logic_vector(3 to 3);
+signal NAND2_0_Y     : std_logic;
+signal CLK_OUT_net_1 : std_logic;
+signal Q_slice_0     : std_logic_vector(0 to 0);
+signal Q_slice_1     : std_logic_vector(1 to 1);
+signal Q_slice_2     : std_logic_vector(2 to 2);
+signal Q_net_0       : std_logic_vector(3 downto 0);
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
-signal GND_net                 : std_logic;
+signal GND_net       : std_logic;
 
 begin
 ----------------------------------------------------------------------
@@ -143,7 +129,7 @@ AO14_0 : AO14
         -- Inputs
         A => GND_net,
         B => GND_net,
-        C => muxSwitcthRing_0_Result,
+        C => NAND2_0_Y,
         -- Outputs
         Y => AO14_0_Y 
         );
@@ -376,16 +362,6 @@ AO14_23 : AO14
         C => AO14_11_Y,
         -- Outputs
         Y => AO14_23_Y 
-        );
--- muxSwitcthRing_0
-muxSwitcthRing_0 : muxSwitcthRing
-    port map( 
-        -- Inputs
-        Data0_port => NAND2_0_Y,
-        Data1_port => GND_net,
-        Sel0       => Enable_N,
-        -- Outputs
-        Result     => muxSwitcthRing_0_Result 
         );
 -- NAND2_0
 NAND2_0 : NAND2

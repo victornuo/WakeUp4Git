@@ -18,8 +18,6 @@ port (
 	IRQ3 : OUT std_logic; -- Señal q va a IRQ 3 a StartTimers
 	WD_IRQ : IN std_logic;
 	WD_CLR : OUT std_logic;
-	
-	ZBCtrlState : OUT std_logic_vector (1 downto 0);
  	
 	R2SINKTimeout : IN std_logic;
 	NWKrRouteTimeout : IN std_logic;
@@ -54,7 +52,7 @@ signal SleepZB: std_logic;
 signal ActivateZB : std_logic;
 signal ZBTimeout : std_logic;
 
-type state_type is (RadioOff, RadioOn, ResetFlags);--, Inic0);--, Inic1); --, ZB_Booted); --WaitingPMODChange);--, R2SACK, NWKreRoute);
+type state_type is (RadioOff, RadioOn, ResetFlags, Inic0); --, ZB_Booted); --WaitingPMODChange);--, R2SACK, NWKreRoute);
 signal state, next_state : state_type;
 
 
@@ -80,16 +78,6 @@ begin
 	
 	--uC_ACK <= -- ZBcontrolACK;
 	
-	-- ZBTimeout_rising_proc: process (rstn, clk)
-	-- begin
-		-- if (rstn = '0') then
-			-- ZBTimeout_rising_aux <= '0'; -- lo inicializo a 1 para que al principio est 10 segundos encendido
-		-- elsif (clk'event and clk = '1') then
-			-- ZBTimeout_rising_aux <= NWKrRouteTimeout;
-		-- end if;
-	-- end process;
-	
-	--ZBTimeout_rising <= not ZBTimeout_rising_aux and NWKrRouteTimeout;
 	
 	Comand_Reg: process (rstn, clk)
 	begin
@@ -109,6 +97,7 @@ begin
 			--state <= Inic0;
 			state <= RadioOff;
 		elsif (clk'event and clk = '1') then
+			
 			state <= next_state;
 		end if;
 	end process;
@@ -125,39 +114,30 @@ begin
 		case (state) is
 		
 			when RadioOff =>
-				ZBCtrlState <= "00";
 				
 				if commandReadyIN = '1' then
 					next_state <= RadioOn;
 				end if;
 			
 			when RadioOn =>
-				ZBCtrlState <= "01";
+				
 				if ZBTimeout = '1' then 
 					next_state <= ResetFlags;
-				
-				--elsif WD_IRQ = '1' then
-					--next_state <= ResetFlags;
+				elsif WD_IRQ = '1' then
+					next_state <= ResetFlags;
 				end if;
 			
 			when ResetFlags =>
-				ZBCtrlState <= "10";
+				
 				if R2SINKTimeout = '0' and NWKrRouteTimeout = '0' then -- cuando recivo PMOD = 3 por el pto serie es q esta durmiendo 
 					next_state <= RadioOff;
 				end if;
 						
-			-- when Inic0 =>
-				-- ZBCtrlState <= "11";
-				-- if NWKrRouteTimeout = '1' then -- cuando recivo PMOD = 3 por el pto serie es q esta durmiendo 
-					-- next_state <= ResetFlags;
-				-- end if;
-			
-			-- when Inic1 =>
+			when Inic0 =>
 				
-					
-				-- if NWKrRouteTimeout = '1' then -- cuando recivo PMOD = 3 por el pto serie es q esta durmiendo 
-					-- next_state <= ResetFlags;
-				-- end if;
+				if ZBTimeout = '1' then -- cuando recivo PMOD = 3 por el pto serie es q esta durmiendo 
+					next_state <= ResetFlags;
+				end if;
 				
 
 		end case;      
@@ -235,11 +215,11 @@ begin
 						
 			if R2SINKTimeout = '0' and NWKrRouteTimeout = '0' then
 				WD_CLR <= '1';  
-				ActivateZB <= '1'; 
+				ActivateZB <= '0'; 
 				SleepZB <= '0';
 				LoadNWKmsg <= '0';
 				-- ZBcontrolACK <= '0';
-				ZBcontrolActive <= '1';
+				ZBcontrolActive <= '0';
 				IOtoLow <= '0'; -- Señal q va a IRQ 2 
 				StartTimers <= '0';
 				
@@ -255,60 +235,28 @@ begin
 			 
 			end if;
 
-		-- elsif state = Inic0 then  
+		elsif state = Inic0 then  
 			
-			-- if  rstn = '0' then
-		 		-- WD_CLR <= '0';  
-				-- ActivateZB <= '0'; 
-				-- SleepZB <= '0';
-				-- LoadNWKmsg <= '0';
-				-- -- ZBcontrolACK <= '0';
-				-- ZBcontrolActive <= '1';
-				-- IOtoLow <= '0'; -- Señal q va a IRQ 2 
-				-- StartTimers <= '0';
+			if  rstn = '0' then
+		 		WD_CLR <= '0';  
+				ActivateZB <= '0'; 
+				SleepZB <= '0';
+				LoadNWKmsg <= '0';
+				-- ZBcontrolACK <= '0';
+				ZBcontrolActive <= '1';
+				IOtoLow <= '0'; -- Señal q va a IRQ 2 
+				StartTimers <= '0';
 			
-			-- elsif R2SINKTimeout = '1' then
-				-- WD_CLR <= '0';  
-				-- ActivateZB <= '0'; 
-				-- SleepZB <= '0';
-				-- LoadNWKmsg <= '0';
-				-- -- ZBcontrolACK <= '0';
-				-- ZBcontrolActive <= '1';
-				-- IOtoLow <= '0'; -- Señal q va a IRQ 2 
-				-- StartTimers <= '0';
-			
-			-- else
-				-- WD_CLR <= '0';  
-				-- ActivateZB <= '1'; 
-				-- SleepZB <= '0';
-				-- LoadNWKmsg <= '0';
-				-- -- ZBcontrolACK <= '0';
-				-- ZBcontrolActive <= '1';
-				-- IOtoLow <= '1'; -- Señal q va a IRQ 2 
-				-- StartTimers <= '1';
-			-- end if;
-			
-		-- elsif state = Inic1 then  
-						
-			-- if R2SINKTimeout = '1' then
-				-- WD_CLR <= '0';  
-				-- ActivateZB <= '0'; 
-				-- SleepZB <= '0';
-				-- LoadNWKmsg <= '0';
-			--	ZBcontrolACK <= '0';
-				-- ZBcontrolActive <= '1';
-				-- IOtoLow <= '0'; -- Señal q va a IRQ 2 
-				-- StartTimers <= '0';
-			
-			-- else
-				-- WD_CLR <= '0';  
-				-- ActivateZB <= '0'; 
-				-- SleepZB <= '0';
-				-- LoadNWKmsg <= '0';
-			--	ZBcontrolACK <= '0';
-				-- ZBcontrolActive <= '1';
-				-- IOtoLow <= '1'; -- Señal q va a IRQ 2 
-				-- StartTimers <= '1';
+			else
+				WD_CLR <= '0';  
+				ActivateZB <= '1'; 
+				SleepZB <= '0';
+				LoadNWKmsg <= '0';
+				-- ZBcontrolACK <= '0';
+				ZBcontrolActive <= '1';
+				IOtoLow <= '0'; -- Señal q va a IRQ 2 
+				StartTimers <= '0';
+			end if;
 		
 			
 		else

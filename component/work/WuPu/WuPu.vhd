@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Nov 13 14:49:29 2013
--- Version: v11.1 SP3 11.1.3.1
+-- Created by SmartDesign Fri Jul 26 12:49:01 2013
+-- Version: v11.1 11.1.0.14
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -18,32 +18,30 @@ entity WuPu is
     -- Port list
     port(
         -- Inputs
-        ClearPerformData : in    std_logic;
         NWKrRouteTimeout : in    std_logic;
         R2SINKTimeout    : in    std_logic;
         RST              : in    std_logic;
         RX               : in    std_logic;
+        Sel_address      : in    std_logic_vector(1 downto 0);
         Wakeup           : in    std_logic;
-        selAdd           : in    std_logic_vector(2 downto 0);
-        selExp           : in    std_logic_vector(1 downto 0);
         uC_commandReady  : in    std_logic;
         uC_commandType   : in    std_logic;
         -- Outputs
+        AddOKflag        : out   std_logic;
         CLK_GATED        : out   std_logic;
+        CTRL1_Enab       : out   std_logic;
+        CommandReady2ZB  : out   std_logic;
+        CommandType2ZB   : out   std_logic;
+        Decoder_hk       : out   std_logic;
         IRQ0             : out   std_logic;
         IRQ1             : out   std_logic;
         IRQ2             : out   std_logic;
         IRQ3             : out   std_logic;
-        LedMochila       : out   std_logic;
         MoMstateLed      : out   std_logic_vector(2 downto 0);
-        PM_DataReady     : out   std_logic;
-        PM_TXCounter     : out   std_logic_vector(2 downto 0);
-        PM_msgType       : out   std_logic;
         RESETZB          : out   std_logic;
         RX_OUT           : out   std_logic;
         TX               : out   std_logic;
-        f32              : out   std_logic;
-        f59              : out   std_logic;
+        bit_error        : out   std_logic;
         -- Inouts
         CTRL1            : inout std_logic
         );
@@ -62,11 +60,11 @@ component addressingData
         -- Inputs
         clk            : in  std_logic;
         rstn           : in  std_logic;
-        selAdd         : in  std_logic_vector(2 downto 0);
-        selExp         : in  std_logic_vector(1 downto 0);
+        sel            : in  std_logic_vector(1 downto 0);
         -- Outputs
         NextHopAddress : out std_logic_vector(7 downto 0);
-        NodeAddress    : out std_logic_vector(7 downto 0)
+        NodeAddress    : out std_logic_vector(7 downto 0);
+        addressload    : out std_logic
         );
 end component;
 -- BIBUF
@@ -103,18 +101,6 @@ component command_process
         set_newMessage_flag : out std_logic
         );
 end component;
--- DFN1C0
-component DFN1C0
-    -- Port list
-    port(
-        -- Inputs
-        CLK : in  std_logic;
-        CLR : in  std_logic;
-        D   : in  std_logic;
-        -- Outputs
-        Q   : out std_logic
-        );
-end component;
 -- housekeepingCheck
 component housekeepingCheck
     -- Port list
@@ -126,7 +112,6 @@ component housekeepingCheck
         Data4  : in  std_logic;
         Data5  : in  std_logic;
         Data6  : in  std_logic;
-        Data7  : in  std_logic;
         -- Outputs
         Result : out std_logic
         );
@@ -139,18 +124,6 @@ component INBUF
         PAD : in  std_logic;
         -- Outputs
         Y   : out std_logic
-        );
-end component;
--- InintialMsgInjector
-component InintialMsgInjector
-    -- Port list
-    port(
-        -- Inputs
-        clear          : in  std_logic;
-        clk            : in  std_logic;
-        rstn           : in  std_logic;
-        -- Outputs
-        NewMsgInjector : out std_logic
         );
 end component;
 -- LowPowerManagement
@@ -230,58 +203,14 @@ component MoM_unit
         d_hk             : out std_logic
         );
 end component;
--- OR2
-component OR2
-    -- Port list
-    port(
-        -- Inputs
-        A : in  std_logic;
-        B : in  std_logic;
-        -- Outputs
-        Y : out std_logic
-        );
-end component;
--- PerformanceMeasure
-component PerformanceMeasure
-    -- Port list
-    port(
-        -- Inputs
-        ClearPerformData : in  std_logic;
-        CntTX            : in  std_logic;
-        MsgType          : in  std_logic;
-        NewMsg           : in  std_logic;
-        RaisePMFlag      : in  std_logic;
-        clk              : in  std_logic;
-        rstn             : in  std_logic;
-        -- Outputs
-        PM_DataReady     : out std_logic;
-        PM_TXCounter     : out std_logic_vector(2 downto 0);
-        PM_msgType       : out std_logic;
-        d_hk             : out std_logic
-        );
-end component;
--- ProcessFlagGen
-component ProcessFlagGen
-    -- Port list
-    port(
-        -- Inputs
-        MoMState    : in  std_logic_vector(2 downto 0);
-        clearPF     : in  std_logic;
-        clk         : in  std_logic;
-        rstn        : in  std_logic;
-        -- Outputs
-        ProcessFlag : out std_logic
-        );
-end component;
 -- RingOscillator
 component RingOscillator
     -- Port list
     port(
         -- Inputs
-        Enable_N : in  std_logic;
-        RESET_N  : in  std_logic;
+        RESET_N : in  std_logic;
         -- Outputs
-        CLK_OUT  : out std_logic
+        CLK_OUT : out std_logic
         );
 end component;
 -- ZBControl
@@ -302,7 +231,6 @@ component ZBControl
         IRQ2             : out std_logic;
         IRQ3             : out std_logic;
         WD_CLR           : out std_logic;
-        ZBCtrlState      : out std_logic_vector(1 downto 0);
         ZB_active        : out std_logic;
         d_hk             : out std_logic
         );
@@ -316,118 +244,96 @@ signal addressingData_0_NextHopAddress_0     : std_logic_vector(7 downto 0);
 signal addressingData_0_NodeAddress_0        : std_logic_vector(7 downto 0);
 signal bit_error_0                           : std_logic;
 signal bit_error_1                           : std_logic;
+signal bit_error_2                           : std_logic;
 signal CLK_GATED_net_0                       : std_logic;
-signal CLK_GATED_0                           : std_logic;
-signal command_process_0_msgType0to0         : std_logic_vector(0 to 0);
-signal command_process_0_msgType_1           : std_logic_vector(1 downto 0);
-signal command_process_0_newMsg              : std_logic;
+signal command_process_0_msgType_0           : std_logic_vector(1 downto 0);
 signal commandP_hk                           : std_logic;
-signal CommandReady2ZB                       : std_logic;
-signal CommandType2ZB                        : std_logic;
-signal CTRL1_Enab                            : std_logic;
-signal Decoder_hk                            : std_logic;
-signal DFN1C0_0_Q                            : std_logic;
+signal commandP_hk_1                         : std_logic;
+signal CommandReady2ZB_net_0                 : std_logic;
+signal CommandType2ZB_net_0                  : std_logic;
+signal CTRL1_Enab_net_0                      : std_logic;
+signal Decoder_hk_net_0                      : std_logic;
+signal Decoder_hk_0                          : std_logic;
+signal Decoder_hk_2                          : std_logic;
 signal Encoder_hk                            : std_logic;
-signal InintialMsgInjector_0_NewMsgInjector  : std_logic;
+signal housekeepingCheck_0_Result            : std_logic;
 signal IRQ0_net_0                            : std_logic;
 signal IRQ1_net_0                            : std_logic;
 signal IRQ2_net_0                            : std_logic;
 signal IRQ3_net_0                            : std_logic;
-signal LedMochila_net_0                      : std_logic;
 signal LowpoerM_hk                           : std_logic;
 signal manchesterEncoderComplete_0_TX_Active : std_logic;
-signal md_v4_0_new_data                      : std_logic;
 signal md_v4_0_RX_end                        : std_logic;
+signal MoM_hk                                : std_logic;
 signal MoM_unit_0_commandToEncoder           : std_logic_vector(1 downto 0);
-signal MoM_unit_0_d_hk                       : std_logic;
 signal MoM_unit_0_RX_processed               : std_logic;
 signal MoM_unit_0_TX_load                    : std_logic;
 signal MoM_unit_0_TX_start                   : std_logic;
-signal MoMstateLed_net_0                     : std_logic_vector(2 downto 0);
-signal OR2_0_Y                               : std_logic;
-signal PM_DataReady_net_0                    : std_logic;
-signal PM_msgType_net_0                      : std_logic;
-signal PM_TXCounter_net_0                    : std_logic_vector(2 downto 0);
-signal ProcessFlagGen_0_ProcessFlag          : std_logic;
 signal RESETZB_1                             : std_logic;
+signal RingOscillator_0_CLK_OUT              : std_logic;
+signal statusLed                             : std_logic_vector(2 downto 0);
 signal TX_net_0                              : std_logic;
-signal ZBControl_0_d_hk                      : std_logic;
+signal ZBControl_0_WD_CLR                    : std_logic;
 signal TX_net_1                              : std_logic;
+signal CommandType2ZB_net_1                  : std_logic;
+signal CommandReady2ZB_net_1                 : std_logic;
 signal RESETZB_1_net_0                       : std_logic;
 signal RX_0_net_0                            : std_logic;
-signal LedMochila_net_1                      : std_logic;
+signal AddOKflag_1_net_0                     : std_logic;
+signal bit_error_2_net_0                     : std_logic;
 signal IRQ1_net_1                            : std_logic;
+signal IRQ0_net_1                            : std_logic;
 signal IRQ2_net_1                            : std_logic;
 signal IRQ3_net_1                            : std_logic;
 signal CLK_GATED_net_1                       : std_logic;
-signal PM_msgType_net_1                      : std_logic;
-signal PM_DataReady_net_1                    : std_logic;
-signal MoMstateLed_net_1                     : std_logic_vector(2 downto 0);
-signal PM_TXCounter_net_1                    : std_logic_vector(2 downto 0);
-signal msgType_slice_0                       : std_logic_vector(1 to 1);
-signal ZBCtrlState_slice_0                   : std_logic_vector(0 to 0);
-signal ZBCtrlState_slice_1                   : std_logic_vector(1 to 1);
-signal ZBCtrlState_net_0                     : std_logic_vector(1 downto 0);
+signal Decoder_hk_2_net_0                    : std_logic;
+signal CTRL1_Enab_net_1                      : std_logic;
+signal statusLed_net_0                       : std_logic_vector(2 downto 0);
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
 signal GND_net                               : std_logic;
-----------------------------------------------------------------------
--- Inverted Signals
-----------------------------------------------------------------------
-signal IRQ0_net_1                            : std_logic;
-signal IRQ0_OUT_PRE_INV0_0                   : std_logic;
+signal VCC_net                               : std_logic;
 
 begin
 ----------------------------------------------------------------------
 -- Constant assignments
 ----------------------------------------------------------------------
  GND_net <= '0';
-----------------------------------------------------------------------
--- Inversions
-----------------------------------------------------------------------
- IRQ0_net_1 <= NOT IRQ0_OUT_PRE_INV0_0;
-----------------------------------------------------------------------
--- TieOff assignments
-----------------------------------------------------------------------
- f32                      <= '0';
- f59                      <= '0';
+ VCC_net <= '1';
 ----------------------------------------------------------------------
 -- Top level output port assignments
 ----------------------------------------------------------------------
- TX_net_1                 <= TX_net_0;
- TX                       <= TX_net_1;
- RESETZB_1_net_0          <= RESETZB_1;
- RESETZB                  <= RESETZB_1_net_0;
- RX_0_net_0               <= RX;
- RX_OUT                   <= RX_0_net_0;
- LedMochila_net_1         <= LedMochila_net_0;
- LedMochila               <= LedMochila_net_1;
- IRQ1_net_1               <= IRQ1_net_0;
- IRQ1                     <= IRQ1_net_1;
- IRQ2_net_1               <= IRQ2_net_0;
- IRQ2                     <= IRQ2_net_1;
- IRQ3_net_1               <= IRQ3_net_0;
- IRQ3                     <= IRQ3_net_1;
- CLK_GATED_net_1          <= CLK_GATED_net_0;
- CLK_GATED                <= CLK_GATED_net_1;
- IRQ0_OUT_PRE_INV0_0      <= IRQ0_net_0;
- IRQ0                     <= IRQ0_net_1;
- PM_msgType_net_1         <= PM_msgType_net_0;
- PM_msgType               <= PM_msgType_net_1;
- PM_DataReady_net_1       <= PM_DataReady_net_0;
- PM_DataReady             <= PM_DataReady_net_1;
- MoMstateLed_net_1        <= MoMstateLed_net_0;
- MoMstateLed(2 downto 0)  <= MoMstateLed_net_1;
- PM_TXCounter_net_1       <= PM_TXCounter_net_0;
- PM_TXCounter(2 downto 0) <= PM_TXCounter_net_1;
-----------------------------------------------------------------------
--- Slices assignments
-----------------------------------------------------------------------
- command_process_0_msgType0to0(0) <= command_process_0_msgType_1(0);
- msgType_slice_0(1)               <= command_process_0_msgType_1(1);
- ZBCtrlState_slice_0(0)           <= ZBCtrlState_net_0(0);
- ZBCtrlState_slice_1(1)           <= ZBCtrlState_net_0(1);
+ TX_net_1                <= TX_net_0;
+ TX                      <= TX_net_1;
+ CommandType2ZB_net_1    <= CommandType2ZB_net_0;
+ CommandType2ZB          <= CommandType2ZB_net_1;
+ CommandReady2ZB_net_1   <= CommandReady2ZB_net_0;
+ CommandReady2ZB         <= CommandReady2ZB_net_1;
+ RESETZB_1_net_0         <= RESETZB_1;
+ RESETZB                 <= RESETZB_1_net_0;
+ RX_0_net_0              <= RX;
+ RX_OUT                  <= RX_0_net_0;
+ AddOKflag_1_net_0       <= AddOKflag_1;
+ AddOKflag               <= AddOKflag_1_net_0;
+ bit_error_2_net_0       <= bit_error_2;
+ bit_error               <= bit_error_2_net_0;
+ IRQ1_net_1              <= IRQ1_net_0;
+ IRQ1                    <= IRQ1_net_1;
+ IRQ0_net_1              <= IRQ0_net_0;
+ IRQ0                    <= IRQ0_net_1;
+ IRQ2_net_1              <= IRQ2_net_0;
+ IRQ2                    <= IRQ2_net_1;
+ IRQ3_net_1              <= IRQ3_net_0;
+ IRQ3                    <= IRQ3_net_1;
+ CLK_GATED_net_1         <= CLK_GATED_net_0;
+ CLK_GATED               <= CLK_GATED_net_1;
+ Decoder_hk_2_net_0      <= Decoder_hk_2;
+ Decoder_hk              <= Decoder_hk_2_net_0;
+ CTRL1_Enab_net_1        <= CTRL1_Enab_net_0;
+ CTRL1_Enab              <= CTRL1_Enab_net_1;
+ statusLed_net_0         <= statusLed;
+ MoMstateLed(2 downto 0) <= statusLed_net_0;
 ----------------------------------------------------------------------
 -- Component instances
 ----------------------------------------------------------------------
@@ -437,9 +343,9 @@ addressingData_0 : addressingData
         -- Inputs
         clk            => CLK_GATED_net_0,
         rstn           => RESETZB_1,
-        selAdd         => selAdd,
-        selExp         => selExp,
+        sel            => Sel_address,
         -- Outputs
+        addressload    => OPEN,
         NodeAddress    => addressingData_0_NodeAddress_0,
         NextHopAddress => addressingData_0_NextHopAddress_0 
         );
@@ -448,7 +354,7 @@ BIBUF_0 : BIBUF
     port map( 
         -- Inputs
         D   => GND_net,
-        E   => CTRL1_Enab,
+        E   => CTRL1_Enab_net_0,
         -- Outputs
         Y   => OPEN,
         -- Inouts
@@ -459,29 +365,19 @@ command_process_0 : command_process
     port map( 
         -- Inputs
         din                 => AddOKflag_1,
-        newData             => md_v4_0_new_data,
+        newData             => bit_error_2,
         dataClean           => MoM_unit_0_RX_processed,
         bitError            => bit_error_1,
         clk                 => CLK_GATED_net_0,
         rstn                => RESETZB_1,
         nodeAddress         => addressingData_0_NodeAddress_0,
         -- Outputs
-        newMsg              => command_process_0_newMsg,
-        set_newMessage_flag => OPEN,
+        newMsg              => Decoder_hk_0,
+        set_newMessage_flag => commandP_hk_1,
         AddOKflag           => AddOKflag_0,
-        Parity              => OPEN,
+        Parity              => Decoder_hk_2,
         d_hk                => commandP_hk,
-        msgType             => command_process_0_msgType_1 
-        );
--- DFN1C0_0
-DFN1C0_0 : DFN1C0
-    port map( 
-        -- Inputs
-        D   => LedMochila_net_0,
-        CLK => CLK_GATED_net_0,
-        CLR => RESETZB_1,
-        -- Outputs
-        Q   => DFN1C0_0_Q 
+        msgType             => command_process_0_msgType_0 
         );
 -- housekeepingCheck_0
 housekeepingCheck_0 : housekeepingCheck
@@ -490,12 +386,11 @@ housekeepingCheck_0 : housekeepingCheck
         Data1  => commandP_hk,
         Data2  => LowpoerM_hk,
         Data3  => Encoder_hk,
-        Data4  => MoM_unit_0_d_hk,
-        Data5  => Decoder_hk,
-        Data6  => ZBControl_0_d_hk,
-        Data7  => GND_net,
+        Data4  => MoM_hk,
+        Data5  => Decoder_hk_net_0,
+        Data6  => VCC_net,
         -- Outputs
-        Result => LedMochila_net_0 
+        Result => housekeepingCheck_0_Result 
         );
 -- INBUF_0
 INBUF_0 : INBUF
@@ -505,24 +400,14 @@ INBUF_0 : INBUF
         -- Outputs
         Y   => RESETZB_1 
         );
--- InintialMsgInjector_0
-InintialMsgInjector_0 : InintialMsgInjector
-    port map( 
-        -- Inputs
-        clk            => CLK_GATED_net_0,
-        clear          => MoM_unit_0_TX_start,
-        rstn           => RESETZB_1,
-        -- Outputs
-        NewMsgInjector => InintialMsgInjector_0_NewMsgInjector 
-        );
 -- LowPowerManagement_0
 LowPowerManagement_0 : LowPowerManagement
     port map( 
         -- Inputs
         Flash_Freeze_N    => Wakeup,
         RST_N             => RESETZB_1,
-        CLK               => CLK_GATED_0,
-        Done_Housekeeping => DFN1C0_0_Q,
+        CLK               => RingOscillator_0_CLK_OUT,
+        Done_Housekeeping => housekeepingCheck_0_Result,
         -- Outputs
         CLK_GATED         => CLK_GATED_net_0,
         Wait_Housekeeping => LowpoerM_hk,
@@ -554,8 +439,8 @@ md_v4_0 : md_v5
         bit_error => bit_error_1,
         RX_end    => md_v4_0_RX_end,
         dout      => AddOKflag_1,
-        new_data  => md_v4_0_new_data,
-        d_hk      => Decoder_hk 
+        new_data  => bit_error_2,
+        d_hk      => Decoder_hk_net_0 
         );
 -- MoM_unit_0
 MoM_unit_0 : MoM_unit
@@ -563,79 +448,41 @@ MoM_unit_0 : MoM_unit
         -- Inputs
         RX_port          => RX,
         RX_end           => md_v4_0_RX_end,
-        RX_commandReady  => command_process_0_newMsg,
+        RX_commandReady  => Decoder_hk_0,
         RX_addressOK     => AddOKflag_0,
         uC_commandType   => uC_commandType,
-        uC_commandReady  => OR2_0_Y,
+        uC_commandReady  => uC_commandReady,
         ZB_active        => bit_error_0,
         TX_Active        => manchesterEncoderComplete_0_TX_Active,
         clk              => CLK_GATED_net_0,
         rstn             => RESETZB_1,
-        RX_commandType   => command_process_0_msgType_1,
+        RX_commandType   => command_process_0_msgType_0,
         nextHopAddress   => addressingData_0_NextHopAddress_0,
         -- Outputs
-        commandType2ZB   => CommandType2ZB,
-        commandReady2ZB  => CommandReady2ZB,
+        commandType2ZB   => CommandType2ZB_net_0,
+        commandReady2ZB  => CommandReady2ZB_net_0,
         TX_start         => MoM_unit_0_TX_start,
-        RF_selector      => CTRL1_Enab,
+        RF_selector      => CTRL1_Enab_net_0,
         TX_load          => MoM_unit_0_TX_load,
         RX_processed     => MoM_unit_0_RX_processed,
-        d_hk             => MoM_unit_0_d_hk,
+        d_hk             => MoM_hk,
         commandToEncoder => MoM_unit_0_commandToEncoder,
-        MoMState         => MoMstateLed_net_0 
-        );
--- OR2_0
-OR2_0 : OR2
-    port map( 
-        -- Inputs
-        A => uC_commandReady,
-        B => InintialMsgInjector_0_NewMsgInjector,
-        -- Outputs
-        Y => OR2_0_Y 
-        );
--- PerformanceMeasure_0
-PerformanceMeasure_0 : PerformanceMeasure
-    port map( 
-        -- Inputs
-        rstn             => RESETZB_1,
-        ClearPerformData => ClearPerformData,
-        CntTX            => MoM_unit_0_TX_start,
-        clk              => CLK_GATED_net_0,
-        RaisePMFlag      => ProcessFlagGen_0_ProcessFlag,
-        MsgType          => command_process_0_msgType0to0(0),
-        NewMsg           => command_process_0_newMsg,
-        -- Outputs
-        PM_msgType       => PM_msgType_net_0,
-        PM_DataReady     => PM_DataReady_net_0,
-        d_hk             => OPEN,
-        PM_TXCounter     => PM_TXCounter_net_0 
-        );
--- ProcessFlagGen_0
-ProcessFlagGen_0 : ProcessFlagGen
-    port map( 
-        -- Inputs
-        clearPF     => ClearPerformData,
-        clk         => CLK_GATED_net_0,
-        rstn        => RESETZB_1,
-        MoMState    => MoMstateLed_net_0,
-        -- Outputs
-        ProcessFlag => ProcessFlagGen_0_ProcessFlag 
+        MoMState         => statusLed 
         );
 -- RingOscillator_0
 RingOscillator_0 : RingOscillator
     port map( 
         -- Inputs
-        RESET_N  => RESETZB_1,
-        Enable_N => DFN1C0_0_Q,
+        RESET_N => RESETZB_1,
         -- Outputs
-        CLK_OUT  => CLK_GATED_0 
+        CLK_OUT => RingOscillator_0_CLK_OUT 
         );
 -- ZBControl_0
 ZBControl_0 : ZBControl
     port map( 
         -- Inputs
-        commandType2uC   => CommandType2ZB,
-        commandReady2uC  => CommandReady2ZB,
+        commandType2uC   => CommandType2ZB_net_0,
+        commandReady2uC  => CommandReady2ZB_net_0,
         WD_IRQ           => GND_net,
         R2SINKTimeout    => R2SINKTimeout,
         NWKrRouteTimeout => NWKrRouteTimeout,
@@ -647,9 +494,8 @@ ZBControl_0 : ZBControl
         IRQ1             => IRQ1_net_0,
         IRQ2             => IRQ2_net_0,
         IRQ3             => IRQ3_net_0,
-        WD_CLR           => OPEN,
-        d_hk             => ZBControl_0_d_hk,
-        ZBCtrlState      => ZBCtrlState_net_0 
+        WD_CLR           => ZBControl_0_WD_CLR,
+        d_hk             => OPEN 
         );
 
 end RTL;
